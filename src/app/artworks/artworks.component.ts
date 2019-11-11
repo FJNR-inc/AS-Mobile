@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
-import {RouterExtensions} from "nativescript-angular";
+import { RouterExtensions } from "nativescript-angular";
 
 @Component({
     selector: "Artworks",
@@ -12,26 +12,26 @@ import {RouterExtensions} from "nativescript-angular";
 })
 export class ArtworksComponent implements OnInit {
 
-    artworks: {background: string, label: string, author: string}[] = [
+    artworks: Array<{background: string, label: string, author: string}> = [
         {
-            background: '~/assets/artwork/1.jpg',
-            label: 'Optimus II',
-            author: 'Amelie Laurence Fortin'
+            background: "~/assets/artwork/1.jpg",
+            label: "Optimus II",
+            author: "Amelie Laurence Fortin"
         },
         {
-            background: '~/assets/artwork/2.jpg',
-            label: 'Test 2',
-            author: 'Author 2'
+            background: "~/assets/artwork/2.jpg",
+            label: "Test 2",
+            author: "Author 2"
         },
         {
-            background: '~/assets/artwork/1.jpg',
-            label: 'Optimus II',
-            author: 'Amelie Laurence Fortin'
+            background: "~/assets/artwork/1.jpg",
+            label: "Optimus II",
+            author: "Amelie Laurence Fortin"
         },
         {
-            background: '~/assets/artwork/2.jpg',
-            label: 'Test 2',
-            author: 'Author 2'
+            background: "~/assets/artwork/2.jpg",
+            label: "Test 2",
+            author: "Author 2"
         }
     ];
 
@@ -48,7 +48,7 @@ export class ArtworksComponent implements OnInit {
         sideDrawer.showDrawer();
     }
 
-    public onNavigationItemTap(args: any) {
-        this.routerExtensions.navigate(['/artworks/artwork'], { animated: false });
+    onNavigationItemTap(args: any) {
+        this.routerExtensions.navigate(["/artworks/artwork"], { animated: false });
     }
 }

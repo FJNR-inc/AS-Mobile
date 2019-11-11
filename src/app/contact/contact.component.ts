@@ -1,19 +1,25 @@
 import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
+import { Elevation } from "nativescript-ngx-shadow";
 
 @Component({
-    selector: "Search",
-    templateUrl: "./search.component.html"
+    selector: "Contact",
+    templateUrl: "./contact.component.html",
+    styleUrls: [
+        "./contact.component.scss"
+    ]
 })
-export class SearchComponent implements OnInit {
+export class ContactComponent implements OnInit {
+
+    boxElevation;
 
     constructor() {
         // Use the component constructor to inject providers.
     }
 
     ngOnInit(): void {
-        // Init your component properties here.
+        this.boxElevation = Elevation.SNACKBAR;
     }
 
     onDrawerButtonTap(): void {

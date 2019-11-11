@@ -1,0 +1,36 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Partenaires"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout class="partners-page">
+        <TitleComponent text="Art Souterrain s'appuie fièrement sur de nombreux partenaires."
+                        textAlignment="center"
+                        type="3"></TitleComponent>
+
+        <StackLayout *ngFor="let section of sections" class="partners-page__section">
+            <TitleComponent [text]="section.name"
+                            textAlignment="center"
+                            type="2"></TitleComponent>
+
+            <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="space-between" width="100%" class="partners-page__section__list">
+                <Image *ngFor="let partner of section.partners" width="45%" [src]="partner.logo"
+                       class="partners-page__section__list__item"></Image>
+            </FlexboxLayout>
+        </StackLayout>
+
+    </StackLayout>
+</ScrollView>

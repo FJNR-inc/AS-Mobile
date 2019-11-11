@@ -12,16 +12,17 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Artworks"></Label>
+    <Label class="action-bar-title" text="Galerie"></Label>
 </ActionBar>
 
 <GridLayout height="100%" class="artworks-page">
     <ListView [items]="artworks" [nsRouterLink]="['/artworks/artwork']" pageTransition="slide">
         <ng-template let-item="item">
             <GridLayout class="artworks-page__artwork" [style.background]="'url(' + item.background + ')'">
-                <GridLayout rows="*, auto, auto" class="artworks-page__artwork__description">
+                <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__artwork__description">
                     <Label row="1" col="0" [text]="item.label" class="artworks-page__artwork__description__title"></Label>
                     <Label row="2" col="0" [text]="item.author" class="artworks-page__artwork__description__author"></Label>
+                    <Label row="2" col="1" verticalAlignment="bottom" text="1000 de la gauchetiere" class="artworks-page__artwork__description__address"></Label>
                 </GridLayout>
             </GridLayout>
         </ng-template>

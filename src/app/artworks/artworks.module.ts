@@ -3,7 +3,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 import { ArtworksRoutingModule } from "./artworks-routing.module";
 import { ArtworksComponent } from "./artworks.component";
-import { ArtworkComponent } from './artwork/artwork.component';
+import { ArtworkComponent } from "./artwork/artwork.component";
 
 @NgModule({
     imports: [

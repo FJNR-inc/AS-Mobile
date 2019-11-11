@@ -1,0 +1,28 @@
+.title {
+    &--1 {
+        color: #ED1C24;
+        font-size: 40;
+        font-weight: bold;
+    }
+
+    &--2 {
+        color: #ED1C24;
+        font-size: 20;
+        font-weight: 700;
+    }
+
+    &--3 {
+        color: #707070;
+        font-size: 20;
+    }
+
+    &--title-section {
+        color: #707070;
+        font-size: 20;
+        font-weight: 900;
+    }
+
+    &--input-helper {
+        font-size: 14;
+    }
+}

@@ -2,7 +2,15 @@
 // This is where the vast majority of your CSS code goes.
 // Font icon class
 .fa {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
 }
 // Common page class
 .page-content {
@@ -36,8 +44,19 @@ $sidedrawer-list-icon-offset: 10;
 $sidedrawer-list-icon-size: 20;
 
 .sidedrawer {
+    background-image: url('~/assets/background.png');
+    background-size: cover;
+
+    .sidedrawer-header {
+        background-color: $art-souterrain-main;
+        padding: 50 0;
+
+        &__logo {
+            margin: 50 0;
+        }
+    }
+
     &.sidedrawer-left {
-        background-color: $ab-background;
 
         .sidedrawer-header-image {
             color: $background-dark;
@@ -54,37 +73,57 @@ $sidedrawer-list-icon-size: 20;
         }
     }
 
-    .sidedrawer-header {
-        background-color: $ab-background;
-
-        .sidedrawer-header-brand {
-            color: $ab-color;
-        }
-    }
-
     .sidedrawer-content {
-        background-color: $side-drawer-background;
-
         $sidedrawer-list-item-offset-left: 15;
         $sidedrawer-list-icon-offset: 10;
         $sidedrawer-list-icon-size: 20;
 
         .sidedrawer-list-item {
-            padding-left: $sidedrawer-list-item-offset-left;
+            padding: 20 0 20 $sidedrawer-list-item-offset-left;
+            height: 75;
+            border-bottom-width: 1;
+            border-color: grey;
+            background-color: rgba(white, 0.5);
+
             Label {
                 vertical-align: center;
                 color: $blue-dark;
+                font-size: 20;
             }
             .fa {
                 width: $sidedrawer-list-icon-size;
                 margin-right: $sidedrawer-list-icon-offset;
             }
+
+            &--first {
+                border-top-width: 1;
+            }
+            &--last {
+                border-top-width: 1;
+            }
+
             &.selected {
-                background-color: $item-active-background;
+                border-color: $item-active-color;
                 Label {
                     color: $item-active-color;
                 }
             }
         }
     }
+}
+
+.button {
+    background-color: $art-souterrain-main;
+    color: white;
+}
+
+.input {
+    background-color: #BBBBBB;
+    border-radius: 5;
+    margin-top: 20;
+}
+
+.card {
+    padding: 30 10;
+    background-color: white;
 }

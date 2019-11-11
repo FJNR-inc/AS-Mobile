@@ -1,0 +1,17 @@
+.partners-page {
+  padding: 20;
+  padding-top: 50;
+  background-image: url('~/assets/background.png');
+  background-size: cover;
+
+  &__section {
+    padding-top: 50;
+
+    &__list {
+
+      &__item {
+        margin-top: 20;
+      }
+    }
+  }
+}

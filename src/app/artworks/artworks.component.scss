@@ -1,12 +1,12 @@
 .artworks-page {
   &__artwork {
     margin-bottom: 2;
-    height: 150;
+    height: 200;
     background-size: cover;
     background-position: center;
 
     &__description {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(#8A5642, 0.4);
       vertical-align: bottom;
       padding: 5;
 
@@ -17,6 +17,11 @@
 
       &__author {
         font-size: 16;
+        color: white;
+      }
+
+      &__address {
+        font-size: 12;
         color: white;
       }
     }

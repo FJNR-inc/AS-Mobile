@@ -5,41 +5,36 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
 -->
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
     <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
-        <StackLayout row="0" class="sidedrawer-header">
-            <Label class="sidedrawer-header-image fa" text="&#xf2bd;"></Label>
-            <Label class="sidedrawer-header-brand" text="User Name"></Label>
-            <Label class="footnote" text="username@mail.com"></Label>
-        </StackLayout>
+        <FlexLayout height="100" class="sidedrawer-header">
+            <Image width="50%" src="~/assets/logo.png" class="sidedrawer-header__logo"></Image>
+        </FlexLayout>
 
         <ScrollView row="1" class="sidedrawer-content">
-            <StackLayout>
-                <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map')" (tap)="onNavItemTap('/map')">
-                    <Label col="0" text="&#xf015;" class="fa"></Label>
-                    <Label col="1" text="Map" class="p-r-10"></Label>
-                </GridLayout>
+            <GridLayout rows="auto, *, auto" height="100%" verticalAlignment="bottom">
+                <StackLayout orientation="vertical" row="0">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--first" [class.selected]="isComponentSelected('/map')" (tap)="onNavItemTap('/map')">
+                        <Label col="1" text="Plan des sous-terrains" class="p-r-10"></Label>
+                    </GridLayout>
 
-                <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/artworks')" (tap)="onNavItemTap('/artworks')">
-                    <Label col="0" text="&#xf1ea;" class="fa"></Label>
-                    <Label col="1" text="ArtWorks" class="p-r-10"></Label>
-                </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/artworks')" (tap)="onNavItemTap('/artworks')">
+                        <Label col="1" text="Galerie" class="p-r-10"></Label>
+                    </GridLayout>
 
-                <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/search')" (tap)="onNavItemTap('/search')">
-                    <Label col="0" text="&#xf002;" class="fa"></Label>
-                    <Label col="1" text="Search" class="p-r-10"></Label>
-                </GridLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/partners')" (tap)="onNavItemTap('/partners')">
+                        <Label col="1" text="Partenaires" class="p-r-10"></Label>
+                    </GridLayout>
 
-                <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/featured')" (tap)="onNavItemTap('/featured')">
-                    <Label col="0" text="&#xf005;" class="fa"></Label>
-                    <Label col="1" text="Featured" class="p-r-10"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr-light"></StackLayout>
-
-                <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/settings')" (tap)="onNavItemTap('/settings')">
-                    <Label col="0" text="&#xf013;" class="fa"></Label>
-                    <Label col="1" text="Settings" class="p-r-10"></Label>
-                </GridLayout>
-            </StackLayout>
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/contact')" (tap)="onNavItemTap('/contact')">
+                        <Label col="1" text="Contact" class="p-r-10"></Label>
+                    </GridLayout>
+                </StackLayout>
+                <StackLayout row="1"></StackLayout>
+                <StackLayout orientation="vertical" row="2">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--last" [class.selected]="isComponentSelected('/settings')" (tap)="onNavItemTap('/settings')">
+                        <Label col="1" text="Preferences" class="p-r-10"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </GridLayout>
         </ScrollView>
     </GridLayout>
 

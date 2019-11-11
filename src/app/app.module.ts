@@ -4,6 +4,9 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { PartnersService } from "~/app/services/partners.service";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { NgShadowModule } from "nativescript-ngx-shadow";
 
 @NgModule({
     bootstrap: [
@@ -12,10 +15,16 @@ import { AppComponent } from "./app.component";
     imports: [
         AppRoutingModule,
         NativeScriptModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        NativeScriptHttpClientModule,
+        NgShadowModule
     ],
     declarations: [
         AppComponent
+    ],
+    exports: [],
+    providers: [
+        PartnersService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

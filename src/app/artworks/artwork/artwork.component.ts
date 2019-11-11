@@ -6,7 +6,9 @@ import {RouterExtensions} from "nativescript-angular";
 @Component({
   selector: 'ns-artwork',
   templateUrl: './artwork.component.html',
-  styleUrls: ['./artwork.component.css']
+  styleUrls: [
+      './artwork.component.scss'
+  ]
 })
 export class ArtworkComponent implements OnInit {
 

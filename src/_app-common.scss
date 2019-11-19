@@ -82,7 +82,7 @@ $sidedrawer-list-icon-size: 20;
             padding: 20 0 20 $sidedrawer-list-item-offset-left;
             height: 75;
             border-bottom-width: 1;
-            border-color: grey;
+            border-color: #4B4B4B;
             background-color: rgba(white, 0.5);
 
             Label {
@@ -121,6 +121,13 @@ $sidedrawer-list-icon-size: 20;
     background-color: #BBBBBB;
     border-radius: 5;
     margin-top: 20;
+}
+
+.input-select {
+    border-bottom-width: 1;
+    border-bottom-color: #eeeeee;
+    padding: 4 32 4 0;
+    height: 28;
 }
 
 .card {

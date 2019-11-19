@@ -7,7 +7,7 @@ import {ArtworkComponent} from "~/app/artworks/artwork/artwork.component";
 
 const routes: Routes = [
     { path: "", component: ArtworksComponent },
-    { path: "artwork", component: ArtworkComponent }
+    { path: "artwork/:id", component: ArtworkComponent }
 ];
 
 @NgModule({

@@ -5,8 +5,11 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { PartnersService } from "~/app/services/partners.service";
+import { ArtworksService } from "~/app/services/artworks.service";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { NgShadowModule } from "nativescript-ngx-shadow";
+import {ArtworkTypesService} from "~/app/services/artwork-types.service";
+import {PlacesService} from "~/app/services/places.service";
 
 @NgModule({
     bootstrap: [
@@ -24,7 +27,10 @@ import { NgShadowModule } from "nativescript-ngx-shadow";
     ],
     exports: [],
     providers: [
-        PartnersService
+        PartnersService,
+        ArtworksService,
+        ArtworkTypesService,
+        PlacesService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

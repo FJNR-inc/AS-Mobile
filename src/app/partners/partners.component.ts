@@ -44,8 +44,6 @@ export class PartnersComponent implements OnInit {
                 section.partners =  partners.results.map(
                     (item) => new Partner(item)
                 );
-                console.log(section.key);
-                console.log(partners);
             }
         );
     }

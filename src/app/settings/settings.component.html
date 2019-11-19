@@ -16,20 +16,5 @@
 </ActionBar>
 
 <GridLayout class="settings-page">
-    <StackLayout orientation="vertical" class="contact-page__box card" shadow [elevation]="boxElevation">
-        <TitleComponent text="Formulaire de contact" type="title-section" textAlignment="center"></TitleComponent>
-        <TextField hint="Courriel"
-                   text=''
-                   secure="false"
-                   returnKeyType="done"
-                   autocorrect="false"
-                   maxLength="100"
-                   focus="onFocus"
-                   blur="onBlur" class="input"></TextField>
-        <TitleComponent text="Cette adresse courriel sera utilise par notre équipe pour vous répondre"
-                        type="input-helper"></TitleComponent>
-        <TextView height="300" hint="Votre message" class="input input--textarea"></TextView>
 
-        <Button text="Envoyer" tap="onTap" class="button"></Button>
-    </StackLayout>
 </GridLayout>

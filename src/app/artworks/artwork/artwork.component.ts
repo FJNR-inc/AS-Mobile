@@ -29,6 +29,14 @@ export class ArtworkComponent implements OnInit {
         });
     }
 
+    getArtworkName() {
+        if (this.artwork) {
+            return this.artwork.name;
+        } else {
+            return "";
+        }
+    }
+
     refreshArtwork() {
         this.artworksService.get(this.index).subscribe(
             (artwork) => {

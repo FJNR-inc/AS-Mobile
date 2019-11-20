@@ -20,6 +20,10 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                         <Label col="1" text="Galerie" class="p-r-10"></Label>
                     </GridLayout>
 
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/events')" (tap)="onNavItemTap('/events')">
+                        <Label col="1" text="Evenement" class="p-r-10"></Label>
+                    </GridLayout>
+
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/partners')" (tap)="onNavItemTap('/partners')">
                         <Label col="1" text="Partenaires" class="p-r-10"></Label>
                     </GridLayout>

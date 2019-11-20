@@ -1,0 +1,30 @@
+.event-page {
+  padding: 20;
+  padding-top: 20;
+  background-image: url('~/assets/background.png');
+  background-size: cover;
+
+  &__box {
+    &__header {
+      margin-bottom: 30;
+
+      &__picture {
+        width: 75;
+        height: 75;
+        border-radius: 50%;
+      }
+
+      &__details {
+        margin-left: 10;
+
+        &__place {
+          margin-top: 20;
+        }
+
+        &__date {
+          margin-top: 20;
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,8 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { NgShadowModule } from "nativescript-ngx-shadow";
 import {ArtworkTypesService} from "~/app/services/artwork-types.service";
 import {PlacesService} from "~/app/services/places.service";
+import {EventsService} from "~/app/services/events.service";
+import {EventTypesService} from "~/app/services/eventTypes.service";
 
 @NgModule({
     bootstrap: [
@@ -30,7 +32,9 @@ import {PlacesService} from "~/app/services/places.service";
         PartnersService,
         ArtworksService,
         ArtworkTypesService,
-        PlacesService
+        PlacesService,
+        EventsService,
+        EventTypesService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

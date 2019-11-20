@@ -1,0 +1,75 @@
+.events-page {
+
+  &--dialogOpen {
+    opacity: 0.5;
+  }
+
+  &__event {
+    margin-bottom: 2;
+    height: 200;
+    background-size: cover;
+    background-position: center;
+
+    &__description {
+      background-color: rgba(#8A5642, 0.4);
+      vertical-align: bottom;
+      padding: 5;
+
+      &__title {
+        font-size: 20;
+        color: white;
+      }
+
+      &__author {
+        font-size: 16;
+        color: white;
+      }
+
+      &__date {
+        font-size: 12;
+        color: white;
+      }
+
+      &__address {
+        font-size: 12;
+        color: white;
+      }
+    }
+  }
+}
+
+.events-modal {
+  animation-name: show;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+
+  &__content {
+    border-top-width: 1;
+    border-color: #222222;
+    background-color: white;
+    width: 100%;
+    padding: 20;
+    margin-top: 100;
+
+    &__text {
+      margin-top: 20;
+    }
+
+    &__select {
+      margin-top: 30;
+    }
+
+    &__button {
+      margin-top: 30;
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

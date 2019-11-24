@@ -15,20 +15,21 @@
     <Label class="action-bar-title" [text]="getArtworkName()"></Label>
 </ActionBar>
 
-<StackLayout>
-    <StackLayout class="artwork-page" *ngIf="artwork">
-        <StackLayout orientation="vertical" class="artwork-page__box card">
-            <StackLayout orientation="horizontal" class="artwork-page__box__header">
-                <Image [src]="artwork.picture" stretch="aspectFill" verticalAlignment="stretch" class="artwork-page__box__header__picture"></Image>
-                <StackLayout class="artwork-page__box__header__details">
-                    <TitleComponent [text]="artwork.name" type="title-section"></TitleComponent>
-                    <TitleComponent [text]="artwork.artist.full_name" type="3"></TitleComponent>
-                    <TitleComponent [text]="artwork.place.name" type="3"></TitleComponent>
+<ScrollView>
+    <StackLayout>
+        <StackLayout class="artwork-page" *ngIf="artwork">
+            <StackLayout orientation="vertical" class="artwork-page__box card">
+                <StackLayout orientation="horizontal" class="artwork-page__box__header">
+                    <Image [src]="artwork.picture" stretch="aspectFill" verticalAlignment="stretch" class="artwork-page__box__header__picture"></Image>
+                    <StackLayout class="artwork-page__box__header__details">
+                        <TitleComponent [text]="artwork.name" type="title-section"></TitleComponent>
+                        <TitleComponent [text]="artwork.artist.full_name" type="3"></TitleComponent>
+                        <TitleComponent [text]="artwork.place.name" type="3"></TitleComponent>
+                    </StackLayout>
                 </StackLayout>
+                <TitleComponent type="3" [text]="artwork.description"></TitleComponent>
             </StackLayout>
-            <TitleComponent type="3" [text]="artwork.description"></TitleComponent>
+            <Button text="Voir sur le plan" tap="onTap" class="button" [nsRouterLink]="['/map']"></Button>
         </StackLayout>
-        <Button text="Voir sur le plan" tap="onTap" class="button" [nsRouterLink]="['/map']"></Button>
     </StackLayout>
-</StackLayout>
-.
+</ScrollView>

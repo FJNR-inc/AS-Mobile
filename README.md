@@ -9,6 +9,15 @@ If you're new with Nativescript, feel free to subscribe to the [community Slack 
 NativeScript have some [code samples](https://market.nativescript.org/?tab=samples&framework=all_frameworks&category=all_samples) you can edit and try directly online, it's a good way to start and rampup.
 
 If you need, NativeScript have a page that list all the available [plugins](https://market.nativescript.org/?tab=plugins) in the NativeScript's community.
+
+## Google Maps integration
+
+Here is the [page of presentation for Indoor Maps](https://www.google.com/maps/about/partners/indoormaps/) of Google.
+
+Here is the [NativeScript plugin for Google Maps SDK](https://github.com/dapriett/nativescript-google-maps-sdk) we use in this project.
+
+If you want to edit the Map design, feel free to use the [official wizard](https://mapstyle.withgoogle.com/) to help you
+
 ## How to publish a new release
 
 Here is the command to create a new bundle:

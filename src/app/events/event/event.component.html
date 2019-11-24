@@ -15,19 +15,21 @@
     <Label class="action-bar-title" [text]="getEventName()"></Label>
 </ActionBar>
 
-<StackLayout>
-    <StackLayout class="event-page" *ngIf="event">
-        <StackLayout orientation="vertical" class="event-page__box card">
-            <StackLayout orientation="horizontal" class="event-page__box__header">
-                <Image [src]="event.picture" stretch="aspectFill" verticalAlignment="stretch" class="event-page__box__header__picture"></Image>
-                <StackLayout class="event-page__box__header__details">
-                    <TitleComponent [text]="event.name" type="title-section"></TitleComponent>
-                    <TitleComponent [text]="event.place.name" type="3" class="event-page__box__header__details__place"></TitleComponent>
-                    <TitleComponent [text]="formatDate(event.date)" type="3" class="event-page__box__header__details__date"></TitleComponent>
+<ScrollView>
+    <StackLayout>
+        <StackLayout class="event-page" *ngIf="event">
+            <StackLayout orientation="vertical" class="event-page__box card">
+                <StackLayout orientation="horizontal" class="event-page__box__header">
+                    <Image [src]="event.picture" stretch="aspectFill" verticalAlignment="stretch" class="event-page__box__header__picture"></Image>
+                    <StackLayout class="event-page__box__header__details">
+                        <TitleComponent [text]="event.name" type="title-section"></TitleComponent>
+                        <TitleComponent [text]="event.place.name" type="3" class="event-page__box__header__details__place"></TitleComponent>
+                        <TitleComponent [text]="formatDate(event.date)" type="3" class="event-page__box__header__details__date"></TitleComponent>
+                    </StackLayout>
                 </StackLayout>
+                <TitleComponent type="3" [text]="event.description"></TitleComponent>
             </StackLayout>
-            <TitleComponent type="3" [text]="event.description"></TitleComponent>
+            <Button text="S'inscrire a l'evenement" (tap)="redirectToSubscribe()" class="button"></Button>
         </StackLayout>
-        <Button text="S'inscrire a l'evenement" (tap)="redirectToSubscribe()" class="button"></Button>
     </StackLayout>
-</StackLayout>
+</ScrollView>

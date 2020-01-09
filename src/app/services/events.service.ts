@@ -6,7 +6,7 @@ import GlobalService from "./globalService";
 @Injectable()
 export class EventsService extends GlobalService {
 
-    urlEvents = "https://drm4oye0d8.execute-api.ca-central-1.amazonaws.com/dev" + "/event";
+    urlEvents = this.URL_BASE_API + "/event";
 
     constructor(public http: HttpClient) {
         super();

@@ -6,7 +6,7 @@ import GlobalService from "./globalService";
 @Injectable()
 export class ArtworkTypesService extends GlobalService {
 
-    urlArtworkTypes = "https://drm4oye0d8.execute-api.ca-central-1.amazonaws.com/dev" + "/artwork_type";
+    urlArtworkTypes = this.URL_BASE_API + "/artwork_type";
 
     constructor(public http: HttpClient) {
         super();

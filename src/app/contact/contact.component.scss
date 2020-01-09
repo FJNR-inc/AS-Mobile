@@ -6,5 +6,20 @@
 
   &__box {
     margin: 30 0;
+
+    &__error {
+      padding: 20;
+    }
+  }
+
+  &__success {
+    &__icon {
+      margin-bottom: 20;
+    }
+
+    &__button {
+      margin-top: 30;
+      margin-bottom: 30;
+    }
   }
 }

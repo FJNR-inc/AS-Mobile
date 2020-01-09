@@ -1,0 +1,7 @@
+<StackLayout orientation="horizontal" class="choice" (tap)="onTap()" [ngClass]="{'choice--checked': checked}">
+    <FlexboxLayout alignItems="center" width="100%" justifyContent="space-between">
+        <Label *ngIf="!checked" text="&#xf111;" fontSize="20" class="far choice__icon"></Label>
+        <Label *ngIf="checked" text="&#xf192;" fontSize="20" class="far choice__icon"></Label>
+        <TitleComponent [text]="text" type="title title--3" class="choice__label"></TitleComponent>
+    </FlexboxLayout>
+</StackLayout>

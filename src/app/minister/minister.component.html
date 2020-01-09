@@ -1,0 +1,45 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Mot des ministres"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout class="minister-page">
+        <StackLayout class="minister-page__text card">
+            <StackLayout class="minister-page__text__section">
+                <TitleComponent text="Art Souterrain se démarque par l’originalité de sa démarche : rendre accessible l’art au plus grand nombre, à l’extérieur des institutions muséales traditionnelles."
+                                type="3"></TitleComponent>
+            </StackLayout>
+            <StackLayout class="minister-page__text__section">
+                <TitleComponent text="En exposant des œuvres dans le réseau souterrain, emblème touristique de la métropole, et dans des lieux satellites, le festival va à la rencontre de son public, composé à la fois d’amateurs d’art et de passants. Il participe à la mise en valeur du patrimoine urbain de Montréal et contribue à la visibilité et à la vitalité de l’offre touristique de la métropole, une destination de calibre international."
+                                type="3"></TitleComponent>
+            </StackLayout>
+            <StackLayout class="minister-page__text__section">
+                <TitleComponent text="Votre gouvernement est heureux de soutenir ce rendez-vous culturel hivernal qui permet à des milliers de spectateurs de découvrir gratuitement les œuvres et le talent d’artistes locaux dont nous sommes fiers, ainsi que des œuvres internationales. "
+                                type="3"></TitleComponent>
+            </StackLayout>
+
+            <StackLayout orientation="vertical" *ngFor="let author of AUTHORS" class="minister-page__text__author">
+                <TitleComponent [text]="author.name"
+                                type="title-section"></TitleComponent>
+
+                <TitleComponent [text]="author.title"
+                                type="3"></TitleComponent>
+            </StackLayout>
+        </StackLayout>
+
+        <Image *ngFor="let logo of LOGOS" width="45%" [src]="logo.url" class="minister-page__logo"></Image>
+    </StackLayout>
+</ScrollView>

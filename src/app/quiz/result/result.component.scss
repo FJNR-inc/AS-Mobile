@@ -1,0 +1,28 @@
+.question-page {
+  padding: 20;
+  padding-top: 50;
+  background-image: url('~/assets/background.png');
+  background-size: cover;
+
+  &__question {
+    margin: 20 0;
+
+    &__header {
+      &__icon {
+        margin: 20;
+
+        &--false {
+          color: #fa2e56;
+        }
+
+        &--true {
+          color: #008265;
+        }
+      }
+    }
+
+    &__content {
+      margin-top: 20;
+    }
+  }
+}

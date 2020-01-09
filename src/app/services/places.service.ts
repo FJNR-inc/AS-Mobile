@@ -6,7 +6,7 @@ import GlobalService from "./globalService";
 @Injectable()
 export class PlacesService extends GlobalService {
 
-    urlPlaces = "https://drm4oye0d8.execute-api.ca-central-1.amazonaws.com/dev" + "/place";
+    urlPlaces = this.URL_BASE_API + "/place";
 
     constructor(public http: HttpClient) {
         super();

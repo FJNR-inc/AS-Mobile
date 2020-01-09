@@ -1,0 +1,32 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+                ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Quizz"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout class="question-page" *ngIf="assessment">
+        <StackLayout orientation="vertical" class="question-page__question card" *ngFor="let question of questions">
+            <StackLayout class="question-page__question__header" *ngFor="let question of questions">
+                <TitleComponent class="question-page__question__header__label" [text]="question.label" type="3"></TitleComponent>
+            </StackLayout>
+            <ns-choice *ngFor="let choice of question.choices" id="CB-{{ choice.label }}" class="question-page__question__choices" [text]="choice.label" (toggle)="toggleChoice(question, choice)" [checked]="isChecked(question, choice)"></ns-choice>
+            <!--
+            <CheckBox *ngFor="let choice of question.choices" id="CB-{{ choice.label }}" [text]="choice.label" (tap)="toggleChoice(question, choice)" [checked]="isChecked(question, choice)"></CheckBox>
+            -->
+        </StackLayout>
+
+        <Button text="Continuer" (tap)="submitAnswer()" class="button"></Button>
+    </StackLayout>
+</ScrollView>

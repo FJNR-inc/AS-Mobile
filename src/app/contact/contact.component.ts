@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
-import { Elevation } from "nativescript-ngx-shadow";
+import { ContactService } from "~/app/services/contact.service";
 
 @Component({
     selector: "Contact",
@@ -10,16 +10,35 @@ import { Elevation } from "nativescript-ngx-shadow";
         "./contact.component.scss"
     ]
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
+    email: string = "";
+    message: string = "";
 
-    boxElevation;
+    error: string = null;
+    success: boolean = false;
 
-    constructor() {
+    constructor(private contactService: ContactService) {
         // Use the component constructor to inject providers.
     }
 
-    ngOnInit(): void {
-        this.boxElevation = Elevation.SNACKBAR;
+    send(): void {
+        this.contactService.create(this.email, this.message).subscribe(
+            () => {
+                this.error = null;
+                this.success = true;
+            },
+            (err) => {
+                if (err.error.non_field_errors) {
+                    this.error = err.error.non_field_errors;
+                }
+                if (err.error.sender_email) {
+                    this.error = err.error.sender_email;
+                }
+                if (err.error.message) {
+                    this.error = err.error.message;
+                }
+            }
+        );
     }
 
     onDrawerButtonTap(): void {

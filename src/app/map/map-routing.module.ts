@@ -5,7 +5,8 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { MapComponent } from "./map.component";
 
 const routes: Routes = [
-    { path: "", component: MapComponent }
+    { path: "", component: MapComponent },
+    { path: ":id", component: MapComponent }
 ];
 
 @NgModule({

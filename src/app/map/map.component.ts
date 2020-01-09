@@ -1,8 +1,13 @@
-import { Component, ViewChild } from "@angular/core";
+import { Component } from "@angular/core";
 import { registerElement } from "nativescript-angular/element-registry";
 import { MapView, Marker, Position, Style } from "nativescript-google-maps-sdk";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
+import { Artwork } from "~/app/models/artwork";
+import { ArtworksService } from "~/app/services/artworks.service";
+import {ActivatedRoute, Params, Router} from "@angular/router";
+
+declare const com: any;
 
 // Important - must register MapView plugin in order to use in Angular templates
 registerElement("MapView", () => MapView);
@@ -24,8 +29,6 @@ export class MapComponent {
     tilt = 0;
     padding = [20, 20, 20, 20];
     mapView: MapView;
-
-    lastCamera: string;
 
     style = `
         [
@@ -224,47 +227,107 @@ export class MapComponent {
         ]
     `;
 
-    constructor() {}
+    mapIsReady: boolean = false;
+    currentLevelName: string;
+    artworks: Array<Artwork>;
+    displayedArtworks: Array<Artwork>;
+
+    constructor(private artworksService: ArtworksService,
+                private router: Router,
+                private activatedRoute: ActivatedRoute) { }
 
     onDrawerButtonTap(): void {
         const sideDrawer = <RadSideDrawer>app.getRootView();
         sideDrawer.showDrawer();
     }
 
-    // Map events
     onMapReady(event) {
-        console.log("Map Ready");
-
         this.mapView = event.object;
+        this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 
-        console.log("Setting a marker...");
+        this.mapIsReady = true;
 
-        const marker = new Marker();
-        marker.position = Position.positionFromLatLng(45.497748, -73.571746);
-        marker.title = "Optimus II";
-        marker.snippet = "1000 de la gauchetiere";
-        marker.userData = {index: 1};
-        this.mapView.addMarker(marker);
+        this.activatedRoute.params.subscribe((params: Params) => {
+            const index = params.id;
+            if (index) {
+                this.zoomOnArtwork(index);
+            }
+            this.getArtworks();
+        });
     }
 
-    onCoordinateTapped(args) {
-        console.log("Coordinate Tapped, Lat: " + args.position.latitude + ", Lon: " + args.position.longitude, args);
+    initMarkerOnMap() {
+        this.mapView.removeAllMarkers();
+
+        for (const artwork of this.displayedArtworks) {
+            const marker = new Marker();
+            marker.position = Position.positionFromLatLng(artwork.latitude, artwork.longitude);
+            marker.title = artwork.name;
+            marker.snippet = artwork.place.name;
+            marker.userData = {index: artwork.id};
+            this.mapView.addMarker(marker);
+        }
+        console.log("Marker refreshed");
     }
 
-    onMarkerEvent(args) {
-        console.log("Marker Event: '" + args.eventName
-            + "' triggered on: " + args.marker.title
-            + ", Lat: " + args.marker.position.latitude + ", Lon: " + args.marker.position.longitude, args);
+    onIndoorBuildingFocused(args) {
+        console.log("Building changed -> " + args.indoorBuilding);
+        if (args.indoorBuilding) {
+            this.currentLevelName = args.indoorBuilding.levels[args.indoorBuilding.defaultLevelIndex].name;
+        } else {
+            this.currentLevelName = null;
+        }
+        this.refreshDisplayedArtworks();
     }
 
-    onCameraChanged(args) {
-        console.log("Camera changed: " + JSON.stringify(args.camera), JSON.stringify(args.camera) === this.lastCamera);
-        this.lastCamera = JSON.stringify(args.camera);
+    onIndoorLevelActivated(args) {
+        console.log("Level changed -> " + args.activateLevel);
+        if (args.activateLevel) {
+            this.currentLevelName = args.activateLevel.name;
+        } else {
+            this.currentLevelName = null;
+        }
+        this.refreshDisplayedArtworks();
     }
 
-    onCameraMove(args) {
-        console.log("Camera moving: " + JSON.stringify(args.camera));
+    refreshDisplayedArtworks() {
+        this.displayedArtworks = [];
+        console.log("New filter artwork -> " + this.currentLevelName);
+        for (const artwork of this.artworks) {
+            if (!this.currentLevelName || this.currentLevelName && artwork.level === this.currentLevelName) {
+                this.displayedArtworks.push(artwork);
+            }
+        }
+        console.log("Artworks -> " + this.artworks);
+        console.log("New displayed artwork -> " + this.displayedArtworks);
+        this.initMarkerOnMap();
     }
 
+    zoomOnArtwork(id) {
+        this.artworksService.get(id).subscribe(
+            (artwork) => {
+                const item = new Artwork(artwork);
+                this.latitude = Number(item.latitude);
+                this.longitude = Number(item.longitude);
+                this.zoom = 18;
+            }
+        );
+    }
+
+    getArtworks() {
+        this.artworksService.list().subscribe(
+            (artworks) => {
+                this.artworks =  artworks.results.map(
+                    (item) => new Artwork(item)
+                );
+                this.displayedArtworks = this.artworks;
+                this.refreshDisplayedArtworks();
+            }
+        );
+    }
+
+    onMarkerInfoWindowTapped(args) {
+        this.router.navigate(["/artworks/artwork/" + args.marker.userData.index]);
+    }
 }

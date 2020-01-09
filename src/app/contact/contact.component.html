@@ -17,31 +17,48 @@
 
 <ScrollView>
     <StackLayout class="contact-page">
-        <TitleComponent text="Une question, un avis, une remarque ?"
-                        textAlignment="center"
-                        type="3"
-                        class="contact-page__title"></TitleComponent>
+        <StackLayout *ngIf="!success">
+            <TitleComponent text="Une question, un avis, une remarque ?"
+                            textAlignment="center"
+                            type="3"
+                            class="contact-page__title"></TitleComponent>
 
-        <TitleComponent text="N'hésitez pas a nous écrire, nous nous ferons un plaisir de vous répondre."
-                        textAlignment="center"
-                        type="3"
-                        class="contact-page__title"></TitleComponent>
+            <TitleComponent text="N'hésitez pas a nous écrire, nous nous ferons un plaisir de vous répondre."
+                            textAlignment="center"
+                            type="3"
+                            class="contact-page__title"></TitleComponent>
 
-        <StackLayout orientation="vertical" class="contact-page__box card" shadow [elevation]="boxElevation">
-            <TitleComponent text="Formulaire de contact" type="title-section" textAlignment="center"></TitleComponent>
-            <TextField hint="Courriel"
-                       text=''
-                       secure="false"
-                       returnKeyType="done"
-                       autocorrect="false"
-                       maxLength="100"
-                       focus="onFocus"
-                       blur="onBlur" class="input"></TextField>
-            <TitleComponent text="Cette adresse courriel sera utilise par notre équipe pour vous répondre"
-                            type="input-helper"></TitleComponent>
-            <TextView height="300" hint="Votre message" class="input input--textarea"></TextView>
+            <StackLayout orientation="vertical" class="contact-page__box card">
+                <TitleComponent text="Formulaire de contact" type="title-section" textAlignment="center"></TitleComponent>
+                <TextField hint="Courriel"
+                           [(ngModel)]="email"
+                           keyboardType="email"
+                           returnKeyType="done"
+                           autocorrect="false"
+                           maxLength="100"
+                           focus="onFocus"
+                           blur="onBlur" class="input"></TextField>
+                <TitleComponent text="Cette adresse courriel sera utilise par notre équipe pour vous répondre"
+                                type="input-helper"></TitleComponent>
+                <TextView height="300"
+                          [(ngModel)]="message"
+                          hint="Votre message"
+                          class="input input--textarea"></TextView>
 
-            <Button text="Envoyer" tap="onTap" class="button"></Button>
+                <StackLayout orientation="vertical" class="contact_page__box__error">
+                    <TitleComponent *ngIf="error"
+                                    [text]="error"
+                                    type="error"></TitleComponent>
+                </StackLayout>
+                <Button text="Envoyer" (tap)="send()" class="button"></Button>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout orientation="vertical" class="contact-page__success" *ngIf="success">
+            <Label text="&#xf058;" textalignment="center" fontSize="40" class="fas contact-page__success__icon"></Label>
+            <TitleComponent text="Votre message a bien été envoyé!" type="3" textAlignment="center"></TitleComponent>
+            <StackLayout orientation="vertical" class="contact-page__success__button">
+                <Button text="Retour a la page d'accueil" nsRouterLink="/"></Button>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 </ScrollView>

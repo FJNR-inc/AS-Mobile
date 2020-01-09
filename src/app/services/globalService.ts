@@ -2,20 +2,35 @@ import { HttpHeaders } from "@angular/common/http";
 
 export default class GlobalService {
 
+    URL_BASE_API = "http://10.0.2.2:8000";
+    EMAIL_STORAGE_NAME = "Email";
+
     getHeaders(contentType: string = "application/json") {
         const options = {};
 
-        // const token = localStorage.getItem("token");
         if (contentType) {
             options["Content-Type"] = contentType;
         }
-        /*
-        if (token) {
-            options["Authorization"] = "Token " + token;
+
+        const email = this.getEmail();
+
+        if (email) {
+            options["Email"] = email;
         }
-         */
+
         const header = new HttpHeaders(options);
 
         return header;
+    }
+
+    getEmail() {
+        const appSettings = require("tns-core-modules/application-settings");
+
+        return appSettings.getString(this.EMAIL_STORAGE_NAME);
+    }
+
+    setEmail(email) {
+        const appSettings = require("tns-core-modules/application-settings");
+        appSettings.setString(this.EMAIL_STORAGE_NAME, email);
     }
 }

@@ -7,7 +7,6 @@ import { EventTypesService } from "~/app/services/eventTypes.service";
 import { EventType } from "~/app/models/eventType";
 import { Event } from "~/app/models/event";
 import { EventsService } from "~/app/services/events.service";
-import { DateHelper } from "../helpers/date";
 
 @Component({
     selector: "Events",
@@ -106,6 +105,6 @@ export class EventsComponent implements OnInit {
     }
 
     formatDate(value) {
-        return DateHelper.formatDate(value);
+        return value;
     }
 }

@@ -1,0 +1,15 @@
+.question-page {
+  padding: 20;
+  padding-top: 50;
+  background-image: url('~/assets/background.png');
+  background-size: cover;
+
+  &__question {
+    margin: 30 0;
+
+    &__header {
+      margin-bottom: 20;
+    }
+  }
+
+}

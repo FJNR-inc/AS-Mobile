@@ -28,6 +28,10 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                         <Label col="1" text="Partenaires" class="p-r-10"></Label>
                     </GridLayout>
 
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/minister')" (tap)="onNavItemTap('/minister')">
+                        <Label col="1" text="Mot des ministres" class="p-r-10"></Label>
+                    </GridLayout>
+
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/contact')" (tap)="onNavItemTap('/contact')">
                         <Label col="1" text="Contact" class="p-r-10"></Label>
                     </GridLayout>

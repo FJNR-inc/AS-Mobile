@@ -1,21 +1,31 @@
 .artwork-page {
-  padding: 20;
-  padding-top: 20;
   background-image: url('~/assets/background.png');
   background-size: cover;
 
-  &__box {
-    &__header {
-      margin-bottom: 30;
+  &__tabs {
+    background-color: #ED1C24;
+    color: white;
+  }
 
-      &__picture {
-        width: 75;
-        height: 75;
-        border-radius: 50%;
-      }
+  &__details {
+    height: 100%;
+    padding: 20;
+    background-image: url('~/assets/background.png');
+    background-size: cover;
 
-      &__details {
-        margin-left: 10;
+    &__box {
+      &__header {
+        margin-bottom: 30;
+
+        &__picture {
+          width: 75;
+          height: 75;
+          border-radius: 50%;
+        }
+
+        &__details {
+          margin-left: 10;
+        }
       }
     }
   }

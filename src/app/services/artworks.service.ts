@@ -6,7 +6,7 @@ import GlobalService from "./globalService";
 @Injectable()
 export class ArtworksService extends GlobalService {
 
-    urlArtworks = "https://drm4oye0d8.execute-api.ca-central-1.amazonaws.com/dev" + "/artwork";
+    urlArtworks = this.URL_BASE_API + "/artwork";
 
     constructor(public http: HttpClient) {
         super();
@@ -18,8 +18,10 @@ export class ArtworksService extends GlobalService {
         params = params.set("limit", limit.toString());
         params = params.set("offset", offset.toString());
 
-        for (const filter of filters) {
-            params = params.set(filter.name, filter.value);
+        if (filters) {
+            for (const filter of filters) {
+                params = params.set(filter.name, filter.value);
+            }
         }
 
         return this.http.get<any>(

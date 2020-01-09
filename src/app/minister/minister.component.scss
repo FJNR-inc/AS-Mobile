@@ -1,0 +1,24 @@
+.minister-page {
+  padding: 20;
+  padding-top: 50;
+  padding-bottom: 50;
+  background-image: url('~/assets/background.png');
+  background-size: cover;
+
+  &__text {
+    margin-top: 30;
+
+    &__section {
+      margin-bottom: 20;
+    }
+
+    &__author {
+      margin-top: 10;
+      margin-bottom: 20;
+    }
+  }
+
+  &__logo {
+    margin-top: 20;
+  }
+}

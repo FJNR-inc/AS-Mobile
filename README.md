@@ -18,6 +18,12 @@ Here is the [NativeScript plugin for Google Maps SDK](https://github.com/dapriet
 
 If you want to edit the Map design, feel free to use the [official wizard](https://mapstyle.withgoogle.com/) to help you
 
+How to work with ANDROID API for indoor level
+https://developers.google.com/maps/documentation/android-sdk/map#work_with_indoor_maps_in_the_api
+
+How to add custom indoor map (for global user or intern to app)
+https://developers.google.com/maps/documentation/android-sdk/map#add_floor_plans
+
 ## How to publish a new release
 
 Here is the command to create a new bundle:

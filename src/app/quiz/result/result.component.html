@@ -1,0 +1,43 @@
+<ActionBar class="action-bar">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+                ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Quizz"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout class="question-page">
+        <TitleComponent class="question-page__welcome" textAlignment="center" [text]="welcomeText" type="1"></TitleComponent>
+
+        <TitleComponent class="question-page__percentage" textAlignment="center" text="Vous avez eu {{percentage}}% de bonne reponse." type="3"></TitleComponent>
+
+        <StackLayout orientation="vertical" class="question-page__question card" *ngFor="let question of questions">
+            <StackLayout orientation="horizontal" class="question-page__question__header">
+                <Label *ngIf="!question.correctly_answered" text="&#xf057;" fontSize="20" class="fas question-page__question__header__icon question-page__question__header__icon--false"></Label>
+                <Label *ngIf="question.correctly_answered" text="&#xf058;" fontSize="20" class="fas question-page__question__header__icon question-page__question__header__icon--true"></Label>
+                <TitleComponent class="question-page__question__label" [text]="question.label" type="title-section"></TitleComponent>
+            </StackLayout>
+
+            <StackLayout *ngIf="question.explanation" orientation="horizontal" class="question-page__question__content">
+                <TitleComponent [text]="question.explanation" type="3"></TitleComponent>
+            </StackLayout>
+
+        </StackLayout>
+
+        <Button tap="onTap" class="button" [nsRouterLink]="['/artworks']">
+            <FormattedString>
+                <Span text="Retour a la liste des oeuvres"></Span>
+            </FormattedString>
+        </Button>
+    </StackLayout>
+</ScrollView>

@@ -9,6 +9,9 @@ export class Artwork extends BaseModel {
     artist: Artist;
     place: Place;
     description: string;
+    level: string;
+    latitude: number;
+    longitude: number;
 
     constructor(data: Object = {}) {
         super(data);

@@ -1,0 +1,13 @@
+.choice {
+  background-color: #EEEEEE;
+  margin-bottom: 10;
+  padding: 20;
+
+  &--checked {
+    .choice {
+      &__icon {
+        color: #008265;
+      }
+    }
+  }
+}

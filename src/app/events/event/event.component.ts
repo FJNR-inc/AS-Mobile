@@ -5,7 +5,6 @@ import { RouterExtensions } from "nativescript-angular";
 import { ActivatedRoute, Params } from "@angular/router";
 import { Event } from "~/app/models/event";
 import { EventsService } from "~/app/services/events.service";
-import { DateHelper } from "../../helpers/date";
 
 @Component({
   selector: "ns-event",
@@ -56,7 +55,7 @@ export class EventComponent implements OnInit {
     }
 
     formatDate(value) {
-        return DateHelper.formatDate(value);
+        return value;
     }
 
     redirectToSubscribe() {

@@ -5,17 +5,20 @@ import { ArtworksRoutingModule } from "./artworks-routing.module";
 import { ArtworksComponent } from "./artworks.component";
 import { ArtworkComponent } from "./artwork/artwork.component";
 import { SharedModule } from "~/app/shared/shared.module";
-import { ModalDialogService } from "nativescript-angular";
+import { ModalDialogService, NativeScriptFormsModule } from "nativescript-angular";
+import { ListQuizzComponent } from './artwork/list-quizz/list-quizz.component';
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         ArtworksRoutingModule,
-        SharedModule
+        SharedModule,
+        NativeScriptFormsModule
     ],
     declarations: [
         ArtworksComponent,
-        ArtworkComponent
+        ArtworkComponent,
+        ListQuizzComponent
     ],
     providers: [
         ModalDialogService

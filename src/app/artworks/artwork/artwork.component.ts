@@ -1,32 +1,43 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { RouterExtensions } from "nativescript-angular";
-import { ActivatedRoute, Params } from "@angular/router";
+import { ActivatedRoute, Params, Router } from "@angular/router";
 import { Artwork } from "~/app/models/artwork";
 import { ArtworksService } from "~/app/services/artworks.service";
+import { AssessmentsService } from "~/app/services/assessments.service";
+import { Assessment } from "~/app/models/assessment";
+import GlobalService from "~/app/services/globalService";
 
 @Component({
-  selector: 'ns-artwork',
-  templateUrl: './artwork.component.html',
+  selector: "ns-artwork",
+  templateUrl: "./artwork.component.html",
   styleUrls: [
-      './artwork.component.scss'
+      "./artwork.component.scss"
   ]
 })
 export class ArtworkComponent implements OnInit {
 
     index = 0;
     artwork: Artwork;
+    assessments: Array<Assessment> = [];
+    email: string = "";
+
+    emailVerified = false;
 
     constructor(public routerExtensions: RouterExtensions,
                 private activatedRoute: ActivatedRoute,
-                private artworksService: ArtworksService) { }
+                private artworksService: ArtworksService,
+                private assessmentService: AssessmentsService,
+                private globalService: GlobalService,
+                private router: Router) { }
 
     ngOnInit() {
         this.activatedRoute.params.subscribe((params: Params) => {
-            this.index = params["id"];
+            this.index = params.id;
             this.refreshArtwork();
         });
+        this.email = this.globalService.getEmail();
     }
 
     getArtworkName() {
@@ -37,10 +48,27 @@ export class ArtworkComponent implements OnInit {
         }
     }
 
+    listAssessmentOfArtwork() {
+        const filters = [
+            {
+                name: "artwork",
+                value: this.artwork.id
+            }
+        ];
+        this.assessmentService.list(filters).subscribe(
+            (assessments) => {
+                this.assessments = assessments.results.map(
+                    (item) => new Assessment(item)
+                );
+            }
+        );
+    }
+
     refreshArtwork() {
         this.artworksService.get(this.index).subscribe(
             (artwork) => {
                 this.artwork =  new Artwork(artwork);
+                this.listAssessmentOfArtwork();
             }
         );
     }
@@ -52,5 +80,16 @@ export class ArtworkComponent implements OnInit {
 
     goBack() {
         this.routerExtensions.back();
+    }
+
+    onTap() {
+        if (this.email) {
+            this.globalService.setEmail(this.email);
+            this.emailVerified = true;
+
+            if (this.assessments.length === 1) {
+                this.router.navigate(["/quiz/" + this.assessments[0].id]);
+            }
+        }
     }
 }

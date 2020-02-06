@@ -8,6 +8,8 @@ import { ArtworksService } from "~/app/services/artworks.service";
 import { AssessmentsService } from "~/app/services/assessments.service";
 import { Assessment } from "~/app/models/assessment";
 import GlobalService from "~/app/services/globalService";
+import { MediasService } from "~/app/services/medias.service";
+import { Media } from "~/app/models/media";
 
 @Component({
   selector: "ns-artwork",
@@ -21,7 +23,9 @@ export class ArtworkComponent implements OnInit {
     index = 0;
     artwork: Artwork;
     assessments: Array<Assessment> = [];
-    email: string = "";
+    medias: Array<Media>;
+    email: string;
+    selectedMedia: Media;
 
     emailVerified = false;
 
@@ -30,14 +34,26 @@ export class ArtworkComponent implements OnInit {
                 private artworksService: ArtworksService,
                 private assessmentService: AssessmentsService,
                 private globalService: GlobalService,
-                private router: Router) { }
+                private router: Router,
+                private mediaService: MediasService) { }
 
     ngOnInit() {
         this.activatedRoute.params.subscribe((params: Params) => {
             this.index = params.id;
             this.refreshArtwork();
+            this.listMediaOfArtwork();
         });
         this.email = this.globalService.getEmail();
+    }
+
+    listMediaOfArtwork() {
+        this.mediaService.list().subscribe(
+            (medias) => {
+                this.medias = medias.results.map(
+                    (item) => new Media(item)
+                );
+            }
+        );
     }
 
     getArtworkName() {
@@ -91,5 +107,13 @@ export class ArtworkComponent implements OnInit {
                 this.router.navigate(["/quiz/" + this.assessments[0].id]);
             }
         }
+    }
+
+    selectMedia(media) {
+        this.selectedMedia = media;
+    }
+
+    closeMedia() {
+        this.selectedMedia = null;
     }
 }

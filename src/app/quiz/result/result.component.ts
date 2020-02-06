@@ -5,6 +5,7 @@ import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { Question } from "~/app/models/question";
 import { AssessmentsService } from "~/app/services/assessments.service";
+import { Assessment } from "~/app/models/assessment";
 
 @Component({
     selector: "ns-result",
@@ -16,18 +17,29 @@ import { AssessmentsService } from "~/app/services/assessments.service";
 
 export class ResultComponent implements OnInit {
 
+    assessment: Assessment;
     assessmentIndex: number = null;
     questions: Array<Question> = [];
 
     constructor(public routerExtensions: RouterExtensions,
                 private activatedRoute: ActivatedRoute,
-                private assessmentService: AssessmentsService) { }
+                private assessmentService: AssessmentsService,
+                private router: Router) { }
 
     ngOnInit() {
         this.activatedRoute.params.subscribe((params: Params) => {
             this.assessmentIndex = params.idQuizz;
             this.getQuestions(this.assessmentIndex);
+            this.refreshAssessment();
         });
+    }
+
+    refreshAssessment() {
+        this.assessmentService.get(this.assessmentIndex).subscribe(
+            (assessment) => {
+                this.assessment =  new Assessment(assessment);
+            }
+        );
     }
 
     getQuestions(idAssessment: number) {
@@ -65,5 +77,9 @@ export class ResultComponent implements OnInit {
         } else {
             return "Fini!";
         }
+    }
+
+    redirectToArtwork() {
+        this.router.navigate(["/artworks/artwork/" + this.assessment.artwork.id]);
     }
 }

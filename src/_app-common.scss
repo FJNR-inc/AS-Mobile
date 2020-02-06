@@ -114,6 +114,10 @@ $sidedrawer-list-icon-size: 20;
 .button {
     background-color: $art-souterrain-main;
     color: white;
+
+    &:disabled {
+        background-color: #4B4B4B;
+    }
 }
 
 .input {

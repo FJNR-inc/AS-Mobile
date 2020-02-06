@@ -9,11 +9,12 @@
 
   &__details {
     height: 100%;
-    padding: 20;
     background-image: url('~/assets/background.png');
     background-size: cover;
 
     &__box {
+      margin: 20;
+
       &__header {
         margin-bottom: 30;
 
@@ -28,5 +29,52 @@
         }
       }
     }
+
+    &__button-map {
+      margin-left: 30;
+      margin-right: 30;
+
+      &__icon {
+        margin-right: 20;
+      }
+    }
+
+    &__medias {
+      margin-top: 20;
+
+      &__item {
+        width: 200;
+        height: 200;
+        margin: 30;
+        border-radius: 10;
+      }
+    }
+  }
+}
+
+
+.media-modal {
+  animation-name: show;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+
+  &__content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20;
+
+    &__text {
+      margin-top: 20;
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

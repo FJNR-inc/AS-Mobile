@@ -19,7 +19,7 @@
 </ActionBar>
 
 <GridLayout height="100%" class="events-page" [ngClass]="{'events-page--dialogOpen': this.dialogShown}">
-    <ListView [items]="events" *ngIf="events">
+    <ListView [items]="events" *ngIf="events.length > 1">
         <ng-template let-item="item">
             <GridLayout class="events-page__event" [style.background]="'url(' + item.picture + ')'" [nsRouterLink]="['/events/event', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="events-page__event__description">
@@ -30,6 +30,9 @@
             </GridLayout>
         </ng-template>
     </ListView>
+    <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="events.length < 1">
+        <TitleComponent text="Aucun evenement ne correspond a votre recherche" textAlignment="center"></TitleComponent>
+    </FlexBoxLayout>
 </GridLayout>
 
 <AbsoluteLayout class="events-modal" *ngIf="dialogShown">

@@ -2,7 +2,8 @@ import { HttpHeaders } from "@angular/common/http";
 
 export default class GlobalService {
 
-    URL_BASE_API = "http://10.0.2.2:8000";
+    // URL_BASE_API = "http://10.0.2.2:8000";
+    URL_BASE_API = "https://drm4oye0d8.execute-api.ca-central-1.amazonaws.com/dev";
     EMAIL_STORAGE_NAME = "Email";
 
     getHeaders(contentType: string = "application/json") {

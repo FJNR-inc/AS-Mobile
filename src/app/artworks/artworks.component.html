@@ -19,7 +19,7 @@
 </ActionBar>
 
 <GridLayout height="100%" class="artworks-page" [ngClass]="{'artworks-page--dialogOpen': this.dialogShown}">
-    <ListView [items]="artworks" *ngIf="artworks">
+    <ListView [items]="artworks" *ngIf="artworks.length > 1">
         <ng-template let-item="item">
             <GridLayout class="artworks-page__artwork" [style.background]="'url(' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__artwork__description">
@@ -30,6 +30,9 @@
             </GridLayout>
         </ng-template>
     </ListView>
+    <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="artworks.length < 1">
+        <TitleComponent text="Aucune oeuvre ne correspond a votre recherche" textAlignment="center"></TitleComponent>
+    </FlexBoxLayout>
 </GridLayout>
 
 <AbsoluteLayout class="artworks-modal" *ngIf="dialogShown">

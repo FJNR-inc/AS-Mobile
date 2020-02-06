@@ -15,6 +15,7 @@ import { AssessmentsService } from "~/app/services/assessments.service";
 import { NativeScriptFormsModule } from "nativescript-angular";
 import GlobalService from "~/app/services/globalService";
 import { ContactService } from "~/app/services/contact.service";
+import { MediasService } from "~/app/services/medias.service";
 
 @NgModule({
     bootstrap: [
@@ -41,7 +42,8 @@ import { ContactService } from "~/app/services/contact.service";
         EventTypesService,
         AssessmentsService,
         GlobalService,
-        ContactService
+        ContactService,
+        MediasService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

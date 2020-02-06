@@ -34,9 +34,9 @@
 
         </StackLayout>
 
-        <Button tap="onTap" class="button" [nsRouterLink]="['/artworks']">
+        <Button (tap)="redirectToArtwork()" class="button">
             <FormattedString>
-                <Span text="Retour a la liste des oeuvres"></Span>
+                <Span text="Retour a la fiche de l'oeuvre"></Span>
             </FormattedString>
         </Button>
     </StackLayout>

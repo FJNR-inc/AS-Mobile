@@ -16,6 +16,10 @@ import { NativeScriptFormsModule } from "nativescript-angular";
 import GlobalService from "~/app/services/globalService";
 import { ContactService } from "~/app/services/contact.service";
 import { MediasService } from "~/app/services/medias.service";
+import { MapView } from "nativescript-google-maps-sdk";
+import { registerElement } from "nativescript-angular/element-registry";
+
+registerElement("MapView", () => MapView);
 
 @NgModule({
     bootstrap: [

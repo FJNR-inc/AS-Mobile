@@ -125,8 +125,6 @@ export class ArtworksComponent implements OnInit {
                 this.artworks =  artworks.results.map(
                     (item) => new Artwork(item)
                 );
-
-                console.log(artworks[0].picture);
             }
         );
     }

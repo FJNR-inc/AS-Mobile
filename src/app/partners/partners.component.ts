@@ -17,15 +17,15 @@ export class PartnersComponent implements OnInit {
 
     sections = [
         {
-            key: 'GrandPartenaires',
-            name: 'Grand partenaires',
-            partners: [],
+            key: "GrandPartenaires",
+            name: "Grand partenaires",
+            partners: []
         },
         {
-            key: 'Partenaires',
-            name: 'Partenaires',
-            partners: [],
-        },
+            key: "Partenaires",
+            name: "Partenaires",
+            partners: []
+        }
     ];
 
     constructor(private partnersService: PartnersService) {
@@ -39,7 +39,7 @@ export class PartnersComponent implements OnInit {
     }
 
     loadPartnersOfSection(section) {
-        this.partnersService.list([{name: 'partner_type__key', value: section.key}]).subscribe(
+        this.partnersService.list([{name: "partner_type__key", value: section.key}]).subscribe(
             (partners) => {
                 section.partners =  partners.results.map(
                     (item) => new Partner(item)

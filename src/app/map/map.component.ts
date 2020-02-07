@@ -1,16 +1,12 @@
 import { Component } from "@angular/core";
-import { registerElement } from "nativescript-angular/element-registry";
 import { MapView, Marker, Position, Style } from "nativescript-google-maps-sdk";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { Artwork } from "~/app/models/artwork";
 import { ArtworksService } from "~/app/services/artworks.service";
-import {ActivatedRoute, Params, Router} from "@angular/router";
+import { ActivatedRoute, Params, Router } from "@angular/router";
 
 declare const com: any;
-
-// Important - must register MapView plugin in order to use in Angular templates
-registerElement("MapView", () => MapView);
 
 @Component({
     moduleId: module.id,
@@ -243,6 +239,7 @@ export class MapComponent {
 
     onMapReady(event) {
         this.mapView = event.object;
+        this.mapView.settings.myLocationButtonEnabled = true;
         this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 
@@ -268,11 +265,10 @@ export class MapComponent {
             marker.userData = {index: artwork.id};
             this.mapView.addMarker(marker);
         }
-        console.log("Marker refreshed");
     }
 
     onIndoorBuildingFocused(args) {
-        console.log("Building changed -> " + args.indoorBuilding);
+        console.log("onIndoorBuildingFocused");
         if (args.indoorBuilding) {
             this.currentLevelName = args.indoorBuilding.levels[args.indoorBuilding.defaultLevelIndex].name;
         } else {
@@ -282,7 +278,7 @@ export class MapComponent {
     }
 
     onIndoorLevelActivated(args) {
-        console.log("Level changed -> " + args.activateLevel);
+        console.log("onIndoorLevelActivated");
         if (args.activateLevel) {
             this.currentLevelName = args.activateLevel.name;
         } else {
@@ -293,14 +289,11 @@ export class MapComponent {
 
     refreshDisplayedArtworks() {
         this.displayedArtworks = [];
-        console.log("New filter artwork -> " + this.currentLevelName);
         for (const artwork of this.artworks) {
             if (!this.currentLevelName || this.currentLevelName && artwork.level === this.currentLevelName) {
                 this.displayedArtworks.push(artwork);
             }
         }
-        console.log("Artworks -> " + this.artworks);
-        console.log("New displayed artwork -> " + this.displayedArtworks);
         this.initMarkerOnMap();
     }
 

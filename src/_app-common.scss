@@ -115,7 +115,7 @@ $sidedrawer-list-icon-size: 20;
     background-color: $art-souterrain-main;
     color: white;
 
-    &:disabled {
+    &--disabled {
         background-color: #4B4B4B;
     }
 }

@@ -50,6 +50,20 @@
       }
     }
   }
+
+  &__quizz {
+    &__header {
+      margin: 30;
+    }
+
+    &__text {
+      margin-bottom: 40;
+    }
+
+    &__button {
+      margin-top: 40;
+    }
+  }
 }
 
 

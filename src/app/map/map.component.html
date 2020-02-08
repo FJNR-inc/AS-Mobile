@@ -17,18 +17,18 @@
 
 
 <GridLayout>
-    <MapView [latitude]="latitude"
-             [longitude]="longitude"
-             [zoom]="zoom"
-             [minZoom]="minZoom"
-             [maxZoom]="maxZoom"
-             [bearing]="bearing"
-             [tilt]="tilt"
+    <MapView [latitude]="_mapService.latitude"
+             [longitude]="_mapService.longitude"
+             [zoom]="_mapService.zoom"
+             [minZoom]="_mapService.minZoom"
+             [maxZoom]="_mapService.maxZoom"
+             [bearing]="_mapService.bearing"
+             [tilt]="_mapService.tilt"
              i-padding="50,50,50,50"
-             [padding]="padding"
-             (mapReady)="onMapReady($event)"
-             (indoorBuildingFocused)="onIndoorBuildingFocused($event)"
-             (indoorLevelActivated)="onIndoorLevelActivated($event)"
-             (markerInfoWindowTapped)="onMarkerInfoWindowTapped($event)">
+             [padding]="_mapService.padding"
+             (mapReady)="_mapService.onMapReady($event)"
+             (indoorBuildingFocused)="_mapService.onIndoorBuildingFocused($event)"
+             (indoorLevelActivated)="_mapService.onIndoorLevelActivated($event)"
+             (markerInfoWindowTapped)="_mapService.onMarkerInfoWindowTapped($event)">
     </MapView>
 </GridLayout>

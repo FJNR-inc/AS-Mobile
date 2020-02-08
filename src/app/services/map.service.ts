@@ -1,0 +1,317 @@
+import { Injectable } from "@angular/core";
+import { MapView, Marker, Position, Style } from "nativescript-google-maps-sdk";
+import { Artwork } from "~/app/models/artwork";
+import { ArtworksService } from "~/app/services/artworks.service";
+import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+import * as app from "tns-core-modules/application";
+import { Router } from "@angular/router";
+
+@Injectable({
+  providedIn: "root"
+})
+export class MapService {
+
+    latitude =  45.497748;
+    longitude = -73.571746;
+    zoom = 13;
+    minZoom = 11;
+    maxZoom = 22;
+    bearing = 0;
+    tilt = 0;
+    padding = [20, 20, 20, 20];
+    mapView: MapView;
+
+    style = `
+        [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ]
+    `;
+
+    mapIsReady: boolean = false;
+    currentLevelName: string;
+    artworks: Array<Artwork>;
+    displayedArtworks: Array<Artwork>;
+
+    constructor(public artworksService: ArtworksService,
+                public router: Router) {
+
+    }
+
+    onDrawerButtonTap(): void {
+        const sideDrawer = <RadSideDrawer>app.getRootView();
+        sideDrawer.showDrawer();
+    }
+
+    onMapReady(event) {
+        if (!this.mapView) {
+            this.mapView = event.object;
+            this.mapView.settings.myLocationButtonEnabled = true;
+            this.mapView.settings.indoorLevelPickerEnabled = true;
+            this.mapView.setStyle(<Style>JSON.parse(this.style));
+
+            this.mapIsReady = true;
+        }
+
+    }
+
+    initMarkerOnMap() {
+        this.mapView.removeAllMarkers();
+
+        for (const artwork of this.displayedArtworks) {
+            const marker = new Marker();
+            marker.position = Position.positionFromLatLng(artwork.latitude, artwork.longitude);
+            marker.title = artwork.name;
+            marker.snippet = artwork.place.name;
+            marker.userData = {index: artwork.id};
+            this.mapView.addMarker(marker);
+        }
+    }
+
+    onIndoorBuildingFocused(args) {
+        console.log("onIndoorBuildingFocused");
+        if (args.indoorBuilding) {
+            this.currentLevelName = args.indoorBuilding.levels[args.indoorBuilding.defaultLevelIndex].name;
+        } else {
+            this.currentLevelName = null;
+        }
+        this.refreshDisplayedArtworks();
+    }
+
+    onIndoorLevelActivated(args) {
+        console.log("onIndoorLevelActivated");
+        if (args.activateLevel) {
+            this.currentLevelName = args.activateLevel.name;
+        } else {
+            this.currentLevelName = null;
+        }
+        this.refreshDisplayedArtworks();
+    }
+
+    refreshDisplayedArtworks() {
+        this.displayedArtworks = [];
+        for (const artwork of this.artworks) {
+            if (!this.currentLevelName || this.currentLevelName && artwork.level === this.currentLevelName) {
+                this.displayedArtworks.push(artwork);
+            }
+        }
+        this.initMarkerOnMap();
+    }
+
+    zoomOnArtwork(id) {
+        this.artworksService.get(id).subscribe(
+            (artwork) => {
+                const item = new Artwork(artwork);
+                this.latitude = Number(item.latitude);
+                this.longitude = Number(item.longitude);
+                this.zoom = 18;
+            }
+        );
+    }
+
+    getArtworks() {
+        this.artworksService.list().subscribe(
+            (artworks) => {
+                this.artworks =  artworks.results.map(
+                    (item) => new Artwork(item)
+                );
+                this.displayedArtworks = this.artworks;
+                this.refreshDisplayedArtworks();
+            }
+        );
+    }
+
+    onMarkerInfoWindowTapped(args) {
+        this.router.navigate(["/artworks/artwork/" + args.marker.userData.index]);
+    }
+}

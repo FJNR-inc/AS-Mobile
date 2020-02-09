@@ -3,11 +3,13 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 import { MapRoutingModule } from "./map-routing.module";
 import { MapComponent } from "./map.component";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
-        MapRoutingModule
+        MapRoutingModule,
+        TranslateModule
     ],
     declarations: [
         MapComponent

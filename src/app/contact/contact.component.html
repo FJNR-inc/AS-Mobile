@@ -12,25 +12,25 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Contact"></Label>
+    <Label class="action-bar-title" text="{{ 'contact.title' | translate }}"></Label>
 </ActionBar>
 
 <ScrollView>
     <StackLayout class="contact-page">
         <StackLayout *ngIf="!success">
-            <TitleComponent text="Une question, un avis, une remarque ?"
+            <TitleComponent text="{{ 'contact.promotion_1' | translate }}"
                             textAlignment="center"
                             type="3"
                             class="contact-page__title"></TitleComponent>
 
-            <TitleComponent text="N'hésitez pas a nous écrire, nous nous ferons un plaisir de vous répondre."
+            <TitleComponent text="{{ 'contact.promotion_2' | translate }}"
                             textAlignment="center"
                             type="3"
                             class="contact-page__title"></TitleComponent>
 
             <StackLayout orientation="vertical" class="contact-page__box card">
-                <TitleComponent text="Formulaire de contact" type="title-section" textAlignment="center"></TitleComponent>
-                <TextField hint="Courriel"
+                <TitleComponent text="{{ 'contact.box_title' | translate }}" type="title-section" textAlignment="center"></TitleComponent>
+                <TextField hint="{{ 'contact.email_hint' | translate }}"
                            [(ngModel)]="email"
                            keyboardType="email"
                            returnKeyType="done"
@@ -38,11 +38,11 @@
                            maxLength="100"
                            focus="onFocus"
                            blur="onBlur" class="input"></TextField>
-                <TitleComponent text="Cette adresse courriel sera utilise par notre équipe pour vous répondre"
+                <TitleComponent text="{{ 'contact.email_explanation' | translate }}"
                                 type="input-helper"></TitleComponent>
                 <TextView height="300"
                           [(ngModel)]="message"
-                          hint="Votre message"
+                          hint="{{ 'contact.content_hint' | translate }}"
                           class="input input--textarea"></TextView>
 
                 <StackLayout orientation="vertical" class="contact_page__box__error">
@@ -50,14 +50,14 @@
                                     [text]="error"
                                     type="error"></TitleComponent>
                 </StackLayout>
-                <Button text="Envoyer" (tap)="send()" class="button"></Button>
+                <Button text="{{ 'contact.button_send' | translate }}" (tap)="send()" class="button"></Button>
             </StackLayout>
         </StackLayout>
         <StackLayout orientation="vertical" class="contact-page__success" *ngIf="success">
             <Label text="&#xf058;" textalignment="center" fontSize="40" class="fas contact-page__success__icon"></Label>
-            <TitleComponent text="Votre message a bien été envoyé!" type="3" textAlignment="center"></TitleComponent>
+            <TitleComponent text="{{ 'contact.confirmation_sent' | translate }}" type="3" textAlignment="center"></TitleComponent>
             <StackLayout orientation="vertical" class="contact-page__success__button">
-                <Button text="Retour a la page d'accueil" nsRouterLink="/"></Button>
+                <Button text="{{ 'contact.go_back_to_home' | translate }}" nsRouterLink="/"></Button>
             </StackLayout>
         </StackLayout>
     </StackLayout>

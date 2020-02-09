@@ -12,14 +12,14 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
                 ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Quizz"></Label>
+    <Label class="action-bar-title" text="{{ 'result.title' | translate }}"></Label>
 </ActionBar>
 
 <ScrollView>
     <StackLayout class="question-page">
         <TitleComponent class="question-page__welcome" textAlignment="center" [text]="welcomeText" type="1"></TitleComponent>
 
-        <TitleComponent class="question-page__percentage" textAlignment="center" text="Vous avez eu {{percentage}}% de bonne reponse." type="3"></TitleComponent>
+        <TitleComponent class="question-page__percentage" textAlignment="center" text="{{ 'result.percentage' | translate:{'percentage': percentage} }}" type="3"></TitleComponent>
 
         <StackLayout orientation="vertical" class="question-page__question card" *ngFor="let question of questions">
             <StackLayout orientation="horizontal" class="question-page__question__header">
@@ -36,7 +36,7 @@
 
         <Button (tap)="redirectToArtwork()" class="button">
             <FormattedString>
-                <Span text="Retour a la fiche de l'oeuvre"></Span>
+                <Span text="{{ 'result.go_back_to_artwork' | translate }}"></Span>
             </FormattedString>
         </Button>
     </StackLayout>

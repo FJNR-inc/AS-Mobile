@@ -18,8 +18,22 @@ import { ContactService } from "~/app/services/contact.service";
 import { MediasService } from "~/app/services/medias.service";
 import { MapView } from "nativescript-google-maps-sdk";
 import { registerElement } from "nativescript-angular/element-registry";
+import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
+import { registerLocaleData } from "@angular/common";
+import { HttpClient } from "@angular/common/http";
+import localeFr from "@angular/common/locales/fr";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { WelcomeComponent } from './welcome/welcome.component';
+import {SharedModule} from "~/app/shared/shared.module";
 
 registerElement("MapView", () => MapView);
+
+registerLocaleData(localeFr);
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, "/assets/i18n/", ".json");
+}
 
 @NgModule({
     bootstrap: [
@@ -31,7 +45,15 @@ registerElement("MapView", () => MapView);
         NativeScriptUISideDrawerModule,
         NativeScriptHttpClientModule,
         NgShadowModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        SharedModule,
     ],
     declarations: [
         AppComponent
@@ -47,7 +69,8 @@ registerElement("MapView", () => MapView);
         AssessmentsService,
         GlobalService,
         ContactService,
-        MediasService
+        MediasService,
+        InternationalizationService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

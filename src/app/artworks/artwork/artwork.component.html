@@ -20,15 +20,15 @@
     <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
     <TabStrip class="artwork-page__tabs">
         <TabStripItem>
-            <Label text="General"></Label>
+            <Label text="{{ 'artwork.tabs.general' | translate }}"></Label>
             <Image src="font://&#xf2bb;" class="fas t-36"></Image>
         </TabStripItem>
         <TabStripItem>
-            <Label text="Parcours"></Label>
+            <Label text="{{ 'artwork.tabs.plan' | translate }}"></Label>
             <Image src="font://&#xf5a0;" class="fas t-36"></Image>
         </TabStripItem>
         <TabStripItem>
-            <Label text="Quizz"></Label>
+            <Label text="{{ 'artwork.tabs.quizz' | translate }}"></Label>
             <Image src="font://&#xf022;" class="fas t-36"></Image>
         </TabStripItem>
     </TabStrip>
@@ -52,7 +52,7 @@
                     <Button tap="onTap" class="button artwork-page__details__button-map" *ngIf="artwork.latitude && artwork.longitude" [nsRouterLink]="['/map/' + artwork.id]">
                         <FormattedString>
                             <Span text="&#xf5a0;" fontSize="18" class="fas artwork-page__details__button-map__icon"></Span>
-                            <Span text=" Voir sur le plan" fontSize="18" class="artwork-page__details__button-map__text"></Span>
+                            <Span text=" {{ 'artwork.details.go_to_map' | translate }}" fontSize="18" class="artwork-page__details__button-map__text"></Span>
                         </FormattedString>
                     </Button>
 
@@ -69,7 +69,7 @@
         <ScrollView>
             <StackLayout orientation="vertical" class="artwork-page__plan">
                 <Image *ngIf="artwork && artwork.plan" [src]="artwork.plan" class="artwork-page__plan__image" stretch="aspectFit"></Image>
-                <Label *ngIf="artwork && !artwork.plan" textWrap="true" textalignment="center" fontSize="20" class="artwork-page__plan__text" text="Aucun plan n'est disponible pour cette oeuvre"></Label>
+                <Label *ngIf="artwork && !artwork.plan" textWrap="true" textalignment="center" fontSize="20" class="artwork-page__plan__text" text="{{ 'artwork.plan.no_plan_available' | translate }}"></Label>
             </StackLayout>
         </ScrollView>
     </TabContentItem>
@@ -78,20 +78,20 @@
             <StackLayout orientation="vertical">
                 <FlexboxLayout class="artwork-page__quizz" flexDirection="column" justifyContent="space-around" alignItems="center" *ngIf="assessments.length >= 1 && !emailVerified">
                     <StackLayout class="artwork-page__quizz__header">
-                        <TitleComponent type="1" text="Quizz"></TitleComponent>
+                        <TitleComponent type="1" text="{{ 'artwork.quizz.title' | translate }}"></TitleComponent>
                     </StackLayout>
                     <StackLayout orientation="vertical" class="artwork-page__quizz__text">
-                        <TitleComponent type="3" text="Il est temps de faire valoir vos connaissances et d'en apprendre plus sur cette oeuvre." textAlignment="center"></TitleComponent>
-                        <TitleComponent type="3" text="Entrez l'adresse email que vous souhaitez utiliser pour le concours" textAlignment="center"></TitleComponent>
+                        <TitleComponent type="3" text="{{ 'artwork.quizz.promotion' | translate }}" textAlignment="center"></TitleComponent>
+                        <TitleComponent type="3" text="{{ 'artwork.quizz.ask_email' | translate }}" textAlignment="center"></TitleComponent>
                     </StackLayout>
-                    <TextField hint="Your email"
+                    <TextField hint="{{ 'artwork.quizz.email_hint' | translate }}"
                                [(ngModel)]="email"
                                keyboardType="email"
                                returnKeyType="done"
                                autocorrect="false">
                     </TextField>
                     <StackLayout class="artwork-page__quizz__button">
-                        <Button (tap)="onTap()" text="Commencer" [isEnabled]="isEmailValid()" class="button" [ngClass]="{'button--disabled': !isEmailValid()}"></Button>
+                        <Button (tap)="onTap()" text="{{ 'artwork.quizz.begin_button' | translate }}" [isEnabled]="isEmailValid()" class="button" [ngClass]="{'button--disabled': !isEmailValid()}"></Button>
                     </StackLayout>
                 </FlexboxLayout>
 
@@ -99,10 +99,10 @@
 
                 <FlexboxLayout class="artwork-page__quizz" flexDirection="column" justifyContent="space-around" alignItems="center" *ngIf="assessments.length < 1">
                     <StackLayout class="artwork-page__quizz__header">
-                        <TitleComponent type="1" text="Quizz"></TitleComponent>
+                        <TitleComponent type="1" text="{{ 'artwork.quizz.title' | translate }}"></TitleComponent>
                     </StackLayout>
                     <StackLayout orientation="vertical" class="artwork-page__quizz__text">
-                        <TitleComponent type="3" text="Il n'y a pas de Quizz pour cette oeuvre" textAlignment="center"></TitleComponent>
+                        <TitleComponent type="3" text="{{ 'artwork.quizz.no_quizz_available' | translate }}" textAlignment="center"></TitleComponent>
                     </StackLayout>
                 </FlexboxLayout>
             </StackLayout>
@@ -118,7 +118,7 @@
                 <StackLayout class="media-modal__content__text">
                     <TitleComponent [text]="selectedMedia.detail" type="3"></TitleComponent>
                 </StackLayout>
-                <Button (tap)="closeMedia()" text="Fermer" class="button"></Button>
+                <Button (tap)="closeMedia()" text="{{ 'artwork.media_modale.close_modale' | translate }}" class="button"></Button>
             </StackLayout>
         </ScrollView>
     </StackLayout>

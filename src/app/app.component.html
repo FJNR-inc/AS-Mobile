@@ -14,38 +14,38 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                 <StackLayout orientation="vertical" row="0">
                     <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--first" [class.selected]="isComponentSelected('/map')" (tap)="onNavItemTap('/map')">
                         <Label col="0" text="&#xf5a0;" class="fas"></Label>
-                        <Label col="1" text=" Plan des sous-terrains" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.map' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/artworks')" (tap)="onNavItemTap('/artworks')">
                         <Label col="0" text="&#xf53f;" class="fas"></Label>
-                        <Label col="1" text=" Galerie" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.artworks' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/events')" (tap)="onNavItemTap('/events')">
                         <Label col="0" text="&#xf0a1;" class="fas"></Label>
-                        <Label col="1" text=" Evenement" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.events' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/partners')" (tap)="onNavItemTap('/partners')">
                         <Label col="0" text="&#xf004;" class="fas"></Label>
-                        <Label col="1" text=" Partenaires" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.partners' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/minister')" (tap)="onNavItemTap('/minister')">
                         <Label col="0" text="&#xf4ad;" class="fas"></Label>
-                        <Label col="1" text=" Mot des ministres" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.minister' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/contact')" (tap)="onNavItemTap('/contact')">
                         <Label col="0" text="&#xf1d8;" class="fas"></Label>
-                        <Label col="1" text=" Contactez-nous" class="p-r-10"></Label>
+                        <Label col="1" text=" {{ 'nav.contact' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
                 </StackLayout>
                 <StackLayout row="1"></StackLayout>
                 <StackLayout orientation="vertical" row="2">
                     <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--last" [class.selected]="isComponentSelected('/settings')" (tap)="onNavItemTap('/settings')">
-                        <Label col="1" text="Preferences" class="p-r-10"></Label>
+                        <Label col="1" text="{{ 'nav.settings' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
                 </StackLayout>
             </GridLayout>

@@ -1,4 +1,5 @@
 import { HttpHeaders } from "@angular/common/http";
+import {InternationalizationService} from "~/app/services/internationalization.service";
 
 export default class GlobalService {
 
@@ -7,7 +8,9 @@ export default class GlobalService {
     EMAIL_STORAGE_NAME = "Email";
 
     getHeaders(contentType: string = "application/json") {
-        const options = {};
+        const options = {
+            "Accept-Language": InternationalizationService.getLocale()
+        };
 
         if (contentType) {
             options["Content-Type"] = contentType;

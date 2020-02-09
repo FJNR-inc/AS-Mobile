@@ -12,9 +12,21 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Preferences"></Label>
+    <Label class="action-bar-title" text="{{ 'settings.title' | translate }}"></Label>
 </ActionBar>
 
-<GridLayout class="settings-page">
+<ScrollView>
+    <StackLayout orientation="vertical" class="settings-page">
+        <TitleComponent text="{{ 'settings.title' | translate }}"
+                        textAlignment="center"
+                        type="3"
+                        class="settings-page__title"></TitleComponent>
 
-</GridLayout>
+        <StackLayout orientation="vertical" class="settings-page__box card">
+            <StackLayout class="settings-page__box__select">
+                <Label row="10" col="1" colSpan="5" text="{{ 'settings.input_language' | translate }}" class="title-label"></Label>
+                <Label [text]="currentLanguage" editable="false" class="input-select" (tap)="onSelectLanguageTap()"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

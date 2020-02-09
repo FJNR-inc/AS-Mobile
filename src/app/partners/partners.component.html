@@ -12,12 +12,12 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Partenaires"></Label>
+    <Label class="action-bar-title" text="{{ 'partners.title' | translate }}"></Label>
 </ActionBar>
 
 <ScrollView>
     <StackLayout class="partners-page">
-        <TitleComponent text="Art Souterrain s'appuie fièrement sur de nombreux partenaires."
+        <TitleComponent text="{{ 'partners.promotion' | translate }}"
                         textAlignment="center"
                         type="3"></TitleComponent>
 

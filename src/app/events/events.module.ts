@@ -6,12 +6,14 @@ import { EventsComponent } from "./events.component";
 import { EventComponent } from "./event/event.component";
 import { SharedModule } from "~/app/shared/shared.module";
 import { ModalDialogService } from "nativescript-angular";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         EventsRoutingModule,
-        SharedModule
+        SharedModule,
+        TranslateModule
     ],
     declarations: [
         EventsComponent,

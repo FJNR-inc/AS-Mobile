@@ -8,13 +8,15 @@ import { QuizRoutingModule } from "~/app/quiz/quiz-routing.module";
 import { TNSCheckBoxModule } from "@nstudio/nativescript-checkbox/angular";
 import { ChoiceComponent } from "./choice/choice.component";
 import { ResultComponent } from './result/result.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         QuizRoutingModule,
         SharedModule,
-        TNSCheckBoxModule
+        TNSCheckBoxModule,
+        TranslateModule
     ],
     declarations: [
         QuestionComponent,

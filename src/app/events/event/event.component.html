@@ -29,7 +29,7 @@
                 </StackLayout>
                 <TitleComponent type="3" [text]="event.description"></TitleComponent>
             </StackLayout>
-            <Button text="S'inscrire a l'evenement" (tap)="redirectToSubscribe()" class="button"></Button>
+            <Button text="{{ 'event.subscribe_to_event' | translate }}" (tap)="redirectToSubscribe()" class="button"></Button>
         </StackLayout>
     </StackLayout>
 </ScrollView>

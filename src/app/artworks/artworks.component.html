@@ -12,10 +12,13 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Galerie"></Label>
+    <Label class="action-bar-title" text="{{ 'artworks.title' | translate }}"></Label>
     <ActionItem (tap)="toggleModal()"
-                ios.systemIcon="9" ios.position="left" color="white"
-                android.systemIcon="ic_menu_search" android.position="actionBar"></ActionItem>
+                ios.systemIcon="9"
+                ios.position="left"
+                color="white"
+                android.systemIcon="ic_menu_search" a
+                ndroid.position="actionBar"></ActionItem>
 </ActionBar>
 
 <GridLayout height="100%" class="artworks-page" [ngClass]="{'artworks-page--dialogOpen': this.dialogShown}">
@@ -31,19 +34,19 @@
         </ng-template>
     </ListView>
     <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="artworks.length < 1">
-        <TitleComponent text="Aucune oeuvre ne correspond a votre recherche" textAlignment="center"></TitleComponent>
+        <TitleComponent text="{{ 'artworks.no_artworks_found' | translate }}" textAlignment="center"></TitleComponent>
     </FlexBoxLayout>
 </GridLayout>
 
 <AbsoluteLayout class="artworks-modal" *ngIf="dialogShown">
     <StackLayout class="artworks-modal__content">
-        <TitleComponent text="Recherche"
+        <TitleComponent text="{{ 'artworks.search' | translate }}"
                         textAlignment="center"
                         type="3"
                         class="artworks-modal__content__title"></TitleComponent>
 
         <StackLayout class="artworks-modal__content__text">
-            <TitleComponent text="Vous pouvez, si vous le souhaitez, filtrer les oeuvres disponible pour trouver ce que vous aimez"
+            <TitleComponent text="{{ 'artworks.search_modal.explanation' | translate }}"
                             textAlignment="center"
                             type="4"></TitleComponent>
         </StackLayout>
@@ -54,12 +57,12 @@
         </StackLayout>
 
         <StackLayout class="artworks-modal__content__select">
-            <Label row="10" col="1" colSpan="5" text="Type d'oeuvre" class="title-label"></Label>
+            <Label row="10" col="1" colSpan="5" text="{{ 'artworks.search_modal.input_artwork_type' | translate }}" class="title-label"></Label>
             <Label [text]="typeOfArtwork" editable="false" class="input-select" (tap)="onTypeArtworkTap()"></Label>
         </StackLayout>
 
         <StackLayout class="artworks-modal__content__button">
-            <Button text="Filtrer les elements" (tap)="refreshArtworks()" class="button"></Button>
+            <Button text="{{ 'artworks.search_modal.filter_button' | translate }}" (tap)="refreshArtworks()" class="button"></Button>
         </StackLayout>
     </StackLayout>
 </AbsoluteLayout>

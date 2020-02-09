@@ -3,13 +3,15 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 import { SettingsRoutingModule } from "./settings-routing.module";
 import { SettingsComponent } from "./settings.component";
-import {SharedModule} from "~/app/shared/shared.module";
+import { SharedModule } from "~/app/shared/shared.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         SettingsRoutingModule,
-        SharedModule
+        SharedModule,
+        TranslateModule
     ],
     declarations: [
         SettingsComponent

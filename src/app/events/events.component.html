@@ -12,7 +12,7 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Evenements"></Label>
+    <Label class="action-bar-title" text="{{ 'events.title' | translate }}"></Label>
     <ActionItem (tap)="toggleModal()"
                 ios.systemIcon="9" ios.position="left"
                 android.systemIcon="ic_menu_search" android.position="actionBar"></ActionItem>
@@ -31,30 +31,30 @@
         </ng-template>
     </ListView>
     <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="events.length < 1">
-        <TitleComponent text="Aucun evenement ne correspond a votre recherche" textAlignment="center"></TitleComponent>
+        <TitleComponent text="{{ 'events.no_events_found' | translate }}" textAlignment="center"></TitleComponent>
     </FlexBoxLayout>
 </GridLayout>
 
 <AbsoluteLayout class="events-modal" *ngIf="dialogShown">
     <StackLayout class="events-modal__content">
-        <TitleComponent text="Recherche"
+        <TitleComponent text="{{ 'events.search_modal.title' | translate }}"
                         textAlignment="center"
                         type="3"
                         class="events-modal__content__title"></TitleComponent>
 
         <StackLayout class="events-modal__content__text">
-            <TitleComponent text="Vous pouvez, si vous le souhaitez, filtrer les evenements disponible pour trouver ce que vous aimez"
+            <TitleComponent text="{{ 'events.search_modal.explanation' | translate }}"
                             textAlignment="center"
                             type="4"></TitleComponent>
         </StackLayout>
 
         <StackLayout class="events-modal__content__select">
-            <Label row="10" col="1" colSpan="5" text="Type d'evenement" class="title-label"></Label>
+            <Label row="10" col="1" colSpan="5" text="{{ 'events.search_modal.input_type_event' | translate }}" class="title-label"></Label>
             <Label [text]="typeOfEvent" editable="false" class="input-select" (tap)="onTypeEventTap()"></Label>
         </StackLayout>
 
         <StackLayout class="events-modal__content__button">
-            <Button text="Filtrer les elements" (tap)="refreshEvents()" class="button"></Button>
+            <Button text="{{ 'events.search_modal.button_filter' | translate }}" (tap)="refreshEvents()" class="button"></Button>
         </StackLayout>
     </StackLayout>
 </AbsoluteLayout>

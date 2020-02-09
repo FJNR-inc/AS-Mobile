@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { action } from "tns-core-modules/ui/dialogs";
 
 @Component({
     selector: "Settings",
@@ -11,8 +13,10 @@ import * as app from "tns-core-modules/application";
 })
 export class SettingsComponent implements OnInit {
 
-    constructor() {
-        // Use the component constructor to inject providers.
+    currentLanguage: string;
+
+    constructor(private internationalizationService: InternationalizationService) {
+        this.currentLanguage = InternationalizationService.getLocale();
     }
 
     ngOnInit(): void {
@@ -22,5 +26,31 @@ export class SettingsComponent implements OnInit {
     onDrawerButtonTap(): void {
         const sideDrawer = <RadSideDrawer>app.getRootView();
         sideDrawer.showDrawer();
+    }
+
+    onSelectLanguageTap() {
+        const actions = ["Francais", "English"];
+
+        for (const language of this.internationalizationService.LOCALES) {
+            actions.push(language);
+        }
+
+        const options = {
+            title: "Langue",
+            message: "Choisir une langue",
+            cancelButtonText: "Annuler",
+            actions
+        };
+
+        action(options).then((result) => {
+            let lang = null;
+            if (result === "Francais") {
+                lang = "fr";
+            } else {
+                lang = "en";
+            }
+            this.currentLanguage = lang;
+            this.internationalizationService.setLocale(this.currentLanguage);
+        });
     }
 }

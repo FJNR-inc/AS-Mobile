@@ -12,7 +12,7 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
                 ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Quizz"></Label>
+    <Label class="action-bar-title" text="{{ 'question.title' | translate }}"></Label>
 </ActionBar>
 
 <ScrollView>
@@ -27,6 +27,6 @@
             -->
         </StackLayout>
 
-        <Button text="Continuer" (tap)="submitAnswer()" class="button"></Button>
+        <Button text="{{ 'question.button_continue' | translate }}" (tap)="submitAnswer()" class="button"></Button>
     </StackLayout>
 </ScrollView>

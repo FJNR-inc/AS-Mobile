@@ -5,13 +5,15 @@ import { ContactRoutingModule } from "./contact-routing.module";
 import { ContactComponent } from "./contact.component";
 import { SharedModule } from "~/app/shared/shared.module";
 import { NativeScriptFormsModule } from "nativescript-angular";
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         ContactRoutingModule,
         SharedModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        TranslateModule
     ],
     declarations: [
         ContactComponent

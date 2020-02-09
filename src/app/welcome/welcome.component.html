@@ -1,0 +1,23 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Art Souterrain"></Label>
+</ActionBar>
+
+<ScrollView>
+    <StackLayout class="welcome-page" orientation="vertical" *ngIf="step === 1">
+        <Image width="100%" src="~/assets/reset.png" class="welcome-page__logo"></Image>
+
+        <button text="{{ 'welcome.button_next' | translate }}" (tap)="nextStep()" class="button"></button>
+    </StackLayout>
+    <StackLayout class="welcome-page" orientation="vertical" *ngIf="step === 2">
+        <Image width="50%" src="~/assets/logo.png" class="welcome-page__logo"></Image>
+
+        <StackLayout orientation="vertical" class="welcome-page__box card">
+            <StackLayout class="welcome-page__box__select">
+                <Label row="10" col="1" colSpan="5" text="{{ 'welcome.input_language' | translate }}" class="title-label"></Label>
+                <Label [text]="currentLanguage" editable="false" fontSize="20" class="input-select" (tap)="onSelectLanguageTap()"></Label>
+            </StackLayout>
+        </StackLayout>
+
+        <button text="{{ 'welcome.button_next' | translate }}" (tap)="finish()" class="button"></button>
+    </StackLayout>
+</ScrollView>

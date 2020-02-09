@@ -7,13 +7,15 @@ import { ArtworkComponent } from "./artwork/artwork.component";
 import { SharedModule } from "~/app/shared/shared.module";
 import { ModalDialogService, NativeScriptFormsModule } from "nativescript-angular";
 import { ListQuizzComponent } from './artwork/list-quizz/list-quizz.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
         ArtworksRoutingModule,
         SharedModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        TranslateModule
     ],
     declarations: [
         ArtworksComponent,

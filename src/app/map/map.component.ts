@@ -5,6 +5,8 @@ import * as app from "tns-core-modules/application";
 import { Artwork } from "~/app/models/artwork";
 import { ArtworksService } from "~/app/services/artworks.service";
 import { ActivatedRoute, Params, Router } from "@angular/router";
+import * as geolocation from "nativescript-geolocation";
+import { Accuracy } from "tns-core-modules/ui/enums";
 
 declare const com: any;
 
@@ -230,7 +232,8 @@ export class MapComponent {
 
     constructor(private artworksService: ArtworksService,
                 private router: Router,
-                private activatedRoute: ActivatedRoute) { }
+                private activatedRoute: ActivatedRoute) {
+    }
 
     onDrawerButtonTap(): void {
         const sideDrawer = <RadSideDrawer>app.getRootView();
@@ -239,6 +242,7 @@ export class MapComponent {
 
     onMapReady(event) {
         this.mapView = event.object;
+        this.mapView.myLocationEnabled = true;
         this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 

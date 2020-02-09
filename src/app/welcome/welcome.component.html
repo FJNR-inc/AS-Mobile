@@ -14,7 +14,7 @@
         <StackLayout orientation="vertical" class="welcome-page__box card">
             <StackLayout class="welcome-page__box__select">
                 <Label row="10" col="1" colSpan="5" text="{{ 'welcome.input_language' | translate }}" class="title-label"></Label>
-                <Label [text]="currentLanguage" editable="false" fontSize="20" class="input-select" (tap)="onSelectLanguageTap()"></Label>
+                <Label [text]="currentLanguage" editable="false" class="input-select" (tap)="onSelectLanguageTap()"></Label>
             </StackLayout>
         </StackLayout>
 

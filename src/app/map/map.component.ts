@@ -232,12 +232,22 @@ export class MapComponent {
 
     constructor(private artworksService: ArtworksService,
                 private router: Router,
-                private activatedRoute: ActivatedRoute) {
+                private activatedRoute: ActivatedRoute) {}
+
+    onDrawerButtonTap(): void {
+        const sideDrawer = <RadSideDrawer>app.getRootView();
+        sideDrawer.showDrawer();
+    }
+
+    activateLocation() {
+        let that = this;
         geolocation.isEnabled().then(
             function (isEnabled) {
                 if (!isEnabled) {
                     geolocation.enableLocationRequest(true, true).then(() => {
-                        console.log("User Enabled Location Service");
+                        if (that.mapView) {
+                            that.mapView.myLocationEnabled = true;
+                        }
                     }, (e) => {
                         console.log("Error: " + (e.message || e));
                     }).catch(ex => {
@@ -251,14 +261,9 @@ export class MapComponent {
         );
     }
 
-    onDrawerButtonTap(): void {
-        const sideDrawer = <RadSideDrawer>app.getRootView();
-        sideDrawer.showDrawer();
-    }
-
     onMapReady(event) {
         this.mapView = event.object;
-        this.mapView.myLocationEnabled = true;
+        this.activateLocation();
         this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 

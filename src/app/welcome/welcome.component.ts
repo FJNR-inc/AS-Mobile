@@ -18,7 +18,7 @@ export class WelcomeComponent {
     constructor(private internationalizationService: InternationalizationService,
                 private router: Router) {
         this.checkForRedirection();
-        this.currentLanguage = InternationalizationService.getLocale();
+        this.currentLanguage = InternationalizationService.getNameLocale();
     }
 
     checkForRedirection() {

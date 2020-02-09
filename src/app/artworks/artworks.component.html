@@ -21,9 +21,9 @@
 <GridLayout height="100%" class="artworks-page" [ngClass]="{'artworks-page--dialogOpen': this.dialogShown}">
     <ListView [items]="artworks" *ngIf="artworks.length > 1">
         <ng-template let-item="item">
-            <GridLayout class="artworks-page__artwork" [style.background]="'url(' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
+            <GridLayout class="artworks-page__artwork" backgroundPosition="center center" backgroundSize="cover" [style.background]="'url(' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__artwork__description">
-                    <Label row="1" col="0" [text]="item.name" class="artworks-page__artwork__description__title"></Label>
+                    <Label row="1" col="0" colSpan="2" [text]="item.name" class="artworks-page__artwork__description__title"></Label>
                     <Label row="2" col="0" [text]="item.artist.full_name" class="artworks-page__artwork__description__author"></Label>
                     <Label row="2" col="1" verticalAlignment="bottom" [text]="item.place.name" class="artworks-page__artwork__description__address"></Label>
                 </GridLayout>

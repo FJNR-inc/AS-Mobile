@@ -239,7 +239,6 @@ export class MapComponent {
 
     onMapReady(event) {
         this.mapView = event.object;
-        this.mapView.settings.myLocationButtonEnabled = true;
         this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 
@@ -252,6 +251,7 @@ export class MapComponent {
             }
             this.getArtworks();
         });
+        this.getArtworks();
     }
 
     initMarkerOnMap() {
@@ -268,23 +268,27 @@ export class MapComponent {
     }
 
     onIndoorBuildingFocused(args) {
-        console.log("onIndoorBuildingFocused");
+        // Can't use this script since indoor building are not shown.
+        /*
         if (args.indoorBuilding) {
             this.currentLevelName = args.indoorBuilding.levels[args.indoorBuilding.defaultLevelIndex].name;
         } else {
             this.currentLevelName = null;
         }
         this.refreshDisplayedArtworks();
+         */
     }
 
     onIndoorLevelActivated(args) {
-        console.log("onIndoorLevelActivated");
+        // Can't use this script since indoor building are not shown.
+        /*
         if (args.activateLevel) {
             this.currentLevelName = args.activateLevel.name;
         } else {
             this.currentLevelName = null;
         }
         this.refreshDisplayedArtworks();
+         */
     }
 
     refreshDisplayedArtworks() {

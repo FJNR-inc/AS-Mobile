@@ -12,6 +12,7 @@ export class Artwork extends BaseModel {
     level: string;
     latitude: number;
     longitude: number;
+    plan: string;
 
     constructor(data: Object = {}) {
         super(data);

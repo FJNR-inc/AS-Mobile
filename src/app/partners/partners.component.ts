@@ -15,27 +15,30 @@ export class PartnersComponent implements OnInit {
 
     partners: Array<Partner>;
 
-    sections = [
-        {
-            key: "GrandPartenaires",
-            name: "Grand partenaires",
-            partners: []
-        },
-        {
-            key: "Partenaires",
-            name: "Partenaires",
-            partners: []
-        }
-    ];
+    sections = [];
 
     constructor(private partnersService: PartnersService) {
         // Use the component constructor to inject providers.
     }
 
     ngOnInit(): void {
-        for (const section of this.sections) {
-            this.loadPartnersOfSection(section);
-        }
+        this.loadSections();
+    }
+
+    loadSections() {
+        this.partnersService.listSection().subscribe(
+            (sections) => {
+                for (const section of sections.results) {
+                    const newSection = {
+                        key: section.key,
+                        name: section.name,
+                        partners: []
+                    };
+                    this.loadPartnersOfSection(newSection);
+                    this.sections.push(newSection);
+                }
+            }
+        );
     }
 
     loadPartnersOfSection(section) {

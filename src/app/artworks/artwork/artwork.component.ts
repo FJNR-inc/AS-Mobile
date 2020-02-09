@@ -49,7 +49,6 @@ export class ArtworkComponent implements OnInit {
     listMediaOfArtwork() {
         this.mediaService.list([{name: "artwork", value: this.index}]).subscribe(
             (medias) => {
-                console.log(medias);
                 this.medias = medias.results.map(
                     (item) => new Media(item)
                 );

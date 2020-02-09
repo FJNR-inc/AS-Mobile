@@ -64,6 +64,18 @@
       margin-top: 40;
     }
   }
+
+  &__plan {
+
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      margin: 20;
+    }
+  }
 }
 
 

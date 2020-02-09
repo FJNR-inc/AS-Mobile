@@ -24,6 +24,10 @@
             <Image src="font://&#xf2bb;" class="fas t-36"></Image>
         </TabStripItem>
         <TabStripItem>
+            <Label text="Parcours"></Label>
+            <Image src="font://&#xf5a0;" class="fas t-36"></Image>
+        </TabStripItem>
+        <TabStripItem>
             <Label text="Quizz"></Label>
             <Image src="font://&#xf022;" class="fas t-36"></Image>
         </TabStripItem>
@@ -45,7 +49,7 @@
                         </StackLayout>
                         <TitleComponent type="3" [text]="artwork.description"></TitleComponent>
                     </StackLayout>
-                    <Button tap="onTap" class="button artwork-page__details__button-map" [nsRouterLink]="['/map/' + artwork.id]">
+                    <Button tap="onTap" class="button artwork-page__details__button-map" *ngIf="artwork.latitude && artwork.longitude" [nsRouterLink]="['/map/' + artwork.id]">
                         <FormattedString>
                             <Span text="&#xf5a0;" fontSize="18" class="fas artwork-page__details__button-map__icon"></Span>
                             <Span text=" Voir sur le plan" fontSize="18" class="artwork-page__details__button-map__text"></Span>
@@ -58,6 +62,14 @@
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </TabContentItem>
+    <TabContentItem>
+        <ScrollView>
+            <StackLayout orientation="vertical" class="artwork-page__plan">
+                <Image *ngIf="artwork && artwork.plan" [src]="artwork.plan" class="artwork-page__plan__image" stretch="aspectFit"></Image>
+                <Label *ngIf="artwork && !artwork.plan" textWrap="true" textalignment="center" fontSize="20" class="artwork-page__plan__text" text="Aucun plan n'est disponible pour cette oeuvre"></Label>
             </StackLayout>
         </ScrollView>
     </TabContentItem>
@@ -82,14 +94,17 @@
                         <Button (tap)="onTap()" text="Commencer" [isEnabled]="isEmailValid()" class="button" [ngClass]="{'button--disabled': !isEmailValid()}"></Button>
                     </StackLayout>
                 </FlexboxLayout>
-                <ns-list-quizz *ngIf="assessments.length >=1 && emailVerified" [assessments]="this.assessments"></ns-list-quizz>
-                <FlexboxLayout class="artwork-page__quizz" flexDirection="column" justifyContent="space-around" alignItems="center" *ngIf="assessments.length < 1">
-            <TitleComponent type="1" text="Quizz"></TitleComponent>
 
-            <StackLayout orientation="vertical" class="artwork-page__quizz__text">
-                <TitleComponent type="3" text="Il n'y a pas de Quizz pour cette oeuvre" textAlignment="center"></TitleComponent>
-            </StackLayout>
-        </FlexboxLayout>
+                <ns-list-quizz *ngIf="assessments.length >=1 && emailVerified" [assessments]="this.assessments"></ns-list-quizz>
+
+                <FlexboxLayout class="artwork-page__quizz" flexDirection="column" justifyContent="space-around" alignItems="center" *ngIf="assessments.length < 1">
+                    <StackLayout class="artwork-page__quizz__header">
+                        <TitleComponent type="1" text="Quizz"></TitleComponent>
+                    </StackLayout>
+                    <StackLayout orientation="vertical" class="artwork-page__quizz__text">
+                        <TitleComponent type="3" text="Il n'y a pas de Quizz pour cette oeuvre" textAlignment="center"></TitleComponent>
+                    </StackLayout>
+                </FlexboxLayout>
             </StackLayout>
         </ScrollView>
     </TabContentItem>

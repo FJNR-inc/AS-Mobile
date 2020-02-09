@@ -41,11 +41,7 @@ export class WelcomeComponent {
     }
 
     onSelectLanguageTap() {
-        const actions = [];
-
-        for (const language of this.internationalizationService.LOCALES) {
-            actions.push(language);
-        }
+        const actions = ["Francais", "English"];
 
         const options = {
             title: "Langue",
@@ -55,8 +51,14 @@ export class WelcomeComponent {
         };
 
         action(options).then((result) => {
-            this.currentLanguage = (result === "Annuler") ? this.currentLanguage : result;
-            this.internationalizationService.setLocale(this.currentLanguage);
+            let lang = null;
+            if (result === "Francais") {
+                lang = "fr";
+            } else {
+                lang = "en";
+            }
+            this.currentLanguage = result;
+            this.internationalizationService.setLocale(lang);
         });
     }
 }

@@ -18,6 +18,23 @@ export class InternationalizationService {
         }
     }
 
+    static getNameLocale() {
+        const appSettings = require("tns-core-modules/application-settings");
+        const locale = appSettings.getString(LANGUAGE_STORAGE_NAME);
+
+        if (locale) {
+            if (locale === "fr") {
+                return "Francais";
+            } else if (locale === "en") {
+                return "English";
+            } else {
+                return locale;
+            }
+        } else {
+            return DEFAULT_LOCALE;
+        }
+    }
+
     LOCALES = ["en", "fr"];
     @Output() locale: EventEmitter<any> = new EventEmitter();
 

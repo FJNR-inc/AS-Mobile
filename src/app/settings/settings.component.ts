@@ -16,7 +16,7 @@ export class SettingsComponent implements OnInit {
     currentLanguage: string;
 
     constructor(private internationalizationService: InternationalizationService) {
-        this.currentLanguage = InternationalizationService.getLocale();
+        this.currentLanguage = InternationalizationService.getNameLocale();
     }
 
     ngOnInit(): void {
@@ -30,10 +30,6 @@ export class SettingsComponent implements OnInit {
 
     onSelectLanguageTap() {
         const actions = ["Francais", "English"];
-
-        for (const language of this.internationalizationService.LOCALES) {
-            actions.push(language);
-        }
 
         const options = {
             title: "Langue",
@@ -49,8 +45,8 @@ export class SettingsComponent implements OnInit {
             } else {
                 lang = "en";
             }
-            this.currentLanguage = lang;
-            this.internationalizationService.setLocale(this.currentLanguage);
+            this.currentLanguage = result;
+            this.internationalizationService.setLocale(lang);
         });
     }
 }

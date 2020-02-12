@@ -17,7 +17,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                         <Label col="1" text=" {{ 'nav.map' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/artworks')" (tap)="onNavItemTap('/artworks')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map/artworks')" (tap)="onNavItemTap('/map/artworks')">
                         <Label col="0" text="&#xf53f;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.artworks' | translate }}" class="p-r-10"></Label>
                     </GridLayout>

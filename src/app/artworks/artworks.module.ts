@@ -25,6 +25,9 @@ import {TranslateModule} from "@ngx-translate/core";
     providers: [
         ModalDialogService
     ],
+    exports: [
+        ArtworksComponent
+    ],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

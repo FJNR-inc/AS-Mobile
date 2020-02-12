@@ -18,6 +18,8 @@ declare const com: any;
 })
 export class MapComponent {
 
+    displayMap = true
+
     latitude =  45.497748;
     longitude = -73.571746;
     zoom = 13;
@@ -239,6 +241,18 @@ export class MapComponent {
         sideDrawer.showDrawer();
     }
 
+    deactivateRouter(event){
+        console.log('deactivate')
+        console.log(event)
+        this.displayMap = true;
+    }
+
+    activateRouter(event){
+        console.log('activate')
+        console.log(event)
+        this.displayMap = false;
+    }
+
     activateLocation() {
         let that = this;
         geolocation.isEnabled().then(
@@ -350,6 +364,7 @@ export class MapComponent {
     }
 
     onMarkerInfoWindowTapped(args) {
-        this.router.navigate(["/artworks/artwork/" + args.marker.userData.index]);
+        console.log('go to art' + args.marker.userData.index)
+        this.router.navigate(["/map/artworks/artwork/", args.marker.userData.index]);
     }
 }

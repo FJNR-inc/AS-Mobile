@@ -35,6 +35,7 @@ export class ArtworksComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        console.log('load artworksssss')
         this.refreshArtworks();
         this.refreshArtworkTypes();
         this.refreshPlaces();
@@ -46,7 +47,7 @@ export class ArtworksComponent implements OnInit {
     }
 
     onNavigationItemTap(args: any) {
-        this.routerExtensions.navigate(["/artworks/artwork"], { animated: false });
+        this.routerExtensions.navigate(["/map/artworks/artwork"], { animated: false });
     }
 
     toggleModal() {

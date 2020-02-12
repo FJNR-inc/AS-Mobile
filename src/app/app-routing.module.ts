@@ -7,7 +7,7 @@ const routes: Routes = [
     { path: "welcome", loadChildren: () => import("~/app/welcome/welcome.module").then((m) => m.WelcomeModule) },
     { path: "map", loadChildren: () => import("~/app/map/map.module").then((m) => m.MapModule) },
     { path: "events", loadChildren: () => import("~/app/events/events.module").then((m) => m.EventsModule) },
-    { path: "artworks", loadChildren: () => import("~/app/artworks/artworks.module").then((m) => m.ArtworksModule) },
+    //{ path: "artworks", loadChildren: () => import("~/app/artworks/artworks.module").then((m) => m.ArtworksModule) },
     { path: "quiz", loadChildren: () => import("~/app/quiz/quiz.module").then((m) => m.QuizModule) },
     { path: "minister", loadChildren: () => import("~/app/minister/minister.module").then((m) => m.MinisterModule) },
     { path: "partners", loadChildren: () => import("~/app/partners/partners.module").then((m) => m.PartnersModule) },

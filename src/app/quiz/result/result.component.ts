@@ -80,6 +80,6 @@ export class ResultComponent implements OnInit {
     }
 
     redirectToArtwork() {
-        this.router.navigate(["/artworks/artwork/" + this.assessment.artwork.id]);
+        this.router.navigate(["/map/artworks/artwork/" + this.assessment.artwork.id]);
     }
 }

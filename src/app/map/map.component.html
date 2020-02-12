@@ -1,4 +1,4 @@
-<ActionBar class="action-bar">
+<ng-container *ngIf="displayMap"> <ActionBar class="action-bar">
     <!--
     Use the NavigationButton as a side-drawer button in Android
     because ActionItems are shown on the right side of the ActionBar
@@ -12,7 +12,7 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="{{ 'map.title' | translate }}"></Label>
+    <Label class="action-bar-title" text="test 6 {{displayMap}}"></Label>
 </ActionBar>
 
 
@@ -32,3 +32,7 @@
              (markerInfoWindowTapped)="onMarkerInfoWindowTapped($event)">
     </MapView>
 </GridLayout>
+</ng-container>
+<router-outlet  (activate)="activateRouter($event)" (deactivate)="deactivateRouter($event)"></router-outlet>
+
+

@@ -40,6 +40,8 @@ export class ArtworkComponent implements OnInit {
     }
 
     ngOnInit() {
+
+        console.log('Load artwork ng one init')
         this.activatedRoute.params.subscribe((params: Params) => {
 
             console.log('Load artwork index ' + params.id)
@@ -108,7 +110,7 @@ export class ArtworkComponent implements OnInit {
             this.emailVerified = true;
 
             if (this.assessments.length === 1) {
-                this.router.navigate(["/quiz/" + this.assessments[0].id]);
+                this.router.navigate(["/map/quiz/" + this.assessments[0].id]);
             }
         }
     }

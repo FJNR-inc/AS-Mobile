@@ -243,13 +243,11 @@ export class MapComponent {
 
     deactivateRouter(event){
         console.log('deactivate')
-        console.log(event)
         this.displayMap = true;
     }
 
     activateRouter(event){
         console.log('activate')
-        console.log(event)
         this.displayMap = false;
     }
 
@@ -364,7 +362,9 @@ export class MapComponent {
     }
 
     onMarkerInfoWindowTapped(args) {
-        console.log('go to art' + args.marker.userData.index)
-        this.router.navigate(["/map/artworks/artwork/", args.marker.userData.index]);
+
+        const index = args.marker.userData.index
+        console.log('go to art' + index)
+        this.router.navigate(["/map/artworks/artwork/", index]).then();
     }
 }

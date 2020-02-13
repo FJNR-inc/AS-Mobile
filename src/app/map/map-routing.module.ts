@@ -12,7 +12,14 @@ const routes: Routes = [
                 path: "artworks",
                 loadChildren: () => import("~/app/artworks/artworks.module").then(
                     (m) => m.ArtworksModule)
-            }
+            },
+            { path: "events", loadChildren: () => import("~/app/events/events.module").then((m) => m.EventsModule) },
+            { path: "quiz", loadChildren: () => import("~/app/quiz/quiz.module").then((m) => m.QuizModule) },
+            { path: "minister", loadChildren: () => import("~/app/minister/minister.module").then((m) => m.MinisterModule) },
+            { path: "partners", loadChildren: () => import("~/app/partners/partners.module").then((m) => m.PartnersModule) },
+            { path: "contact", loadChildren: () => import("~/app/contact/contact.module").then((m) => m.ContactModule) },
+            { path: "settings", loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule) }
+
 
         ]
     },

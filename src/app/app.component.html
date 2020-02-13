@@ -22,29 +22,29 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                         <Label col="1" text=" {{ 'nav.artworks' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/events')" (tap)="onNavItemTap('/events')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map/events')" (tap)="onNavItemTap('/map/events')">
                         <Label col="0" text="&#xf0a1;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.events' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/partners')" (tap)="onNavItemTap('/partners')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map/partners')" (tap)="onNavItemTap('/map/partners')">
                         <Label col="0" text="&#xf004;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.partners' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/minister')" (tap)="onNavItemTap('/minister')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map/minister')" (tap)="onNavItemTap('/map/minister')">
                         <Label col="0" text="&#xf4ad;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.minister' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
 
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/contact')" (tap)="onNavItemTap('/contact')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/map/contact')" (tap)="onNavItemTap('/map/contact')">
                         <Label col="0" text="&#xf1d8;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.contact' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
                 </StackLayout>
                 <StackLayout row="1"></StackLayout>
                 <StackLayout orientation="vertical" row="2">
-                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--last" [class.selected]="isComponentSelected('/settings')" (tap)="onNavItemTap('/settings')">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item--last" [class.selected]="isComponentSelected('/map/settings')" (tap)="onNavItemTap('/map/settings')">
                         <Label col="1" text="{{ 'nav.settings' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
                 </StackLayout>

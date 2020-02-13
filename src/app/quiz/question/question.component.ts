@@ -119,10 +119,10 @@ export class QuestionComponent implements OnInit {
                     }
                     if (this.pages.length > index) {
                         this.router.navigate(
-                            ["/quiz/" + this.assessmentIndex + "/question/" + index]
+                            ["/map/quiz/" + this.assessmentIndex + "/question/" + index]
                         );
                     } else {
-                        this.router.navigate(["/quiz/" + this.assessmentIndex + "/results"]);
+                        this.router.navigate(["/map/quiz/" + this.assessmentIndex + "/results"]);
                     }
                 }
             );

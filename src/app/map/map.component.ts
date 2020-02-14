@@ -363,8 +363,8 @@ export class MapComponent {
 
     onMarkerInfoWindowTapped(args) {
 
-        const index = args.marker.userData.index
-        console.log('go to art' + index)
-        this.router.navigate(["/map/artworks/artwork/", index]).then();
+        const index = args.marker.userData.index;
+        console.log("go to art" + index);
+        this.router.navigate(["/map/artworks/artwork/" + index]);
     }
 }

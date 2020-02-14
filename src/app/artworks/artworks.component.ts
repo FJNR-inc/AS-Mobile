@@ -10,13 +10,15 @@ import { ArtworkType } from "~/app/models/artworkType";
 import { Place } from "~/app/models/place";
 import { PlacesService } from "~/app/services/places.service";
 
-@Component({
-    selector: "Artworks",
-    templateUrl: "./artworks.component.html",
-    styleUrls: [
-        "./artworks.component.scss"
-    ]
-})
+@Component(
+    {
+        selector: "Artworks",
+        templateUrl: "./artworks.component.html",
+        styleUrls: [
+            "./artworks.component.scss"
+        ]
+    }
+)
 export class ArtworksComponent implements OnInit {
 
     artworks: Array<Artwork> = [];
@@ -35,7 +37,6 @@ export class ArtworksComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        console.log('load artworksssss')
         this.refreshArtworks();
         this.refreshArtworkTypes();
         this.refreshPlaces();

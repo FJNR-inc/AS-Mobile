@@ -19,8 +19,6 @@ const routes: Routes = [
             { path: "partners", loadChildren: () => import("~/app/partners/partners.module").then((m) => m.PartnersModule) },
             { path: "contact", loadChildren: () => import("~/app/contact/contact.module").then((m) => m.ContactModule) },
             { path: "settings", loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule) }
-
-
         ]
     },
     { path: ":id", component: MapComponent }

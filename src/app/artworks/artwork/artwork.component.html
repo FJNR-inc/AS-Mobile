@@ -1,18 +1,24 @@
-<ActionBar [title]="getArtworkName()" class="action-bar">
+<ActionBar title=""
+           class="action-bar">
     <!--
     Use the NavigationButton as a side-drawer button in Android
     because ActionItems are shown on the right side of the ActionBar
     -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <NavigationButton ios:visibility="collapsed"
+                      icon="res://menu"
+                      (tap)="onDrawerButtonTap()"></NavigationButton>
     <!--
     Use the ActionItem for IOS with position set to left. Using the
     NavigationButton as a side-drawer button in iOS is not possible,
     because its function is to always navigate back in the application.
     -->
-    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+    <ActionItem icon="res://navigation/menu"
+                android:visibility="collapsed"
+                (tap)="onDrawerButtonTap()"
                 ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" [text]="getArtworkName()"></Label>
+    <Label class="action-bar-title"
+           [text]="getArtworkName()"></Label>
 </ActionBar>
 
 <BottomNavigation selectedIndex="0" class="artwork-page">
@@ -27,10 +33,12 @@
             <Label text="{{ 'artwork.tabs.plan' | translate }}"></Label>
             <Image src="font://&#xf5a0;" class="fas t-36"></Image>
         </TabStripItem>
+        <!--
         <TabStripItem>
             <Label text="{{ 'artwork.tabs.quizz' | translate }}"></Label>
             <Image src="font://&#xf022;" class="fas t-36"></Image>
         </TabStripItem>
+        -->
     </TabStrip>
 
     <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->

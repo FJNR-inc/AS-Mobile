@@ -1,7 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
+import { places } from "~/app/datas/place_data";
+import { IPlace } from "~/app/models/place";
+import { map } from "rxjs/internal/operators";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { IResponseApi } from "~/app/models/api";
 
 @Injectable()
 export class PlacesService extends GlobalService {
@@ -12,25 +17,34 @@ export class PlacesService extends GlobalService {
         super();
     }
 
-    list(filters: Array<{name: string, value: any}> = null, limit = 100, offset = 0): Observable<any> {
-        const headers = this.getHeaders();
-        let params = new HttpParams();
-        params = params.set("limit", limit.toString());
-        params = params.set("offset", offset.toString());
+    list(): Observable<any> {
+        const local = InternationalizationService.getLocale();
+        const newPlacesResponse: IResponseApi<IPlace> = places;
+        newPlacesResponse.results = places.results.map(
+            (place: IPlace) => {
+                place.name = place["name_" + local];
 
-        return this.http.get<any>(
-            this.urlPlaces,
-            {headers, params}
-        );
+                return place;
+            });
+
+        return of(newPlacesResponse);
     }
 
     get(id: number): Observable<any> {
-        const headers = this.getHeaders();
-        const params = new HttpParams();
+        const local = InternationalizationService.getLocale();
+        const newPlace = places.results.find(
+            (place: IPlace) => {
 
-        return this.http.get<any>(
-            this.urlPlaces + "/" + id,
-            {headers, params}
+                return place.id === id;
+            }
+        );
+
+        return of(newPlace).pipe(
+            map((place: IPlace) => {
+                place.name = place["name_" + local];
+
+                return place;
+            })
         );
     }
 }

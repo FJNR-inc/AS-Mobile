@@ -282,7 +282,7 @@ export class MapComponent {
         this.mapIsReady = true;
 
         this.activatedRoute.params.subscribe((params: Params) => {
-            const index = params.id;
+            const index = +params.id;
             if (index) {
                 this.zoomOnArtwork(index);
             }

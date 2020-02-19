@@ -1,7 +1,12 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpParams } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
+import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
+import { partnerTypes } from "~/app/datas/partner_types_data";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { IResponseApi } from "~/app/models/api";
+import { IPartnerType } from "~/app/models/partner-type";
+import { IPartner, Partner } from "~/app/models/partner";
 
 @Injectable()
 export class PartnersService extends GlobalService {
@@ -13,43 +18,26 @@ export class PartnersService extends GlobalService {
         super();
     }
 
-    list(filters: Array<{name: string, value: any}> = null, limit = 100, offset = 0): Observable<any> {
-        const headers = this.getHeaders();
-        let params = new HttpParams();
-        params = params.set("limit", limit.toString());
-        params = params.set("offset", offset.toString());
+    listSection(): Observable<any> {
+        const local = InternationalizationService.getLocale();
+        const newPartnerTypesResponse: IResponseApi<IPartnerType> = partnerTypes;
+        newPartnerTypesResponse.results = partnerTypes.results.map(
+            (partnerType: IPartnerType) => {
+                partnerType.name = partnerType["name_" + local];
 
-        if (filters != null) {
-            for (const filter of filters) {
-                if (filter.name === "partner_type__key") {
-                    params = params.set("partner_type__key", filter.value);
-                }
-            }
-        }
+                partnerType.partner_set = partnerType.partner_set.map(
+                    (partner: IPartner) => {
+                        partner.name = partner["name_" + local];
+                        partner.link = partner["link_" + local];
+                        partner.description = partner["description_" + local];
 
-        return this.http.get<any>(
-            this.URL_PARTNERS,
-            {headers: headers, params: params}
-        );
-    }
+                        return partner;
+                    }
+                );
 
-    listSection(filters: Array<{name: string, value: any}> = null, limit = 100, offset = 0): Observable<any> {
-        const headers = this.getHeaders();
-        let params = new HttpParams();
-        params = params.set("limit", limit.toString());
-        params = params.set("offset", offset.toString());
+                return partnerType;
+            });
 
-        if (filters != null) {
-            for (const filter of filters) {
-                if (filter.name === "partner_type__key") {
-                    params = params.set("partner_type__key", filter.value);
-                }
-            }
-        }
-
-        return this.http.get<any>(
-            this.URL_PARTNER_TYPES,
-            {headers: headers, params: params}
-        );
+        return of(newPartnerTypesResponse);
     }
 }

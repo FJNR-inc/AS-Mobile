@@ -3,11 +3,14 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { MapComponent } from "./map.component";
+import { RedirectMapComponent } from "~/app/artworks/redirect-map/redirect-map.component";
 
 const routes: Routes = [
     {
         path: "", component: MapComponent,
         children: [
+
+            { path: "redirect", component: RedirectMapComponent},
             {
                 path: "artworks",
                 loadChildren: () => import("~/app/artworks/artworks.module").then(

@@ -3,6 +3,7 @@ import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { PartnersService } from "~/app/services/partners.service";
 import { Partner } from "~/app/models/partner";
+import { PartnerType } from "~/app/models/partner-type";
 
 @Component({
     selector: "Partners",
@@ -15,7 +16,7 @@ export class PartnersComponent implements OnInit {
 
     partners: Array<Partner>;
 
-    sections = [];
+    partnerTypes: Array<PartnerType> = [];
 
     constructor(private partnersService: PartnersService) {
         // Use the component constructor to inject providers.
@@ -28,25 +29,7 @@ export class PartnersComponent implements OnInit {
     loadSections() {
         this.partnersService.listSection().subscribe(
             (sections) => {
-                for (const section of sections.results) {
-                    const newSection = {
-                        key: section.key,
-                        name: section.name,
-                        partners: []
-                    };
-                    this.loadPartnersOfSection(newSection);
-                    this.sections.push(newSection);
-                }
-            }
-        );
-    }
-
-    loadPartnersOfSection(section) {
-        this.partnersService.list([{name: "partner_type__key", value: section.key}]).subscribe(
-            (partners) => {
-                section.partners =  partners.results.map(
-                    (item) => new Partner(item)
-                );
+                this.partnerTypes = sections.results;
             }
         );
     }

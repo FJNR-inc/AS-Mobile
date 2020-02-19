@@ -48,7 +48,7 @@
                 <StackLayout class="artwork-page__details" *ngIf="artwork">
                     <StackLayout orientation="vertical" class="artwork-page__details__box card">
                         <StackLayout orientation="horizontal" class="artwork-page__details__box__header">
-                            <Image [src]="artwork.picture" stretch="aspectFill" verticalAlignment="stretch" class="artwork-page__details__box__header__picture"></Image>
+                            <Image [src]="'https://as-dev-api-media.s3.ca-central-1.amazonaws.com/media/' + artwork.picture" stretch="aspectFill" verticalAlignment="stretch" class="artwork-page__details__box__header__picture"></Image>
                             <StackLayout class="artwork-page__details__box__header__details">
                                 <TitleComponent [text]="artwork.name" type="title-section"></TitleComponent>
                                 <TitleComponent [text]="artwork.artist.full_name" type="3"></TitleComponent>
@@ -76,7 +76,7 @@
     <TabContentItem>
         <ScrollView>
             <StackLayout orientation="vertical" class="artwork-page__plan">
-                <Image *ngIf="artwork && artwork.plan" [src]="artwork.plan" class="artwork-page__plan__image" stretch="aspectFit"></Image>
+                <Image *ngIf="artwork && artwork.plan" [src]="'https://as-dev-api-media.s3.ca-central-1.amazonaws.com/media/' + artwork.plan" class="artwork-page__plan__image" stretch="aspectFit"></Image>
                 <Label *ngIf="artwork && !artwork.plan" textWrap="true" textalignment="center" fontSize="20" class="artwork-page__plan__text" text="{{ 'artwork.plan.no_plan_available' | translate }}"></Label>
             </StackLayout>
         </ScrollView>

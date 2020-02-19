@@ -3,7 +3,8 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { ArtworksComponent } from "./artworks.component";
-import {ArtworkComponent} from "~/app/artworks/artwork/artwork.component";
+import { ArtworkComponent } from "~/app/artworks/artwork/artwork.component";
+import { RedirectMapComponent } from "~/app/artworks/redirect-map/redirect-map.component";
 
 const routes: Routes = [
     { path: "", component: ArtworksComponent },

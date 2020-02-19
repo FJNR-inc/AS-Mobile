@@ -22,11 +22,13 @@ export class WelcomeComponent {
     }
 
     checkForRedirection() {
+        console.log('check redirection')
         const appSettings = require("tns-core-modules/application-settings");
         const check = appSettings.getString(this.FIRST_OPENING_STORAGE_NAME);
 
         if (check) {
-            this.router.navigate(["/map"]);
+            console.log('redirect to map')
+            this.router.navigate(["/map/redirect"]);
         }
     }
 
@@ -35,9 +37,11 @@ export class WelcomeComponent {
     }
 
     finish() {
+        console.log('finish')
         const appSettings = require("tns-core-modules/application-settings");
         appSettings.setString(this.FIRST_OPENING_STORAGE_NAME, "done");
-        this.router.navigate(["/map"]);
+        console.log('go to map')
+        this.router.navigate(["/map/artwork/redirect"]);
     }
 
     onSelectLanguageTap() {

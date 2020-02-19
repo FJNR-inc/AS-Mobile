@@ -21,13 +21,14 @@
                         textAlignment="center"
                         type="3"></TitleComponent>
 
-        <StackLayout *ngFor="let section of sections" class="partners-page__section">
-            <TitleComponent [text]="section.name"
+        <StackLayout *ngFor="let partnerType of partnerTypes" class="partners-page__section">
+            <TitleComponent [text]="partnerType.name"
                             textAlignment="center"
                             type="2"></TitleComponent>
 
             <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="space-between" width="100%" class="partners-page__section__list">
-                <Image *ngFor="let partner of section.partners" width="45%" [src]="partner.logo"
+                <Image *ngFor="let partner of partnerType.partner_set" width="45%"
+                       [src]="'https://as-dev-api-media.s3.ca-central-1.amazonaws.com/media/' + partner.logo"
                        class="partners-page__section__list__item"></Image>
             </FlexboxLayout>
         </StackLayout>

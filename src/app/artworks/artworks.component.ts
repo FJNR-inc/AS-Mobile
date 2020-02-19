@@ -9,6 +9,7 @@ import { ArtworkTypesService } from "~/app/services/artwork-types.service";
 import { ArtworkType } from "~/app/models/artworkType";
 import { Place } from "~/app/models/place";
 import { PlacesService } from "~/app/services/places.service";
+import { Router } from "@angular/router";
 
 @Component(
     {
@@ -93,36 +94,27 @@ export class ArtworksComponent implements OnInit {
         });
     }
 
-    getFilters() {
-        const filters = [];
-        for (const artworkType of this.artworkTypes) {
-            if (artworkType.name === this.typeOfArtwork) {
-                filters.push(
-                    {
-                        name: "artwork_type",
-                        value: artworkType.id
-                    }
-                );
-            }
-        }
-        for (const place of this.places) {
-            if (place.name === this.place) {
-                filters.push(
-                    {
-                        name: "place",
-                        value: place.id
-                    }
-                );
-            }
-        }
+    getFilterArtworkType() {
+        const artworkTypeFilter = this.artworkTypes.find(
+            (artworkType: ArtworkType) => artworkType.name === this.typeOfArtwork);
 
-        return filters;
+        return !!artworkTypeFilter ? artworkTypeFilter.id : null;
+
+    }
+
+    getFilterPlace() {
+        const artworkTypeFilter = this.places.find(
+            (place: Place) => place.name === this.place);
+
+        return !!artworkTypeFilter ? artworkTypeFilter.id : null;
+
     }
 
     refreshArtworks() {
         this.dialogShown = false;
-        const filters = this.getFilters();
-        this.artworksService.list(filters).subscribe(
+        this.artworksService.list(
+            this.getFilterPlace(),
+            this.getFilterArtworkType()).subscribe(
             (artworks) => {
                 this.artworks =  artworks.results.map(
                     (item) => new Artwork(item)

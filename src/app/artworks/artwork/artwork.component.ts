@@ -36,18 +36,15 @@ export class ArtworkComponent implements OnInit {
                 private globalService: GlobalService,
                 private router: Router,
                 private mediaService: MediasService) {
-        console.log('Load artwork')
     }
 
     ngOnInit() {
 
-        console.log('Load artwork ng one init')
         this.activatedRoute.params.subscribe((params: Params) => {
 
-            console.log('Load artwork index ' + params.id)
-            this.index = params.id;
+            this.index = +params.id;
             this.refreshArtwork();
-            this.listMediaOfArtwork();
+            // this.listMediaOfArtwork();
         });
         this.email = this.globalService.getEmail();
     }

@@ -1,7 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
+import { artworkTypes } from "~/app/datas/artwork_data_type";
+import { IArtworkType } from "~/app/models/artworkType";
+import { map } from "rxjs/internal/operators";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { IResponseApi } from "~/app/models/api";
 
 @Injectable()
 export class ArtworkTypesService extends GlobalService {
@@ -12,25 +17,33 @@ export class ArtworkTypesService extends GlobalService {
         super();
     }
 
-    list(filters: Array<{name: string, value: any}> = null, limit = 100, offset = 0): Observable<any> {
-        const headers = this.getHeaders();
-        let params = new HttpParams();
-        params = params.set("limit", limit.toString());
-        params = params.set("offset", offset.toString());
+    list(): Observable<any> {
 
-        return this.http.get<any>(
-            this.urlArtworkTypes,
-            {headers, params}
-        );
+        const local = InternationalizationService.getLocale();
+        const newArtworkTypesResponse: IResponseApi<IArtworkType> = artworkTypes;
+        newArtworkTypesResponse.results = artworkTypes.results.map(
+            (artworkType: IArtworkType) => {
+            artworkType.name = artworkType["name_" + local];
+
+            return artworkType;
+        });
+
+        return of(newArtworkTypesResponse);
     }
 
     get(id: number): Observable<any> {
-        const headers = this.getHeaders();
-        const params = new HttpParams();
+        const local = InternationalizationService.getLocale();
 
-        return this.http.get<any>(
-            this.urlArtworkTypes + "/" + id,
-            {headers, params}
+        return of(artworkTypes.results.find(
+            (artworkType: IArtworkType) => {
+                return artworkType.id === id;
+            }
+        )).pipe(
+            map((artworkType: IArtworkType) => {
+                artworkType.name = artworkType["name_" + local];
+
+                return artworkType;
+            })
         );
     }
 }

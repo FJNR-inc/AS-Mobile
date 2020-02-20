@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpParams } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
 import { artworks } from "~/app/datas/artwork_data";
-import { Artwork, IArtwork } from "~/app/models/artwork";
+import { IArtwork } from "~/app/models/artwork";
 import { IResponseApi } from "~/app/models/api";
 import { InternationalizationService } from "~/app/services/internationalization.service";
 import { map } from "rxjs/internal/operators";
@@ -17,13 +17,15 @@ export class ArtworksService extends GlobalService {
         super();
     }
 
-    list(placeId: number = null , artworkTypeId: number = null): Observable<any> {
+    list(placeId: number = null, artworkTypeId: number = null): Observable<any> {
+
+        console.log(`filters-> placeId: ${placeId}, artworkTypeId: ${artworkTypeId}`);
 
         const local = InternationalizationService.getLocale();
-        const newArtworkResponse: IResponseApi<IArtwork> = artworks;
-        newArtworkResponse.results = artworks.results.filter(
+        const newArtworkResponse: IResponseApi<IArtwork> = JSON.parse(JSON.stringify(artworks));
+        newArtworkResponse.results = newArtworkResponse.results.filter(
             (artwork: IArtwork) => {
-                const checkPlace = !placeId || artwork.artist.id === placeId;
+                const checkPlace = !placeId || artwork.place.id === placeId;
                 const checkType = !artworkTypeId || artwork.artwork_type.id === artworkTypeId;
 
                 return checkPlace && checkType;
@@ -47,7 +49,7 @@ export class ArtworksService extends GlobalService {
 
     get(id: number): Observable<any> {
 
-        const newArtwork = artworks.results.find(
+        const newArtwork = JSON.parse(JSON.stringify(artworks)).results.find(
             (artwork: IArtwork) => {
 
                 return artwork.id === id;

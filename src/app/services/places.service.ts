@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpParams } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
 import { places } from "~/app/datas/place_data";
@@ -19,8 +19,8 @@ export class PlacesService extends GlobalService {
 
     list(): Observable<any> {
         const local = InternationalizationService.getLocale();
-        const newPlacesResponse: IResponseApi<IPlace> = places;
-        newPlacesResponse.results = places.results.map(
+        const newPlacesResponse: IResponseApi<IPlace> = JSON.parse(JSON.stringify(places)) ;
+        newPlacesResponse.results = JSON.parse(JSON.stringify(places)).results.map(
             (place: IPlace) => {
                 place.name = place["name_" + local];
 
@@ -32,7 +32,7 @@ export class PlacesService extends GlobalService {
 
     get(id: number): Observable<any> {
         const local = InternationalizationService.getLocale();
-        const newPlace = places.results.find(
+        const newPlace = JSON.parse(JSON.stringify(places)).results.find(
             (place: IPlace) => {
 
                 return place.id === id;

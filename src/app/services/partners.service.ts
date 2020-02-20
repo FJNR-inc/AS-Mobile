@@ -6,7 +6,7 @@ import { partnerTypes } from "~/app/datas/partner_types_data";
 import { InternationalizationService } from "~/app/services/internationalization.service";
 import { IResponseApi } from "~/app/models/api";
 import { IPartnerType } from "~/app/models/partner-type";
-import { IPartner, Partner } from "~/app/models/partner";
+import { IPartner } from "~/app/models/partner";
 
 @Injectable()
 export class PartnersService extends GlobalService {
@@ -20,8 +20,8 @@ export class PartnersService extends GlobalService {
 
     listSection(): Observable<any> {
         const local = InternationalizationService.getLocale();
-        const newPartnerTypesResponse: IResponseApi<IPartnerType> = partnerTypes;
-        newPartnerTypesResponse.results = partnerTypes.results.map(
+        const newPartnerTypesResponse: IResponseApi<IPartnerType> = JSON.parse(JSON.stringify(partnerTypes));
+        newPartnerTypesResponse.results = JSON.parse(JSON.stringify(partnerTypes)).results.map(
             (partnerType: IPartnerType) => {
                 partnerType.name = partnerType["name_" + local];
 

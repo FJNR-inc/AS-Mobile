@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpParams } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
 import { artworkTypes } from "~/app/datas/artwork_data_type";
@@ -20,8 +20,8 @@ export class ArtworkTypesService extends GlobalService {
     list(): Observable<any> {
 
         const local = InternationalizationService.getLocale();
-        const newArtworkTypesResponse: IResponseApi<IArtworkType> = artworkTypes;
-        newArtworkTypesResponse.results = artworkTypes.results.map(
+        const newArtworkTypesResponse: IResponseApi<IArtworkType> = JSON.parse(JSON.stringify(artworkTypes)) ;
+        newArtworkTypesResponse.results = JSON.parse(JSON.stringify(artworkTypes)).results.map(
             (artworkType: IArtworkType) => {
             artworkType.name = artworkType["name_" + local];
 
@@ -34,7 +34,7 @@ export class ArtworkTypesService extends GlobalService {
     get(id: number): Observable<any> {
         const local = InternationalizationService.getLocale();
 
-        return of(artworkTypes.results.find(
+        return of(JSON.parse(JSON.stringify(artworkTypes)).results.find(
             (artworkType: IArtworkType) => {
                 return artworkType.id === id;
             }

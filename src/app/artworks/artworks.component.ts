@@ -49,7 +49,7 @@ export class ArtworksComponent implements OnInit {
     }
 
     onNavigationItemTap(args: any) {
-        this.routerExtensions.navigate(["/map/artworks/artwork"], { animated: false });
+        this.routerExtensions.navigate(["/artworks/artwork"], { animated: false });
     }
 
     toggleModal() {

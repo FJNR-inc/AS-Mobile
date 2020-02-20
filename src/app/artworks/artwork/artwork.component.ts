@@ -122,7 +122,6 @@ export class ArtworkComponent implements OnInit {
 
     isEmailValid() {
         const regexp = new RegExp("^.+@.+\..+$");
-        console.log(regexp.test(this.email));
 
         return regexp.test(this.email);
     }

@@ -6,9 +6,8 @@ import { ArtworksComponent } from "./artworks.component";
 import { ArtworkComponent } from "./artwork/artwork.component";
 import { SharedModule } from "~/app/shared/shared.module";
 import { ModalDialogService, NativeScriptFormsModule } from "nativescript-angular";
-import { ListQuizzComponent } from './artwork/list-quizz/list-quizz.component';
-import {TranslateModule} from "@ngx-translate/core";
-import { RedirectMapComponent } from './redirect-map/redirect-map.component';
+import { ListQuizzComponent } from "./artwork/list-quizz/list-quizz.component";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
     imports: [
@@ -21,8 +20,7 @@ import { RedirectMapComponent } from './redirect-map/redirect-map.component';
     declarations: [
         ArtworksComponent,
         ArtworkComponent,
-        ListQuizzComponent,
-        RedirectMapComponent
+        ListQuizzComponent
     ],
     providers: [
         ModalDialogService

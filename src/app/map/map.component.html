@@ -1,44 +1,38 @@
-<ng-container [hidden]="!displayMap">
-    <ActionBar class="action-bar" title=""
-               *ngIf="displayMap">
-        <!--
-        Use the NavigationButton as a side-drawer button in Android
-        because ActionItems are shown on the right side of the ActionBar
-        -->
-        <NavigationButton ios:visibility="collapsed"
-                          icon="res://menu"
-                          (tap)="onDrawerButtonTap()"></NavigationButton>
-        <!--
-        Use the ActionItem for IOS with position set to left. Using the
-        NavigationButton as a side-drawer button in iOS is not possible,
-        because its function is to always navigate back in the application.
-        -->
-        <ActionItem icon="res://navigation/menu"
-                    android:visibility="collapsed"
-                    (tap)="onDrawerButtonTap()"
-                    ios.position="left">
-        </ActionItem>
-        <Label class="action-bar-title"
-               text="{{ 'map.title' | translate }}"></Label>
-    </ActionBar>
+<ActionBar class="action-bar" title="">
+    <!--
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton (tap)="onDrawerButtonTap()"
+                      icon="res://menu"
+                      ios:visibility="collapsed"></NavigationButton>
+    <!--
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem (tap)="onDrawerButtonTap()"
+                android:visibility="collapsed"
+                icon="res://navigation/menu"
+                ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title"
+           text="{{ 'map.title' | translate }}"></Label>
+</ActionBar>
 
-    <GridLayout>
-        <MapView [latitude]="latitude"
-                 [longitude]="longitude"
-                 [zoom]="zoom"
-                 [minZoom]="minZoom"
-                 [maxZoom]="maxZoom"
-                 [bearing]="bearing"
-                 [tilt]="tilt"
-                 i-padding="50,50,50,50"
-                 [padding]="padding"
-                 (mapReady)="onMapReady($event)"
-                 (indoorBuildingFocused)="onIndoorBuildingFocused($event)"
-                 (indoorLevelActivated)="onIndoorLevelActivated($event)"
-                 (markerInfoWindowTapped)="onMarkerInfoWindowTapped($event)">
-        </MapView>
-    </GridLayout>
-</ng-container>
-
-<router-outlet (activate)="activateRouter($event)"
-               (deactivate)="deactivateRouter($event)"></router-outlet>
+<GridLayout>
+    <MapView (indoorBuildingFocused)="onIndoorBuildingFocused($event)"
+             (indoorLevelActivated)="onIndoorLevelActivated($event)"
+             (mapReady)="onMapReady($event)"
+             (markerInfoWindowTapped)="onMarkerInfoWindowTapped($event)"
+             [bearing]="bearing"
+             [latitude]="latitude"
+             [longitude]="longitude"
+             [maxZoom]="maxZoom"
+             [minZoom]="minZoom"
+             [padding]="padding"
+             [tilt]="tilt"
+             [zoom]="zoom"
+             i-padding="50,50,50,50">
+    </MapView>
+</GridLayout>

@@ -40,7 +40,7 @@ export class EventsComponent implements OnInit {
     }
 
     onNavigationItemTap(args: any) {
-        this.routerExtensions.navigate(["/map/events/event"], { animated: false });
+        this.routerExtensions.navigate(["/events/event"], { animated: false });
     }
 
     toggleModal() {

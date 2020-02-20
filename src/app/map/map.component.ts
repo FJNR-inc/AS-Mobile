@@ -6,7 +6,6 @@ import { Artwork } from "~/app/models/artwork";
 import { ArtworksService } from "~/app/services/artworks.service";
 import { ActivatedRoute, Params, Router } from "@angular/router";
 import * as geolocation from "nativescript-geolocation";
-import { Accuracy } from "tns-core-modules/ui/enums";
 
 declare const com: any;
 
@@ -18,9 +17,7 @@ declare const com: any;
 })
 export class MapComponent {
 
-    displayMap = true
-
-    latitude =  45.497748;
+    latitude = 45.497748;
     longitude = -73.571746;
     zoom = 13;
     minZoom = 11;
@@ -234,41 +231,31 @@ export class MapComponent {
 
     constructor(private artworksService: ArtworksService,
                 private router: Router,
-                private activatedRoute: ActivatedRoute) {}
+                private activatedRoute: ActivatedRoute) {
+    }
 
     onDrawerButtonTap(): void {
         const sideDrawer = <RadSideDrawer>app.getRootView();
         sideDrawer.showDrawer();
     }
 
-    deactivateRouter(event){
-        console.log('deactivate')
-        this.displayMap = true;
-    }
-
-    activateRouter(event){
-        console.log('activate')
-        this.displayMap = false;
-    }
-
     activateLocation() {
-        let that = this;
         geolocation.isEnabled().then(
-            function (isEnabled) {
+            (isEnabled) => {
                 if (!isEnabled) {
                     geolocation.enableLocationRequest(true, true).then(() => {
-                        if (that.mapView) {
-                            that.mapView.myLocationEnabled = true;
+                        if (this.mapView) {
+                            this.mapView.myLocationEnabled = true;
                         }
                     }, (e) => {
                         console.log("Error: " + (e.message || e));
-                    }).catch(ex => {
+                    }).catch((ex) => {
                         console.log("Unable to Enable Location", ex);
                     });
                 }
             },
-            function (e) {
-                console.log("Error: " + (e.message || e));
+            (error) => {
+                console.log("Error: " + (error.message || error));
             }
         );
     }
@@ -295,6 +282,22 @@ export class MapComponent {
         this.mapView.removeAllMarkers();
 
         for (const artwork of this.displayedArtworks) {
+
+            /* Code to use custom icon
+            const imgModule = require("ui/image");
+            const icon = new imgModule.Image();
+            const imageSource = require("image-source");
+            icon.src = "~/assets/icon/photographie.png";
+            icon.imageSource = imageSource.fromFile("~/assets/icon/photographie.png");
+
+            marker.icon = icon;
+             */
+
+            /* code to use custom color
+
+            //marker.color = "blue";
+             */
+
             const marker = new Marker();
             marker.position = Position.positionFromLatLng(artwork.latitude, artwork.longitude);
             marker.title = artwork.name;
@@ -352,7 +355,7 @@ export class MapComponent {
     getArtworks() {
         this.artworksService.list().subscribe(
             (artworks) => {
-                this.artworks =  artworks.results.map(
+                this.artworks = artworks.results.map(
                     (item) => new Artwork(item)
                 );
                 this.displayedArtworks = this.artworks;
@@ -364,7 +367,6 @@ export class MapComponent {
     onMarkerInfoWindowTapped(args) {
 
         const index = args.marker.userData.index;
-        console.log("go to art" + index);
-        this.router.navigate(["/map/artworks/artwork/" + index]);
+        this.router.navigate(["/artworks/artwork/" + index]);
     }
 }

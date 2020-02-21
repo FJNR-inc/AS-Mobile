@@ -1,25 +1,28 @@
 .contact-page {
-  padding: 20;
-  padding-top: 50;
   background-image: url('~/assets/background.png');
   background-size: cover;
 
-  &__box {
-    margin: 30 0;
+  &__body {
+    padding: 20;
+    padding-top: 50;
 
-    &__error {
-      padding: 20;
+    &__box {
+      margin: 30 0;
+
+      &__error {
+        padding: 20;
+      }
     }
-  }
 
-  &__success {
-    &__icon {
-      margin-bottom: 20;
-    }
+    &__success {
+      &__icon {
+        margin-bottom: 20;
+      }
 
-    &__button {
-      margin-top: 30;
-      margin-bottom: 30;
+      &__button {
+        margin-top: 30;
+        margin-bottom: 30;
+      }
     }
   }
 }

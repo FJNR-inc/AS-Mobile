@@ -15,20 +15,20 @@
     <Label class="action-bar-title" text="{{ 'contact.title' | translate }}"></Label>
 </ActionBar>
 
-<ScrollView>
-    <StackLayout class="contact-page">
+<ScrollView class="contact-page">
+    <StackLayout class="contact-page__body">
         <StackLayout *ngIf="!success">
             <TitleComponent text="{{ 'contact.promotion_1' | translate }}"
                             textAlignment="center"
                             type="3"
-                            class="contact-page__title"></TitleComponent>
+                            class="contact-page__body__title"></TitleComponent>
 
             <TitleComponent text="{{ 'contact.promotion_2' | translate }}"
                             textAlignment="center"
                             type="3"
-                            class="contact-page__title"></TitleComponent>
+                            class="contact-page__body__title"></TitleComponent>
 
-            <StackLayout orientation="vertical" class="contact-page__box card">
+            <StackLayout orientation="vertical" class="contact-page__body__box card">
                 <TitleComponent text="{{ 'contact.box_title' | translate }}" type="title-section" textAlignment="center"></TitleComponent>
                 <TextField hint="{{ 'contact.email_hint' | translate }}"
                            [(ngModel)]="email"
@@ -53,10 +53,10 @@
                 <Button text="{{ 'contact.button_send' | translate }}" (tap)="send()" class="button"></Button>
             </StackLayout>
         </StackLayout>
-        <StackLayout orientation="vertical" class="contact-page__success" *ngIf="success">
-            <Label text="&#xf058;" textalignment="center" fontSize="40" class="fas contact-page__success__icon"></Label>
+        <StackLayout orientation="vertical" class="contact-page__body__success" *ngIf="success">
+            <Label text="&#xf058;" textalignment="center" fontSize="40" class="fas contact-page__body__success__icon"></Label>
             <TitleComponent text="{{ 'contact.confirmation_sent' | translate }}" type="3" textAlignment="center"></TitleComponent>
-            <StackLayout orientation="vertical" class="contact-page__success__button">
+            <StackLayout orientation="vertical" class="contact-page__body__success__button">
                 <Button text="{{ 'contact.go_back_to_home' | translate }}" nsRouterLink="/"></Button>
             </StackLayout>
         </StackLayout>

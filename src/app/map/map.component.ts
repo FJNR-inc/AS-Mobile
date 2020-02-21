@@ -232,6 +232,7 @@ export class MapComponent {
     constructor(private artworksService: ArtworksService,
                 private router: Router,
                 private activatedRoute: ActivatedRoute) {
+        this.activateLocation();
     }
 
     onDrawerButtonTap(): void {
@@ -244,9 +245,6 @@ export class MapComponent {
             (isEnabled) => {
                 if (!isEnabled) {
                     geolocation.enableLocationRequest(true, true).then(() => {
-                        if (this.mapView) {
-                            this.mapView.myLocationEnabled = true;
-                        }
                     }, (e) => {
                         console.log("Error: " + (e.message || e));
                     }).catch((ex) => {
@@ -262,7 +260,7 @@ export class MapComponent {
 
     onMapReady(event) {
         this.mapView = event.object;
-        this.activateLocation();
+        this.mapView.myLocationEnabled = true;
         this.mapView.settings.indoorLevelPickerEnabled = true;
         this.mapView.setStyle(<Style>JSON.parse(this.style));
 

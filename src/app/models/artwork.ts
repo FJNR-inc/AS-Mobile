@@ -22,6 +22,7 @@ export interface IArtwork {
     index_itinerary: number;
     creation_year: string;
     qr_code_token: string;
+    off_road: boolean;
 }
 
 export class Artwork {
@@ -43,6 +44,7 @@ export class Artwork {
     index_itinerary: number;
     creation_year: string;
     qr_code_token: string;
+    off_road: boolean;
 
     constructor(data: IArtwork) {
         Object.assign(this, data);

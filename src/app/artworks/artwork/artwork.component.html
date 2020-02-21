@@ -53,6 +53,7 @@
                                 <TitleComponent [text]="artwork.name" type="title-section"></TitleComponent>
                                 <TitleComponent [text]="artwork.artist.full_name" type="3"></TitleComponent>
                                 <TitleComponent [text]="artwork.place.name" type="3"></TitleComponent>
+                                <TitleComponent *ngIf="artwork.off_road" text="{{ 'artwork.details.off_road' | translate }}" type="3"></TitleComponent>
                             </StackLayout>
                         </StackLayout>
                         <TitleComponent type="3" [text]="artwork.description"></TitleComponent>

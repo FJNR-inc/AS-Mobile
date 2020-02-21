@@ -14,7 +14,7 @@ export const artworks: IResponseApi<IArtwork> = {
             picture: "https://as-dev-api-media.s3.ca-central-1.amazonaws.com/media/ID_Artiste-5.png",
             bio: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
             bio_fr: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
-            bio_en: "Anaïs Tondeur is a French visual artist based in Paris. She creates speculative narratives and investigations through which she experiments other conditions of being to the world and other modes of cohabitation with the other-than-humans: plants, rocks, air, water. Here, she searches for a renewal of our modes of perception, and explores, beyond the separation of nature and culture, ways to disrupt the grand narrative of the Anthropocene.\r\nCollaborating with geologists, oceanographers, physicists, philosophers, and anthropologists, her protocols of research took her in expeditions on the traces of particles of black carbon with scientists, through Chernobyl Exclusion Zone, across the Atlantic Ocean or along major frontiers between tectonic plates.\r\nShe has presented her work in institutions such as Centre Pompidou and Spencer Museum of Modern Art."
+            bio_en: "Anaïs Tondeur is a French visual artist based in Paris. She creates speculative narratives and investigations through which she experiments other conditions of being to the world and other modes of cohabitation with the other-than-humans: plants, rocks, air, water. Here, she searches for a renewal of our modes of perception, and explores, beyond the separation of nature and culture, ways to disrupt the grand narrative of the Anthropocene.\r\nCollaborating with geologists, oceanographers, physicists, philosophers, and anthropologists, her protocols of research took her in expeditions on the traces of particles of black carbon with scientists, through Chernobyl Exclusion Zone, across the Atlantic Ocean or along major frontiers between tectonic plates.\r\nShe has presented her work in institutions such as Centre Pompidou and Spencer Museum of Modern Art.",
         },
         place: {
             id: 97,
@@ -42,7 +42,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50086221",
         longitude: "-73.56314421",
         creation_year: "2016-2018",
-        qr_code_token: "e32699a0-0535-4756-af46-fc7ea03aa5f8"
+        qr_code_token: "e32699a0-0535-4756-af46-fc7ea03aa5f8",
+        off_road: true
     }, {
         id: 238,
         artist: {
@@ -78,7 +79,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50038244",
         longitude: "-73.5641613",
         creation_year: "2018",
-        qr_code_token: "c4548aa8-4bd7-48e7-b5aa-196e56c63d1d"
+        qr_code_token: "c4548aa8-4bd7-48e7-b5aa-196e56c63d1d",
+        off_road: false
     }, {
         id: 233,
         artist: {
@@ -108,7 +110,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "75c20cf8-c6f2-4cf8-80ba-7d48450ea99e"
+        qr_code_token: "75c20cf8-c6f2-4cf8-80ba-7d48450ea99e",
+        off_road: false
     }, {
         id: 232,
         artist: {
@@ -138,7 +141,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "2f2ee695-2f84-40fe-ba22-4d0802b36c0c"
+        qr_code_token: "2f2ee695-2f84-40fe-ba22-4d0802b36c0c",
+        off_road: false
     }, {
         id: 234,
         artist: {
@@ -168,7 +172,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2016",
-        qr_code_token: "da279f66-6311-448f-8e4d-8cbe0aaa01e4"
+        qr_code_token: "da279f66-6311-448f-8e4d-8cbe0aaa01e4",
+        off_road: false
     }, {
         id: 227,
         artist: {
@@ -198,7 +203,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "4971b737-2c8e-42ab-ab05-f7bcb8563a04"
+        qr_code_token: "4971b737-2c8e-42ab-ab05-f7bcb8563a04",
+        off_road: false
     }, {
         id: 228,
         artist: {
@@ -228,7 +234,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "2a7c4b7d-8cb3-4a2a-ada3-ae0003fa180e"
+        qr_code_token: "2a7c4b7d-8cb3-4a2a-ada3-ae0003fa180e",
+        off_road: false
     }, {
         id: 229,
         artist: {
@@ -258,7 +265,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2018",
-        qr_code_token: "38734d61-d191-45b9-b3aa-5793f2cbb5b2"
+        qr_code_token: "38734d61-d191-45b9-b3aa-5793f2cbb5b2",
+        off_road: false
     }, {
         id: 230,
         artist: {
@@ -288,7 +296,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50980332",
         longitude: "-73.56177092",
         creation_year: "",
-        qr_code_token: "fc98c6b6-5405-4931-bcf8-becc976227c3"
+        qr_code_token: "fc98c6b6-5405-4931-bcf8-becc976227c3",
+        off_road: false
     }, {
         id: 231,
         artist: {
@@ -318,7 +327,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2015-2018",
-        qr_code_token: "434c0df3-21d2-4bf3-aca4-29721e51c7a3"
+        qr_code_token: "434c0df3-21d2-4bf3-aca4-29721e51c7a3",
+        off_road: false
     }, {
         id: 235,
         artist: {
@@ -348,7 +358,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2018",
-        qr_code_token: "a8ddf37e-500b-42ac-8150-51d7be95cc68"
+        qr_code_token: "a8ddf37e-500b-42ac-8150-51d7be95cc68",
+        off_road: false
     }, {
         id: 236,
         artist: {
@@ -384,7 +395,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50039898",
         longitude: "-73.56355619",
         creation_year: "2019",
-        qr_code_token: "628d88f4-b7e9-4cc0-b17c-87140ed9db68"
+        qr_code_token: "628d88f4-b7e9-4cc0-b17c-87140ed9db68",
+        off_road: false
     }, {
         id: 239,
         artist: {
@@ -420,7 +432,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50039898",
         longitude: "-73.56339741",
         creation_year: "2018",
-        qr_code_token: "10bd990c-afac-4b71-909e-bb17d71f2c60"
+        qr_code_token: "10bd990c-afac-4b71-909e-bb17d71f2c60",
+        off_road: false
     }, {
         id: 240,
         artist: {
@@ -456,7 +469,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50064263",
         longitude: "-73.56333303",
         creation_year: "2019",
-        qr_code_token: "9ca8169d-0600-4fb0-8557-d30bd533c27e"
+        qr_code_token: "9ca8169d-0600-4fb0-8557-d30bd533c27e",
+        off_road: false
     }, {
         id: 243,
         artist: {
@@ -492,7 +506,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "1bf713cd-2975-4144-8f43-41f6b8514bdb"
+        qr_code_token: "1bf713cd-2975-4144-8f43-41f6b8514bdb",
+        off_road: false
     }, {
         id: 241,
         artist: {
@@ -528,7 +543,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50028468",
         longitude: "-73.56372356",
         creation_year: "2019",
-        qr_code_token: "3d8a16fa-d3f5-4919-98d1-c4c989aece1c"
+        qr_code_token: "3d8a16fa-d3f5-4919-98d1-c4c989aece1c",
+        off_road: false
     }, {
         id: 242,
         artist: {
@@ -564,7 +580,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5001794",
         longitude: "-73.56463552",
         creation_year: "2019",
-        qr_code_token: "fc88a1e1-0dd3-4d89-8375-5d5e3e5bac70"
+        qr_code_token: "fc88a1e1-0dd3-4d89-8375-5d5e3e5bac70",
+        off_road: false
     }, {
         id: 248,
         artist: {
@@ -594,7 +611,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50448063",
         longitude: "-73.56112504",
         creation_year: "2012-2019",
-        qr_code_token: "d85ca6c1-d3a3-4a31-a9da-5fd62242f13e"
+        qr_code_token: "d85ca6c1-d3a3-4a31-a9da-5fd62242f13e",
+        off_road: false
     }, {
         id: 244,
         artist: {
@@ -630,7 +648,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "",
-        qr_code_token: "446fbf92-3864-42f5-b74e-059a1df49229"
+        qr_code_token: "446fbf92-3864-42f5-b74e-059a1df49229",
+        off_road: false
     }, {
         id: 247,
         artist: {
@@ -660,7 +679,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50399638",
         longitude: "-73.56110144",
         creation_year: "2019",
-        qr_code_token: "1e9a3298-cfe2-42ec-b90e-c6abe2cf4c75"
+        qr_code_token: "1e9a3298-cfe2-42ec-b90e-c6abe2cf4c75",
+        off_road: false
     }, {
         id: 245,
         artist: {
@@ -696,7 +716,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.49991621",
         longitude: "-73.56484151",
         creation_year: "2019",
-        qr_code_token: "fd4df5ac-6323-4bc2-8bdc-1fea09de195f"
+        qr_code_token: "fd4df5ac-6323-4bc2-8bdc-1fea09de195f",
+        off_road: false
     }, {
         id: 246,
         artist: {
@@ -732,7 +753,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "",
-        qr_code_token: "ad6a26cf-5bdc-4c82-b451-a86b42f8575a"
+        qr_code_token: "ad6a26cf-5bdc-4c82-b451-a86b42f8575a",
+        off_road: false
     }, {
         id: 249,
         artist: {
@@ -762,7 +784,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50344145",
         longitude: "-73.56158853",
         creation_year: "2019",
-        qr_code_token: "3123ae77-49fa-4911-a9b5-04ea505ff85e"
+        qr_code_token: "3123ae77-49fa-4911-a9b5-04ea505ff85e",
+        off_road: false
     }, {
         id: 250,
         artist: {
@@ -792,7 +815,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50404601",
         longitude: "-73.56135678",
         creation_year: "2019",
-        qr_code_token: "e20a130e-5ba5-41f5-a971-c6fa36f367c0"
+        qr_code_token: "e20a130e-5ba5-41f5-a971-c6fa36f367c0",
+        off_road: false
     }, {
         id: 251,
         artist: {
@@ -822,7 +846,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50588222",
         longitude: "-73.56096196",
         creation_year: "2011",
-        qr_code_token: "f42acec7-1f79-44e7-ad4c-8a6bb7357833"
+        qr_code_token: "f42acec7-1f79-44e7-ad4c-8a6bb7357833",
+        off_road: false
     }, {
         id: 252,
         artist: {
@@ -852,7 +877,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50525512",
         longitude: "-73.56051135",
         creation_year: "2019",
-        qr_code_token: "1aad0d3d-b3d1-4455-89a7-a2bd522b2698"
+        qr_code_token: "1aad0d3d-b3d1-4455-89a7-a2bd522b2698",
+        off_road: false
     }, {
         id: 262,
         artist: {
@@ -888,7 +914,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50232555",
         longitude: "-73.56035256",
         creation_year: "2020",
-        qr_code_token: "8d7dd57b-55da-452d-87bc-1c9d449e8176"
+        qr_code_token: "8d7dd57b-55da-452d-87bc-1c9d449e8176",
+        off_road: false
     }, {
         id: 253,
         artist: {
@@ -918,7 +945,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50463102",
         longitude: "-73.56068087",
         creation_year: "2020",
-        qr_code_token: "68e5ef5e-05a1-4248-b60d-e63b4c7e3de6"
+        qr_code_token: "68e5ef5e-05a1-4248-b60d-e63b4c7e3de6",
+        off_road: false
     }, {
         id: 254,
         artist: {
@@ -948,7 +976,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50384299",
         longitude: "-73.56145978",
         creation_year: "",
-        qr_code_token: "cb6daa8c-56e2-4c38-b2ef-8b6d4608d7df"
+        qr_code_token: "cb6daa8c-56e2-4c38-b2ef-8b6d4608d7df",
+        off_road: false
     }, {
         id: 255,
         artist: {
@@ -978,7 +1007,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50538896",
         longitude: "-73.56051564",
         creation_year: "2019",
-        qr_code_token: "09e00ffb-0faf-4cea-8de0-100237d087e1"
+        qr_code_token: "09e00ffb-0faf-4cea-8de0-100237d087e1",
+        off_road: false
     }, {
         id: 256,
         artist: {
@@ -1008,7 +1038,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50343092",
         longitude: "-73.56046414",
         creation_year: "2020",
-        qr_code_token: "bbad7817-adc9-4f13-9f95-2a98c419d574"
+        qr_code_token: "bbad7817-adc9-4f13-9f95-2a98c419d574",
+        off_road: false
     }, {
         id: 257,
         artist: {
@@ -1038,7 +1069,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50367004",
         longitude: "-73.56143188",
         creation_year: "2018-2019",
-        qr_code_token: "eda26cb4-3314-4871-9b47-a9c63322dddf"
+        qr_code_token: "eda26cb4-3314-4871-9b47-a9c63322dddf",
+        off_road: false
     }, {
         id: 258,
         artist: {
@@ -1068,7 +1100,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50547919",
         longitude: "-73.56060576",
         creation_year: "2018",
-        qr_code_token: "700414ac-a64d-4373-9d93-8c0fbe7d6044"
+        qr_code_token: "700414ac-a64d-4373-9d93-8c0fbe7d6044",
+        off_road: false
     }, {
         id: 259,
         artist: {
@@ -1098,7 +1131,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50368508",
         longitude: "-73.56114221",
         creation_year: "",
-        qr_code_token: "5f87c327-cdf9-410e-9d29-4948cdfe97a7"
+        qr_code_token: "5f87c327-cdf9-410e-9d29-4948cdfe97a7",
+        off_road: false
     }, {
         id: 260,
         artist: {
@@ -1134,7 +1168,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50285493",
         longitude: "-73.55997491",
         creation_year: "2019",
-        qr_code_token: "fe5aae98-a516-4502-b54d-3de5c2a77184"
+        qr_code_token: "fe5aae98-a516-4502-b54d-3de5c2a77184",
+        off_road: false
     }, {
         id: 261,
         artist: {
@@ -1170,7 +1205,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50299329",
         longitude: "-73.56004143",
         creation_year: "2013-2019",
-        qr_code_token: "f83aa705-fb6c-40bb-8e8e-fc76ca699b50"
+        qr_code_token: "f83aa705-fb6c-40bb-8e8e-fc76ca699b50",
+        off_road: false
     }, {
         id: 263,
         artist: {
@@ -1206,7 +1242,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50145777",
         longitude: "-73.56098986",
         creation_year: "2020",
-        qr_code_token: "6d26c725-157b-41d7-a9e2-4256088c7987"
+        qr_code_token: "6d26c725-157b-41d7-a9e2-4256088c7987",
+        off_road: false
     }, {
         id: 264,
         artist: {
@@ -1242,7 +1279,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2014-2018",
-        qr_code_token: "119df969-4c40-40bc-895b-35428d0a63be"
+        qr_code_token: "119df969-4c40-40bc-895b-35428d0a63be",
+        off_road: false
     }, {
         id: 265,
         artist: {
@@ -1278,7 +1316,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2019",
-        qr_code_token: "8e64169b-d2ce-4675-bc28-05fcfcf8b801"
+        qr_code_token: "8e64169b-d2ce-4675-bc28-05fcfcf8b801",
+        off_road: false
     }, {
         id: 266,
         artist: {
@@ -1314,7 +1353,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2019",
-        qr_code_token: "3ebeb2c4-4869-4055-9209-5b2202585001"
+        qr_code_token: "3ebeb2c4-4869-4055-9209-5b2202585001",
+        off_road: false
     }, {
         id: 267,
         artist: {
@@ -1350,7 +1390,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2016",
-        qr_code_token: "66125c73-728a-455d-86dd-810a48a9bc9d"
+        qr_code_token: "66125c73-728a-455d-86dd-810a48a9bc9d",
+        off_road: false
     }, {
         id: 268,
         artist: {
@@ -1380,7 +1421,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50363094",
         longitude: "-73.56059718",
         creation_year: "2017",
-        qr_code_token: "7d52752c-b0e6-4831-a1f8-9ff995faa639"
+        qr_code_token: "7d52752c-b0e6-4831-a1f8-9ff995faa639",
+        off_road: false
     }, {
         id: 269,
         artist: {
@@ -1410,7 +1452,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5101522",
         longitude: "-73.5681669",
         creation_year: "2020",
-        qr_code_token: "eb58f0c6-32ec-4c34-9436-15d9438f0281"
+        qr_code_token: "eb58f0c6-32ec-4c34-9436-15d9438f0281",
+        off_road: false
     }, {
         id: 270,
         artist: {
@@ -1440,7 +1483,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5101522",
         longitude: "-73.5681669",
         creation_year: "2012",
-        qr_code_token: "7efb8a13-bcf5-446d-bfa2-1a286efae18b"
+        qr_code_token: "7efb8a13-bcf5-446d-bfa2-1a286efae18b",
+        off_road: false
     }, {
         id: 271,
         artist: {
@@ -1470,7 +1514,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5101522",
         longitude: "-73.5681669",
         creation_year: "",
-        qr_code_token: "9efe0334-fa4e-412c-86c4-6971796d75b9"
+        qr_code_token: "9efe0334-fa4e-412c-86c4-6971796d75b9",
+        off_road: false
     }, {
         id: 272,
         artist: {
@@ -1500,7 +1545,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "2020",
-        qr_code_token: "a39edef1-3c3b-45a4-8ce9-b76c517babeb"
+        qr_code_token: "a39edef1-3c3b-45a4-8ce9-b76c517babeb",
+        off_road: false
     }, {
         id: 273,
         artist: {
@@ -1530,7 +1576,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "2018",
-        qr_code_token: "48320ab3-8dca-4698-8b10-764a9d17f0a8"
+        qr_code_token: "48320ab3-8dca-4698-8b10-764a9d17f0a8",
+        off_road: false
     }, {
         id: 274,
         artist: {
@@ -1560,7 +1607,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "2016",
-        qr_code_token: "40c5ba66-af39-4533-b96b-b455c9284ad4"
+        qr_code_token: "40c5ba66-af39-4533-b96b-b455c9284ad4",
+        off_road: false
     }, {
         id: 275,
         artist: {
@@ -1590,7 +1638,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50231502",
         longitude: "-73.56214857",
         creation_year: "2019",
-        qr_code_token: "fbb3c0b7-8ed7-403d-9390-66ed08420b27"
+        qr_code_token: "fbb3c0b7-8ed7-403d-9390-66ed08420b27",
+        off_road: false
     }, {
         id: 276,
         artist: {
@@ -1620,7 +1669,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "",
-        qr_code_token: "3e98a844-3ae3-4a6d-aae8-d2aa5d7bd8ac"
+        qr_code_token: "3e98a844-3ae3-4a6d-aae8-d2aa5d7bd8ac",
+        off_road: false
     }, {
         id: 277,
         artist: {
@@ -1650,7 +1700,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "2019",
-        qr_code_token: "7180d122-4090-4093-bf74-0c501354581f"
+        qr_code_token: "7180d122-4090-4093-bf74-0c501354581f",
+        off_road: false
     }, {
         id: 278,
         artist: {
@@ -1680,7 +1731,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5539015",
         longitude: "-73.5538942",
         creation_year: "",
-        qr_code_token: "50082b99-b8ad-4c91-bab1-fba266deaafd"
+        qr_code_token: "50082b99-b8ad-4c91-bab1-fba266deaafd",
+        off_road: false
     }, {
         id: 279,
         artist: {
@@ -1710,7 +1762,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50299329",
         longitude: "-73.56161427",
         creation_year: "2020",
-        qr_code_token: "827e5522-bab3-4e43-8942-afe969dbae08"
+        qr_code_token: "827e5522-bab3-4e43-8942-afe969dbae08",
+        off_road: false
     }, {
         id: 280,
         artist: {
@@ -1740,7 +1793,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5020398",
         longitude: "-73.56239533",
         creation_year: "2017",
-        qr_code_token: "60d11e60-ba30-4349-b517-82f8e0204117"
+        qr_code_token: "60d11e60-ba30-4349-b517-82f8e0204117",
+        off_road: false
     }, {
         id: 281,
         artist: {
@@ -1770,7 +1824,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50279477",
         longitude: "-73.56181598",
         creation_year: "2015-à ce jour",
-        qr_code_token: "2a31d8b1-1d78-42cd-a376-8fa45fa368d1"
+        qr_code_token: "2a31d8b1-1d78-42cd-a376-8fa45fa368d1",
+        off_road: false
     }, {
         id: 282,
         artist: {
@@ -1800,7 +1855,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50260828",
         longitude: "-73.56185675",
         creation_year: "2019",
-        qr_code_token: "2a6108b3-6137-4435-9d9f-dfb36b39108d"
+        qr_code_token: "2a6108b3-6137-4435-9d9f-dfb36b39108d",
+        off_road: false
     }, {
         id: 283,
         artist: {
@@ -1836,7 +1892,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "",
-        qr_code_token: "5b5238d0-7017-4927-ac1c-8f993e51b09e"
+        qr_code_token: "5b5238d0-7017-4927-ac1c-8f993e51b09e",
+        off_road: false
     }, {
         id: 284,
         artist: {
@@ -1866,7 +1923,8 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5104646",
         longitude: "-73.5750036",
         creation_year: "2015-2019",
-        qr_code_token: "8af77ebb-7660-44e9-8c4c-dc0c57cae6ae"
+        qr_code_token: "8af77ebb-7660-44e9-8c4c-dc0c57cae6ae",
+        off_road: false
     }, {
         id: 285,
         artist: {
@@ -1902,6 +1960,7 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50581605",
         longitude: "-73.56707954",
         creation_year: "",
-        qr_code_token: "8131b7f5-ebb1-4947-8edd-ae9507c68383"
+        qr_code_token: "8131b7f5-ebb1-4947-8edd-ae9507c68383",
+        off_road: false
     }]
 };

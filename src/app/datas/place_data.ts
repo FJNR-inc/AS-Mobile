@@ -2,56 +2,68 @@ import { IResponseApi } from "~/app/models/api";
 import { IPlace } from "~/app/models/place";
 
 export const places: IResponseApi<IPlace> = {
-    count: 11,
+    count: 13,
     next: null,
     previous: null,
     results: [{
-        id: 96,
-        plan: null,
+        id: 120,
+        plan: "E_Place_Victoria.jpg",
         name: "Place Victoria",
         name_fr: "Place Victoria",
         name_en: ""
     }, {
-        id: 97,
-        plan: "ID_Lieu-2.jpg",
+        id: 121,
+        plan: "F_Cite_Int.jpg",
         name: "Cité Internationale",
         name_fr: "Cité Internationale",
         name_en: ""
     }, {
-        id: 98,
-        plan: null,
-        name: "Palais des congrès",
-        name_fr: "Palais des congrès",
+        id: 122,
+        plan: "B_Palais_Congres.jpg",
+        name: "Palais des Congrès",
+        name_fr: "Palais des Congrès",
         name_en: ""
     }, {
-        id: 99,
-        plan: null,
-        name: "Centre commerce mondial",
-        name_fr: "Centre commerce mondial",
+        id: 123,
+        plan: "D_CCMM.jpg",
+        name: "Centre Commerce Mondial de Montréal",
+        name_fr: "Centre Commerce Mondial de Montréal",
         name_en: ""
     }, {
-        id: 100,
-        plan: null,
+        id: 124,
+        plan: "A_Guy_Favreau.jpg",
         name: "Complexe Guy-Favreau",
         name_fr: "Complexe Guy-Favreau",
         name_en: ""
-    }, {id: 101, plan: null, name: "Agora UQAM", name_fr: "Agora UQAM", name_en: ""}, {
-        id: 102,
+    }, {id: 125, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: ""}, {
+        id: 126,
         plan: null,
-        name: "Château Dufresne",
-        name_fr: "Château Dufresne",
+        name: "Château Dufresne ",
+        name_fr: "Château Dufresne ",
         name_en: ""
-    }, {id: 103, plan: null, name: "Jacques Parizeau", name_fr: "Jacques Parizeau", name_en: ""}, {
-        id: 104,
+    }, {
+        id: 127,
+        plan: "C_Jacques_Parizeau.jpg",
+        name: "Jacques Parizeau",
+        name_fr: "Jacques Parizeau",
+        name_en: ""
+    }, {
+        id: 128,
         plan: null,
         name: "Institut Culturel du Mexique",
         name_fr: "Institut Culturel du Mexique",
         name_en: ""
-    }, {
-        id: 106,
+    }, {id: 129, plan: null, name: "Cinema Du Parc ", name_fr: "Cinema Du Parc ", name_en: ""}, {
+        id: 130,
         plan: null,
-        name: "Centre Des Arts Actuels Skol",
-        name_fr: "Centre Des Arts Actuels Skol",
+        name: "Centre Des Arts Actuels Skol ",
+        name_fr: "Centre Des Arts Actuels Skol ",
         name_en: ""
-    }, {id: 105, plan: "slim_hCWqI1R.png", name: "Cinema Du Parc", name_fr: "Cinema Du Parc", name_en: null}]
+    }, {
+        id: 131,
+        plan: null,
+        name: "Observatoire Place Ville Marie ",
+        name_fr: "Observatoire Place Ville Marie ",
+        name_en: ""
+    }, {id: 132, plan: null, name: "Ellephant", name_fr: "Ellephant", name_en: ""}]
 };

@@ -3,7 +3,7 @@ import { IPartner } from "~/app/models/partner";
 
 export const partners: IResponseApi<IPartner> = {
     count: 57, next: null, previous: null, results: [{
-        id: 173,
+        id: 230,
         logo: "ID_Partenaires-2.png",
         name: "Arsenal Art Contemporain Montréal",
         name_fr: "Arsenal Art Contemporain Montréal",
@@ -14,22 +14,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Arsenal art contemporain Montréal est situé dans un ancien chantier naval du 19e siècle sur le canal Lachine au cœur du quartier Griffintown de Montréal. Ses salles d’exposition totalisent 80 000 pieds carrés. Chaque salle accueille chaque année plusieurs expositions d’art contemporain. Les fondateurs espèrent que, grâce à une production constante de programmes de qualité, Arsenal art contemporain contribuera à faire de Montréal l’une des meilleures destinations d’art contemporain au monde. Arsenal art contemporain Montréal abrite également le programme de résidence d’artistes de Arsenal art contemporain, un programme conçu pour aider les artistes canadiens et internationaux dans leur processus de création. Tout au long de l’année, des artistes du monde entier sont invités à participer au programme et à montrer le travail qu’ils ont produit dans un ou plusieurs lieux de Arsenal art contemporain à la fin de leur séjour.",
         description_fr: "Arsenal art contemporain Montréal est situé dans un ancien chantier naval du 19e siècle sur le canal Lachine au cœur du quartier Griffintown de Montréal. Ses salles d’exposition totalisent 80 000 pieds carrés. Chaque salle accueille chaque année plusieurs expositions d’art contemporain. Les fondateurs espèrent que, grâce à une production constante de programmes de qualité, Arsenal art contemporain contribuera à faire de Montréal l’une des meilleures destinations d’art contemporain au monde. Arsenal art contemporain Montréal abrite également le programme de résidence d’artistes de Arsenal art contemporain, un programme conçu pour aider les artistes canadiens et internationaux dans leur processus de création. Tout au long de l’année, des artistes du monde entier sont invités à participer au programme et à montrer le travail qu’ils ont produit dans un ou plusieurs lieux de Arsenal art contemporain à la fin de leur séjour.",
         description_en: "",
-        partner_type: 22
+        partner_type: 29
     }, {
-        id: 174,
-        logo: "ID_Partenaires-3.png",
-        name: "Fondation J.Armand Bombardier",
-        name_fr: "Fondation J.Armand Bombardier",
-        name_en: "",
-        link: "http://www.fondationbombardier.ca/accueil2/",
-        link_fr: "http://www.fondationbombardier.ca/accueil2/",
-        link_en: "",
-        description: "",
-        description_fr: "",
-        description_en: "",
-        partner_type: 23
-    }, {
-        id: 172,
+        id: 229,
         logo: "ID_Partenaires-1.png",
         name: "Destination Centre-ville Montréal",
         name_fr: "Destination Centre-ville Montréal",
@@ -40,9 +27,22 @@ export const partners: IResponseApi<IPartner> = {
         description: "La Société de Développement Commercial Destination centre-ville est fière d’être partenaire d’Art Souterrain depuis sa création. Que ce soit à travers le Festival Art Souterrain, le projet Vitrine sur l’Art ou encore ARTCH – le marché de l’art contemporain émergent, Art Souterrain contribue de manière significative à diffuser et rendre accessible l’art contemporain au centre-ville de Montréal grâce à ses initiatives valorisantes et stimulantes. Nous sommes heureux de participer à de tels projets de partage et de rencontre.",
         description_fr: "La Société de Développement Commercial Destination centre-ville est fière d’être partenaire d’Art Souterrain depuis sa création. Que ce soit à travers le Festival Art Souterrain, le projet Vitrine sur l’Art ou encore ARTCH – le marché de l’art contemporain émergent, Art Souterrain contribue de manière significative à diffuser et rendre accessible l’art contemporain au centre-ville de Montréal grâce à ses initiatives valorisantes et stimulantes. Nous sommes heureux de participer à de tels projets de partage et de rencontre.",
         description_en: "",
-        partner_type: 22
+        partner_type: 29
     }, {
-        id: 175,
+        id: 231,
+        logo: "ID_Partenaires-3.png",
+        name: "Fondation J.Armand Bombardier",
+        name_fr: "Fondation J.Armand Bombardier",
+        name_en: "",
+        link: "http://www.fondationbombardier.ca/accueil2/",
+        link_fr: "http://www.fondationbombardier.ca/accueil2/",
+        link_en: "",
+        description: "",
+        description_fr: "",
+        description_en: "",
+        partner_type: 30
+    }, {
+        id: 232,
         logo: "ID_Partenaires-4.png",
         name: "L'équipe Spectra",
         name_fr: "L'équipe Spectra",
@@ -53,9 +53,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 23
+        partner_type: 30
     }, {
-        id: 176,
+        id: 233,
         logo: "ID_Partenaires-5.png",
         name: "Patrimoine Canadien",
         name_fr: "Patrimoine Canadien",
@@ -66,9 +66,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Patrimoine canadien et ses organismes du portefeuille jouent un rôle vital dans la vie culturelle, civique et économique des Canadiens. Les arts, la culture et le patrimoine représentent 53,8 milliards de dollars en activité économique et emploient plus de 650 000 personnes dans de nombreux secteurs d’activité tels que le film et la vidéo, la radiodiffusion, la musique, l’édition, les archives, les arts de la scène, les établissements du patrimoine, les festivals et les célébrations.",
         description_fr: "Patrimoine canadien et ses organismes du portefeuille jouent un rôle vital dans la vie culturelle, civique et économique des Canadiens. Les arts, la culture et le patrimoine représentent 53,8 milliards de dollars en activité économique et emploient plus de 650 000 personnes dans de nombreux secteurs d’activité tels que le film et la vidéo, la radiodiffusion, la musique, l’édition, les archives, les arts de la scène, les établissements du patrimoine, les festivals et les célébrations.",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 177,
+        id: 234,
         logo: "ID_Partenaires-6.png",
         name: "Ville de Montréal - Arrondissement Ville-Marie ",
         name_fr: "Ville de Montréal - Arrondissement Ville-Marie ",
@@ -79,9 +79,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Ville-Marie est un arrondissement central de Montréal. On y retrouve à la fois le centre des affaires et le centre historique de la ville.",
         description_fr: "Ville-Marie est un arrondissement central de Montréal. On y retrouve à la fois le centre des affaires et le centre historique de la ville.",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 178,
+        id: 235,
         logo: "ID_Partenaires-7.png",
         name: "Conseils des arts du Canada",
         name_fr: "Conseils des arts du Canada",
@@ -92,9 +92,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 179,
+        id: 236,
         logo: "ID_Partenaires-8.png",
         name: "Ville de Montréal",
         name_fr: "Ville de Montréal",
@@ -105,48 +105,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 183,
-        logo: "ID_Partenaires-12.png",
-        name: "Consulat général de france à Québec",
-        name_fr: "Consulat général de france à Québec",
-        name_en: "",
-        link: "https://quebec.consulfrance.org/",
-        link_fr: "https://quebec.consulfrance.org/",
-        link_en: "",
-        description: "",
-        description_fr: "",
-        description_en: "",
-        partner_type: 24
-    }, {
-        id: 184,
-        logo: "ID_Partenaires-13.png",
-        name: "Conseil des arts et des lettres du QUébec",
-        name_fr: "Conseil des arts et des lettres du QUébec",
-        name_en: "",
-        link: "https://www.calq.gouv.qc.ca/",
-        link_fr: "https://www.calq.gouv.qc.ca/",
-        link_en: "",
-        description: "Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion.Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger.",
-        description_fr: "Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion.Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger.",
-        description_en: "",
-        partner_type: 24
-    }, {
-        id: 185,
-        logo: "ID_Partenaires-14.png",
-        name: "Art Public Montréal",
-        name_fr: "Art Public Montréal",
-        name_en: "",
-        link: "https://artpublicmontreal.ca/",
-        link_fr: "https://artpublicmontreal.ca/",
-        link_en: "",
-        description: "Art public Montréal est une initiative de la Ville de Montréal visant à rassembler, au sein d’un partenariat unique, les propriétaires d’œuvres d’art public présentes sur le territoire montréalais et les acteurs du rayonnement de la métropole. En collaboration avec Tourisme Montréal, son objectif est d’accroître la notoriété de Montréal à titre de destination internationale d’art public.",
-        description_fr: "Art public Montréal est une initiative de la Ville de Montréal visant à rassembler, au sein d’un partenariat unique, les propriétaires d’œuvres d’art public présentes sur le territoire montréalais et les acteurs du rayonnement de la métropole. En collaboration avec Tourisme Montréal, son objectif est d’accroître la notoriété de Montréal à titre de destination internationale d’art public.",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 180,
+        id: 237,
         logo: "ID_Partenaires-9.png",
         name: "Gouvernement du Québec",
         name_fr: "Gouvernement du Québec",
@@ -157,9 +118,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Le gouvernement du Québec est un fier partenaire des projets de Art Souterrain #QcFierPartenaire. Le Fonds d’initiative et de rayonnement de la métropole (FIRM) est l’un des principaux leviers dont dispose la ministre responsable de la Métropole et de la région de Montréal pour stimuler l’activité économique, culturelle et sociale de la métropole. Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion. Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger. Cet organisme relève de la ministre de la Culture et des Communications.",
         description_fr: "Le gouvernement du Québec est un fier partenaire des projets de Art Souterrain #QcFierPartenaire. Le Fonds d’initiative et de rayonnement de la métropole (FIRM) est l’un des principaux leviers dont dispose la ministre responsable de la Métropole et de la région de Montréal pour stimuler l’activité économique, culturelle et sociale de la métropole. Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion. Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger. Cet organisme relève de la ministre de la Culture et des Communications.",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 181,
+        id: 238,
         logo: "ID_Partenaires-10.png",
         name: "Conseil des arts de Montréal",
         name_fr: "Conseil des arts de Montréal",
@@ -170,9 +131,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 182,
+        id: 239,
         logo: "ID_Partenaires-11.png",
         name: "Tourisme Montréal",
         name_fr: "Tourisme Montréal",
@@ -183,9 +144,48 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 24
+        partner_type: 31
     }, {
-        id: 186,
+        id: 240,
+        logo: "ID_Partenaires-12.png",
+        name: "Consulat général de france à Québec",
+        name_fr: "Consulat général de france à Québec",
+        name_en: "",
+        link: "https://quebec.consulfrance.org/",
+        link_fr: "https://quebec.consulfrance.org/",
+        link_en: "",
+        description: "",
+        description_fr: "",
+        description_en: "",
+        partner_type: 31
+    }, {
+        id: 241,
+        logo: "ID_Partenaires-13.png",
+        name: "Conseil des arts et des lettres du QUébec",
+        name_fr: "Conseil des arts et des lettres du QUébec",
+        name_en: "",
+        link: "https://www.calq.gouv.qc.ca/",
+        link_fr: "https://www.calq.gouv.qc.ca/",
+        link_en: "",
+        description: "Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion.Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger.",
+        description_fr: "Dans une perspective de développement culturel, le Conseil des arts et des lettres du Québec a pour mission de soutenir, dans toutes les régions du Québec, la création artistique et littéraire, l’expérimentation, la production et la diffusion.Le Conseil soutient également le rayonnement des artistes, des écrivains, des organismes artistiques et de leurs œuvres, que ce soit au Québec, ailleurs au Canada ou à l’étranger.",
+        description_en: "",
+        partner_type: 31
+    }, {
+        id: 242,
+        logo: "ID_Partenaires-14.png",
+        name: "Art Public Montréal",
+        name_fr: "Art Public Montréal",
+        name_en: "",
+        link: "https://artpublicmontreal.ca/",
+        link_fr: "https://artpublicmontreal.ca/",
+        link_en: "",
+        description: "Art public Montréal est une initiative de la Ville de Montréal visant à rassembler, au sein d’un partenariat unique, les propriétaires d’œuvres d’art public présentes sur le territoire montréalais et les acteurs du rayonnement de la métropole. En collaboration avec Tourisme Montréal, son objectif est d’accroître la notoriété de Montréal à titre de destination internationale d’art public.",
+        description_fr: "Art public Montréal est une initiative de la Ville de Montréal visant à rassembler, au sein d’un partenariat unique, les propriétaires d’œuvres d’art public présentes sur le territoire montréalais et les acteurs du rayonnement de la métropole. En collaboration avec Tourisme Montréal, son objectif est d’accroître la notoriété de Montréal à titre de destination internationale d’art public.",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 243,
         logo: "ID_Partenaires-15.png",
         name: "Ellephant",
         name_fr: "Ellephant",
@@ -196,35 +196,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Basée dans le Quartier des spectacles de Montréal, ELLEPHANT représente le travail d’artistes québécois, canadiens et autochtones par le biais d’expositions, d’art public, d’événements, de foires et de publications. En se concentrant sur l’art contemporain de divers genres, ELLEPHANT a une préférence pour le travail qui intègre les nouveaux médias, est socialement engagé, a un angle performatif et implique le spectateur comme partie intégrante de l’expérience. Nous nous efforçons d’accorder une attention et des opportunités accrues à nos artistes sur la scène locale, nationale et internationale.",
         description_fr: "Basée dans le Quartier des spectacles de Montréal, ELLEPHANT représente le travail d’artistes québécois, canadiens et autochtones par le biais d’expositions, d’art public, d’événements, de foires et de publications. En se concentrant sur l’art contemporain de divers genres, ELLEPHANT a une préférence pour le travail qui intègre les nouveaux médias, est socialement engagé, a un angle performatif et implique le spectateur comme partie intégrante de l’expérience. Nous nous efforçons d’accorder une attention et des opportunités accrues à nos artistes sur la scène locale, nationale et internationale.",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 189,
-        logo: "ID_Partenaires-18.png",
-        name: "Topo",
-        name_fr: "Topo",
-        name_en: "",
-        link: "http://www.agencetopo.qc.ca/wp/",
-        link_fr: "http://www.agencetopo.qc.ca/wp/",
-        link_en: "",
-        description: "Le centre d’artistes montréalais TOPO est un laboratoire d’écritures et de créations numériques pour les espaces du web, de la performance et de l’installation. Son mandat est d’incuber, de produire et de diffuser des œuvres originales qui explorent les croisements interdisciplinaires et interculturels à travers les arts numériques.",
-        description_fr: "Le centre d’artistes montréalais TOPO est un laboratoire d’écritures et de créations numériques pour les espaces du web, de la performance et de l’installation. Son mandat est d’incuber, de produire et de diffuser des œuvres originales qui explorent les croisements interdisciplinaires et interculturels à travers les arts numériques.",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 190,
-        logo: "ID_Partenaires-19.png",
-        name: "Échappe-Toi",
-        name_fr: "Échappe-Toi",
-        name_en: "",
-        link: "https://echappetoi.com/",
-        link_fr: "https://echappetoi.com/",
-        link_en: "",
-        description: "Un jeu d’évasion pas comme les autres : chez Échappe-Toi, ils font bien plus qu’enfermer des groupes dans une pièce. Nous amenons le jeu d’évasion à un niveau d’expérience unique, une véritable expérience immersive, basée sur l’histoire de Montréal. Celle-ci va réveiller le Sherlock Holmes qui est en vous.",
-        description_fr: "Un jeu d’évasion pas comme les autres : chez Échappe-Toi, ils font bien plus qu’enfermer des groupes dans une pièce. Nous amenons le jeu d’évasion à un niveau d’expérience unique, une véritable expérience immersive, basée sur l’histoire de Montréal. Celle-ci va réveiller le Sherlock Holmes qui est en vous.",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 187,
+        id: 244,
         logo: "ID_Partenaires-16.png",
         name: "ALN/NT2",
         name_fr: "ALN/NT2",
@@ -235,48 +209,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 191,
-        logo: "ID_Partenaires-20.png",
-        name: "Dix au Carré",
-        name_fr: "Dix au Carré",
-        name_en: "",
-        link: "https://dix2.com/",
-        link_fr: "https://dix2.com/",
-        link_en: "",
-        description: "",
-        description_fr: "",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 192,
-        logo: "ID_Partenaires-21.png",
-        name: "Consulat Général du Mexique à Québec",
-        name_fr: "Consulat Général du Mexique à Québec",
-        name_en: "",
-        link: "https://consulmex.sre.gob.mx/montreal/index.php/fr/",
-        link_fr: "https://consulmex.sre.gob.mx/montreal/index.php/fr/",
-        link_en: "",
-        description: "",
-        description_fr: "",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 193,
-        logo: "ID_Partenaires-22.png",
-        name: "RAIQ",
-        name_fr: "RAIQ",
-        name_en: "",
-        link: "https://raiq.ca/",
-        link_fr: "https://raiq.ca/",
-        link_en: "",
-        description: "",
-        description_fr: "",
-        description_en: "",
-        partner_type: 25
-    }, {
-        id: 188,
+        id: 245,
         logo: "ID_Partenaires-17.png",
         name: "Hexagram",
         name_fr: "Hexagram",
@@ -287,9 +222,74 @@ export const partners: IResponseApi<IPartner> = {
         description: "RÉSEAU INTERNATIONAL DÉDIÉ À LA RECHERCHE-CRÉATION EN ARTS MÉDIATIQUES, DESIGN, TECHNOLOGIE ET CULTURE NUMÉRIQUE",
         description_fr: "RÉSEAU INTERNATIONAL DÉDIÉ À LA RECHERCHE-CRÉATION EN ARTS MÉDIATIQUES, DESIGN, TECHNOLOGIE ET CULTURE NUMÉRIQUE",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 194,
+        id: 246,
+        logo: "ID_Partenaires-18.png",
+        name: "Topo",
+        name_fr: "Topo",
+        name_en: "",
+        link: "http://www.agencetopo.qc.ca/wp/",
+        link_fr: "http://www.agencetopo.qc.ca/wp/",
+        link_en: "",
+        description: "Le centre d’artistes montréalais TOPO est un laboratoire d’écritures et de créations numériques pour les espaces du web, de la performance et de l’installation. Son mandat est d’incuber, de produire et de diffuser des œuvres originales qui explorent les croisements interdisciplinaires et interculturels à travers les arts numériques.",
+        description_fr: "Le centre d’artistes montréalais TOPO est un laboratoire d’écritures et de créations numériques pour les espaces du web, de la performance et de l’installation. Son mandat est d’incuber, de produire et de diffuser des œuvres originales qui explorent les croisements interdisciplinaires et interculturels à travers les arts numériques.",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 247,
+        logo: "ID_Partenaires-19.png",
+        name: "Échappe-Toi",
+        name_fr: "Échappe-Toi",
+        name_en: "",
+        link: "https://echappetoi.com/",
+        link_fr: "https://echappetoi.com/",
+        link_en: "",
+        description: "Un jeu d’évasion pas comme les autres : chez Échappe-Toi, ils font bien plus qu’enfermer des groupes dans une pièce. Nous amenons le jeu d’évasion à un niveau d’expérience unique, une véritable expérience immersive, basée sur l’histoire de Montréal. Celle-ci va réveiller le Sherlock Holmes qui est en vous.",
+        description_fr: "Un jeu d’évasion pas comme les autres : chez Échappe-Toi, ils font bien plus qu’enfermer des groupes dans une pièce. Nous amenons le jeu d’évasion à un niveau d’expérience unique, une véritable expérience immersive, basée sur l’histoire de Montréal. Celle-ci va réveiller le Sherlock Holmes qui est en vous.",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 248,
+        logo: "ID_Partenaires-20.png",
+        name: "Dix au Carré",
+        name_fr: "Dix au Carré",
+        name_en: "",
+        link: "https://dix2.com/",
+        link_fr: "https://dix2.com/",
+        link_en: "",
+        description: "",
+        description_fr: "",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 249,
+        logo: "ID_Partenaires-21.png",
+        name: "Consulat Général du Mexique à Québec",
+        name_fr: "Consulat Général du Mexique à Québec",
+        name_en: "",
+        link: "https://consulmex.sre.gob.mx/montreal/index.php/fr/",
+        link_fr: "https://consulmex.sre.gob.mx/montreal/index.php/fr/",
+        link_en: "",
+        description: "",
+        description_fr: "",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 250,
+        logo: "ID_Partenaires-22.png",
+        name: "RAIQ",
+        name_fr: "RAIQ",
+        name_en: "",
+        link: "https://raiq.ca/",
+        link_fr: "https://raiq.ca/",
+        link_en: "",
+        description: "",
+        description_fr: "",
+        description_en: "",
+        partner_type: 32
+    }, {
+        id: 251,
         logo: "ID_Partenaires-23.png",
         name: "Galerie V.A.V.",
         name_fr: "Galerie V.A.V.",
@@ -300,9 +300,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "La Galerie V.A.V. (Visual Arts Visuels) est un espace d’exposition géré par des étudiants et financé par la Faculté des Beaux-Arts de l’Université Concordia grâce à une cotisation étudiante (premier cycle). La Galerie V.A.V. encourage la participation de tous les étudiants, quels que soient leur niveau d’expérience, leur approche ou leur appartenance identitaire. L’Université Concordia est située sur le territoire traditionnel Kanien’kehá:ka.",
         description_fr: "La Galerie V.A.V. (Visual Arts Visuels) est un espace d’exposition géré par des étudiants et financé par la Faculté des Beaux-Arts de l’Université Concordia grâce à une cotisation étudiante (premier cycle). La Galerie V.A.V. encourage la participation de tous les étudiants, quels que soient leur niveau d’expérience, leur approche ou leur appartenance identitaire. L’Université Concordia est située sur le territoire traditionnel Kanien’kehá:ka.",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 195,
+        id: 252,
         logo: "ID_Partenaires-24.png",
         name: "Institut Culturel du Mexique à Montréal",
         name_fr: "Institut Culturel du Mexique à Montréal",
@@ -313,9 +313,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 196,
+        id: 253,
         logo: "ID_Partenaires-25.png",
         name: "Centre des arts actuels SKOL",
         name_fr: "Centre des arts actuels SKOL",
@@ -326,9 +326,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Actif depuis 1984, Skol est un centre d’artistes à but non-lucratif soutenant les pratiques émergentes et l’expérimentation en arts visuels. Skol invite artistes et autres professionnels du domaine des arts (commissaires, historiens de l’art, éducateurs etc.) à investir le centre d’artistes comme lieu physique et/ou comme espace critique en collaborant avec les membres actifs pour créer et produire de l’expérience vivante. Par le principe d’une démarche indéterminée, (c’est-à-dire qui ne vise pas un résultat en particulier mais qui présente plutôt l’aboutissement d’une recherche), l’artiste producteur, chercheur, organisateur, penseur… est invité à prendre des risques avec les membres du Centre afin de produire de nouveaux savoirs et ainsi participer à l’avancement de la pratique artistique.",
         description_fr: "Actif depuis 1984, Skol est un centre d’artistes à but non-lucratif soutenant les pratiques émergentes et l’expérimentation en arts visuels. Skol invite artistes et autres professionnels du domaine des arts (commissaires, historiens de l’art, éducateurs etc.) à investir le centre d’artistes comme lieu physique et/ou comme espace critique en collaborant avec les membres actifs pour créer et produire de l’expérience vivante. Par le principe d’une démarche indéterminée, (c’est-à-dire qui ne vise pas un résultat en particulier mais qui présente plutôt l’aboutissement d’une recherche), l’artiste producteur, chercheur, organisateur, penseur… est invité à prendre des risques avec les membres du Centre afin de produire de nouveaux savoirs et ainsi participer à l’avancement de la pratique artistique.",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 197,
+        id: 254,
         logo: "ID_Partenaires-26.png",
         name: "Artexte",
         name_fr: "Artexte",
@@ -339,9 +339,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 198,
+        id: 255,
         logo: "ID_Partenaires-27.png",
         name: "Faculté des Arts de l'UQAM",
         name_fr: "Faculté des Arts de l'UQAM",
@@ -352,9 +352,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 199,
+        id: 256,
         logo: "ID_Partenaires-28.png",
         name: "Regroupement Des Artistes en Arts Visuels du Québec",
         name_fr: "Regroupement Des Artistes en Arts Visuels du Québec",
@@ -365,9 +365,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 200,
+        id: 257,
         logo: "ID_Partenaires-29.png",
         name: "Art Matters Festival",
         name_fr: "Art Matters Festival",
@@ -378,9 +378,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 25
+        partner_type: 32
     }, {
-        id: 201,
+        id: 258,
         logo: "ID_Partenaires-30.png",
         name: "Nuit Blanche",
         name_fr: "Nuit Blanche",
@@ -391,9 +391,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 202,
+        id: 259,
         logo: "ID_Partenaires-31.png",
         name: "Château Dufresne",
         name_fr: "Château Dufresne",
@@ -404,9 +404,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "LE CHÂTEAU DUFRESNE, TÉMOIN D’UNE CITÉ MODERNE : MAISONNEUVE\r\nLe Château Dufresne est un domaine constitué de deux maisons bourgeoises jumelées situées dans l’arrondissement Mercier-Hochelaga-Maisonneuve de la ville de Montréal au Canada. Ces maisons sont les résidences des frères Marius et Oscar Dufresne ainsi que de leurs successions de 1919 à 1948",
         description_fr: "LE CHÂTEAU DUFRESNE, TÉMOIN D’UNE CITÉ MODERNE : MAISONNEUVE\r\nLe Château Dufresne est un domaine constitué de deux maisons bourgeoises jumelées situées dans l’arrondissement Mercier-Hochelaga-Maisonneuve de la ville de Montréal au Canada. Ces maisons sont les résidences des frères Marius et Oscar Dufresne ainsi que de leurs successions de 1919 à 1948",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 203,
+        id: 260,
         logo: "ID_Partenaires-32.png",
         name: "Espace d’exposition UBISOFT",
         name_fr: "Espace d’exposition UBISOFT",
@@ -417,9 +417,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 204,
+        id: 261,
         logo: "ID_Partenaires-33.png",
         name: "Cinéma du Parc",
         name_fr: "Cinéma du Parc",
@@ -430,9 +430,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 205,
+        id: 262,
         logo: "ID_Partenaires-34.png",
         name: "Cinéma du Musée",
         name_fr: "Cinéma du Musée",
@@ -443,9 +443,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 206,
+        id: 263,
         logo: "ID_Partenaires-35.png",
         name: "Cinéma Beaubien",
         name_fr: "Cinéma Beaubien",
@@ -456,9 +456,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 207,
+        id: 264,
         logo: "ID_Partenaires-36.png",
         name: "1000 De La Gauchetière",
         name_fr: "1000 De La Gauchetière",
@@ -469,22 +469,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Depuis les célébrations du 20e anniversaire de l’édifice, Le 1000 émet un certain bouillonnement intriguant et interprétant une ère de renouveau. Étant situé au cœur de la capitale culturelle du Canada, il entamera de nouveaux projets de responsabilités sociales dotés d’une identité culturelle. Par le biais de liaisons stratégiques, Le 1000 s’engagera à mettre en vedette les artistes d’ici, œuvrant sous diverses formules artistiques. Ces contributions à la collectivité reflète le désir de l’édifice à instaurer un environnement convivial et accessible à tous, à l’année.Le 1000 envisage donc promouvoir ses espaces auprès de la communauté afin d’y offrir une plateforme pour la présentation d’œuvres artistiques. Soyez à l’affut des développements qui suivront!",
         description_fr: "Depuis les célébrations du 20e anniversaire de l’édifice, Le 1000 émet un certain bouillonnement intriguant et interprétant une ère de renouveau. Étant situé au cœur de la capitale culturelle du Canada, il entamera de nouveaux projets de responsabilités sociales dotés d’une identité culturelle. Par le biais de liaisons stratégiques, Le 1000 s’engagera à mettre en vedette les artistes d’ici, œuvrant sous diverses formules artistiques. Ces contributions à la collectivité reflète le désir de l’édifice à instaurer un environnement convivial et accessible à tous, à l’année.Le 1000 envisage donc promouvoir ses espaces auprès de la communauté afin d’y offrir une plateforme pour la présentation d’œuvres artistiques. Soyez à l’affut des développements qui suivront!",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 208,
-        logo: "ID_Partenaires-37.png",
-        name: "Place Bonaventure",
-        name_fr: "Place Bonaventure",
-        name_en: "",
-        link: "http://placebonaventure.com/",
-        link_fr: "http://placebonaventure.com/",
-        link_en: "",
-        description: "La Place Bonaventure est une référence pour le centre-ville de Montréal. Cet édifice qui jadis était une « ville dans la ville » est aujourd’hui un grand immeuble à bureaux et le centre d’exposition par excellence de Montréal. Il abrite de plus un hôtel de première classe qui surplombe l’agitation de la ville.",
-        description_fr: "La Place Bonaventure est une référence pour le centre-ville de Montréal. Cet édifice qui jadis était une « ville dans la ville » est aujourd’hui un grand immeuble à bureaux et le centre d’exposition par excellence de Montréal. Il abrite de plus un hôtel de première classe qui surplombe l’agitation de la ville.",
-        description_en: "",
-        partner_type: 26
-    }, {
-        id: 209,
+        id: 266,
         logo: "ID_Partenaires-38.png",
         name: "Palais des congrés de Montréal",
         name_fr: "Palais des congrés de Montréal",
@@ -495,9 +482,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 210,
+        id: 267,
         logo: "ID_Partenaires-39.png",
         name: "Édifice Jacques-Parizeau",
         name_fr: "Édifice Jacques-Parizeau",
@@ -508,9 +495,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 211,
+        id: 268,
         logo: "ID_Partenaires-40.png",
         name: "Complexe Guy-Favreau",
         name_fr: "Complexe Guy-Favreau",
@@ -521,9 +508,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 212,
+        id: 269,
         logo: "ID_Partenaires-41.png",
         name: "Centre de commerce mondial de Montréal",
         name_fr: "Centre de commerce mondial de Montréal",
@@ -534,9 +521,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 213,
+        id: 270,
         logo: "ID_Partenaires-42.png",
         name: "Observatoire place ville marie",
         name_fr: "Observatoire place ville marie",
@@ -547,9 +534,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Situé du 44 au 46e étage, l’observatoire offre un panorama de Montréal en 360 degrés à 188 mètres de haut. Des audio-guides et des panneaux explicatifs retracent l’histoire de la tour et la description des quartiers visibles de l’observatoire. Une terrasse extérieure et un restaurant complètent les installations.",
         description_fr: "Situé du 44 au 46e étage, l’observatoire offre un panorama de Montréal en 360 degrés à 188 mètres de haut. Des audio-guides et des panneaux explicatifs retracent l’histoire de la tour et la description des quartiers visibles de l’observatoire. Une terrasse extérieure et un restaurant complètent les installations.",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 214,
+        id: 271,
         logo: "ID_Partenaires-43.png",
         name: "ACCÈS culture Montréal",
         name_fr: "ACCÈS culture Montréal",
@@ -560,9 +547,22 @@ export const partners: IResponseApi<IPartner> = {
         description: "Le réseau de diffusion culturelle de la ville de Montréal",
         description_fr: "Le réseau de diffusion culturelle de la ville de Montréal",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 215,
+        id: 265,
+        logo: "ID_Partenaires-37.png",
+        name: "Place Bonaventure",
+        name_fr: "Place Bonaventure",
+        name_en: "",
+        link: "http://placebonaventure.com/",
+        link_fr: "http://placebonaventure.com/",
+        link_en: "",
+        description: "La Place Bonaventure est une référence pour le centre-ville de Montréal. Cet édifice qui jadis était une « ville dans la ville » est aujourd’hui un grand immeuble à bureaux et le centre d’exposition par excellence de Montréal. Il abrite de plus un hôtel de première classe qui surplombe l’agitation de la ville.",
+        description_fr: "La Place Bonaventure est une référence pour le centre-ville de Montréal. Cet édifice qui jadis était une « ville dans la ville » est aujourd’hui un grand immeuble à bureaux et le centre d’exposition par excellence de Montréal. Il abrite de plus un hôtel de première classe qui surplombe l’agitation de la ville.",
+        description_en: "",
+        partner_type: 33
+    }, {
+        id: 272,
         logo: "ID_Partenaires-44.png",
         name: "L’association des diffuseurs culturels de l'ile de Montréal",
         name_fr: "L’association des diffuseurs culturels de l'ile de Montréal",
@@ -573,9 +573,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Lieu d’échanges et de mises en commun de ressources et d’expériences de diffusion, l’ADICÎM participe activement au développement des arts de la scène et des arts visuels des villes reconstituées membres.",
         description_fr: "Lieu d’échanges et de mises en commun de ressources et d’expériences de diffusion, l’ADICÎM participe activement au développement des arts de la scène et des arts visuels des villes reconstituées membres.",
         description_en: "",
-        partner_type: 26
+        partner_type: 33
     }, {
-        id: 216,
+        id: 273,
         logo: "ID_Partenaires-45.png",
         name: "Y Kombucha",
         name_fr: "Y Kombucha",
@@ -586,9 +586,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 27
+        partner_type: 34
     }, {
-        id: 217,
+        id: 274,
         logo: "ID_Partenaires-46.png",
         name: "Thierry du bois",
         name_fr: "Thierry du bois",
@@ -599,9 +599,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Photographe",
         description_fr: "Photographe",
         description_en: "",
-        partner_type: 27
+        partner_type: 34
     }, {
-        id: 218,
+        id: 275,
         logo: "ID_Partenaires-47.png",
         name: "Productions Yves Nicol",
         name_fr: "Productions Yves Nicol",
@@ -612,9 +612,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 27
+        partner_type: 34
     }, {
-        id: 219,
+        id: 276,
         logo: "ID_Partenaires-48.png",
         name: "CJLO",
         name_fr: "CJLO",
@@ -625,9 +625,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "CJLO est la radio officielle de campus et de radio communautaire de l’Université Concordia de Montréal, au Québec.",
         description_fr: "CJLO est la radio officielle de campus et de radio communautaire de l’Université Concordia de Montréal, au Québec.",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 220,
+        id: 277,
         logo: "ID_Partenaires-49.png",
         name: "Nouveau Projet",
         name_fr: "Nouveau Projet",
@@ -638,9 +638,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 221,
+        id: 278,
         logo: "ID_Partenaires-50.jpg",
         name: "V2COM Newswire",
         name_fr: "V2COM Newswire",
@@ -651,9 +651,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "Le fil de presse v2com soumet vos projets au plus important réseau de médias spécialisés afin qu’ils soient publiés dans les meilleures publications en architecture et design au monde.",
         description_fr: "Le fil de presse v2com soumet vos projets au plus important réseau de médias spécialisés afin qu’ils soient publiés dans les meilleures publications en architecture et design au monde.",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 222,
+        id: 279,
         logo: "ID_Partenaires-51.png",
         name: "Paprika",
         name_fr: "Paprika",
@@ -664,9 +664,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 223,
+        id: 280,
         logo: "ID_Partenaires-52.png",
         name: "Vie des Arts",
         name_fr: "Vie des Arts",
@@ -677,9 +677,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 224,
+        id: 281,
         logo: "ID_Partenaires-53.png",
         name: "ESSE",
         name_fr: "ESSE",
@@ -690,9 +690,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 225,
+        id: 282,
         logo: "ID_Partenaires-54.png",
         name: "Espace Art Actuel",
         name_fr: "Espace Art Actuel",
@@ -703,9 +703,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 226,
+        id: 283,
         logo: "ID_Partenaires-55.png",
         name: "Direction Art MTL",
         name_fr: "Direction Art MTL",
@@ -716,9 +716,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 227,
+        id: 284,
         logo: "ID_Partenaires-56.png",
         name: "Ciel Variable",
         name_fr: "Ciel Variable",
@@ -729,9 +729,9 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }, {
-        id: 228,
+        id: 285,
         logo: "ID_Partenaires-57.png",
         name: "Canadian Art",
         name_fr: "Canadian Art",
@@ -742,6 +742,6 @@ export const partners: IResponseApi<IPartner> = {
         description: "",
         description_fr: "",
         description_en: "",
-        partner_type: 28
+        partner_type: 35
     }]
 };

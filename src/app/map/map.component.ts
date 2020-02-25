@@ -281,22 +281,15 @@ export class MapComponent {
 
         for (const artwork of this.displayedArtworks) {
 
-            /* Code to use custom icon
             const imgModule = require("ui/image");
             const icon = new imgModule.Image();
             const imageSource = require("image-source");
-            icon.src = "~/assets/icon/photographie.png";
-            icon.imageSource = imageSource.fromFile("~/assets/icon/photographie.png");
-
-            marker.icon = icon;
-             */
-
-            /* code to use custom color
-
-            //marker.color = "blue";
-             */
+            icon.src = "~/assets/googleMapPointer.png";
+            icon.imageSource = imageSource.fromFile("~/assets/googleMapPointer.png");
 
             const marker = new Marker();
+
+            marker.icon = icon;
             marker.position = Position.positionFromLatLng(artwork.latitude, artwork.longitude);
             marker.title = artwork.name;
             marker.snippet = artwork.place.name;

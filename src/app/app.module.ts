@@ -25,11 +25,11 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { InternationalizationService } from "~/app/services/internationalization.service";
 import { SharedModule } from "~/app/shared/shared.module";
 import { registerElement } from "nativescript-angular/element-registry";
-import * as platform from "platform";
+const platform = require("platform");
 declare var GMSServices: any;
 
 if (platform.isIOS) {
-    GMSServices.provideAPIKey("AIzaSyDLH0sm5pEgcIzfGTEnUGL529KOdaXzU");
+    GMSServices.provideAPIKey("AIzaSyDcnx9BnDBdwWBDOxcAOAFzLvRoK-DrF04");
 }
 
 registerElement("MapView", () => MapView);

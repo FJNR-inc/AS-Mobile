@@ -19,21 +19,22 @@
     <Label class="action-bar-title"
            text="{{ 'artworks.title' | translate }}"></Label>
     <ActionItem (tap)="toggleModal()"
-                ios.systemIcon="9"
-                ios.position="left"
+                ios.systemIcon="12"
+                ios.position="right"
                 color="white"
                 android.systemIcon="ic_menu_search"
                 android.position="actionBar"></ActionItem>
 </ActionBar>
 
-<GridLayout height="100%" class="artworks-page" [ngClass]="{'artworks-page--dialogOpen': this.dialogShown}">
-    <ListView [items]="artworks" *ngIf="artworks.length > 1">
+<GridLayout height="100%" class="artworks-page">
+    <ListView [items]="artworks" *ngIf="artworks.length > 1"
+              [ngClass]="{'artworks-page__list--dialogOpen': this.dialogShown}">
         <ng-template let-item="item">
-            <GridLayout class="artworks-page__artwork" backgroundPosition="center center" backgroundSize="cover" [style.background]="'url(~/assets/data/' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
-                <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__artwork__description">
-                    <Label row="1" col="0" colSpan="2" [text]="item.name" class="artworks-page__artwork__description__title"></Label>
-                    <Label row="2" col="0" [text]="item.artist.full_name" class="artworks-page__artwork__description__author"></Label>
-                    <Label row="2" col="1" verticalAlignment="bottom" [text]="item.place.name" class="artworks-page__artwork__description__address"></Label>
+            <GridLayout class="artworks-page__list__artwork" backgroundPosition="center center" backgroundSize="cover" [style.background]="'url(~/assets/data/' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
+                <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__list__artwork__description">
+                    <Label row="1" col="0" colSpan="2" [text]="item.name" class="artworks-page__list__artwork__description__title"></Label>
+                    <Label row="2" col="0" [text]="item.artist.full_name" class="artworks-page__list__artwork__description__author"></Label>
+                    <Label row="2" col="1" verticalAlignment="bottom" [text]="item.place.name" class="artworks-page__list__artwork__description__address"></Label>
                 </GridLayout>
             </GridLayout>
         </ng-template>
@@ -41,33 +42,34 @@
     <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="artworks.length < 1">
         <TitleComponent text="{{ 'artworks.no_artworks_found' | translate }}" textAlignment="center"></TitleComponent>
     </FlexBoxLayout>
-</GridLayout>
 
-<AbsoluteLayout class="artworks-modal" *ngIf="dialogShown">
-    <StackLayout class="artworks-modal__content">
-        <TitleComponent text="{{ 'artworks.search' | translate }}"
-                        textAlignment="center"
-                        type="3"
-                        class="artworks-modal__content__title"></TitleComponent>
 
-        <StackLayout class="artworks-modal__content__text">
-            <TitleComponent text="{{ 'artworks.search_modal.explanation' | translate }}"
+    <AbsoluteLayout class="artworks-modal" *ngIf="dialogShown">
+        <StackLayout class="artworks-modal__content">
+            <TitleComponent text="{{ 'artworks.search' | translate }}"
                             textAlignment="center"
-                            type="4"></TitleComponent>
-        </StackLayout>
+                            type="3"
+                            class="artworks-modal__content__title"></TitleComponent>
 
-        <StackLayout class="artworks-modal__content__select">
-            <Label row="10" col="1" colSpan="5" text="Place" class="title-label"></Label>
-            <Label [text]="place" editable="false" class="input-select" (tap)="onPlaceTap()"></Label>
-        </StackLayout>
+            <StackLayout class="artworks-modal__content__text">
+                <TitleComponent text="{{ 'artworks.search_modal.explanation' | translate }}"
+                                textAlignment="center"
+                                type="4"></TitleComponent>
+            </StackLayout>
 
-        <StackLayout class="artworks-modal__content__select">
-            <Label row="10" col="1" colSpan="5" text="{{ 'artworks.search_modal.input_artwork_type' | translate }}" class="title-label"></Label>
-            <Label [text]="typeOfArtwork" editable="false" class="input-select" (tap)="onTypeArtworkTap()"></Label>
-        </StackLayout>
+            <StackLayout class="artworks-modal__content__select">
+                <Label row="10" col="1" colSpan="5" text="Place" class="title-label"></Label>
+                <Label [text]="place" editable="false" class="input-select" (tap)="onPlaceTap()"></Label>
+            </StackLayout>
 
-        <StackLayout class="artworks-modal__content__button">
-            <Button text="{{ 'artworks.search_modal.filter_button' | translate }}" (tap)="refreshArtworks()" class="button"></Button>
+            <StackLayout class="artworks-modal__content__select">
+                <Label row="10" col="1" colSpan="5" text="{{ 'artworks.search_modal.input_artwork_type' | translate }}" class="title-label"></Label>
+                <Label [text]="typeOfArtwork" editable="false" class="input-select" (tap)="onTypeArtworkTap()"></Label>
+            </StackLayout>
+
+            <StackLayout class="artworks-modal__content__button">
+                <Button text="{{ 'artworks.search_modal.filter_button' | translate }}" (tap)="refreshArtworks()" class="button"></Button>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
-</AbsoluteLayout>
+    </AbsoluteLayout>
+</GridLayout>

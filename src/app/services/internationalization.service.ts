@@ -35,6 +35,16 @@ export class InternationalizationService {
         }
     }
 
+    static translateObject(object: any, translateFields: Array<string>){
+        const local = InternationalizationService.getLocale();
+        translateFields.forEach(
+            (field: string) => {
+                object[field] = object[field + "_" + local]
+                    ? object[field + "_" + local] : object[field];
+            }
+        );
+    }
+
     LOCALES = ["en", "fr"];
     @Output() locale: EventEmitter<any> = new EventEmitter();
 

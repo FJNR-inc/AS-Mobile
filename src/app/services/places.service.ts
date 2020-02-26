@@ -18,11 +18,11 @@ export class PlacesService extends GlobalService {
     }
 
     list(): Observable<any> {
-        const local = InternationalizationService.getLocale();
         const newPlacesResponse: IResponseApi<IPlace> = JSON.parse(JSON.stringify(places)) ;
         newPlacesResponse.results = JSON.parse(JSON.stringify(places)).results.map(
             (place: IPlace) => {
-                place.name = place["name_" + local];
+
+                InternationalizationService.translateObject(place, ["name"]);
 
                 return place;
             });
@@ -31,7 +31,6 @@ export class PlacesService extends GlobalService {
     }
 
     get(id: number): Observable<any> {
-        const local = InternationalizationService.getLocale();
         const newPlace = JSON.parse(JSON.stringify(places)).results.find(
             (place: IPlace) => {
 
@@ -41,7 +40,8 @@ export class PlacesService extends GlobalService {
 
         return of(newPlace).pipe(
             map((place: IPlace) => {
-                place.name = place["name_" + local];
+
+                InternationalizationService.translateObject(place, ["name"]);
 
                 return place;
             })

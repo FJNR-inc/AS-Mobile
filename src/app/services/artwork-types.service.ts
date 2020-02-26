@@ -23,16 +23,15 @@ export class ArtworkTypesService extends GlobalService {
         const newArtworkTypesResponse: IResponseApi<IArtworkType> = JSON.parse(JSON.stringify(artworkTypes)) ;
         newArtworkTypesResponse.results = JSON.parse(JSON.stringify(artworkTypes)).results.map(
             (artworkType: IArtworkType) => {
-            artworkType.name = artworkType["name_" + local];
+                InternationalizationService.translateObject(artworkType, ["name"]);
 
-            return artworkType;
+                return artworkType;
         });
 
         return of(newArtworkTypesResponse);
     }
 
     get(id: number): Observable<any> {
-        const local = InternationalizationService.getLocale();
 
         return of(JSON.parse(JSON.stringify(artworkTypes)).results.find(
             (artworkType: IArtworkType) => {
@@ -40,8 +39,8 @@ export class ArtworkTypesService extends GlobalService {
             }
         )).pipe(
             map((artworkType: IArtworkType) => {
-                artworkType.name = artworkType["name_" + local];
 
+                InternationalizationService.translateObject(artworkType, ["name"]);
                 return artworkType;
             })
         );

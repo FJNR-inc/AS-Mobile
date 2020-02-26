@@ -19,17 +19,18 @@ export class PartnersService extends GlobalService {
     }
 
     listSection(): Observable<any> {
-        const local = InternationalizationService.getLocale();
         const newPartnerTypesResponse: IResponseApi<IPartnerType> = JSON.parse(JSON.stringify(partnerTypes));
         newPartnerTypesResponse.results = JSON.parse(JSON.stringify(partnerTypes)).results.map(
             (partnerType: IPartnerType) => {
-                partnerType.name = partnerType["name_" + local];
+
+                InternationalizationService.translateObject(partnerType,
+                    ["name"]);
 
                 partnerType.partner_set = partnerType.partner_set.map(
                     (partner: IPartner) => {
-                        partner.name = partner["name_" + local];
-                        partner.link = partner["link_" + local];
-                        partner.description = partner["description_" + local];
+
+                        InternationalizationService.translateObject(partner,
+                            ["name", "link", "description"]);
 
                         return partner;
                     }

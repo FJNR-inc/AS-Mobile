@@ -18,8 +18,6 @@
 <ScrollView class="minister-page">
     <StackLayout class="minister-page__body">
         <StackLayout class="minister-page__body__text card">
-            <Image *ngFor="let logo of LOGOS" width="45%" [src]="logo.url" class="minister-page__body__logo"></Image>
-
             <StackLayout class="minister-page__body__text__section">
                 <TitleComponent text="Art Souterrain se démarque par l’originalité de sa démarche : rendre accessible l’art au plus grand nombre, à l’extérieur des institutions muséales traditionnelles."
                                 type="3"></TitleComponent>
@@ -39,10 +37,8 @@
 
                 <TitleComponent [text]="author.title"
                                 type="3"></TitleComponent>
-
-                <Image [src]="author.avatar"
-                       class="minister-page__body__text__author__avatar"></Image>
             </StackLayout>
+            <Image *ngFor="let logo of LOGOS" width="45%" [src]="logo.url" class="minister-page__body__text__logo"></Image>
         </StackLayout>
     </StackLayout>
 </ScrollView>

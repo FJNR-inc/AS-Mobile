@@ -12,6 +12,8 @@
     &__artwork {
       margin-bottom: 2;
       height: 200;
+      background-size: cover;
+      background-position: center;
 
       &__description {
         vertical-align: bottom;

@@ -30,7 +30,7 @@
     <ListView [items]="artworks" *ngIf="artworks.length > 1"
               [ngClass]="{'artworks-page__list--dialogOpen': this.dialogShown}">
         <ng-template let-item="item">
-            <GridLayout class="artworks-page__list__artwork" backgroundPosition="center center" backgroundSize="cover" [style.background]="'url(~/assets/data/' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
+            <GridLayout class="artworks-page__list__artwork"  [style.background]="'url(~/assets/data/' + item.picture + ')'" [nsRouterLink]="['/artworks/artwork', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="artworks-page__list__artwork__description">
                     <Label row="1" col="0" colSpan="2" [text]="item.name" class="artworks-page__list__artwork__description__title"></Label>
                     <Label row="2" col="0" [text]="item.artist.full_name" class="artworks-page__list__artwork__description__author"></Label>

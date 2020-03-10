@@ -25,12 +25,12 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                         <Label class="p-r-10" col="1" text=" {{ 'nav.artworks' | translate }}"></Label>
                     </GridLayout>
 
-                    <!--
+
                     <GridLayout columns="auto, *" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/events')" (tap)="onNavItemTap('/events')">
                         <Label col="0" text="&#xf0a1;" class="fas"></Label>
                         <Label col="1" text=" {{ 'nav.events' | translate }}" class="p-r-10"></Label>
                     </GridLayout>
-                    -->
+
 
                     <GridLayout (tap)="onNavItemTap('/partners')" [class.selected]="isComponentSelected('/partners')"
                                 class="sidedrawer-list-item"

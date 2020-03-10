@@ -107,7 +107,7 @@ export class ArtworkComponent implements OnInit {
             this.emailVerified = true;
 
             if (this.assessments.length === 1) {
-                this.router.navigate(["/map/quiz/" + this.assessments[0].id]);
+                this.router.navigate(["/quiz/" + this.assessments[0].id]);
             }
         }
     }

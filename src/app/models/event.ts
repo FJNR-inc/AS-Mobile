@@ -1,26 +1,40 @@
-import BaseModel from "./baseModel";
-import { Place } from "~/app/models/place";
-import { EventType } from "~/app/models/eventType";
+import { IPlace, Place } from "~/app/models/place";
+import { EventType, IEventType } from "~/app/models/eventType";
 
-export class Event extends BaseModel {
+export interface IEvent {
     id: number;
     name: string;
     description: string;
+    description_fr: string;
+    description_en: string;
+    picture: string;
+    link: string;
+    place: IPlace;
+    event_type: IEventType;
+    date: string;
+}
+
+export class Event {
+    id: number;
+    name: string;
+    description: string;
+    description_fr: string;
+    description_en: string;
     picture: string;
     link: string;
     place: Place;
-    eventType: EventType;
+    event_type: EventType;
     date: string;
 
-    constructor(data: Object = {}) {
-        super(data);
-        if (data) {
-            if (data.hasOwnProperty("event_type")) {
-                this.eventType = new EventType(data["event_type"]);
-            }
-            if (data.hasOwnProperty("place")) {
-                this.place = new Place(data["place"]);
-            }
+    constructor(data: IEvent) {
+        Object.assign(this, data);
+
+        if (data.place && typeof data.place !== "string") {
+            this.place = new Place(data.place);
+        }
+
+        if (data.event_type && typeof data.event_type !== "string") {
+            this.event_type = new EventType(data.event_type);
         }
     }
 }

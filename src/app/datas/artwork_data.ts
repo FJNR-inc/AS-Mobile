@@ -3,9 +3,9 @@ import { IArtwork } from "~/app/models/artwork";
 
 export const artworks: IResponseApi<IArtwork> = {
     count: 52, next: null, previous: null, results: [{
-        id: 443,
+        id: 651,
         artist: {
-            id: 709,
+            id: 905,
             picture: "ID_Artiste-1.jpg",
             first_name: "Corbel",
             last_name: "Daniel",
@@ -17,13 +17,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Having grown up in Abitibi, Daniel Corbeil lives and works in Montreal. He has a Bachelor of Fine Arts degree from the Université du Québec en Abitibi-Témiscamingue as well as a Master of Fine Arts degree from the Université du Québec à Montréal. He has been teaching visual arts at the Cégep du Vieux-Montréal since 1999. His work has been regularly shown across Quebec, Canada and internationally. His pieces are collected by both public institutions and private individuals. Daniel Corbeil has also realized several public artworks."
         },
         place: {
-            id: 163,
+            id: 215,
             plan: "A_Guy_Favreau.jpg",
             name: "Complexe Guy-Favreau",
             name_fr: "Complexe Guy-Favreau",
             name_en: "Guy-Favreau Complex"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "A1.jpg",
         picture: "ID_Oeuvre-1.jpg",
         name: "Module de Survie",
@@ -37,49 +37,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.506445",
         longitude: "-73.562362",
         creation_year: "",
-        qr_code_token: "00eda53e-ce05-4375-bed7-3b96e1031312",
+        qr_code_token: "0432eeb8-0358-4332-80a7-a5b3215236db",
         off_road: false
     }, {
-        id: 445,
+        id: 652,
         artist: {
-            id: 711,
-            picture: "ID_Artiste-3.jpg",
-            first_name: "Ratsi",
-            last_name: "Olivier",
-            country: "Paris, France",
-            country_fr: "Paris, France",
-            country_en: "Paris, France",
-            bio: "Olivier Ratsi est un artiste visuel français basé à Paris. \r\nSe basant sur l’expérience de la réalité et de ses représentations ainsi que sur la perception de l’espace, il conçoit des œuvres qui amènent le spectateur à se questionner sur sa propre interprétation du réel. \r\nDurant le processus de création, Olivier Ratsi met en œuvre des dispositifs de déconstruction des repères spatio-temporels en s’appuyant sur la technique de l’anamorphose qu’il développe au cours de ses recherches. \r\nOpérant une cassure dans la réalité objective, ses créations ne se veulent pas tant un déclencheur d’émotions ou un moyen de perturber les sens qu’un catalyseur de points de vue, de références culturelles et psychologiques. Ainsi, le spectateur n’est nullement privé de sa capacité subjective de reconstruction/reconstitution de la réalité et est invité à prendre position afin de vivre l’œuvre en fonction de son propre ressenti. \r\nOlivier Ratsi est connu comme l’un des cofondateurs et un ancien membre du collectif d’artistes AntiVJ. Travaillant maintenant comme artiste indépendant, il a présenté ses œuvres lors d’expositions individuelles et collectives à travers le monde.",
-            bio_fr: "Olivier Ratsi est un artiste visuel français basé à Paris. \r\nSe basant sur l’expérience de la réalité et de ses représentations ainsi que sur la perception de l’espace, il conçoit des œuvres qui amènent le spectateur à se questionner sur sa propre interprétation du réel. \r\nDurant le processus de création, Olivier Ratsi met en œuvre des dispositifs de déconstruction des repères spatio-temporels en s’appuyant sur la technique de l’anamorphose qu’il développe au cours de ses recherches. \r\nOpérant une cassure dans la réalité objective, ses créations ne se veulent pas tant un déclencheur d’émotions ou un moyen de perturber les sens qu’un catalyseur de points de vue, de références culturelles et psychologiques. Ainsi, le spectateur n’est nullement privé de sa capacité subjective de reconstruction/reconstitution de la réalité et est invité à prendre position afin de vivre l’œuvre en fonction de son propre ressenti. \r\nOlivier Ratsi est connu comme l’un des cofondateurs et un ancien membre du collectif d’artistes AntiVJ. Travaillant maintenant comme artiste indépendant, il a présenté ses œuvres lors d’expositions individuelles et collectives à travers le monde.",
-            bio_en: "Olivier Ratsi is a French visual artist based in Paris.\r\nFocusing on the experience of reality and its representations, as well as the perception of space, he conceives works that encourage the viewers to question their own interpretation of what is real.\r\nAs part of his work process, Ratsi creates systems that deconstruct our spatio-temporal reference points, often using the technique of anamorphosis, developed during his research.\r\nMaking a break with objective reality, Ratsi’s works are not specifically aimed to unleash emotions or to perturb the senses, but rather to work as a catalyst for different points of view. As such, the viewer is not deprived of his own subjective capacity to reconstruct/reconstitute reality. Instead, he is invited to make up his own mind and to experience the works through his own personal reactions.\r\nRatsi is known as one of the co-founders and former member of the artist collective AntiVJ. Now working as an independent artist, he has had solo and group exhibitions around the world. His work has been exhibited in museums and international biennales."
-        },
-        place: {
-            id: 163,
-            plan: "A_Guy_Favreau.jpg",
-            name: "Complexe Guy-Favreau",
-            name_fr: "Complexe Guy-Favreau",
-            name_en: "Guy-Favreau Complex"
-        },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: "A3.jpg",
-        picture: "ID_Oeuvre-3.jpg",
-        name: "Anarchitecture",
-        name_fr: "Anarchitecture",
-        name_en: "Anarchitecture",
-        description: "Le projet photographique Anarchitecture déconstruit notre environnement urbain quotidien pour en offrir une nouvelle réalité. Par son travail de fragmentation de l’image et de mise en opposition d’éléments, Ratsi opère une ou plusieurs remodélisation du paysage par le traitement numérique de clichés.\r\nCe projet considère la réalité objective, l’espace et la matière comme des notions d’information intangibles.\r\nPar le biais de la décomposition photographique, Ratsi crée une cassure dans cette réalité objective (celle des grands ensembles urbains), altérant notre perception du réel. Ces architectures du quotidien deviennent à la fois étranges et familières, proches et lointaines.\r\nEn interrogeant l’individu sur sa capacité à reconstruire ce que l’artiste a morcelé, Olivier Ratsi provoque une forme d’interaction entre l’œuvre et le spectateur.",
-        description_fr: "Le projet photographique Anarchitecture déconstruit notre environnement urbain quotidien pour en offrir une nouvelle réalité. Par son travail de fragmentation de l’image et de mise en opposition d’éléments, Ratsi opère une ou plusieurs remodélisation du paysage par le traitement numérique de clichés.\r\nCe projet considère la réalité objective, l’espace et la matière comme des notions d’information intangibles.\r\nPar le biais de la décomposition photographique, Ratsi crée une cassure dans cette réalité objective (celle des grands ensembles urbains), altérant notre perception du réel. Ces architectures du quotidien deviennent à la fois étranges et familières, proches et lointaines.\r\nEn interrogeant l’individu sur sa capacité à reconstruire ce que l’artiste a morcelé, Olivier Ratsi provoque une forme d’interaction entre l’œuvre et le spectateur.",
-        description_en: "The project Anarchitecture breaks down and offers a new version of reality for our day-to-day urban environment.\r\nUsing fragmented images and contrasting parts, Ratsi remakes our urban landscape through digitally processed photos.\r\nThis project considers objective reality, space and material as intangible concepts of information. With the help of photographic decomposition, Ratsi has created a split in this objective reality (that of large urban settings), thereby altering our perception of what is real. These architectures of daily life seem both strange and familiar, near and yet far away.\r\nBy forcing people to question their ability to piece together what the artist has split apart, Ratsi provokes interactivity between the work of art and spectators, based on a mental exercise in visual reconstruction.",
-        index_itinerary: 3,
-        level: "",
-        latitude: "45.506308",
-        longitude: "-73.562337",
-        creation_year: "",
-        qr_code_token: "ec3dde91-e673-41b6-b346-d1abf0f75796",
-        off_road: false
-    }, {
-        id: 444,
-        artist: {
-            id: 710,
+            id: 906,
             picture: "ID_Artiste-2.jpg",
             first_name: "Couture ",
             last_name: "Francois",
@@ -91,13 +54,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "François Couture was born in Montreal. He began his fine-art studies in Newfoundland before completing them at Concordia University. His practice encompasses sculpture, electronic art, performance and painting. His artworks go against well-defined narratives; he is trying to create what he cannot express in words. His practice centres on the exploration of the obligation of functionality within our society. He is likewise interested in themes of social inequality and the loss of the sacred in Western cultures."
         },
         place: {
-            id: 163,
+            id: 215,
             plan: "A_Guy_Favreau.jpg",
             name: "Complexe Guy-Favreau",
             name_fr: "Complexe Guy-Favreau",
             name_en: "Guy-Favreau Complex"
         },
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
         plan: "A2.jpg",
         picture: "ID_Oeuvre-2.jpg",
         name: "Looking For Hope",
@@ -111,86 +74,49 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50653563",
         longitude: "-73.56266785",
         creation_year: "",
-        qr_code_token: "06eef400-977b-4781-a411-4805321de063",
+        qr_code_token: "6a58d3ef-8f18-420d-a670-7bd3351566e1",
         off_road: false
     }, {
-        id: 478,
+        id: 653,
         artist: {
-            id: 747,
-            picture: "ID_Artiste-39.jpg",
-            first_name: "Durocher",
-            last_name: "Micheline",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "Micheline Durocher est une artiste montréalaise qui travaille de façon nomade afin de récolter des matériaux. Elle a exposé son travail et projeté ses vidéos à l'échelle nationale et internationale.\r\nSes vidéos ont été nommées pour plusieurs prix :\r\n● en 2011, au Prix du très court-métrage Georges-Laoun-Opticien-Oboro, à Montréal;\r\n● en 2012, au Festival des cinémas différents et expérimentaux de Paris;\r\n● en 2010, au 12e International Film Festival of Patras city, en Grèce;\r\n● en 2007, au Sydney Underground Film Festival, en Australie.\r\nElle a également réalisé de nombreuses résidences d'artiste.\r\nSes œuvres font notamment partie des collections du Conseil des arts du Canada, de la Bibliothèque nationale du Canada ainsi que du Musée national des beaux-arts du Québec.",
-            bio_fr: "Micheline Durocher est une artiste montréalaise qui travaille de façon nomade afin de récolter des matériaux. Elle a exposé son travail et projeté ses vidéos à l'échelle nationale et internationale.\r\nSes vidéos ont été nommées pour plusieurs prix :\r\n● en 2011, au Prix du très court-métrage Georges-Laoun-Opticien-Oboro, à Montréal;\r\n● en 2012, au Festival des cinémas différents et expérimentaux de Paris;\r\n● en 2010, au 12e International Film Festival of Patras city, en Grèce;\r\n● en 2007, au Sydney Underground Film Festival, en Australie.\r\nElle a également réalisé de nombreuses résidences d'artiste.\r\nSes œuvres font notamment partie des collections du Conseil des arts du Canada, de la Bibliothèque nationale du Canada ainsi que du Musée national des beaux-arts du Québec.",
-            bio_en: "Micheline Durocher is a Montreal-based artist working nomadically in order to collect her materials. She has exhibited her work and shown her videos both nationally and internationally.\r\nHer films have been shortlisted for several awards:\r\n● In 2011, for the Georges-Laoun-Opticien-Oboro Super Short Film Prize (Montreal)\r\n● In 2012, at the Festival des cinémas différents et expérimentaux de Paris\r\n● In 2010, at the 12th International Film Festival of Patras City (Greece)\r\n● In 2007, at the Sydney Underground Film Festival (Australia)\r\nShe has also participated in numerous artist residencies.\r\nHer artworks have been collected by the Canada Council for the Arts, the National Library of Canada and the Musée national des beaux-arts du Québec."
-        },
-        place: {
-            id: 160,
-            plan: "F_Cite_Int.jpg",
-            name: "Cité Internationale",
-            name_fr: "Cité Internationale",
-            name_en: "Cité Internationale"
-        },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: "F2.jpg",
-        picture: "ID_Oeuvre-41.jpg",
-        name: "Surplus",
-        name_fr: "Surplus",
-        name_en: "Surplus",
-        description: "Dans l'imaginaire occidental, le mot « Surplus » fait surgir des images d'entrepôts remplis de biens excédentaires d’une valeur incroyable à des prix extrêmement bas. Ces images évoquent également des idées de biens obsolètes, d'excès budgétaires, de mondialisation et de succès. Comment ces idées façonnent-elles notre façon de nous connecter au monde qui nous entoure?\r\nEntre performances et photographies, cette série de tableaux propose une nouvelle perspective sur notre rapport aux objets et à la matérialité, au désir et à la consommation de masse.\r\nLes objets de luxe ont été remplacés par des objets banals, voir laids, qui enterrent le corps (vivant) au milieu d'un assemblage de chaises, de canapés, de sacs en plastique, de vieilles technologies, de lampes (inertes).\r\nCes photographies nous interrogent : comment s'identifier et s'attacher aux biens qui nous entourent, sans savoir parfois où nous finissons et où ils commencent? Quelles sont les relations entre les corps et les choses? Comment les êtres humains et l'esprit des choses se chevauchent-ils?",
-        description_fr: "Dans l'imaginaire occidental, le mot « Surplus » fait surgir des images d'entrepôts remplis de biens excédentaires d’une valeur incroyable à des prix extrêmement bas. Ces images évoquent également des idées de biens obsolètes, d'excès budgétaires, de mondialisation et de succès. Comment ces idées façonnent-elles notre façon de nous connecter au monde qui nous entoure?\r\nEntre performances et photographies, cette série de tableaux propose une nouvelle perspective sur notre rapport aux objets et à la matérialité, au désir et à la consommation de masse.\r\nLes objets de luxe ont été remplacés par des objets banals, voir laids, qui enterrent le corps (vivant) au milieu d'un assemblage de chaises, de canapés, de sacs en plastique, de vieilles technologies, de lampes (inertes).\r\nCes photographies nous interrogent : comment s'identifier et s'attacher aux biens qui nous entourent, sans savoir parfois où nous finissons et où ils commencent? Quelles sont les relations entre les corps et les choses? Comment les êtres humains et l'esprit des choses se chevauchent-ils?",
-        description_en: "In the Western mind, the word “surplus” evokes images of warehouses overflowing with incredibly valuable goods at knockdown prices. These images are connected with such notions as obsolescence, overspending, globalization and success. How do these concepts shape the way we related to the world around us?\r\nHalfway between performance and photography, this series of pictures offers a new perspective on our relationship with objects and materiality, with desire and mass consumption.\r\nThe luxury goods have been replaced with everyday — even ugly — objects that entomb the (living) body surrounded by a massing of chairs, sofas, plastic bags, old tech and (inanimate) lamps.\r\nThese photographs invite us to reflect... How can we identify and connect with the things around us when we sometimes don’t even know where we end and they begin? How do our bodies and objects relate? How do human beings and the souls of things overlap?",
-        index_itinerary: 41,
-        level: "-1",
-        latitude: "",
-        longitude: "",
-        creation_year: "",
-        qr_code_token: "f80c6861-48c0-462a-9d2a-27852a760c9d",
-        off_road: false
-    }, {
-        id: 479,
-        artist: {
-            id: 746,
-            picture: "ID_Artiste-38.jpg",
-            first_name: "Toudeur",
-            last_name: "Anaïs",
+            id: 907,
+            picture: "ID_Artiste-3.jpg",
+            first_name: "Ratsi",
+            last_name: "Olivier",
             country: "Paris, France",
             country_fr: "Paris, France",
             country_en: "Paris, France",
-            bio: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
-            bio_fr: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
-            bio_en: "Anaïs Tondeur is a French visual artist based in Paris. She creates speculative narratives and investigations through which she experiments other conditions of being to the world and other modes of cohabitation with the other-than-humans: plants, rocks, air, water. Here, she searches for a renewal of our modes of perception, and explores, beyond the separation of nature and culture, ways to disrupt the grand narrative of the Anthropocene.\r\nCollaborating with geologists, oceanographers, physicists, philosophers, and anthropologists, her protocols of research took her in expeditions on the traces of particles of black carbon with scientists, through Chernobyl Exclusion Zone, across the Atlantic Ocean or along major frontiers between tectonic plates.\r\nShe has presented her work in institutions such as Centre Pompidou and Spencer Museum of Modern Art."
+            bio: "Olivier Ratsi est un artiste visuel français basé à Paris. \r\nSe basant sur l’expérience de la réalité et de ses représentations ainsi que sur la perception de l’espace, il conçoit des œuvres qui amènent le spectateur à se questionner sur sa propre interprétation du réel. \r\nDurant le processus de création, Olivier Ratsi met en œuvre des dispositifs de déconstruction des repères spatio-temporels en s’appuyant sur la technique de l’anamorphose qu’il développe au cours de ses recherches. \r\nOpérant une cassure dans la réalité objective, ses créations ne se veulent pas tant un déclencheur d’émotions ou un moyen de perturber les sens qu’un catalyseur de points de vue, de références culturelles et psychologiques. Ainsi, le spectateur n’est nullement privé de sa capacité subjective de reconstruction/reconstitution de la réalité et est invité à prendre position afin de vivre l’œuvre en fonction de son propre ressenti. \r\nOlivier Ratsi est connu comme l’un des cofondateurs et un ancien membre du collectif d’artistes AntiVJ. Travaillant maintenant comme artiste indépendant, il a présenté ses œuvres lors d’expositions individuelles et collectives à travers le monde.",
+            bio_fr: "Olivier Ratsi est un artiste visuel français basé à Paris. \r\nSe basant sur l’expérience de la réalité et de ses représentations ainsi que sur la perception de l’espace, il conçoit des œuvres qui amènent le spectateur à se questionner sur sa propre interprétation du réel. \r\nDurant le processus de création, Olivier Ratsi met en œuvre des dispositifs de déconstruction des repères spatio-temporels en s’appuyant sur la technique de l’anamorphose qu’il développe au cours de ses recherches. \r\nOpérant une cassure dans la réalité objective, ses créations ne se veulent pas tant un déclencheur d’émotions ou un moyen de perturber les sens qu’un catalyseur de points de vue, de références culturelles et psychologiques. Ainsi, le spectateur n’est nullement privé de sa capacité subjective de reconstruction/reconstitution de la réalité et est invité à prendre position afin de vivre l’œuvre en fonction de son propre ressenti. \r\nOlivier Ratsi est connu comme l’un des cofondateurs et un ancien membre du collectif d’artistes AntiVJ. Travaillant maintenant comme artiste indépendant, il a présenté ses œuvres lors d’expositions individuelles et collectives à travers le monde.",
+            bio_en: "Olivier Ratsi is a French visual artist based in Paris.\r\nFocusing on the experience of reality and its representations, as well as the perception of space, he conceives works that encourage the viewers to question their own interpretation of what is real.\r\nAs part of his work process, Ratsi creates systems that deconstruct our spatio-temporal reference points, often using the technique of anamorphosis, developed during his research.\r\nMaking a break with objective reality, Ratsi’s works are not specifically aimed to unleash emotions or to perturb the senses, but rather to work as a catalyst for different points of view. As such, the viewer is not deprived of his own subjective capacity to reconstruct/reconstitute reality. Instead, he is invited to make up his own mind and to experience the works through his own personal reactions.\r\nRatsi is known as one of the co-founders and former member of the artist collective AntiVJ. Now working as an independent artist, he has had solo and group exhibitions around the world. His work has been exhibited in museums and international biennales."
         },
         place: {
-            id: 160,
-            plan: "F_Cite_Int.jpg",
-            name: "Cité Internationale",
-            name_fr: "Cité Internationale",
-            name_en: "Cité Internationale"
+            id: 215,
+            plan: "A_Guy_Favreau.jpg",
+            name: "Complexe Guy-Favreau",
+            name_fr: "Complexe Guy-Favreau",
+            name_en: "Guy-Favreau Complex"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: "F3.jpg",
-        picture: "ID_Oeuvre-39.jpg",
-        name: "Tchernobyl Herbarium",
-        name_fr: "Tchernobyl Herbarium",
-        name_en: "Tchernobyl Herbarium",
-        description: "Le samedi 26 avril 1986, à 1 h 23 min 58 s, heure locale, un test technique dans la centrale nucléaire de Tchernobyl prend une tournure désastreuse. Le cœur du réacteur n ° 4 explose, émettant un panache de retombées radioactives dans l'atmosphère. Ce projet est composé de 30 rayogrammes, créés par l'empreinte directe de spécimens d'un herbier radioactif sur des plaques photosensibles. Ces plantes ont poussées dans les sols de la zone d'exclusion de Tchernobyl, étudiées par l'équipe du bio-généticien Martin Hajduch qui analyse les impacts de la radioactivité sur la flore.\r\nLes empreintes des spécimens sont capturées par un processus de photogramme - une technique qui rend visible l'effet de l'exposition extrême à lumière que la bombe atomique émet lors d’une explosion –.\r\nAvec cette série d'empreintes végétales, l'artiste interroge les cicatrices d'une tragédie, les traces matérielles d'un désastre invisible, des images capturées à la limite du monde visible.",
-        description_fr: "Le samedi 26 avril 1986, à 1 h 23 min 58 s, heure locale, un test technique dans la centrale nucléaire de Tchernobyl prend une tournure désastreuse. Le cœur du réacteur n ° 4 explose, émettant un panache de retombées radioactives dans l'atmosphère. Ce projet est composé de 30 rayogrammes, créés par l'empreinte directe de spécimens d'un herbier radioactif sur des plaques photosensibles. Ces plantes ont poussées dans les sols de la zone d'exclusion de Tchernobyl, étudiées par l'équipe du bio-généticien Martin Hajduch qui analyse les impacts de la radioactivité sur la flore.\r\nLes empreintes des spécimens sont capturées par un processus de photogramme - une technique qui rend visible l'effet de l'exposition extrême à lumière que la bombe atomique émet lors d’une explosion –.\r\nAvec cette série d'empreintes végétales, l'artiste interroge les cicatrices d'une tragédie, les traces matérielles d'un désastre invisible, des images capturées à la limite du monde visible.",
-        description_en: "On Saturday, April 26th, 1986, at 1:23:58 a.m. local time, a test in Chernobyl nuclear plant takes a disastrous turn. The core of reactor No.4 explodes, emitting a plume of radioactive fallout into the atmosphere which drifts across the then Western Soviet Union and Europe.\r\nThis project is composed of 30 rayograms, created by the direct imprint of specimens from a radioactive herbarium on photosensitive plates. These plants grew in the soils of Chernobyl Exclusion Zone, studied by Martin Hajduch’s team who analyzes the impacts of radioactivity on the flora.\r\nThe photogram technique uses light as a source to record and archives trauma on the species just as the atomic explosions have illuminated and scarred the mind. With this series of plant imprints, the artist aims to interrogate the scars of a tragedy, material traces of an invisible disaster, these images are captured on the edge of the visible.",
-        index_itinerary: 39,
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: "A3.jpg",
+        picture: "ID_Oeuvre-3.jpg",
+        name: "Anarchitecture",
+        name_fr: "Anarchitecture",
+        name_en: "Anarchitecture",
+        description: "Le projet photographique Anarchitecture déconstruit notre environnement urbain quotidien pour en offrir une nouvelle réalité. Par son travail de fragmentation de l’image et de mise en opposition d’éléments, Ratsi opère une ou plusieurs remodélisation du paysage par le traitement numérique de clichés.\r\nCe projet considère la réalité objective, l’espace et la matière comme des notions d’information intangibles.\r\nPar le biais de la décomposition photographique, Ratsi crée une cassure dans cette réalité objective (celle des grands ensembles urbains), altérant notre perception du réel. Ces architectures du quotidien deviennent à la fois étranges et familières, proches et lointaines.\r\nEn interrogeant l’individu sur sa capacité à reconstruire ce que l’artiste a morcelé, Olivier Ratsi provoque une forme d’interaction entre l’œuvre et le spectateur.",
+        description_fr: "Le projet photographique Anarchitecture déconstruit notre environnement urbain quotidien pour en offrir une nouvelle réalité. Par son travail de fragmentation de l’image et de mise en opposition d’éléments, Ratsi opère une ou plusieurs remodélisation du paysage par le traitement numérique de clichés.\r\nCe projet considère la réalité objective, l’espace et la matière comme des notions d’information intangibles.\r\nPar le biais de la décomposition photographique, Ratsi crée une cassure dans cette réalité objective (celle des grands ensembles urbains), altérant notre perception du réel. Ces architectures du quotidien deviennent à la fois étranges et familières, proches et lointaines.\r\nEn interrogeant l’individu sur sa capacité à reconstruire ce que l’artiste a morcelé, Olivier Ratsi provoque une forme d’interaction entre l’œuvre et le spectateur.",
+        description_en: "The project Anarchitecture breaks down and offers a new version of reality for our day-to-day urban environment.\r\nUsing fragmented images and contrasting parts, Ratsi remakes our urban landscape through digitally processed photos.\r\nThis project considers objective reality, space and material as intangible concepts of information. With the help of photographic decomposition, Ratsi has created a split in this objective reality (that of large urban settings), thereby altering our perception of what is real. These architectures of daily life seem both strange and familiar, near and yet far away.\r\nBy forcing people to question their ability to piece together what the artist has split apart, Ratsi provokes interactivity between the work of art and spectators, based on a mental exercise in visual reconstruction.",
+        index_itinerary: 3,
         level: "",
-        latitude: "45.50138483",
-        longitude: "-73.56268609",
-        creation_year: "2016-2018",
-        qr_code_token: "c73de296-99d1-4947-a6ca-ff4e0b06d253",
+        latitude: "45.506308",
+        longitude: "-73.562337",
+        creation_year: "",
+        qr_code_token: "2574415a-ccae-4083-afcc-aaf876430f92",
         off_road: false
     }, {
-        id: 446,
+        id: 654,
         artist: {
-            id: 752,
+            id: 948,
             picture: "ID_Artiste-44.jpg",
             first_name: "Dörfelt",
             last_name: "Matthias",
@@ -202,14 +128,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Matthias Dörfelt is a German visual artist based in Los Angeles.\r\nHe mainly works in software producing artifacts ranging from drawings, prints, animation, videos and interactive installations to robotics. In his works he often trades control in favour of surprise because he strongly believes in computation as an expressive, playful and humorous tool. Matthias will continue to explore these aspects by infusing technology with flaws, naivety and weirdness. He believes in a media arts practice that favours spontaneity over streamlining and hopes that his works contribute to shaping our relationship to machines in a similar way. Matthias studied at the Muthesius Kunsthochschule in Kiel and holds a Master of Fine Arts from the University of California in Los Angeles."
         },
         place: {
-            id: 163,
+            id: 215,
             plan: "A_Guy_Favreau.jpg",
             name: "Complexe Guy-Favreau",
             name_fr: "Complexe Guy-Favreau",
             name_en: "Guy-Favreau Complex"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -227,12 +153,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.506324",
         longitude: "-73.561979",
         creation_year: "2019",
-        qr_code_token: "0dee1ce4-ff1d-43ec-b7c1-ee8e5d23b35b",
+        qr_code_token: "86b3f478-2e63-4c77-b450-05b4ad7de575",
         off_road: false
     }, {
-        id: 447,
+        id: 655,
         artist: {
-            id: 714,
+            id: 910,
             picture: "ID_Artiste-6.jpg",
             first_name: "Ader",
             last_name: "Jean-Jacques",
@@ -244,13 +170,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in the city of Toulouse, France, Jean-Jacques Ader is both a photographer and an independent author since 2002. A graduate of the École nationale supérieure de photographie d’Arles as well as of the isdaT of Toulouse, he also completed studies at the École professionnelle d’audiovisuel de Toulouse (ETPA Toulouse) in addition to a CAP in photography. Recipient of a DRAC scholarship in 2012 and in 2017, he was also awarded the AFDAS-ENSP prize at Arles in 2018.Today, he is active in the cultural scene through his participation in the designing and mounting of exhibitions and photo-books, all while continuing his work as a writer and columnist for the magazine L’Œil de la photographie and Culture31.com."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "B1.jpg",
         picture: "ID_Oeuvre-6.jpg",
         name: "Zones Naturelles",
@@ -264,86 +190,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.506234",
         longitude: "-73.561666",
         creation_year: "",
-        qr_code_token: "1abd3ef5-caf9-4419-9972-825dc1d6c06b",
+        qr_code_token: "3ee6640c-987b-4a7a-af18-beb09ef713f7",
         off_road: false
     }, {
-        id: 481,
+        id: 656,
         artist: {
-            id: 741,
-            picture: "ID_Artiste-33.jpg",
-            first_name: "Sirois",
-            last_name: "Dominique",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "Dominique Sirois vit et travaille à Montréal. Détentrice d’une maîtrise en arts visuels de l’Université du Québec à Montréal, elle y poursuit un doctorat. Ses installations ont été présentées au centre Clark, à la galerie Division et à Latitude 53 au Canada. Avec Grégory Chatonsky, elle a également exposé au Museum of Contemporary Art de Taipei, au Centre d’art d’Enghien-les-Bains, au Unicorn Center for Arts à Beijing, au Mois de la Photo de Montréal, à iMAL, Center for digital cultures and technology de Bruxelles et plus récemment à Diagonale, Montréal. Elle a aussi obtenu plusieurs résidences à l’étranger, notamment à Glasgow, à Paris et à Barcelone.",
-            bio_fr: "Dominique Sirois vit et travaille à Montréal. Détentrice d’une maîtrise en arts visuels de l’Université du Québec à Montréal, elle y poursuit un doctorat. Ses installations ont été présentées au centre Clark, à la galerie Division et à Latitude 53 au Canada. Avec Grégory Chatonsky, elle a également exposé au Museum of Contemporary Art de Taipei, au Centre d’art d’Enghien-les-Bains, au Unicorn Center for Arts à Beijing, au Mois de la Photo de Montréal, à iMAL, Center for digital cultures and technology de Bruxelles et plus récemment à Diagonale, Montréal. Elle a aussi obtenu plusieurs résidences à l’étranger, notamment à Glasgow, à Paris et à Barcelone.",
-            bio_en: "Dominique Sirois lives and works in Montreal. Holding a Master of Fine Arts from the Université du Québec à Montréal, she is currently completing a doctorate. Her installation pieces have been shown in Canada at the Centre Clark, Galerie Division and Latitude 53. In partnership with Grégory Chatonsky, she has also exhibited at the Museum of Contemporary Art of Taipei, at the Centre d’art d’Enghien-les-Bains, at the Unicorn Center for Arts in Beijing, during the Mois de la Photo de Montréal, at iMAL, the Center for digital cultures and technology in Brussels, and more recently at Diagonale (Montreal). She has also participated in several residencies abroad, notably in Glasgow, Paris and Barcelona."
-        },
-        place: {
-            id: 160,
-            plan: "F_Cite_Int.jpg",
-            name: "Cité Internationale",
-            name_fr: "Cité Internationale",
-            name_en: "Cité Internationale"
-        },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
-        plan: "F5.jpg",
-        picture: "ID_Oeuvre-34.jpg",
-        name: "Perfect Skins",
-        name_fr: "Perfect Skins",
-        name_en: "Perfect Skins",
-        description: "Sous forme d’assemblages sculpturaux composés de céramiques, de moulages, d’images et d’objets trouvés, les installations de Dominique Sirois allient un savoir-faire artisanal à une approche critique de la technologie dans ses dimensions économiques, esthétiques, archéologiques et minéralogiques.\r\nL’actuelle présentation s’inscrit dans une recherche anticipant un éventuel passé du futur promis par la technologie, notamment celui des visages, des corps et des peaux dont les représentations explosent aujourd’hui dans les réseaux sociaux. Tout se passe comme si ces images pouvaient être assemblées en une sorte de cartographie d’un corps collectif, désirant et désiré. L’artiste s’intéresse d’ailleurs à cette part affective liée au désir, et adopte une approche analogue à celle de l’économie comportementale, ancrée dans une réflexion sur le rôle du regard désirant face aux possessions matérielles et pécuniaires.\r\nDans l’esprit des mementos mori ou des vanités, l’esthétique de la ruine sert ici également à réfléchir à la portée éphémère des objets et des images. Leur altération avec le temps constitue d’ailleurs un motif récurrent du travail de Sirois.",
-        description_fr: "Sous forme d’assemblages sculpturaux composés de céramiques, de moulages, d’images et d’objets trouvés, les installations de Dominique Sirois allient un savoir-faire artisanal à une approche critique de la technologie dans ses dimensions économiques, esthétiques, archéologiques et minéralogiques.\r\nL’actuelle présentation s’inscrit dans une recherche anticipant un éventuel passé du futur promis par la technologie, notamment celui des visages, des corps et des peaux dont les représentations explosent aujourd’hui dans les réseaux sociaux. Tout se passe comme si ces images pouvaient être assemblées en une sorte de cartographie d’un corps collectif, désirant et désiré. L’artiste s’intéresse d’ailleurs à cette part affective liée au désir, et adopte une approche analogue à celle de l’économie comportementale, ancrée dans une réflexion sur le rôle du regard désirant face aux possessions matérielles et pécuniaires.\r\nDans l’esprit des mementos mori ou des vanités, l’esthétique de la ruine sert ici également à réfléchir à la portée éphémère des objets et des images. Leur altération avec le temps constitue d’ailleurs un motif récurrent du travail de Sirois.",
-        description_en: "Consisting of sculptural arrangements of ceramics, castings, images and found objects, Dominique Sirois’ installations blend artisanal know-how with a critical approach to technology regarding its economic, esthetic, archeological and mineralogical dimensions.\r\nThis presentation involves investigating a prospective past of the future promised by technology, concerning most particularly the representations of faces, bodies and skins, which have today exploded on social media. Things are progressing as if these images could be compiled into some kind of map of a collective body, both seeker and sought. The artist is, moreover, interested in this emotional side of desire and adopts an approach analogous to behavioural economics, focusing on the place of the desiring gaze in relation to material possessions and wealth.\r\nIn the spirit of memento mori or vanitas, the esthetics of the ruin are equally used here as a means of reflecting on the fleeting nature of objects and images. The way they change over time is likewise a recurring motif in Sirois’s work.",
-        index_itinerary: 34,
-        level: "",
-        latitude: "45.50088326",
-        longitude: "-73.5631603",
-        creation_year: "2018",
-        qr_code_token: "e28779af-bc32-427b-b49d-c0b18b97ae28",
-        off_road: false
-    }, {
-        id: 480,
-        artist: {
-            id: 742,
-            picture: "ID_Artiste-34.jpg",
-            first_name: "Winants",
-            last_name: "Francois",
-            country: "Bruxelles, Belgique",
-            country_fr: "Bruxelles, Belgique",
-            country_en: "Brussels, Belgium",
-            bio: "François Winants est un artiste belge basé entre Spa et Bruxelles. Diplômé de La Cambre en dessin, il s’inscrit dans une recherche à travers l’espace, l’expérience et la rencontre. Les thématiques abordées: le climat et le relief, les mouvements d’air, les phénomènes atmosphériques et les processus de formation géologique.\r\nSes travaux se concentrent autour d’une recherche intuitive et documentée. Ils donnent lieu à la réalisation d’œuvres et de projets où le sujet est impliqué dans le dispositif. La pratique se situe dans une relation où le corps et les forces s’engagent. Elle est en constante mutation face aux rencontres et aux incertitudes.\r\nAu-delà des objectifs expérimentaux des projets, il y a au centre de la démarche une réflexion permanente entre le design et l’art, l’art et la science, l’acte de l’artiste et la machine, l’artisanat et l’industrie, l’analogique et le numérique.",
-            bio_fr: "François Winants est un artiste belge basé entre Spa et Bruxelles. Diplômé de La Cambre en dessin, il s’inscrit dans une recherche à travers l’espace, l’expérience et la rencontre. Les thématiques abordées: le climat et le relief, les mouvements d’air, les phénomènes atmosphériques et les processus de formation géologique.\r\nSes travaux se concentrent autour d’une recherche intuitive et documentée. Ils donnent lieu à la réalisation d’œuvres et de projets où le sujet est impliqué dans le dispositif. La pratique se situe dans une relation où le corps et les forces s’engagent. Elle est en constante mutation face aux rencontres et aux incertitudes.\r\nAu-delà des objectifs expérimentaux des projets, il y a au centre de la démarche une réflexion permanente entre le design et l’art, l’art et la science, l’acte de l’artiste et la machine, l’artisanat et l’industrie, l’analogique et le numérique.",
-            bio_en: "François Winants is a Belgian artist based between Spa and Brussels. A graduate of La Cambre in drawing, he is researching space and experience. His main topics are: climate and relief, air movements, atmospheric phenomena and geological formation processes.\r\nHis work focuses on intuitive and documented research. They give birth to works and projects where the subject is involved in the device. His practice is in a relationship between the body and the forces. It is constantly changing from encounters and uncertainties.\r\nAt the centre of his process is a permanent reflection between design and art, art and science, the act of the artist and the machine, craft and industry, analogue and digital."
-        },
-        place: {
-            id: 160,
-            plan: "F_Cite_Int.jpg",
-            name: "Cité Internationale",
-            name_fr: "Cité Internationale",
-            name_en: "Cité Internationale"
-        },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
-        plan: "F4.jpg",
-        picture: "ID_Oeuvre-35.jpg",
-        name: "Dessin des Cimes",
-        name_fr: "Dessin des Cimes",
-        name_en: "Dessin des Cimes",
-        description: "C’est après avoir développé plusieurs machines complexes avec des microcontrôleurs et contrôlées par Processing que François Winants est revenu à des dispositifs totalement analogiques en interaction directe avec leur environnement, et fais d’une grande économie de moyen. Les instruments sont conçus dans une optique où le design des instruments doit être basique et léger, robuste et réparable ; sans besoin d’énergie.\r\nLes Dessins des cimes sont réalisés par un instrument sur un plateau mobile situé à un mètre du sol et suspendu à la cime des arbres. L’instrument se lie aux mouvements spontanés de la forêt, saisissant ses respirations et le temps, devenant co-auteur du dessin.\r\nLes projets de dessins déployés dans des environnements sont nourris par une science qui perçoit la nature comme technicienne. Elle offre aujourd’hui les nouveaux seuils de perception sur une nature que nous aurions cru acquis et/ou nous faisant spectateurs d’un monde qui avance sans nous.",
-        description_fr: "C’est après avoir développé plusieurs machines complexes avec des microcontrôleurs et contrôlées par Processing que François Winants est revenu à des dispositifs totalement analogiques en interaction directe avec leur environnement, et fais d’une grande économie de moyen. Les instruments sont conçus dans une optique où le design des instruments doit être basique et léger, robuste et réparable ; sans besoin d’énergie.\r\nLes Dessins des cimes sont réalisés par un instrument sur un plateau mobile situé à un mètre du sol et suspendu à la cime des arbres. L’instrument se lie aux mouvements spontanés de la forêt, saisissant ses respirations et le temps, devenant co-auteur du dessin.\r\nLes projets de dessins déployés dans des environnements sont nourris par une science qui perçoit la nature comme technicienne. Elle offre aujourd’hui les nouveaux seuils de perception sur une nature que nous aurions cru acquis et/ou nous faisant spectateurs d’un monde qui avance sans nous.",
-        description_en: "It was after developing complex machines using microcontrollers and Processing that François went back to totally analogue devices interacting directly with the subject without any complex resources. The instruments are designed so that they are as basic and light as possible, robust and repairable, needing no energy of battery.\r\nDessins des cimes are achieved by a machine made out of a board and a pen suspended one meter above the ground, rigged to several treetops. The instrument is directly linked to the spontaneous movements of the forest, capturing its breaths and time passing by, becoming co-author of the drawing.\r\nThis drawing project is directly fuelled by its environment, nourished by a science that perceives nature as a technician. It offers a new perception of nature, revealing things we may not have seen. With these images, we become spectators of a world that is moving without us in the center of an uninhabited forest.",
-        index_itinerary: 35,
-        level: "",
-        latitude: "45.50113743",
-        longitude: "-73.56292427",
-        creation_year: "2019",
-        qr_code_token: "99397859-16b7-4573-a1c8-96d86cef6ff6",
-        off_road: false
-    }, {
-        id: 448,
-        artist: {
-            id: 722,
+            id: 918,
             picture: "ID_Artiste-14.jpg",
             first_name: "Le Chevalier",
             last_name: "Martin",
@@ -355,13 +207,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in May 1968, Martin Le Chevallier is an artist, filmmaker and sometimes curator. He lives and works in France. He has also exhibited in his own country and internationally.\r\nHis artworks are created using films, appropriations and contextual interventions.\r\nHe is particularly interested in the place of art in the public sphere."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "B10.jpg",
         picture: "ID_Oeuvre-14.jpg",
         name: "Reset",
@@ -375,74 +227,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50353394",
         longitude: "-73.56104028",
         creation_year: "2020",
-        qr_code_token: "eff211d7-21a3-4926-a9ff-ba458380c83f",
+        qr_code_token: "beee00e3-2e3e-4203-8a3c-4e5fa91dcd4d",
         off_road: false
     }, {
-        id: 486,
+        id: 657,
         artist: {
-            id: 748,
-            picture: null,
-            first_name: "Mercier ",
-            last_name: "Andréanne",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "Diplômée de l’Université du Québec à Montréal et détentrice d’un D.E.S.S en Arts, création et technologie réalisé à l’Université de Montréal, Andréanne Mercier investit plusieurs modes d’expression, oscillant entre la peinture, le jeu vidéo, la sculpture, l’installation, la modélisation 3D et l’animation. Depuis bientôt dix ans, elle participe à différents événements artistiques pour y exposer ses œuvres, tant sur la scène québécoise qu’à l’international, plus précisément au Japon, où elle a effectué deux résidences d’artiste.",
-            bio_fr: "Diplômée de l’Université du Québec à Montréal et détentrice d’un D.E.S.S en Arts, création et technologie réalisé à l’Université de Montréal, Andréanne Mercier investit plusieurs modes d’expression, oscillant entre la peinture, le jeu vidéo, la sculpture, l’installation, la modélisation 3D et l’animation. Depuis bientôt dix ans, elle participe à différents événements artistiques pour y exposer ses œuvres, tant sur la scène québécoise qu’à l’international, plus précisément au Japon, où elle a effectué deux résidences d’artiste.",
-            bio_en: "A graduate of the Université du Québec à Montréal and holder of a D.E.S.S diploma in Arts, Creation and Technology from the Université de Montréal, Andréanne Mercier explores several modes of expression, moving between painting, video games, sculpture, installation art, 3D models and animation. For close to 10 years now, she has been participating in various artistic events to exhibit her artworks, both in Quebec and internationally, most notably in Japan, where she completed two artist residencies."
-        },
-        place: {id: 164, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
-        plan: null,
-        picture: "A_decouvrir_sur_place.jpg",
-        name: "郷愁 / CITYLIFE",
-        name_fr: "郷愁 / CITYLIFE",
-        name_en: "郷愁 / CITYLIFE",
-        description: "La vidéo sélectionnée pour l’édition 2020 du festival Art Souterrain s’intitule 郷愁 / CITYLIFE, soit « kyoshou » ou « nostalgie », en japonais. Celle-ci fut réalisée en partenariat avec Hugo Engel et conçue sous l’égide d’une notion bien définie : la nostalgie. Portant un regard récapitulatif sur la société actuelle, qu’ils jugent empreinte de mélancolie, les artistes ont vite fait de constater l’omniprésence du passé. Selon eux, cet aspect « rétro » se manifeste particulièrement dans les médiums populaires, dont font partie les jeux vidéo inspirés de l’iconographie japonaise qui leur ont servi de modèles. Leur vidéo 郷愁/CITYLIFE est en quelque sorte un prolongement de leur réflexion sur la grisaille qui plombe nos existences, tristesse qu’ils ont transposée dans le personnage principal, Momo, que le récepteur suit durant ses pérégrinations, à savoir une jeune adulte perdue dans la nouvelle ville où elle vient d’emménager. Empruntant la grammaire visuelle des jeux pixel art à défilement horizontal, la bande vidéo-graphique accompagne l’héroïne qui, chemin faisant, rencontre diverses personnes qui partagent des pans de leur histoire. Au fur et à mesure de la scrutation des interactions entre les protagonistes, le regardant est invité à cogiter sur les angles morts de sa propre destinée pour envisager sa possible transformation, sa restructuration ou sa réinitialisation éventuelle.",
-        description_fr: "La vidéo sélectionnée pour l’édition 2020 du festival Art Souterrain s’intitule 郷愁 / CITYLIFE, soit « kyoshou » ou « nostalgie », en japonais. Celle-ci fut réalisée en partenariat avec Hugo Engel et conçue sous l’égide d’une notion bien définie : la nostalgie. Portant un regard récapitulatif sur la société actuelle, qu’ils jugent empreinte de mélancolie, les artistes ont vite fait de constater l’omniprésence du passé. Selon eux, cet aspect « rétro » se manifeste particulièrement dans les médiums populaires, dont font partie les jeux vidéo inspirés de l’iconographie japonaise qui leur ont servi de modèles. Leur vidéo 郷愁/CITYLIFE est en quelque sorte un prolongement de leur réflexion sur la grisaille qui plombe nos existences, tristesse qu’ils ont transposée dans le personnage principal, Momo, que le récepteur suit durant ses pérégrinations, à savoir une jeune adulte perdue dans la nouvelle ville où elle vient d’emménager. Empruntant la grammaire visuelle des jeux pixel art à défilement horizontal, la bande vidéo-graphique accompagne l’héroïne qui, chemin faisant, rencontre diverses personnes qui partagent des pans de leur histoire. Au fur et à mesure de la scrutation des interactions entre les protagonistes, le regardant est invité à cogiter sur les angles morts de sa propre destinée pour envisager sa possible transformation, sa restructuration ou sa réinitialisation éventuelle.",
-        description_en: "The video selected for the 2020 edition of the Art Souterrain Festival is titled 郷愁/ CITYLIFE or “kyoshou,” which means nostalgia in Japanese. The video was made in collaboration with Hugo Engel and focuses on the well-defined concept of nostalgia. While looking over today’s society, which they diagnose as melancholic, the artists quickly recognized the omnipresence of the past. According to them, this “retro” bend is particularly obvious in popular media, including the video games inspired by Japanese imagery that served as their models. Their video, 郷愁 / CITYLIFE, is a kind of continuation of their reflection on the greyness of our lives, a sadness that they injected into the main character, Momo, a young adult lost in the new city she has just moved into whom the spectator follows during her travels. Drawing on the visual vocabulary of horizontal-scrolling pixel art games, the videotape accompa- nies the heroine who, along the way, meets various people who share parts of their history with her. As the interactions between the protagonists are scrutinized, the viewer is invited to reflect upon their own life path’s blind spots to consider its possible transformation, restructuring or eventual reinitialization.",
-        index_itinerary: 42,
-        level: "",
-        latitude: "45.5127498",
-        longitude: "-73.56073666",
-        creation_year: "",
-        qr_code_token: "4508f6db-46ed-4d84-ae88-20e26430cc7a",
-        off_road: true
-    }, {
-        id: 487,
-        artist: {
-            id: 749,
-            picture: "ID_Artiste-41.jpg",
-            first_name: "Inflatables Dieties",
-            last_name: "",
-            country: "Kingston, Canada",
-            country_fr: "Kingston, Canada",
-            country_en: "Kingston, Canada",
-            bio: "Inflatable Deities est un duo collaboratif, composé de Jessica Mensch et d’Emily Pelstring.\r\nLes projets élaborés sont des fictions élargies dans lesquelles des histoires se déroulent sur de multiples supports, comme la vidéo, l'installation et la performance.",
-            bio_fr: "Inflatable Deities est un duo collaboratif, composé de Jessica Mensch et d’Emily Pelstring.\r\nLes projets élaborés sont des fictions élargies dans lesquelles des histoires se déroulent sur de multiples supports, comme la vidéo, l'installation et la performance.",
-            bio_en: "Inflatable Deities is the collaborative duo of Jessica Mensch and Emily Pelstring.\r\nThe projects developed are expanded fictions in which stories unfold over various media, such as video, installation and performance art."
-        },
-        place: {id: 164, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
-        plan: null,
-        picture: "ID_Oeuvre-43.jpg",
-        name: "Mourning of the Living Past",
-        name_fr: "Mourning of the Living Past",
-        name_en: "Mourning of the Living Past",
-        description: "« Mourning of the Living Past » est une science-fiction de vingt-cinq minutes. Il s’agit d’un voyage dans le temps intégrant performance en direct, vidéo et musique.\r\nDans leur style déformé et psychédélique, les artistes adoptent des personnalités de scientifiques pour prendre conscience d'une société lointaine et future.\r\nCe projet dystopique intègre des technologies fictives spéculatives, des horreurs corporelles surréalistes et un travail vocal expérimental pour exprimer les inquiétudes contemporaines autour de la régression sociopolitique.",
-        description_fr: "« Mourning of the Living Past » est une science-fiction de vingt-cinq minutes. Il s’agit d’un voyage dans le temps intégrant performance en direct, vidéo et musique.\r\nDans leur style déformé et psychédélique, les artistes adoptent des personnalités de scientifiques pour prendre conscience d'une société lointaine et future.\r\nCe projet dystopique intègre des technologies fictives spéculatives, des horreurs corporelles surréalistes et un travail vocal expérimental pour exprimer les inquiétudes contemporaines autour de la régression sociopolitique.",
-        description_en: "Mourning of the Living Past is a twenty-five-minute time-travel sci-fi film integrating live performance, video and music.\r\nIn their distorted and psychedelic style, the artists take on the personas of scientists in order to realize what this far distantly future society has become.\r\nThis dystopian project brings together speculative fictional technologies, surrealist body horror and experimental vocal work to express contemporary apprehensions concerning sociopolitical regression.",
-        index_itinerary: 43,
-        level: "",
-        latitude: "45.5127498",
-        longitude: "-73.56073666",
-        creation_year: "2017",
-        qr_code_token: "a22d71d6-e922-4046-a04a-02674a496217",
-        off_road: true
-    }, {
-        id: 449,
-        artist: {
-            id: 717,
+            id: 913,
             picture: "ID_Artiste-9.jpg",
             first_name: "Ratté",
             last_name: "Sabrina",
@@ -454,14 +244,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Sabrina Ratté is a Canadian artist whose practice encompasses video, animation, installation art, sculpture, audiovisual performance and virtual reality.\r\nCombining analogue technology, photography and 3D animation techniques, her work focuses on the creation of architectural structures, abstract compositions and surrealist landscapes existing somewhere between virtual and physical reality. In 2019, she was longlisted for the Sobey Art Award (Canada)."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -479,12 +269,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50317676",
         longitude: "-73.56165719",
         creation_year: "",
-        qr_code_token: "662a9cd9-431b-44b4-b55c-ac23560beef8",
+        qr_code_token: "37aab3ac-b6d5-40e0-aae7-d5827a907d32",
         off_road: false
     }, {
-        id: 450,
+        id: 658,
         artist: {
-            id: 720,
+            id: 916,
             picture: "ID_Artiste-12.jpg",
             first_name: "Elliott",
             last_name: "Damien",
@@ -496,13 +286,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "French, British and Canadian (as an adult), Damien Elliott is a visual, digital and conceptual artist. He seeks logic in chaos. In his opinion, all translation implies alteration. It is from this slight mutation that he finds the inspiration for his conceptual process. His favourite tools for creating monochrome concepts that are minimalist, ordered and thought-provoking are typography, computer code, statistical representations and copyright-free images."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "B12.jpg",
         picture: "ID_Oeuvre-12.jpg",
         name: "Genesix (Altered Echo)",
@@ -516,12 +306,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50302111",
         longitude: "-73.56132781",
         creation_year: "",
-        qr_code_token: "9cabafa3-97f2-4544-b579-0f6c9613b18b",
+        qr_code_token: "aac47956-5fab-4418-b70c-91f0dda9a2ec",
         off_road: false
     }, {
-        id: 451,
+        id: 659,
         artist: {
-            id: 753,
+            id: 949,
             picture: "ID_Artiste-45.jpg",
             first_name: "Majewska",
             last_name: "Mardo",
@@ -533,13 +323,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Margo Majewska is an architect who combines narrative techniques with architecture, art and video to create experiences and spaces that are both unique and innovative.\r\nInitially interested in integrating art into architecture, her professional focus has progressively shifted to art installations.\r\nHer current work explores the sensory and experiential aspects of space by taking into account not only the user’s well-being and environment, but also their imagination and soul."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "B2.jpg",
         picture: "ID_Oeuvre-47.jpg",
         name: "Mindfulness Staion",
@@ -553,12 +343,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.505601",
         longitude: "-73.56034291",
         creation_year: "2019",
-        qr_code_token: "e44207b3-3180-4191-8a44-6b3b871f0efa",
+        qr_code_token: "08c951f7-4612-4fc6-a96d-08b40d31a013",
         off_road: false
     }, {
-        id: 452,
+        id: 660,
         artist: {
-            id: 721,
+            id: 917,
             picture: "ID_Artiste-13.jpg",
             first_name: "Piché",
             last_name: "Julie",
@@ -570,13 +360,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "A Montreal native, Julie Piché had planned on becoming an engineer even though her artistic sensibilities predestined her to the fine arts.\r\nAfter several years of practising in an engineering firm, she finally decided to embrace her true passion: the visual arts.\r\nIn the process of completing her Bachelor of Fine Arts degree at Concordia University, this dedicated and rigorous artist seeks to get to where you wouldn’t expect to find her."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 111, name: "Texte", name_fr: "Texte", name_en: "Text"},
+        artwork_type: {id: 151, name: "Texte", name_fr: "Texte", name_en: "Text"},
         plan: "B4.jpg",
         picture: "ID_Oeuvre-13.jpg",
         name: "Reste Toi Toi-Même",
@@ -590,12 +380,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.505106",
         longitude: "-73.560642",
         creation_year: "",
-        qr_code_token: "0c983b03-a0e8-4f7c-811d-cc36569dda34",
+        qr_code_token: "901d244a-0ed4-4767-86ba-45e0ee637543",
         off_road: false
     }, {
-        id: 453,
+        id: 661,
         artist: {
-            id: 715,
+            id: 911,
             picture: "ID_Artiste-7.jpg",
             first_name: "Les Nivaux",
             last_name: "",
@@ -607,13 +397,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Les Nivaux is the artist couple Pascale (a graduate of the École des beaux-arts de Caen), whose pieces question the idea of nature and nurture, and Thierry (a graduate of École nationale supérieure Louis-Lumière in Paris and the Université Paris VIII), who focuses on concept photography, video art, performances and photo installations. They have combined their modes of creative expression to serve one tool: the scanner. They travel the world in their truck, which they have converted into a digital studio. They have participated twice in Paris editions of Nuit Blanche.\r\nINSTRUCTIONS FOR THE PUBLIC: \r\nLes Nivaux ask the public to an engagement both physical and digital. Physical by stopping and sitting down. Digital by sharing a message, a photo, a video on social networks with #stopurgence. «Stop what, who ? Talk about and share a photo of you on the button, or just the button. What is the emergency or Your emergency, according you ?» And if this button was connected ? And if this artwork initiated a #STOPURGENCE movement ?"
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "B5.jpg",
         picture: "ID_Oeuvre-7.jpg",
         name: "Stop, Urgence",
@@ -627,12 +417,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.504387",
         longitude: "-73.56101",
         creation_year: "",
-        qr_code_token: "3b88a7d6-8133-40a2-97b5-6d9b20c5577a",
+        qr_code_token: "08e6ba17-292a-4c82-9b4c-df4fa733891c",
         off_road: false
     }, {
-        id: 454,
+        id: 662,
         artist: {
-            id: 713,
+            id: 909,
             picture: "ID_Artiste-5.jpg",
             first_name: "Brodeur-Magma",
             last_name: "Elyse",
@@ -644,13 +434,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "A Bachelor of Fine Arts graduate from Concordia University majoring in sculpture, Élyse Brodeur-Magna lives and works in Montreal. She assigns particular importance to materials and space. She explores the idea of emptiness as a means of striving for fullness mainly through sculpture and installation art. Her pieces have been featured in various events and exhibitions in North Shore(Montreal), in Côte-Nord (Quebec), in Montreal, Toronto and in New York State (USA)."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "B6.jpg",
         picture: "ID_Oeuvre-5.jpg",
         name: "Un tout parallèle",
@@ -664,12 +454,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.504147",
         longitude: "-73.561376",
         creation_year: "",
-        qr_code_token: "d9403298-ed40-486a-91b7-22d1bf8e66b6",
+        qr_code_token: "f5a00df0-2f61-422d-bcc6-903c073946f2",
         off_road: false
     }, {
-        id: 455,
+        id: 663,
         artist: {
-            id: 716,
+            id: 912,
             picture: "ID_Artiste-8.jpg",
             first_name: "K. Phaneuf",
             last_name: "Marc-Antoine",
@@ -681,13 +471,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Marc-Antoine K. Phaneuf lives and works in the City of Québec. He is an artist, an author and a curator. His work has been shown in several artist-run centres, galleries and museums across Quebec and Canada. His most recent projects unfold literary systems within dedicated art spaces as well as public spaces. He has published three books of poetry and many writings on the topic of art."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "B7.jpg",
         picture: "ID_Oeuvre-8.jpg",
         name: "Dédales d'Almanachs",
@@ -701,12 +491,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.503939",
         longitude: "-73.561439",
         creation_year: "",
-        qr_code_token: "a76db6f7-4fb3-4b66-822b-0368825f26ec",
+        qr_code_token: "d9dc93fd-6b98-40f1-af39-b72e7c38feb5",
         off_road: false
     }, {
-        id: 456,
+        id: 664,
         artist: {
-            id: 719,
+            id: 915,
             picture: "ID_Artiste-11.jpg",
             first_name: "Ridler",
             last_name: "Anna",
@@ -718,13 +508,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Anna Ridler is a British artist and researcher who lives and works in London. She has degrees from the Royal College of Art, Oxford University, University of Arts London and has a fellowship at the Creative Computing Institute at UAL. She has shown at a variety of cultural institutions and galleries including the Tate Modern and the V&A. She was listed by Artnet as one of nine “pioneering artists” exploring AI’s creative potential and received an honorary mention in the 2019 Ars Electronica Golden Nica award for the category AI & Life Art. She is interested in working with collections of information or data, particularly self-generated data sets, to create new and unusual narratives in a variety of mediums."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "B8.jpg",
         picture: "ID_Oeuvre-11.jpg",
         name: "Mosaic Virus; Myriad",
@@ -738,12 +528,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.503976",
         longitude: "-73.561337",
         creation_year: "",
-        qr_code_token: "88fa2da3-a734-4532-9581-eec5c993a9fc",
+        qr_code_token: "d8a7e154-70a5-4cd3-b494-7b12b5b19f29",
         off_road: false
     }, {
-        id: 457,
+        id: 665,
         artist: {
-            id: 718,
+            id: 914,
             picture: "ID_Artiste-10.jpg",
             first_name: "Suzanne",
             last_name: "",
@@ -755,14 +545,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "SUZANNE is a performance and dance company created in October 2017 after the “Nuit Blanche” in Paris by four artists Lorenz Jack Chaillat-Cavaillé, Julien Chaudet, Julien Deransy et Eurydice Gougeon-Marine. SUZANNE is the fictional character required to embody ideas, identities and statuses to create a composed and sober choreographic style. She’s looking in opposing this demand to the improvisation of dancers, their physical and psychological limits, through their singularities, from elegance to fatigue and indiscernible beauty."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -780,12 +570,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50539648",
         longitude: "-73.56027317",
         creation_year: "",
-        qr_code_token: "79e2024e-40ff-42de-8841-7f3abfdf9f9e",
+        qr_code_token: "d4f0ca8b-a05b-48f7-9b48-baabcf8f6bdc",
         off_road: false
     }, {
-        id: 458,
+        id: 666,
         artist: {
-            id: 712,
+            id: 908,
             picture: "ID_Artiste-4.jpg",
             first_name: "Lavoie-Lachapelle",
             last_name: "Arkadi",
@@ -797,13 +587,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Using clandestine actions, pop-up performances in public spaces or gallery installations, arkadi lavoie lachapelle creates situations that bring into question today’s prevailing productivity-centred ideology, countering it up to a point by fostering a festive and celebratory atmosphere. Born the year of the fall of the Berlin Wall fell and of the Polytechnique shootings, raised in a middle-class family settled in Lanaudière, arkadi lavoie lachapelle lives and works in Montreal. She participates in the organization of events such as VIVA! Art."
         },
         place: {
-            id: 161,
+            id: 213,
             plan: "B_Palais_Congres.jpg",
             name: "Palais des Congrès",
             name_fr: "Palais des Congrès",
             name_en: "Palais des Congrès"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "B9.jpg",
         picture: "A_decouvrir_sur_place.jpg",
         name: "La Chorale",
@@ -817,12 +607,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5035377",
         longitude: "-73.56055319",
         creation_year: "",
-        qr_code_token: "01938064-2041-4878-b6e6-d9fe0566ebc0",
+        qr_code_token: "62fac7f3-9992-4d68-8ce9-3a4b95a90e08",
         off_road: false
     }, {
-        id: 459,
+        id: 667,
         artist: {
-            id: 723,
+            id: 919,
             picture: "ID_Artiste-15.jpg",
             first_name: "Lemercier",
             last_name: "Joanie",
@@ -834,14 +624,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Joanie Lemercier is a French artist primarily focused on projections of light in space and its influence on our perception. The threads of his early education grounded his interest in physical structures: geometry, patterns, and minimalist forms. As Lemercier’s work evolved, he began to play with these concrete structures through the physics and philosophy of how light can be used to manipulate perceived reality.\r\nSince 2006 Lemercier has worked with projected light. In 2008, he co-founded visual label AntiVJ with artists Yannick Jacquet, Romain Tardy and Olivier Ratsi. Together they collaborate at creating installations and stage design for festivals, developing specific visual projects for artists like Portishead’s Adrian Utley or Flying Lotus alongside numerous large scale architectural projections all around the world.\r\nIn 2010, Lemercier turned his focus on installations and gallery work. To this day, he took part in more than thirty exhibitions and contemporary art fairs around the world.\r\nIn 2013, he founded his own creative studio, based in Brussels, focused on research and development of installations, gallery pieces and experiments using projected light in space."
         },
         place: {
-            id: 166,
+            id: 218,
             plan: "C_Jacques_Parizeau.jpg",
             name: "Édifice Jacques Parizeau",
             name_fr: "Édifice Jacques Parizeau",
             name_en: "Édifice Jacques-Parizeau"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -859,12 +649,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50297298",
         longitude: "-73.56146729",
         creation_year: "2020",
-        qr_code_token: "9878cdc4-9a61-4ed4-881e-df510dbf5728",
+        qr_code_token: "91fd172a-84fc-4345-b3fa-e11e7de1c69a",
         off_road: false
     }, {
-        id: 460,
+        id: 668,
         artist: {
-            id: 725,
+            id: 921,
             picture: "ID_Artiste-17.jpg",
             first_name: "De Lucas",
             last_name: "Rubén Martin",
@@ -876,13 +666,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Madrid, Spain, in 1977, Rubén Martin De Luca has a civil engineering diploma. Following his graduation, he fully dedicated himself to art.\r\nHe is likewise one of the five co-founders of Boamistura, a multidisciplinary urban art collective as a member of which he has worked around the world.\r\nIn January 2015, he embarked on his solo career by focusing of “the landscape and its associated behaviours.”\r\nHis projects have evolved from paintings to more conceptual processes. His artistic practice has broadened to include photography, video and actions within the landscape. One of his main preoccupations is humanity’s relationship to the land."
         },
         place: {
-            id: 166,
+            id: 218,
             plan: "C_Jacques_Parizeau.jpg",
             name: "Édifice Jacques Parizeau",
             name_fr: "Édifice Jacques Parizeau",
             name_en: "Édifice Jacques-Parizeau"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "C2.jpg",
         picture: "ID_Oeuvre-17.jpg",
         name: "Minimal Republics",
@@ -896,12 +686,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5028241",
         longitude: "-73.56179559",
         creation_year: "2015-à ce jour",
-        qr_code_token: "a1e4fbad-84e1-4176-83b8-e440d6b604ff",
+        qr_code_token: "defa8911-7458-40f2-8ae2-e506aa8683a3",
         off_road: false
     }, {
-        id: 461,
+        id: 669,
         artist: {
-            id: 726,
+            id: 922,
             picture: "ID_Artiste-18.jpg",
             first_name: "Létourneau",
             last_name: "Sara",
@@ -913,14 +703,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "A multidisciplinary artist from Saguenay, Sara Létourneau is active in the fields of the visual arts, music, video, performance art and theatre.\r\nHer recent work explores how music and performance may potentially be connected, often through video or on the stage.\r\nShe is also interested in the ritualization of movement as an expression of a unique way of living in the world.\r\nHer pieces have been presented at many major festivals as well as in artist-run spaces, galleries, performance venues and theatres across Canada, the United States, Europe and Asia."
         },
         place: {
-            id: 166,
+            id: 218,
             plan: "C_Jacques_Parizeau.jpg",
             name: "Édifice Jacques Parizeau",
             name_fr: "Édifice Jacques Parizeau",
             name_en: "Édifice Jacques-Parizeau"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -938,12 +728,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5025955",
         longitude: "-73.56194794",
         creation_year: "2019",
-        qr_code_token: "acdf1036-a077-4db7-8f23-ac22bb9153ae",
+        qr_code_token: "3ffe37af-19ec-4002-9284-dc549cb9e20a",
         off_road: false
     }, {
-        id: 462,
+        id: 670,
         artist: {
-            id: 724,
+            id: 920,
             picture: "ID_Artiste-16.jpg",
             first_name: "Les Soeurs Chevalme ",
             last_name: "",
@@ -955,13 +745,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Les sœurs Chevalme are twins. For over ten years now, they have been exploring the concept of identity as being multiple through the prism of History. In their opinion, identity is a complex amalgamation that never ceases to shift, migrate, expand, associate and absorb.\r\nThis is for them a deeply felt issue: they are two individuals and yet are often perceived as one. People get them mixed up, confuse one for the other; they are one of two, the one and the other."
         },
         place: {
-            id: 166,
+            id: 218,
             plan: "C_Jacques_Parizeau.jpg",
             name: "Édifice Jacques Parizeau",
             name_fr: "Édifice Jacques Parizeau",
             name_en: "Édifice Jacques-Parizeau"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "C4.jpg",
         picture: "ID_Oeuvre-16.jpg",
         name: "Les éternels",
@@ -975,12 +765,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.502306",
         longitude: "-73.56226981",
         creation_year: "2017",
-        qr_code_token: "e539b206-3a0a-40b1-bbc9-feb809107c34",
+        qr_code_token: "6da9fb81-d860-4bbc-8d02-9ce0a520b5bb",
         off_road: false
     }, {
-        id: 463,
+        id: 671,
         artist: {
-            id: 728,
+            id: 924,
             picture: "ID_Artiste-20.jpg",
             first_name: "Levine",
             last_name: "JJ",
@@ -992,13 +782,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "JJ Levine est un artiste qui vit et travaille à Montréal. Sa pratique s’articule autour de revendications politiques de la communauté LGBTQ+. Il est connu pour les séries « Queer Portraits », « Alone Time » et « Switch », exposées aux États-Unis et en Europe ainsi que publiées dans des magazines, des journaux ou des livres d’artiste. Son travail a été reconnu par de nombreux prix et bourses du Conseil des arts et des lettres du Québec et du Conseil des arts du Canada. Il a été finaliste pour le Prix découverte Louis Roederer 2019 des Rencontres de la photographie d’Arles."
         },
         place: {
-            id: 162,
+            id: 214,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
             name_en: "World Trade Centre Montréal"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "D1.jpg",
         picture: "ID_Oeuvre-20.jpg",
         name: "Family",
@@ -1012,12 +802,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.503123",
         longitude: "-73.560411",
         creation_year: "2013-2019",
-        qr_code_token: "ebd78698-15c4-40a4-bfbe-af4ae206dfcb",
+        qr_code_token: "0d2e41cb-865c-467f-9726-df475ad7ab18",
         off_road: false
     }, {
-        id: 464,
+        id: 672,
         artist: {
-            id: 727,
+            id: 923,
             picture: "ID_Artiste-19.jpg",
             first_name: "Van De Geer",
             last_name: "Jacqueline",
@@ -1029,13 +819,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Jacqueline van de Geer moved to Montreal in 2005. Her home city, Rotterdam, twice devastated by bombings, was left scarred by the Second World War.\r\nGrowing up in a city under reconstruction taught her so much about making the most out of the very little that was on hand. Her work is inspired in part by daily life, Dada and her personal memories.\r\nSince having received her Canadian immigration status, she has developed performance pieces during which spectators are invited to participate in the work."
         },
         place: {
-            id: 162,
+            id: 214,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
             name_en: "World Trade Centre Montréal"
         },
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
         plan: "D2.jpg",
         picture: "A_decouvrir_sur_place.jpg",
         name: "Here and Now",
@@ -1049,12 +839,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50287749",
         longitude: "-73.56002426",
         creation_year: "2019",
-        qr_code_token: "f5de4650-a1dc-4725-815f-a088d4b709e4",
+        qr_code_token: "a2c59b11-0235-4b10-b1c2-fa0645cd565a",
         off_road: false
     }, {
-        id: 465,
+        id: 673,
         artist: {
-            id: 729,
+            id: 925,
             picture: "ID_Artiste-21.jpg",
             first_name: "Skaawennati",
             last_name: "",
@@ -1066,13 +856,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Kahnawà:ke Mohawk Territory, Skawennati is a member of the turtle clan. Her work, which has been widely shown in Canada and internationally, is collected by both private individuals and public institutions. She co-directs, along with Jason Edward Lewis, the AbTeC (Aboriginal Territories in Cyberspace), a research-creation network of artists and academics who study and develop Indigenous visual environments. In 2015, she and Lewis also launched the Initiative for Indigenous Futures (IIF) dedicated to developing visions of Indigenous peoples tomorrow. Skawennati lives and works in Montreal. She is represented by ELLEPHANT."
         },
         place: {
-            id: 162,
+            id: 214,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
             name_en: "World Trade Centre Montréal"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "D3.jpg",
         picture: "ID_Oeuvre-21.jpg",
         name: "Calico & Camouflage : Assemblée, 2020",
@@ -1086,117 +876,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50204431",
         longitude: "-73.56054783",
         creation_year: "2020",
-        qr_code_token: "aaccdb97-fcec-4a7a-8e10-af794c3bf788",
+        qr_code_token: "2d9c430f-b7e6-4f64-9c16-9f0e04a1650e",
         off_road: false
     }, {
-        id: 492,
+        id: 675,
         artist: {
-            id: 731,
-            picture: "ID_Artiste-23.jpg",
-            first_name: "Cheuk",
-            last_name: "Chloe",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "Depuis 2012, Chloé Cheuk est diplômée de l'École des médias créatifs de la City University de Hong Kong. Elle poursuit actuellement une maîtrise en beaux-arts, spécialisée en sculpture, à l'Université Concordia, au Québec.\r\nElle a participé à plusieurs expositions solitaires et collectives à Hong Kong (2017), en Pologne, en Autriche et à Dubaï. En 2014, elle a été lauréate du prix « Mention spéciale » au 19 e Festival ifva (catégorie « Médias interactifs »). En 2016, elle a été membre du comité de programme international de l'ISEA.\r\nTravaillant simultanément dans l'installation, les médias interactifs, la photographie et la vidéo, Chloé Cheuk se concentre sur la « structure des sentiments » entre les personnes et la société. Pour cela, elle reconstruit des objets par le biais de métaphores, dans un vocabulaire spirituel et esthétique réduit.\r\nSes œuvres se rapportent souvent aux expériences ainsi qu’aux souvenirs quotidiens des spectateurs, personnels ou collectifs, qui établissent un dialogue intime. Signifiant différentes implications, les objets quotidiens qu'elle choisit font souvent écho à notre monde contemporain sur les plans personnel, social et politique.",
-            bio_fr: "Depuis 2012, Chloé Cheuk est diplômée de l'École des médias créatifs de la City University de Hong Kong. Elle poursuit actuellement une maîtrise en beaux-arts, spécialisée en sculpture, à l'Université Concordia, au Québec.\r\nElle a participé à plusieurs expositions solitaires et collectives à Hong Kong (2017), en Pologne, en Autriche et à Dubaï. En 2014, elle a été lauréate du prix « Mention spéciale » au 19 e Festival ifva (catégorie « Médias interactifs »). En 2016, elle a été membre du comité de programme international de l'ISEA.\r\nTravaillant simultanément dans l'installation, les médias interactifs, la photographie et la vidéo, Chloé Cheuk se concentre sur la « structure des sentiments » entre les personnes et la société. Pour cela, elle reconstruit des objets par le biais de métaphores, dans un vocabulaire spirituel et esthétique réduit.\r\nSes œuvres se rapportent souvent aux expériences ainsi qu’aux souvenirs quotidiens des spectateurs, personnels ou collectifs, qui établissent un dialogue intime. Signifiant différentes implications, les objets quotidiens qu'elle choisit font souvent écho à notre monde contemporain sur les plans personnel, social et politique.",
-            bio_en: "Chloé Cheuk graduated from City University’s School of Creative Media (Hong Kong) in 2012. She is currently pursuing a Master of Fine Arts degree with a concentration in sculpture at Concordia University in Quebec.\r\nShe has participated in numerous solo and group exhibitions in Hong Kong (2017), Poland, Austria and Dubai. In 2014, she was awarded the Special Mention Prize at the 19 th edition of the ifva Festival (in the Interactive Media category). She was a member of the ISEA’s international program committee for the year 2016.\r\nWorking simultaneously in the mediums of installation art, interactive media, photography and video, Chloé Cheuk focuses on the “structure of feelings” between people and society by reconstructing objects through metaphors using a pared down vocabulary based in spirituality and esthetics.\r\nHer artworks often touch upon spectators’ everyday experiences and memories, on both an individual and collective level, which lay the groundwork for an intimate conversation. Carrying various implications, the ordinary objects she chooses frequently echo the personal, social and political facets of our contemporary world."
-        },
-        place: {id: 171, plan: null, name: "Ellephant", name_fr: "Ellephant", name_en: "Ellephant"},
-        artwork_type: {id: 115, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
-        plan: null,
-        picture: "A_decouvrir_sur_place.jpg",
-        name: "Deep Cleansing",
-        name_fr: "Deep Cleansing",
-        name_en: "Deep Cleansing",
-        description: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.",
-        description_fr: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.",
-        description_en: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.        The process of cleansing is to remove contaminants in order to achieve a certain level of comfort. To cleanse is to remove and forget—willingly, unwillingly, selectively or indiscriminately. In ethics, contaminants are heterogenous forms that cause uneasiness. The “final solution” for the removal of dirt is to perform a deep cleansing. By bleaching physical vestiges, one detaches oneself from others and covers the past with new memories, as if what came before never existed. When historical records are constantly being re-interpreted and denied, do we truly have a choice to remember the truth, our experiences, and our feelings? When we are constantly asked to move forward and not dwell on past mistakes, how do we ford the tide and return to what may no longer exist? In the exhibition, the artist investigates the term “cleansing” through the use of cleaning products. The artist fixes the processes of cleansing and expresses the frustrations and conflict of remembering truths that are being washed away or distorted. Memory is ephemeral, washable, and can be eradicated. Forgetfulness may not be a loss for everyone—it can also be a desirable strategy to solidify an ideology. Both remembering and forgetting are political acts. While event memory can be passed on to the next generation through records and archives, emotion memory that can only be attained through sensory experiences cannot be transcended.",
-        index_itinerary: 50,
-        level: "",
-        latitude: "45.50975746",
-        longitude: "-73.56177306",
-        creation_year: "",
-        qr_code_token: "a34c1245-6d28-48dc-a61f-9ace627faad2",
-        off_road: true
-    }, {
-        id: 493,
-        artist: {
-            id: 756,
-            picture: null,
-            first_name: "Canseco",
-            last_name: "Luis",
-            country: "Mexico, Mexique",
-            country_fr: "Mexico, Mexique",
-            country_en: "Mexico City, Mexico",
-            bio: "",
-            bio_fr: "",
-            bio_en: ""
-        },
-        place: {
-            id: 167,
-            plan: null,
-            name: "Institut Culturel du Mexique",
-            name_fr: "Institut Culturel du Mexique",
-            name_en: "Cultural Institute of Mexico"
-        },
-        artwork_type: {id: 115, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
-        plan: null,
-        picture: "A_decouvrir_sur_place.jpg",
-        name: "Matière première - RESET",
-        name_fr: "Matière première - RESET",
-        name_en: "Matière première - RESET",
-        description: "Les oeuvres qui feront partie du projet Matière Première seront produites in situ par l’artiste Luis Canseco. Canseco entreprend un voyage qui commence dans le cadre de la dimension utilitaire et pratique d'une série d'objets industriels extraits de ses contextes de fabrication d'origine. Faisant appel à l’idée que tout objet et toute action, produit d’un processus naturel ou d’une activité humaine, peut devenir une fonction esthétique, l’artiste va encore plus loin dans l’endroit où il se demande ce qui différencie le phénomène Esthétique de l’œuvre d'art . Canseco parvient non seulement à potentialiser sa fonction esthétique, mais également à ouvrir des conditions de possibilité pour l'ouverture et l'exploration du territoire artistique en leur imprimant des qualités dérivées de leur propre sensibilité.",
-        description_fr: "Les oeuvres qui feront partie du projet Matière Première seront produites in situ par l’artiste Luis Canseco. Canseco entreprend un voyage qui commence dans le cadre de la dimension utilitaire et pratique d'une série d'objets industriels extraits de ses contextes de fabrication d'origine. Faisant appel à l’idée que tout objet et toute action, produit d’un processus naturel ou d’une activité humaine, peut devenir une fonction esthétique, l’artiste va encore plus loin dans l’endroit où il se demande ce qui différencie le phénomène Esthétique de l’œuvre d'art . Canseco parvient non seulement à potentialiser sa fonction esthétique, mais également à ouvrir des conditions de possibilité pour l'ouverture et l'exploration du territoire artistique en leur imprimant des qualités dérivées de leur propre sensibilité.",
-        description_en: "The works that are part of the Raw Material project will be produced in situ by the artist Luis Canseco. Canseco undertakes a journey that begins within the scope of the practical-utilitarian dimension of a series of industrial objects extracted from its original manufacturing contexts. Appealing to the idea that any object and any action, product of either a natural process or a human activity, can become an aesthetic function, the artist goes one step further to the place where he wonders what differentiates the phenomenon Aesthetic of the work of art. It is right there where from the intervention and fusion of these pieces with other materials such as graphite and objects from territorial environments (stones, plastic, metal etc), Canseco not only manages to potentiate its aesthetic function, but also to open conditions of possibility for the opening and exploration of the artistic territory by printing on them qualities derived from their own sensitivity.",
-        index_itinerary: 51,
-        level: "",
-        latitude: "45.50161268",
-        longitude: "-73.57564116",
-        creation_year: "",
-        qr_code_token: "ab6c030c-354d-47d7-8fb0-2af0ba104cba",
-        off_road: true
-    }, {
-        id: 494,
-        artist: {
-            id: 757,
-            picture: null,
-            first_name: "Multiple Artiste",
-            last_name: "",
-            country: "",
-            country_fr: "",
-            country_en: "",
-            bio: "",
-            bio_fr: "",
-            bio_en: ""
-        },
-        place: {
-            id: 165,
-            plan: null,
-            name: "Château Dufresne ",
-            name_fr: "Château Dufresne ",
-            name_en: "Château Dufresne "
-        },
-        artwork_type: {id: 115, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
-        plan: null,
-        picture: "A_decouvrir_sur_place.jpg",
-        name: "Expositions du Château Dufresne",
-        name_fr: "Expositions du Château Dufresne",
-        name_en: "Expositions du Château Dufresne",
-        description: "Le Château Dufresne est une somptueuse résidence jumelée d’inspiration beaux-arts dans laquelle vivait une famille bourgeoise francophone durant la première moitié du siècle dernier. Ce lieu a abrité le premier Musée national d’art contemporain du Québec et un premier Musée des Arts décoratifs, avant de devenir lui-même un établissement muséal et patrimonial.",
-        description_fr: "Le Château Dufresne est une somptueuse résidence jumelée d’inspiration beaux-arts dans laquelle vivait une famille bourgeoise francophone durant la première moitié du siècle dernier. Ce lieu a abrité le premier Musée national d’art contemporain du Québec et un premier Musée des Arts décoratifs, avant de devenir lui-même un établissement muséal et patrimonial.",
-        description_en: "The Château Dufresne is a sumptuous semi-detached fine art residence in which a bourgeois French-speaking family lived during the first half of the last century. It housed the first National Museum of Contemporary Art in Quebec and a first Museum of Decorative Arts, before becoming itself a museum and heritage establishment.",
-        index_itinerary: 52,
-        level: "",
-        latitude: "45.5539015",
-        longitude: "-73.5538942",
-        creation_year: "",
-        qr_code_token: "670b6d3b-a383-4a71-be87-c87261889a3d",
-        off_road: true
-    }, {
-        id: 467,
-        artist: {
-            id: 732,
+            id: 928,
             picture: "ID_Artiste-24.jpg",
             first_name: "El Haïk",
             last_name: "Myriam",
@@ -1208,13 +893,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Myriam El Haïk is a Franco-Moroccan artist born at Rabat in 1973. She is a visual artist, composer and performer.\r\nHer creative language is based on the repetition and combination of simple designs or actions.\r\nThe act of writing and play are central to her approach. Deconstructing and subverting conventions, she loves to set her own rules when it comes to creating her pieces.\r\nActive in Berlin, Paris and Rabat, she has benefited from numerous solo and group exhibitions in Europe and Morocco. Additionally, she has participated in several international fairs and festivals."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "E1.jpg",
         picture: "ID_Oeuvre-25.jpg",
         name: "Ecriture 0:00",
@@ -1228,12 +913,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "344acd6f-7c8a-4a4c-adc8-b45e84a31b82",
+        qr_code_token: "f0f91fce-6e2e-4993-abfb-daa766f6b4ea",
         off_road: false
     }, {
-        id: 466,
+        id: 674,
         artist: {
-            id: 730,
+            id: 926,
             picture: "ID_Artiste-22.jpg",
             first_name: "Vaquié",
             last_name: "Thomas",
@@ -1245,14 +930,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Musician and composer Thomas Vaquié dedicates most of his time composing music and sound design for moving images.\r\nOver the last few years he specialized in music experimentation for audiovisual work for visual artists like Yannick Jacquet, Olivier Ratsi, Joanie Lemercier, Romain Tardy, Visual System collective, Tigrelab...\r\nHe has composed music for site-specific pieces as well as immersive audiovisual installations, from Montreal Old Port to South Korea's new city, France’s Centre Pompidou Metz and The Atomium in Brussels. \r\nWith a strong sense of composition and narrative, sound designer skills and a capacity to project an image sonically, Thomas produces striking, emotional and physical pieces, consistently trying to extend visual experiences into physical ones. In 2018, with Laurent Delforge and Simon Thierée, he founded the music composer collective NONE."
         },
         place: {
-            id: 162,
+            id: 214,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
             name_en: "World Trade Centre Montréal"
         },
         artwork_type: {
-            id: 112,
+            id: 152,
             name: "Installation Sonore",
             name_fr: "Installation Sonore",
             name_en: "Sound Installation"
@@ -1270,12 +955,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5013525",
         longitude: "-73.560992",
         creation_year: "2020",
-        qr_code_token: "4c8692f6-95ec-4fd8-9652-50c2f9ad7c1c",
+        qr_code_token: "c9c76e46-2654-46a6-b48a-6bab471da004",
         off_road: false
     }, {
-        id: 468,
+        id: 676,
         artist: {
-            id: 737,
+            id: 933,
             picture: "ID_Artiste-29.jpg",
             first_name: "Loiseau",
             last_name: "Maxime",
@@ -1287,13 +972,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "The idea of the lens as both the source and the revealer of truth is the cornerstone of Maxime Loiseau’s artistic process.\r\nFrom the outset of his career, this photographer (a Bachelor of Fine Arts graduate from Concordia University) has realized multiple projects in which the human being is laid bare, unfiltered. His photos are not simply images, they are experiences in themselves.\r\nThe photographer’s lens captures the subject’s soul, with all its vulnerabilities. Maxime Loiseau’s multidisciplinary background allows for a very versatile approach."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
         plan: "E2.jpg",
         picture: "ID_Oeuvre-30.jpg",
         name: "Bac à Sable",
@@ -1307,12 +992,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "8f8de127-b4b7-40c4-bede-61cddf4402e4",
+        qr_code_token: "d7940be0-ec1b-47f8-aa09-e9949cf62554",
         off_road: false
     }, {
-        id: 469,
+        id: 677,
         artist: {
-            id: 734,
+            id: 930,
             picture: "ID_Artiste-26.jpg",
             first_name: "Pintado",
             last_name: "Boris",
@@ -1324,14 +1009,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Having always been interested in drawing, Boris Pintado worked for a few years in the fields of animated film and graphic design. He then joined a mosaic preparation studio specializing in the creation of public art murals. Self-taught, he continues to broaden the scope of his artistic exploration thought studio practice as well as in situ installations and land art. He has participated in several group and solo shows. Born in Spain, he currently lives and works in Montreal."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -1349,12 +1034,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "",
         longitude: "",
         creation_year: "2020",
-        qr_code_token: "2d4d0b67-bdfc-4f6d-8c2e-da4de2a956e0",
+        qr_code_token: "23b4c7f2-41e7-4ca5-ac08-fdf63fbf40a7",
         off_road: false
     }, {
-        id: 470,
+        id: 678,
         artist: {
-            id: 731,
+            id: 927,
             picture: "ID_Artiste-23.jpg",
             first_name: "Cheuk",
             last_name: "Chloe",
@@ -1366,13 +1051,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Chloé Cheuk graduated from City University’s School of Creative Media (Hong Kong) in 2012. She is currently pursuing a Master of Fine Arts degree with a concentration in sculpture at Concordia University in Quebec.\r\nShe has participated in numerous solo and group exhibitions in Hong Kong (2017), Poland, Austria and Dubai. In 2014, she was awarded the Special Mention Prize at the 19 th edition of the ifva Festival (in the Interactive Media category). She was a member of the ISEA’s international program committee for the year 2016.\r\nWorking simultaneously in the mediums of installation art, interactive media, photography and video, Chloé Cheuk focuses on the “structure of feelings” between people and society by reconstructing objects through metaphors using a pared down vocabulary based in spirituality and esthetics.\r\nHer artworks often touch upon spectators’ everyday experiences and memories, on both an individual and collective level, which lay the groundwork for an intimate conversation. Carrying various implications, the ordinary objects she chooses frequently echo the personal, social and political facets of our contemporary world."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "E4.jpg",
         picture: "A_decouvrir_sur_place.jpg",
         name: "I am fine, I am good, I am happy",
@@ -1386,12 +1071,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50052682",
         longitude: "-73.5620842",
         creation_year: "2018",
-        qr_code_token: "de984c6d-7a81-46cf-bbe0-5f9d5c6bb977",
+        qr_code_token: "9410575c-8422-4c42-a521-df4aed91387a",
         off_road: false
     }, {
-        id: 471,
+        id: 679,
         artist: {
-            id: 731,
+            id: 927,
             picture: "ID_Artiste-23.jpg",
             first_name: "Cheuk",
             last_name: "Chloe",
@@ -1403,13 +1088,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Chloé Cheuk graduated from City University’s School of Creative Media (Hong Kong) in 2012. She is currently pursuing a Master of Fine Arts degree with a concentration in sculpture at Concordia University in Quebec.\r\nShe has participated in numerous solo and group exhibitions in Hong Kong (2017), Poland, Austria and Dubai. In 2014, she was awarded the Special Mention Prize at the 19 th edition of the ifva Festival (in the Interactive Media category). She was a member of the ISEA’s international program committee for the year 2016.\r\nWorking simultaneously in the mediums of installation art, interactive media, photography and video, Chloé Cheuk focuses on the “structure of feelings” between people and society by reconstructing objects through metaphors using a pared down vocabulary based in spirituality and esthetics.\r\nHer artworks often touch upon spectators’ everyday experiences and memories, on both an individual and collective level, which lay the groundwork for an intimate conversation. Carrying various implications, the ordinary objects she chooses frequently echo the personal, social and political facets of our contemporary world."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "E5.jpg",
         picture: "ID_Oeuvre-24.jpg",
         name: "Burst of pleasure",
@@ -1423,12 +1108,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5005554",
         longitude: "73.56205094",
         creation_year: "2018",
-        qr_code_token: "d438d6a4-2f17-4278-b8bc-b487be7ce023",
+        qr_code_token: "a42eff78-ef9f-4fb5-92ef-d0ffa2164547",
         off_road: false
     }, {
-        id: 472,
+        id: 680,
         artist: {
-            id: 738,
+            id: 934,
             picture: "ID_Artiste-30.jpg",
             first_name: "Dufaux & Wendt ",
             last_name: "Pascal & Sarah ",
@@ -1440,14 +1125,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Charlottetown, Prince Edward Islands, Sarah Wendt is based in Montreal. She studied contemporary dance at MainDance in Vancouver and the French horn at the University of Victoria. Originally from Marseille, Pascal Dufaux lives in Montreal where he studied stage design and fine art at Concordia University. Each has shown their work in Canada, Mexico, Europe and Australia. They have been working together since 2015, creating pieces that combine choreography, performance and installation art, which have been presented at the Symposium international d’art contemporain de Baie-Saint-Paul, Mois Multi, Offta and Axe Néo7 in Gatineau."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -1465,49 +1150,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50062308",
         longitude: "-73.56213892",
         creation_year: "2018",
-        qr_code_token: "1bec43e7-f6ad-4080-ab69-5a2a7f43145f",
+        qr_code_token: "5ff55061-6c48-4252-8b79-bd0edea14d48",
         off_road: false
     }, {
-        id: 473,
+        id: 682,
         artist: {
-            id: 733,
-            picture: "ID_Artiste-25.jpg",
-            first_name: "Basanta",
-            last_name: "Adam",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "À travers divers médias, le travail d'Adam Basanta explore les pratiques technologiques en tant que performances humaines, culturelles, matérielles et informatiques. \r\nDepuis 2015, ses œuvres ont été exposées dans des galeries ainsi que dans des institutions du monde entier et font partie de collections institutionnelles et privées. Il a reçu plusieurs prix au Canada et à l'étranger, dont le Prix Pierre-Ayot en 2018. Il est représenté par la galerie Ellephant à Montréal, au Canada. \r\nIl demeure actif en tant que compositeur et interprète de musique expérimentale. ",
-            bio_fr: "À travers divers médias, le travail d'Adam Basanta explore les pratiques technologiques en tant que performances humaines, culturelles, matérielles et informatiques. \r\nDepuis 2015, ses œuvres ont été exposées dans des galeries ainsi que dans des institutions du monde entier et font partie de collections institutionnelles et privées. Il a reçu plusieurs prix au Canada et à l'étranger, dont le Prix Pierre-Ayot en 2018. Il est représenté par la galerie Ellephant à Montréal, au Canada. \r\nIl demeure actif en tant que compositeur et interprète de musique expérimentale. ",
-            bio_en: "Using various media, Adam Basanta explores technological practices as representations of human, cultural, material and computing performances.\r\nHis works have been shown in galleries and institutions around the world since 2015. They are collected by both private individuals and public institutions. He has received numerous awards in Canada and internationally, such as the Prix Pierre-Ayot in 2018. He is currently represented by Ellephant Gallery in Montreal, Canada.\r\nHe continues to be an active composer and performer of experimental music."
-        },
-        place: {
-            id: 159,
-            plan: "E_Place_Victoria.jpg",
-            name: "Place Victoria",
-            name_fr: "Place Victoria",
-            name_en: "Victoria Sqare"
-        },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: "E7.jpg",
-        picture: "ID_Oeuvre-26.jpg",
-        name: "American Vista",
-        name_fr: "American Vista",
-        name_en: "American Vista",
-        description: "L'abondance des images numériques et leur prolifération ont donné naissance à une époque où nous avons accès à plus d'images que jamais. Cependant, nous avons également plus accès aux outils de calculs qui permettent d’organiser cette vaste quantité de données visuelles.\r\nAmerican Vista réagit à cela en utilisant des œuvres d'art publiques, provenant de grandes collections institutionnelles, pour créer de nouvelles œuvres numériques. \r\nUn logiciel de mosaïquage numérique, développé sur mesure, permet de créer de petites « tuiles » de ces ensembles de données. Elles sont ensuite placées et réorganisées sur une toile virtuelle pour créer une nouvelle image globale.\r\nAlors que la nature s'effondre sous le poids des tentatives humaines de la reconquérir, la tradition des paysages romantiques et de la nature pastorale est « réinitialisée » (reset).",
-        description_fr: "L'abondance des images numériques et leur prolifération ont donné naissance à une époque où nous avons accès à plus d'images que jamais. Cependant, nous avons également plus accès aux outils de calculs qui permettent d’organiser cette vaste quantité de données visuelles.\r\nAmerican Vista réagit à cela en utilisant des œuvres d'art publiques, provenant de grandes collections institutionnelles, pour créer de nouvelles œuvres numériques. \r\nUn logiciel de mosaïquage numérique, développé sur mesure, permet de créer de petites « tuiles » de ces ensembles de données. Elles sont ensuite placées et réorganisées sur une toile virtuelle pour créer une nouvelle image globale.\r\nAlors que la nature s'effondre sous le poids des tentatives humaines de la reconquérir, la tradition des paysages romantiques et de la nature pastorale est « réinitialisée » (reset).",
-        description_en: "We are now living at time when we can easily access images like never before as a result of the abundance and continuing proliferation of digital images; however, we now also have at our disposal computing tools to classify this vast amount of visual data.\r\nAmerican Vista reacts to this by creating new digital works using public art pieces provided by large institutional collections.\r\nCustom-developed mosaic preparation software is used to create tiny data group “tiles” which are then placed and reorganized on a virtual canvas. The result is a new panoptic picture.\r\nWhile nature is collapsing under the repeated attempts made by humans to conquer her, the tradition of romantic panoramas and pastoral landscapes is reset.",
-        index_itinerary: 26,
-        level: "RDC",
-        latitude: "45.50072309",
-        longitude: "-73.56200266",
-        creation_year: "2020",
-        qr_code_token: "0b92a855-8d66-4406-8e5f-db0996dc8d16",
-        off_road: false
-    }, {
-        id: 474,
-        artist: {
-            id: 736,
+            id: 932,
             picture: "ID_Artiste-28.jpg",
             first_name: "Disnovation",
             last_name: "",
@@ -1519,14 +1167,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "DISNOVATION.ORG is a working group at the intersection of contemporary art, research and hacking. They develop situations of disruption, speculation, and debate, in order to question dominant techno-positivist ideologies, and to stimulate post-growth narratives. They edited the pirate book, an anthology on media piracy. Their research includes artworks, curation and publications. In 2018 they received a design trust grant (hong kong) for research about China’s shanzhai culture. They are currently visiting researchers at the University of California, Irvine."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
         artwork_type: {
-            id: 113,
+            id: 153,
             name: "Oeuvre Vidéo Générative",
             name_fr: "Oeuvre Vidéo Générative",
             name_en: "Generative Video Work"
@@ -1544,12 +1192,49 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50089078",
         longitude: "-73.56187928",
         creation_year: "2015-2018",
-        qr_code_token: "5ecd143f-ca28-4496-807f-9b9737f7e12b",
+        qr_code_token: "67b61010-a10e-441c-b37f-1b811e52c08c",
         off_road: false
     }, {
-        id: 475,
+        id: 681,
         artist: {
-            id: 735,
+            id: 929,
+            picture: "ID_Artiste-25.jpg",
+            first_name: "Basanta",
+            last_name: "Adam",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "À travers divers médias, le travail d'Adam Basanta explore les pratiques technologiques en tant que performances humaines, culturelles, matérielles et informatiques. \r\nDepuis 2015, ses œuvres ont été exposées dans des galeries ainsi que dans des institutions du monde entier et font partie de collections institutionnelles et privées. Il a reçu plusieurs prix au Canada et à l'étranger, dont le Prix Pierre-Ayot en 2018. Il est représenté par la galerie Ellephant à Montréal, au Canada. \r\nIl demeure actif en tant que compositeur et interprète de musique expérimentale. ",
+            bio_fr: "À travers divers médias, le travail d'Adam Basanta explore les pratiques technologiques en tant que performances humaines, culturelles, matérielles et informatiques. \r\nDepuis 2015, ses œuvres ont été exposées dans des galeries ainsi que dans des institutions du monde entier et font partie de collections institutionnelles et privées. Il a reçu plusieurs prix au Canada et à l'étranger, dont le Prix Pierre-Ayot en 2018. Il est représenté par la galerie Ellephant à Montréal, au Canada. \r\nIl demeure actif en tant que compositeur et interprète de musique expérimentale. ",
+            bio_en: "Using various media, Adam Basanta explores technological practices as representations of human, cultural, material and computing performances.\r\nHis works have been shown in galleries and institutions around the world since 2015. They are collected by both private individuals and public institutions. He has received numerous awards in Canada and internationally, such as the Prix Pierre-Ayot in 2018. He is currently represented by Ellephant Gallery in Montreal, Canada.\r\nHe continues to be an active composer and performer of experimental music."
+        },
+        place: {
+            id: 211,
+            plan: "E_Place_Victoria.jpg",
+            name: "Place Victoria",
+            name_fr: "Place Victoria",
+            name_en: "Victoria Sqare"
+        },
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: "E7.jpg",
+        picture: "ID_Oeuvre-26.jpg",
+        name: "American Vista",
+        name_fr: "American Vista",
+        name_en: "American Vista",
+        description: "L'abondance des images numériques et leur prolifération ont donné naissance à une époque où nous avons accès à plus d'images que jamais. Cependant, nous avons également plus accès aux outils de calculs qui permettent d’organiser cette vaste quantité de données visuelles.\r\nAmerican Vista réagit à cela en utilisant des œuvres d'art publiques, provenant de grandes collections institutionnelles, pour créer de nouvelles œuvres numériques. \r\nUn logiciel de mosaïquage numérique, développé sur mesure, permet de créer de petites « tuiles » de ces ensembles de données. Elles sont ensuite placées et réorganisées sur une toile virtuelle pour créer une nouvelle image globale.\r\nAlors que la nature s'effondre sous le poids des tentatives humaines de la reconquérir, la tradition des paysages romantiques et de la nature pastorale est « réinitialisée » (reset).",
+        description_fr: "L'abondance des images numériques et leur prolifération ont donné naissance à une époque où nous avons accès à plus d'images que jamais. Cependant, nous avons également plus accès aux outils de calculs qui permettent d’organiser cette vaste quantité de données visuelles.\r\nAmerican Vista réagit à cela en utilisant des œuvres d'art publiques, provenant de grandes collections institutionnelles, pour créer de nouvelles œuvres numériques. \r\nUn logiciel de mosaïquage numérique, développé sur mesure, permet de créer de petites « tuiles » de ces ensembles de données. Elles sont ensuite placées et réorganisées sur une toile virtuelle pour créer une nouvelle image globale.\r\nAlors que la nature s'effondre sous le poids des tentatives humaines de la reconquérir, la tradition des paysages romantiques et de la nature pastorale est « réinitialisée » (reset).",
+        description_en: "We are now living at time when we can easily access images like never before as a result of the abundance and continuing proliferation of digital images; however, we now also have at our disposal computing tools to classify this vast amount of visual data.\r\nAmerican Vista reacts to this by creating new digital works using public art pieces provided by large institutional collections.\r\nCustom-developed mosaic preparation software is used to create tiny data group “tiles” which are then placed and reorganized on a virtual canvas. The result is a new panoptic picture.\r\nWhile nature is collapsing under the repeated attempts made by humans to conquer her, the tradition of romantic panoramas and pastoral landscapes is reset.",
+        index_itinerary: 26,
+        level: "RDC",
+        latitude: "45.50072309",
+        longitude: "-73.56200266",
+        creation_year: "2020",
+        qr_code_token: "586c9fdf-e07c-4061-b917-99d1dfb8042b",
+        off_road: false
+    }, {
+        id: 683,
+        artist: {
+            id: 931,
             picture: "ID_Artiste-27.jpg",
             first_name: "Cabinet de Fumisterie Appliquée",
             last_name: "",
@@ -1561,13 +1246,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "The Cabinet de Fumisterie Appliquée (CFA) is the duo Elsa Ferry and the Russian-born artist Anastasia Bolchakova, both based France. Together they tackle issues relating to our future through scientific speculations and disaster scenarios inspired by headlines. Their projects, presented in France, Europe and Quebec, notably the Nutrition in 2050 and Horizon 2050 edition, from which Le Banquet is taken, explore a foreseeable future’s plastic, tragicomic and anxiety-provoking potential."
         },
         place: {
-            id: 159,
+            id: 211,
             plan: "E_Place_Victoria.jpg",
             name: "Place Victoria",
             name_fr: "Place Victoria",
             name_en: "Victoria Sqare"
         },
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: "E9.jpg",
         picture: "ID_Oeuvre-28.jpg",
         name: "Banquet",
@@ -1581,49 +1266,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50072384",
         longitude: "-73.5614984",
         creation_year: "2016",
-        qr_code_token: "a62c965c-b253-4022-bfe3-840998e37633",
+        qr_code_token: "c785f686-39da-4eac-aa3b-237608d4996e",
         off_road: false
     }, {
-        id: 476,
+        id: 685,
         artist: {
-            id: 722,
-            picture: "ID_Artiste-14.jpg",
-            first_name: "Le Chevalier",
-            last_name: "Martin",
-            country: "Orléans, France",
-            country_fr: "Orléans, France",
-            country_en: "Orléans, France",
-            bio: "Né en mai 1968, Martin Le Chevallier est un artiste, un réalisateur et, parfois, un commissaire d’exposition. Il vit et travaille en France. De plus, il a souvent exposé dans son pays ainsi qu’à l’étranger.\r\nSon travail d’artiste est composé de films, de détournements ou d’interventions contextuelles.\r\nIl s’intéresse particulièrement à l’inscription de l’art dans l’espace public.",
-            bio_fr: "Né en mai 1968, Martin Le Chevallier est un artiste, un réalisateur et, parfois, un commissaire d’exposition. Il vit et travaille en France. De plus, il a souvent exposé dans son pays ainsi qu’à l’étranger.\r\nSon travail d’artiste est composé de films, de détournements ou d’interventions contextuelles.\r\nIl s’intéresse particulièrement à l’inscription de l’art dans l’espace public.",
-            bio_en: "Born in May 1968, Martin Le Chevallier is an artist, filmmaker and sometimes curator. He lives and works in France. He has also exhibited in his own country and internationally.\r\nHis artworks are created using films, appropriations and contextual interventions.\r\nHe is particularly interested in the place of art in the public sphere."
-        },
-        place: {
-            id: 160,
-            plan: "F_Cite_Int.jpg",
-            name: "Cité Internationale",
-            name_fr: "Cité Internationale",
-            name_en: "Cité Internationale"
-        },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: "F1 .jpg",
-        picture: "ID_Oeuvre-40.jpg",
-        name: "Métro Hochelaga",
-        name_fr: "Métro Hochelaga",
-        name_en: "Métro Hochelaga",
-        description: "Un plan de métro similaire aux plans habituels de la Société de transport de Montréal, à une différence près : toutes les lignes ont été effacées et toutes les stations ont disparu. Hormis une seule, imaginaire : Hochelaga.\r\nCette unique station porte le nom du village iroquoien découvert par Jacques Cartier à son arrivée, en 1535, et aujourd’hui disparu.\r\nCe plan est affiché dans le réseau souterrain, à la manière d’un plan classique : il dispose du même encadrement, du même format, à la même proximité du métro.\r\nAinsi, le temps précédant la colonisation et ses ravages est évoqué avec les codes du monde occidental contemporain. Comme si, par un étrange retournement de l’Histoire, notre époque représentait sa propre annulation.",
-        description_fr: "Un plan de métro similaire aux plans habituels de la Société de transport de Montréal, à une différence près : toutes les lignes ont été effacées et toutes les stations ont disparu. Hormis une seule, imaginaire : Hochelaga.\r\nCette unique station porte le nom du village iroquoien découvert par Jacques Cartier à son arrivée, en 1535, et aujourd’hui disparu.\r\nCe plan est affiché dans le réseau souterrain, à la manière d’un plan classique : il dispose du même encadrement, du même format, à la même proximité du métro.\r\nAinsi, le temps précédant la colonisation et ses ravages est évoqué avec les codes du monde occidental contemporain. Comme si, par un étrange retournement de l’Histoire, notre époque représentait sa propre annulation.",
-        description_en: "A subway map similar to the ones that are typical of the Société de transport de Montréal. There is a single difference. All the lines and stations have been removed; all but one, the fictional Hochelaga station.\r\nThis unique station has been named for the Iroquois village Jacques Cartier found upon landing in 1535, and which has today disappeared.\r\nThis map is posted in the underground network just like a classical one. It is arranged with the same framing, format and vicinity to the subway.\r\nAnd so, the time before colonization and its disastrous consequences is brought to the fore through contemporary Western codes. As if, by way of a bizarre reversal of History, our age was representing its own undoing.",
-        index_itinerary: 40,
-        level: "-1",
-        latitude: "",
-        longitude: "",
-        creation_year: "2020",
-        qr_code_token: "b9418430-bd17-4ad0-a1e1-a41f61d89849",
-        off_road: false
-    }, {
-        id: 477,
-        artist: {
-            id: 745,
+            id: 941,
             picture: "ID_Artiste-37.jpg",
             first_name: "Mundy",
             last_name: "Sean",
@@ -1635,13 +1283,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Montreal, Canada, in 1991, Sean Mundy creates conceptual images using photography and digital manipulation techniques.\r\nTackling the issues of self-doubt and identity, he creates austere, neutral and distant scenes where the tension and uncertainty are palpable.\r\nUsing a subtle and minimalist approach, he seeks to disrupt, select and even delete the traditional storytelling format to construct scenarios based on subjective associations."
         },
         place: {
-            id: 160,
+            id: 212,
             plan: "F_Cite_Int.jpg",
             name: "Cité Internationale",
             name_fr: "Cité Internationale",
             name_en: "Cité Internationale"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "F10.jpg",
         picture: "ID_Oeuvre-38.jpg",
         name: "Ruin",
@@ -1655,12 +1303,197 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50045012",
         longitude: "-73.56416774",
         creation_year: "2019",
-        qr_code_token: "ac1e5ee0-5c94-4b4d-be87-4115027fe19e",
+        qr_code_token: "6366d509-4c51-4977-aebd-fd232240e38a",
         off_road: false
     }, {
-        id: 482,
+        id: 684,
         artist: {
-            id: 739,
+            id: 918,
+            picture: "ID_Artiste-14.jpg",
+            first_name: "Le Chevalier",
+            last_name: "Martin",
+            country: "Orléans, France",
+            country_fr: "Orléans, France",
+            country_en: "Orléans, France",
+            bio: "Né en mai 1968, Martin Le Chevallier est un artiste, un réalisateur et, parfois, un commissaire d’exposition. Il vit et travaille en France. De plus, il a souvent exposé dans son pays ainsi qu’à l’étranger.\r\nSon travail d’artiste est composé de films, de détournements ou d’interventions contextuelles.\r\nIl s’intéresse particulièrement à l’inscription de l’art dans l’espace public.",
+            bio_fr: "Né en mai 1968, Martin Le Chevallier est un artiste, un réalisateur et, parfois, un commissaire d’exposition. Il vit et travaille en France. De plus, il a souvent exposé dans son pays ainsi qu’à l’étranger.\r\nSon travail d’artiste est composé de films, de détournements ou d’interventions contextuelles.\r\nIl s’intéresse particulièrement à l’inscription de l’art dans l’espace public.",
+            bio_en: "Born in May 1968, Martin Le Chevallier is an artist, filmmaker and sometimes curator. He lives and works in France. He has also exhibited in his own country and internationally.\r\nHis artworks are created using films, appropriations and contextual interventions.\r\nHe is particularly interested in the place of art in the public sphere."
+        },
+        place: {
+            id: 212,
+            plan: "F_Cite_Int.jpg",
+            name: "Cité Internationale",
+            name_fr: "Cité Internationale",
+            name_en: "Cité Internationale"
+        },
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: "F1 .jpg",
+        picture: "ID_Oeuvre-40.jpg",
+        name: "Métro Hochelaga",
+        name_fr: "Métro Hochelaga",
+        name_en: "Métro Hochelaga",
+        description: "Un plan de métro similaire aux plans habituels de la Société de transport de Montréal, à une différence près : toutes les lignes ont été effacées et toutes les stations ont disparu. Hormis une seule, imaginaire : Hochelaga.\r\nCette unique station porte le nom du village iroquoien découvert par Jacques Cartier à son arrivée, en 1535, et aujourd’hui disparu.\r\nCe plan est affiché dans le réseau souterrain, à la manière d’un plan classique : il dispose du même encadrement, du même format, à la même proximité du métro.\r\nAinsi, le temps précédant la colonisation et ses ravages est évoqué avec les codes du monde occidental contemporain. Comme si, par un étrange retournement de l’Histoire, notre époque représentait sa propre annulation.",
+        description_fr: "Un plan de métro similaire aux plans habituels de la Société de transport de Montréal, à une différence près : toutes les lignes ont été effacées et toutes les stations ont disparu. Hormis une seule, imaginaire : Hochelaga.\r\nCette unique station porte le nom du village iroquoien découvert par Jacques Cartier à son arrivée, en 1535, et aujourd’hui disparu.\r\nCe plan est affiché dans le réseau souterrain, à la manière d’un plan classique : il dispose du même encadrement, du même format, à la même proximité du métro.\r\nAinsi, le temps précédant la colonisation et ses ravages est évoqué avec les codes du monde occidental contemporain. Comme si, par un étrange retournement de l’Histoire, notre époque représentait sa propre annulation.",
+        description_en: "A subway map similar to the ones that are typical of the Société de transport de Montréal. There is a single difference. All the lines and stations have been removed; all but one, the fictional Hochelaga station.\r\nThis unique station has been named for the Iroquois village Jacques Cartier found upon landing in 1535, and which has today disappeared.\r\nThis map is posted in the underground network just like a classical one. It is arranged with the same framing, format and vicinity to the subway.\r\nAnd so, the time before colonization and its disastrous consequences is brought to the fore through contemporary Western codes. As if, by way of a bizarre reversal of History, our age was representing its own undoing.",
+        index_itinerary: 40,
+        level: "-1",
+        latitude: "",
+        longitude: "",
+        creation_year: "2020",
+        qr_code_token: "8d6e261c-b3b2-4dcf-b2ea-4516273ae3a1",
+        off_road: false
+    }, {
+        id: 686,
+        artist: {
+            id: 943,
+            picture: "ID_Artiste-39.jpg",
+            first_name: "Durocher",
+            last_name: "Micheline",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "Micheline Durocher est une artiste montréalaise qui travaille de façon nomade afin de récolter des matériaux. Elle a exposé son travail et projeté ses vidéos à l'échelle nationale et internationale.\r\nSes vidéos ont été nommées pour plusieurs prix :\r\n● en 2011, au Prix du très court-métrage Georges-Laoun-Opticien-Oboro, à Montréal;\r\n● en 2012, au Festival des cinémas différents et expérimentaux de Paris;\r\n● en 2010, au 12e International Film Festival of Patras city, en Grèce;\r\n● en 2007, au Sydney Underground Film Festival, en Australie.\r\nElle a également réalisé de nombreuses résidences d'artiste.\r\nSes œuvres font notamment partie des collections du Conseil des arts du Canada, de la Bibliothèque nationale du Canada ainsi que du Musée national des beaux-arts du Québec.",
+            bio_fr: "Micheline Durocher est une artiste montréalaise qui travaille de façon nomade afin de récolter des matériaux. Elle a exposé son travail et projeté ses vidéos à l'échelle nationale et internationale.\r\nSes vidéos ont été nommées pour plusieurs prix :\r\n● en 2011, au Prix du très court-métrage Georges-Laoun-Opticien-Oboro, à Montréal;\r\n● en 2012, au Festival des cinémas différents et expérimentaux de Paris;\r\n● en 2010, au 12e International Film Festival of Patras city, en Grèce;\r\n● en 2007, au Sydney Underground Film Festival, en Australie.\r\nElle a également réalisé de nombreuses résidences d'artiste.\r\nSes œuvres font notamment partie des collections du Conseil des arts du Canada, de la Bibliothèque nationale du Canada ainsi que du Musée national des beaux-arts du Québec.",
+            bio_en: "Micheline Durocher is a Montreal-based artist working nomadically in order to collect her materials. She has exhibited her work and shown her videos both nationally and internationally.\r\nHer films have been shortlisted for several awards:\r\n● In 2011, for the Georges-Laoun-Opticien-Oboro Super Short Film Prize (Montreal)\r\n● In 2012, at the Festival des cinémas différents et expérimentaux de Paris\r\n● In 2010, at the 12th International Film Festival of Patras City (Greece)\r\n● In 2007, at the Sydney Underground Film Festival (Australia)\r\nShe has also participated in numerous artist residencies.\r\nHer artworks have been collected by the Canada Council for the Arts, the National Library of Canada and the Musée national des beaux-arts du Québec."
+        },
+        place: {
+            id: 212,
+            plan: "F_Cite_Int.jpg",
+            name: "Cité Internationale",
+            name_fr: "Cité Internationale",
+            name_en: "Cité Internationale"
+        },
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: "F2.jpg",
+        picture: "ID_Oeuvre-41.jpg",
+        name: "Surplus",
+        name_fr: "Surplus",
+        name_en: "Surplus",
+        description: "Dans l'imaginaire occidental, le mot « Surplus » fait surgir des images d'entrepôts remplis de biens excédentaires d’une valeur incroyable à des prix extrêmement bas. Ces images évoquent également des idées de biens obsolètes, d'excès budgétaires, de mondialisation et de succès. Comment ces idées façonnent-elles notre façon de nous connecter au monde qui nous entoure?\r\nEntre performances et photographies, cette série de tableaux propose une nouvelle perspective sur notre rapport aux objets et à la matérialité, au désir et à la consommation de masse.\r\nLes objets de luxe ont été remplacés par des objets banals, voir laids, qui enterrent le corps (vivant) au milieu d'un assemblage de chaises, de canapés, de sacs en plastique, de vieilles technologies, de lampes (inertes).\r\nCes photographies nous interrogent : comment s'identifier et s'attacher aux biens qui nous entourent, sans savoir parfois où nous finissons et où ils commencent? Quelles sont les relations entre les corps et les choses? Comment les êtres humains et l'esprit des choses se chevauchent-ils?",
+        description_fr: "Dans l'imaginaire occidental, le mot « Surplus » fait surgir des images d'entrepôts remplis de biens excédentaires d’une valeur incroyable à des prix extrêmement bas. Ces images évoquent également des idées de biens obsolètes, d'excès budgétaires, de mondialisation et de succès. Comment ces idées façonnent-elles notre façon de nous connecter au monde qui nous entoure?\r\nEntre performances et photographies, cette série de tableaux propose une nouvelle perspective sur notre rapport aux objets et à la matérialité, au désir et à la consommation de masse.\r\nLes objets de luxe ont été remplacés par des objets banals, voir laids, qui enterrent le corps (vivant) au milieu d'un assemblage de chaises, de canapés, de sacs en plastique, de vieilles technologies, de lampes (inertes).\r\nCes photographies nous interrogent : comment s'identifier et s'attacher aux biens qui nous entourent, sans savoir parfois où nous finissons et où ils commencent? Quelles sont les relations entre les corps et les choses? Comment les êtres humains et l'esprit des choses se chevauchent-ils?",
+        description_en: "In the Western mind, the word “surplus” evokes images of warehouses overflowing with incredibly valuable goods at knockdown prices. These images are connected with such notions as obsolescence, overspending, globalization and success. How do these concepts shape the way we related to the world around us?\r\nHalfway between performance and photography, this series of pictures offers a new perspective on our relationship with objects and materiality, with desire and mass consumption.\r\nThe luxury goods have been replaced with everyday — even ugly — objects that entomb the (living) body surrounded by a massing of chairs, sofas, plastic bags, old tech and (inanimate) lamps.\r\nThese photographs invite us to reflect... How can we identify and connect with the things around us when we sometimes don’t even know where we end and they begin? How do our bodies and objects relate? How do human beings and the souls of things overlap?",
+        index_itinerary: 41,
+        level: "-1",
+        latitude: "",
+        longitude: "",
+        creation_year: "",
+        qr_code_token: "6c713b96-e6ca-4ed1-9430-78bfbf17553a",
+        off_road: false
+    }, {
+        id: 687,
+        artist: {
+            id: 942,
+            picture: "ID_Artiste-38.jpg",
+            first_name: "Toudeur",
+            last_name: "Anaïs",
+            country: "Paris, France",
+            country_fr: "Paris, France",
+            country_en: "Paris, France",
+            bio: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
+            bio_fr: "Anaïs Tondeur est une artiste visuelle française basée à Paris. Elle crée des récits et des enquêtes spéculatives à travers lesquels elle expérimente d'autres rapports au monde et d'autres modes de cohabitation avec les non-humains: les plantes, les roches, l'air, l’eau.\r\nPour cela, elle développe un renouvellement de nos modes de perception, et explore, au-delà de la séparation de la nature et de la culture, des moyens de perturber le grand récit de l’Anthropocène.\r\nEn collaboration avec des géologues, des océanographes, des physiciens, des philosophes et des anthropologues, ses protocoles de recherche l'ont menée dans des expéditions sur les traces de particules de carbone noir avec des scientifiques, à travers la zone d'exclusion de Tchernobyl, à travers l'océan Atlantique ou le long de frontières entre les plaques tectoniques.",
+            bio_en: "Anaïs Tondeur is a French visual artist based in Paris. She creates speculative narratives and investigations through which she experiments other conditions of being to the world and other modes of cohabitation with the other-than-humans: plants, rocks, air, water. Here, she searches for a renewal of our modes of perception, and explores, beyond the separation of nature and culture, ways to disrupt the grand narrative of the Anthropocene.\r\nCollaborating with geologists, oceanographers, physicists, philosophers, and anthropologists, her protocols of research took her in expeditions on the traces of particles of black carbon with scientists, through Chernobyl Exclusion Zone, across the Atlantic Ocean or along major frontiers between tectonic plates.\r\nShe has presented her work in institutions such as Centre Pompidou and Spencer Museum of Modern Art."
+        },
+        place: {
+            id: 212,
+            plan: "F_Cite_Int.jpg",
+            name: "Cité Internationale",
+            name_fr: "Cité Internationale",
+            name_en: "Cité Internationale"
+        },
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: "F3.jpg",
+        picture: "ID_Oeuvre-39.jpg",
+        name: "Tchernobyl Herbarium",
+        name_fr: "Tchernobyl Herbarium",
+        name_en: "Tchernobyl Herbarium",
+        description: "Le samedi 26 avril 1986, à 1 h 23 min 58 s, heure locale, un test technique dans la centrale nucléaire de Tchernobyl prend une tournure désastreuse. Le cœur du réacteur n ° 4 explose, émettant un panache de retombées radioactives dans l'atmosphère. Ce projet est composé de 30 rayogrammes, créés par l'empreinte directe de spécimens d'un herbier radioactif sur des plaques photosensibles. Ces plantes ont poussées dans les sols de la zone d'exclusion de Tchernobyl, étudiées par l'équipe du bio-généticien Martin Hajduch qui analyse les impacts de la radioactivité sur la flore.\r\nLes empreintes des spécimens sont capturées par un processus de photogramme - une technique qui rend visible l'effet de l'exposition extrême à lumière que la bombe atomique émet lors d’une explosion –.\r\nAvec cette série d'empreintes végétales, l'artiste interroge les cicatrices d'une tragédie, les traces matérielles d'un désastre invisible, des images capturées à la limite du monde visible.",
+        description_fr: "Le samedi 26 avril 1986, à 1 h 23 min 58 s, heure locale, un test technique dans la centrale nucléaire de Tchernobyl prend une tournure désastreuse. Le cœur du réacteur n ° 4 explose, émettant un panache de retombées radioactives dans l'atmosphère. Ce projet est composé de 30 rayogrammes, créés par l'empreinte directe de spécimens d'un herbier radioactif sur des plaques photosensibles. Ces plantes ont poussées dans les sols de la zone d'exclusion de Tchernobyl, étudiées par l'équipe du bio-généticien Martin Hajduch qui analyse les impacts de la radioactivité sur la flore.\r\nLes empreintes des spécimens sont capturées par un processus de photogramme - une technique qui rend visible l'effet de l'exposition extrême à lumière que la bombe atomique émet lors d’une explosion –.\r\nAvec cette série d'empreintes végétales, l'artiste interroge les cicatrices d'une tragédie, les traces matérielles d'un désastre invisible, des images capturées à la limite du monde visible.",
+        description_en: "On Saturday, April 26th, 1986, at 1:23:58 a.m. local time, a test in Chernobyl nuclear plant takes a disastrous turn. The core of reactor No.4 explodes, emitting a plume of radioactive fallout into the atmosphere which drifts across the then Western Soviet Union and Europe.\r\nThis project is composed of 30 rayograms, created by the direct imprint of specimens from a radioactive herbarium on photosensitive plates. These plants grew in the soils of Chernobyl Exclusion Zone, studied by Martin Hajduch’s team who analyzes the impacts of radioactivity on the flora.\r\nThe photogram technique uses light as a source to record and archives trauma on the species just as the atomic explosions have illuminated and scarred the mind. With this series of plant imprints, the artist aims to interrogate the scars of a tragedy, material traces of an invisible disaster, these images are captured on the edge of the visible.",
+        index_itinerary: 39,
+        level: "",
+        latitude: "45.50138483",
+        longitude: "-73.56268609",
+        creation_year: "2016-2018",
+        qr_code_token: "2d9545b5-ef65-409f-90da-4ed9d6e56578",
+        off_road: false
+    }, {
+        id: 688,
+        artist: {
+            id: 938,
+            picture: "ID_Artiste-34.jpg",
+            first_name: "Winants",
+            last_name: "Francois",
+            country: "Bruxelles, Belgique",
+            country_fr: "Bruxelles, Belgique",
+            country_en: "Brussels, Belgium",
+            bio: "François Winants est un artiste belge basé entre Spa et Bruxelles. Diplômé de La Cambre en dessin, il s’inscrit dans une recherche à travers l’espace, l’expérience et la rencontre. Les thématiques abordées: le climat et le relief, les mouvements d’air, les phénomènes atmosphériques et les processus de formation géologique.\r\nSes travaux se concentrent autour d’une recherche intuitive et documentée. Ils donnent lieu à la réalisation d’œuvres et de projets où le sujet est impliqué dans le dispositif. La pratique se situe dans une relation où le corps et les forces s’engagent. Elle est en constante mutation face aux rencontres et aux incertitudes.\r\nAu-delà des objectifs expérimentaux des projets, il y a au centre de la démarche une réflexion permanente entre le design et l’art, l’art et la science, l’acte de l’artiste et la machine, l’artisanat et l’industrie, l’analogique et le numérique.",
+            bio_fr: "François Winants est un artiste belge basé entre Spa et Bruxelles. Diplômé de La Cambre en dessin, il s’inscrit dans une recherche à travers l’espace, l’expérience et la rencontre. Les thématiques abordées: le climat et le relief, les mouvements d’air, les phénomènes atmosphériques et les processus de formation géologique.\r\nSes travaux se concentrent autour d’une recherche intuitive et documentée. Ils donnent lieu à la réalisation d’œuvres et de projets où le sujet est impliqué dans le dispositif. La pratique se situe dans une relation où le corps et les forces s’engagent. Elle est en constante mutation face aux rencontres et aux incertitudes.\r\nAu-delà des objectifs expérimentaux des projets, il y a au centre de la démarche une réflexion permanente entre le design et l’art, l’art et la science, l’acte de l’artiste et la machine, l’artisanat et l’industrie, l’analogique et le numérique.",
+            bio_en: "François Winants is a Belgian artist based between Spa and Brussels. A graduate of La Cambre in drawing, he is researching space and experience. His main topics are: climate and relief, air movements, atmospheric phenomena and geological formation processes.\r\nHis work focuses on intuitive and documented research. They give birth to works and projects where the subject is involved in the device. His practice is in a relationship between the body and the forces. It is constantly changing from encounters and uncertainties.\r\nAt the centre of his process is a permanent reflection between design and art, art and science, the act of the artist and the machine, craft and industry, analogue and digital."
+        },
+        place: {
+            id: 212,
+            plan: "F_Cite_Int.jpg",
+            name: "Cité Internationale",
+            name_fr: "Cité Internationale",
+            name_en: "Cité Internationale"
+        },
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        plan: "F4.jpg",
+        picture: "ID_Oeuvre-35.jpg",
+        name: "Dessin des Cimes",
+        name_fr: "Dessin des Cimes",
+        name_en: "Dessin des Cimes",
+        description: "C’est après avoir développé plusieurs machines complexes avec des microcontrôleurs et contrôlées par Processing que François Winants est revenu à des dispositifs totalement analogiques en interaction directe avec leur environnement, et fais d’une grande économie de moyen. Les instruments sont conçus dans une optique où le design des instruments doit être basique et léger, robuste et réparable ; sans besoin d’énergie.\r\nLes Dessins des cimes sont réalisés par un instrument sur un plateau mobile situé à un mètre du sol et suspendu à la cime des arbres. L’instrument se lie aux mouvements spontanés de la forêt, saisissant ses respirations et le temps, devenant co-auteur du dessin.\r\nLes projets de dessins déployés dans des environnements sont nourris par une science qui perçoit la nature comme technicienne. Elle offre aujourd’hui les nouveaux seuils de perception sur une nature que nous aurions cru acquis et/ou nous faisant spectateurs d’un monde qui avance sans nous.",
+        description_fr: "C’est après avoir développé plusieurs machines complexes avec des microcontrôleurs et contrôlées par Processing que François Winants est revenu à des dispositifs totalement analogiques en interaction directe avec leur environnement, et fais d’une grande économie de moyen. Les instruments sont conçus dans une optique où le design des instruments doit être basique et léger, robuste et réparable ; sans besoin d’énergie.\r\nLes Dessins des cimes sont réalisés par un instrument sur un plateau mobile situé à un mètre du sol et suspendu à la cime des arbres. L’instrument se lie aux mouvements spontanés de la forêt, saisissant ses respirations et le temps, devenant co-auteur du dessin.\r\nLes projets de dessins déployés dans des environnements sont nourris par une science qui perçoit la nature comme technicienne. Elle offre aujourd’hui les nouveaux seuils de perception sur une nature que nous aurions cru acquis et/ou nous faisant spectateurs d’un monde qui avance sans nous.",
+        description_en: "It was after developing complex machines using microcontrollers and Processing that François went back to totally analogue devices interacting directly with the subject without any complex resources. The instruments are designed so that they are as basic and light as possible, robust and repairable, needing no energy of battery.\r\nDessins des cimes are achieved by a machine made out of a board and a pen suspended one meter above the ground, rigged to several treetops. The instrument is directly linked to the spontaneous movements of the forest, capturing its breaths and time passing by, becoming co-author of the drawing.\r\nThis drawing project is directly fuelled by its environment, nourished by a science that perceives nature as a technician. It offers a new perception of nature, revealing things we may not have seen. With these images, we become spectators of a world that is moving without us in the center of an uninhabited forest.",
+        index_itinerary: 35,
+        level: "",
+        latitude: "45.50113743",
+        longitude: "-73.56292427",
+        creation_year: "2019",
+        qr_code_token: "2a6bfb9d-14c8-49d0-ac7a-1d7bf6864870",
+        off_road: false
+    }, {
+        id: 689,
+        artist: {
+            id: 937,
+            picture: "ID_Artiste-33.jpg",
+            first_name: "Sirois",
+            last_name: "Dominique",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "Dominique Sirois vit et travaille à Montréal. Détentrice d’une maîtrise en arts visuels de l’Université du Québec à Montréal, elle y poursuit un doctorat. Ses installations ont été présentées au centre Clark, à la galerie Division et à Latitude 53 au Canada. Avec Grégory Chatonsky, elle a également exposé au Museum of Contemporary Art de Taipei, au Centre d’art d’Enghien-les-Bains, au Unicorn Center for Arts à Beijing, au Mois de la Photo de Montréal, à iMAL, Center for digital cultures and technology de Bruxelles et plus récemment à Diagonale, Montréal. Elle a aussi obtenu plusieurs résidences à l’étranger, notamment à Glasgow, à Paris et à Barcelone.",
+            bio_fr: "Dominique Sirois vit et travaille à Montréal. Détentrice d’une maîtrise en arts visuels de l’Université du Québec à Montréal, elle y poursuit un doctorat. Ses installations ont été présentées au centre Clark, à la galerie Division et à Latitude 53 au Canada. Avec Grégory Chatonsky, elle a également exposé au Museum of Contemporary Art de Taipei, au Centre d’art d’Enghien-les-Bains, au Unicorn Center for Arts à Beijing, au Mois de la Photo de Montréal, à iMAL, Center for digital cultures and technology de Bruxelles et plus récemment à Diagonale, Montréal. Elle a aussi obtenu plusieurs résidences à l’étranger, notamment à Glasgow, à Paris et à Barcelone.",
+            bio_en: "Dominique Sirois lives and works in Montreal. Holding a Master of Fine Arts from the Université du Québec à Montréal, she is currently completing a doctorate. Her installation pieces have been shown in Canada at the Centre Clark, Galerie Division and Latitude 53. In partnership with Grégory Chatonsky, she has also exhibited at the Museum of Contemporary Art of Taipei, at the Centre d’art d’Enghien-les-Bains, at the Unicorn Center for Arts in Beijing, during the Mois de la Photo de Montréal, at iMAL, the Center for digital cultures and technology in Brussels, and more recently at Diagonale (Montreal). She has also participated in several residencies abroad, notably in Glasgow, Paris and Barcelona."
+        },
+        place: {
+            id: 212,
+            plan: "F_Cite_Int.jpg",
+            name: "Cité Internationale",
+            name_fr: "Cité Internationale",
+            name_en: "Cité Internationale"
+        },
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        plan: "F5.jpg",
+        picture: "ID_Oeuvre-34.jpg",
+        name: "Perfect Skins",
+        name_fr: "Perfect Skins",
+        name_en: "Perfect Skins",
+        description: "Sous forme d’assemblages sculpturaux composés de céramiques, de moulages, d’images et d’objets trouvés, les installations de Dominique Sirois allient un savoir-faire artisanal à une approche critique de la technologie dans ses dimensions économiques, esthétiques, archéologiques et minéralogiques.\r\nL’actuelle présentation s’inscrit dans une recherche anticipant un éventuel passé du futur promis par la technologie, notamment celui des visages, des corps et des peaux dont les représentations explosent aujourd’hui dans les réseaux sociaux. Tout se passe comme si ces images pouvaient être assemblées en une sorte de cartographie d’un corps collectif, désirant et désiré. L’artiste s’intéresse d’ailleurs à cette part affective liée au désir, et adopte une approche analogue à celle de l’économie comportementale, ancrée dans une réflexion sur le rôle du regard désirant face aux possessions matérielles et pécuniaires.\r\nDans l’esprit des mementos mori ou des vanités, l’esthétique de la ruine sert ici également à réfléchir à la portée éphémère des objets et des images. Leur altération avec le temps constitue d’ailleurs un motif récurrent du travail de Sirois.",
+        description_fr: "Sous forme d’assemblages sculpturaux composés de céramiques, de moulages, d’images et d’objets trouvés, les installations de Dominique Sirois allient un savoir-faire artisanal à une approche critique de la technologie dans ses dimensions économiques, esthétiques, archéologiques et minéralogiques.\r\nL’actuelle présentation s’inscrit dans une recherche anticipant un éventuel passé du futur promis par la technologie, notamment celui des visages, des corps et des peaux dont les représentations explosent aujourd’hui dans les réseaux sociaux. Tout se passe comme si ces images pouvaient être assemblées en une sorte de cartographie d’un corps collectif, désirant et désiré. L’artiste s’intéresse d’ailleurs à cette part affective liée au désir, et adopte une approche analogue à celle de l’économie comportementale, ancrée dans une réflexion sur le rôle du regard désirant face aux possessions matérielles et pécuniaires.\r\nDans l’esprit des mementos mori ou des vanités, l’esthétique de la ruine sert ici également à réfléchir à la portée éphémère des objets et des images. Leur altération avec le temps constitue d’ailleurs un motif récurrent du travail de Sirois.",
+        description_en: "Consisting of sculptural arrangements of ceramics, castings, images and found objects, Dominique Sirois’ installations blend artisanal know-how with a critical approach to technology regarding its economic, esthetic, archeological and mineralogical dimensions.\r\nThis presentation involves investigating a prospective past of the future promised by technology, concerning most particularly the representations of faces, bodies and skins, which have today exploded on social media. Things are progressing as if these images could be compiled into some kind of map of a collective body, both seeker and sought. The artist is, moreover, interested in this emotional side of desire and adopts an approach analogous to behavioural economics, focusing on the place of the desiring gaze in relation to material possessions and wealth.\r\nIn the spirit of memento mori or vanitas, the esthetics of the ruin are equally used here as a means of reflecting on the fleeting nature of objects and images. The way they change over time is likewise a recurring motif in Sirois’s work.",
+        index_itinerary: 34,
+        level: "",
+        latitude: "45.50088326",
+        longitude: "-73.5631603",
+        creation_year: "2018",
+        qr_code_token: "12b8c56b-4c1c-4296-bfb8-95efa88238fb",
+        off_road: false
+    }, {
+        id: 690,
+        artist: {
+            id: 935,
             picture: "ID_Artiste-31.jpg",
             first_name: "Blamchet-Gavouyère",
             last_name: "Alice",
@@ -1672,13 +1505,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Alice Blanchet-Gavouyère has been presenting minimalist choreographic works since 2016. She sets the interpreter’s sensitivity at the heart of choreographic language and questions the disconnection and mystification of contemporary political discourse. Her works are presented by the UQAM, Tagente and SOIR, among others. She is currently pursuing her artistic inquiries within the esthetic context of familiar and everyday environments."
         },
         place: {
-            id: 160,
+            id: 212,
             plan: "F_Cite_Int.jpg",
             name: "Cité Internationale",
             name_fr: "Cité Internationale",
             name_en: "Cité Internationale"
         },
-        artwork_type: {id: 107, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
         plan: "F6.jpg",
         picture: "ID_Oeuvre-32.jpg",
         name: "Le Petit du Grand Déclin",
@@ -1692,12 +1525,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50088101",
         longitude: "-73.56338775",
         creation_year: "2019",
-        qr_code_token: "5a1d0290-8d90-4d9e-ac39-72184135fca2",
+        qr_code_token: "aa9e53d2-061c-4143-af27-4a08fe1bc03e",
         off_road: false
     }, {
-        id: 483,
+        id: 691,
         artist: {
-            id: 743,
+            id: 939,
             picture: "ID_Artiste-35.jpg",
             first_name: "More ",
             last_name: "Gab",
@@ -1709,13 +1542,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Gab More is a painter and multidisciplinary artist from Trois-Rivières, recently established in Montreal.\r\nAfter briefly studying administration, he completed a pre-university program in visual arts before beginning a bachelor of fine arts in \"Studio Arts\" at Concordia University.\r\nIn just one year of study in Montreal, his work has been noticed in four group events, through three galleries. He also participated in the intercollegial of art in 2018 and won the Art Ici competition from Newad in 2017."
         },
         place: {
-            id: 160,
+            id: 212,
             plan: "F_Cite_Int.jpg",
             name: "Cité Internationale",
             name_fr: "Cité Internationale",
             name_en: "Cité Internationale"
         },
-        artwork_type: {id: 109, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
+        artwork_type: {id: 149, name: "Sculpture", name_fr: "Sculpture", name_en: "Sculpture"},
         plan: "F7.jpg",
         picture: "ID_Oeuvre-36.jpg",
         name: "One Cone Army",
@@ -1729,12 +1562,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50062759",
         longitude: "-73.56357872",
         creation_year: "2019",
-        qr_code_token: "a7a2e72e-c237-4170-b8c1-b706f2d7219a",
+        qr_code_token: "4b4cc707-4c5a-410f-9cc5-c6dad859521e",
         off_road: false
     }, {
-        id: 484,
+        id: 692,
         artist: {
-            id: 740,
+            id: 936,
             picture: "ID_Artiste-32.jpg",
             first_name: "Monnet",
             last_name: "Caroline",
@@ -1746,13 +1579,13 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Caroline Monnet is a multidisciplinary artist from Gatineau who lives and works in Montreal. Having finished her studies at the University of Ottawa and the University of Grenada (Spain), she is pursuing a career in the visual arts and in film. Her pieces have been shown in Canada and internationally in Europe and the United States, notably during the 2019 Whitney Biennial and the Toronto Biennale as well as being collected and shown at the Musée d’art contemporain de Montréal and at the National Gallery of Canada. Caroline Monnet is represented by Galerie Division."
         },
         place: {
-            id: 160,
+            id: 212,
             plan: "F_Cite_Int.jpg",
             name: "Cité Internationale",
             name_fr: "Cité Internationale",
             name_en: "Cité Internationale"
         },
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: "F8.jpg",
         picture: "A_decouvrir_sur_place.jpg",
         name: "In the name of progress",
@@ -1766,12 +1599,43 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50070956",
         longitude: "-73.56386626",
         creation_year: "2018",
-        qr_code_token: "f3b43f94-ffb6-42d7-9da7-bd98033b703a",
+        qr_code_token: "90dcf347-9b77-4544-bf01-374e87eb388b",
         off_road: false
     }, {
-        id: 485,
+        id: 694,
         artist: {
-            id: 744,
+            id: 944,
+            picture: null,
+            first_name: "Mercier ",
+            last_name: "Andréanne",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "Diplômée de l’Université du Québec à Montréal et détentrice d’un D.E.S.S en Arts, création et technologie réalisé à l’Université de Montréal, Andréanne Mercier investit plusieurs modes d’expression, oscillant entre la peinture, le jeu vidéo, la sculpture, l’installation, la modélisation 3D et l’animation. Depuis bientôt dix ans, elle participe à différents événements artistiques pour y exposer ses œuvres, tant sur la scène québécoise qu’à l’international, plus précisément au Japon, où elle a effectué deux résidences d’artiste.",
+            bio_fr: "Diplômée de l’Université du Québec à Montréal et détentrice d’un D.E.S.S en Arts, création et technologie réalisé à l’Université de Montréal, Andréanne Mercier investit plusieurs modes d’expression, oscillant entre la peinture, le jeu vidéo, la sculpture, l’installation, la modélisation 3D et l’animation. Depuis bientôt dix ans, elle participe à différents événements artistiques pour y exposer ses œuvres, tant sur la scène québécoise qu’à l’international, plus précisément au Japon, où elle a effectué deux résidences d’artiste.",
+            bio_en: "A graduate of the Université du Québec à Montréal and holder of a D.E.S.S diploma in Arts, Creation and Technology from the Université de Montréal, Andréanne Mercier explores several modes of expression, moving between painting, video games, sculpture, installation art, 3D models and animation. For close to 10 years now, she has been participating in various artistic events to exhibit her artworks, both in Quebec and internationally, most notably in Japan, where she completed two artist residencies."
+        },
+        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        plan: null,
+        picture: "A_decouvrir_sur_place.jpg",
+        name: "郷愁 / CITYLIFE",
+        name_fr: "郷愁 / CITYLIFE",
+        name_en: "郷愁 / CITYLIFE",
+        description: "La vidéo sélectionnée pour l’édition 2020 du festival Art Souterrain s’intitule 郷愁 / CITYLIFE, soit « kyoshou » ou « nostalgie », en japonais. Celle-ci fut réalisée en partenariat avec Hugo Engel et conçue sous l’égide d’une notion bien définie : la nostalgie. Portant un regard récapitulatif sur la société actuelle, qu’ils jugent empreinte de mélancolie, les artistes ont vite fait de constater l’omniprésence du passé. Selon eux, cet aspect « rétro » se manifeste particulièrement dans les médiums populaires, dont font partie les jeux vidéo inspirés de l’iconographie japonaise qui leur ont servi de modèles. Leur vidéo 郷愁/CITYLIFE est en quelque sorte un prolongement de leur réflexion sur la grisaille qui plombe nos existences, tristesse qu’ils ont transposée dans le personnage principal, Momo, que le récepteur suit durant ses pérégrinations, à savoir une jeune adulte perdue dans la nouvelle ville où elle vient d’emménager. Empruntant la grammaire visuelle des jeux pixel art à défilement horizontal, la bande vidéo-graphique accompagne l’héroïne qui, chemin faisant, rencontre diverses personnes qui partagent des pans de leur histoire. Au fur et à mesure de la scrutation des interactions entre les protagonistes, le regardant est invité à cogiter sur les angles morts de sa propre destinée pour envisager sa possible transformation, sa restructuration ou sa réinitialisation éventuelle.",
+        description_fr: "La vidéo sélectionnée pour l’édition 2020 du festival Art Souterrain s’intitule 郷愁 / CITYLIFE, soit « kyoshou » ou « nostalgie », en japonais. Celle-ci fut réalisée en partenariat avec Hugo Engel et conçue sous l’égide d’une notion bien définie : la nostalgie. Portant un regard récapitulatif sur la société actuelle, qu’ils jugent empreinte de mélancolie, les artistes ont vite fait de constater l’omniprésence du passé. Selon eux, cet aspect « rétro » se manifeste particulièrement dans les médiums populaires, dont font partie les jeux vidéo inspirés de l’iconographie japonaise qui leur ont servi de modèles. Leur vidéo 郷愁/CITYLIFE est en quelque sorte un prolongement de leur réflexion sur la grisaille qui plombe nos existences, tristesse qu’ils ont transposée dans le personnage principal, Momo, que le récepteur suit durant ses pérégrinations, à savoir une jeune adulte perdue dans la nouvelle ville où elle vient d’emménager. Empruntant la grammaire visuelle des jeux pixel art à défilement horizontal, la bande vidéo-graphique accompagne l’héroïne qui, chemin faisant, rencontre diverses personnes qui partagent des pans de leur histoire. Au fur et à mesure de la scrutation des interactions entre les protagonistes, le regardant est invité à cogiter sur les angles morts de sa propre destinée pour envisager sa possible transformation, sa restructuration ou sa réinitialisation éventuelle.",
+        description_en: "The video selected for the 2020 edition of the Art Souterrain Festival is titled 郷愁/ CITYLIFE or “kyoshou,” which means nostalgia in Japanese. The video was made in collaboration with Hugo Engel and focuses on the well-defined concept of nostalgia. While looking over today’s society, which they diagnose as melancholic, the artists quickly recognized the omnipresence of the past. According to them, this “retro” bend is particularly obvious in popular media, including the video games inspired by Japanese imagery that served as their models. Their video, 郷愁 / CITYLIFE, is a kind of continuation of their reflection on the greyness of our lives, a sadness that they injected into the main character, Momo, a young adult lost in the new city she has just moved into whom the spectator follows during her travels. Drawing on the visual vocabulary of horizontal-scrolling pixel art games, the videotape accompa- nies the heroine who, along the way, meets various people who share parts of their history with her. As the interactions between the protagonists are scrutinized, the viewer is invited to reflect upon their own life path’s blind spots to consider its possible transformation, restructuring or eventual reinitialization.",
+        index_itinerary: 42,
+        level: "",
+        latitude: "45.5127498",
+        longitude: "-73.56073666",
+        creation_year: "",
+        qr_code_token: "38157335-1e57-475c-bea2-8ef70b8abb2b",
+        off_road: true
+    }, {
+        id: 693,
+        artist: {
+            id: 940,
             picture: "ID_Artiste-36.jpg",
             first_name: "Diaz",
             last_name: "Manuel",
@@ -1783,14 +1647,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Mexico City in 1983, Manuel Diaz lives and works in Mexico.\r\nHe is a graduate of the Faculty of Art and Design of the National Autonomous University of Mexico where he completed a diploma in design and visual communication.\r\nHis multidisciplinary artworks have been shown in museums, galleries, festivals and alternative exhibition spaces in Mexico and internationally including, among others, Russia, Spain, Cuba, the United States, Germany, France, Argentina and Italy.\r\nFurthermore, in 2012, FONCA-CONACULTA (National Council for Culture and the Arts, Mexico) awarded him the Young Creators scholarship."
         },
         place: {
-            id: 160,
+            id: 212,
             plan: "F_Cite_Int.jpg",
             name: "Cité Internationale",
             name_fr: "Cité Internationale",
             name_en: "Cité Internationale"
         },
         artwork_type: {
-            id: 110,
+            id: 150,
             name: "Projection Vidéo",
             name_fr: "Projection Vidéo",
             name_en: "Video projection"
@@ -1808,12 +1672,43 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50066895",
         longitude: "-73.5639714",
         creation_year: "2019",
-        qr_code_token: "257341ce-af4d-4afe-bf24-ce1f8e6cf8a1",
+        qr_code_token: "16c912a3-e3ad-4367-9829-e2eacd5e0e26",
         off_road: false
     }, {
-        id: 488,
+        id: 695,
         artist: {
-            id: 750,
+            id: 945,
+            picture: "ID_Artiste-41.jpg",
+            first_name: "Inflatables Dieties",
+            last_name: "",
+            country: "Kingston, Canada",
+            country_fr: "Kingston, Canada",
+            country_en: "Kingston, Canada",
+            bio: "Inflatable Deities est un duo collaboratif, composé de Jessica Mensch et d’Emily Pelstring.\r\nLes projets élaborés sont des fictions élargies dans lesquelles des histoires se déroulent sur de multiples supports, comme la vidéo, l'installation et la performance.",
+            bio_fr: "Inflatable Deities est un duo collaboratif, composé de Jessica Mensch et d’Emily Pelstring.\r\nLes projets élaborés sont des fictions élargies dans lesquelles des histoires se déroulent sur de multiples supports, comme la vidéo, l'installation et la performance.",
+            bio_en: "Inflatable Deities is the collaborative duo of Jessica Mensch and Emily Pelstring.\r\nThe projects developed are expanded fictions in which stories unfold over various media, such as video, installation and performance art."
+        },
+        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        artwork_type: {id: 147, name: "Performance", name_fr: "Performance", name_en: "Performance"},
+        plan: null,
+        picture: "ID_Oeuvre-43.jpg",
+        name: "Mourning of the Living Past",
+        name_fr: "Mourning of the Living Past",
+        name_en: "Mourning of the Living Past",
+        description: "« Mourning of the Living Past » est une science-fiction de vingt-cinq minutes. Il s’agit d’un voyage dans le temps intégrant performance en direct, vidéo et musique.\r\nDans leur style déformé et psychédélique, les artistes adoptent des personnalités de scientifiques pour prendre conscience d'une société lointaine et future.\r\nCe projet dystopique intègre des technologies fictives spéculatives, des horreurs corporelles surréalistes et un travail vocal expérimental pour exprimer les inquiétudes contemporaines autour de la régression sociopolitique.",
+        description_fr: "« Mourning of the Living Past » est une science-fiction de vingt-cinq minutes. Il s’agit d’un voyage dans le temps intégrant performance en direct, vidéo et musique.\r\nDans leur style déformé et psychédélique, les artistes adoptent des personnalités de scientifiques pour prendre conscience d'une société lointaine et future.\r\nCe projet dystopique intègre des technologies fictives spéculatives, des horreurs corporelles surréalistes et un travail vocal expérimental pour exprimer les inquiétudes contemporaines autour de la régression sociopolitique.",
+        description_en: "Mourning of the Living Past is a twenty-five-minute time-travel sci-fi film integrating live performance, video and music.\r\nIn their distorted and psychedelic style, the artists take on the personas of scientists in order to realize what this far distantly future society has become.\r\nThis dystopian project brings together speculative fictional technologies, surrealist body horror and experimental vocal work to express contemporary apprehensions concerning sociopolitical regression.",
+        index_itinerary: 43,
+        level: "",
+        latitude: "45.5127498",
+        longitude: "-73.56073666",
+        creation_year: "2017",
+        qr_code_token: "f7df7299-2a11-416f-a2d9-7ba320184d99",
+        off_road: true
+    }, {
+        id: 696,
+        artist: {
+            id: 946,
             picture: "ID_Artiste-42.jpg",
             first_name: "Lachance ",
             last_name: "Sandra",
@@ -1824,8 +1719,8 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_fr: "Artiste photographe, Sandra Lachance est notamment détentrice d’une maîtrise en arts visuels et médiatiques de l’Université du Québec à Montréal. Active sur la scène artistique nationale et internationale depuis le début des années 2000, elle a participé à de nombreuses expositions individuelles et collectives, lesquelles sont pour elle autant d’occasions renouvelées d’approfondir ses préoccupations tournées vers deux thématiques phares qui caractérisent sa production artistique : la quotidienneté et les environnements sociaux.",
             bio_en: "A photographer, Sandra Lachance holds, among others, a Master in Fine Arts and Media Arts degree from the Université du Québec à Montréal. Active on both the national and international artistic scene since the early 2000s, she has participated in numerous solo and group exhibitions. These are for her renewed opportunities to delve deeper into the questions that preoccupy her. Her artistic practice is focused on two main themes: daily life and social settings."
         },
-        place: {id: 164, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
         plan: null,
         picture: "A_decouvrir_sur_place.jpg",
         name: "A mon Dernier Repas",
@@ -1839,43 +1734,12 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.5127498",
         longitude: "-73.56073666",
         creation_year: "2012",
-        qr_code_token: "e7eace75-b741-4421-8aca-2c72c05e96da",
+        qr_code_token: "0557737a-221d-44ef-992e-837c172f6d2d",
         off_road: true
     }, {
-        id: 489,
+        id: 698,
         artist: {
-            id: 751,
-            picture: "ID_Artiste-43.jpg",
-            first_name: "Lamarche",
-            last_name: "Laurent",
-            country: "Montréal, Canada",
-            country_fr: "Montréal, Canada",
-            country_en: "Montréal, Canada",
-            bio: "Titulaire d’une maîtrise en arts visuels et médiatiques de l’Université du Québec à Montréal, Laurent Lamarche explore différents modes d’expression, qu’il s’agisse de la photographie, de la sculpture, de l’installation ou du multimédia. Ses œuvres ont été présentées dans de multiples expositions nationales et internationales, tant collectives qu’individuelles, et font partie de collections d’institutions artistiques et de sociétés de renom. En outre, l’artiste a réalisé plus d’une dizaine d’œuvres d’art public dans le cadre de la Politique d’intégration de l’art à l’architecture.",
-            bio_fr: "Titulaire d’une maîtrise en arts visuels et médiatiques de l’Université du Québec à Montréal, Laurent Lamarche explore différents modes d’expression, qu’il s’agisse de la photographie, de la sculpture, de l’installation ou du multimédia. Ses œuvres ont été présentées dans de multiples expositions nationales et internationales, tant collectives qu’individuelles, et font partie de collections d’institutions artistiques et de sociétés de renom. En outre, l’artiste a réalisé plus d’une dizaine d’œuvres d’art public dans le cadre de la Politique d’intégration de l’art à l’architecture.",
-            bio_en: "Holding a Master in Fine Arts and Media Arts degree from the Université du Québec à Montréal, Laurent Lamarche explores different modes of expression, whether it be photography, sculpture, installations or multimedia arts. His works have been presented in numerous national and international exhibitions, both as solo shows and as part of a group. They are also collected by renowned public organizations and art institutions. Moreover, the artist has created more than a dozen public artworks as part of the Politique d’intégration de l’art à l’architecture."
-        },
-        place: {id: 164, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
-        artwork_type: {id: 106, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
-        plan: null,
-        picture: "A_decouvrir_sur_place.jpg",
-        name: "Fossile, Trace",
-        name_fr: "Fossile, Trace",
-        name_en: "Fossile, Trace",
-        description: "Les créations de Laurent Lamarche matérialisent ses cogitations à propos de la perméabilité relatives entre la nature et la fiction par l’entremise de formes organiques artificielles créées de toute pièce. Pour synthétiser, l’artiste accomplit une sorte d’osmose entre l’art et la science pour ainsi transfigurer la réalité et permettre au récepteur de s’extraire momentanément du réel afin de plonger dans un univers extraordinaire et utopique. En raison de l’amalgame alambiqué qu’il opère entre la matière et le concept, la technologie et la nature, son iconographie visuelle est fantasmagorique, insolite et singulière. En fait preuve la série photographique Fossile, trace, choisie pour l’édition 2020 du festival Art Souterrain, montrant à voir des organismes fossilisés inventés, facticement grossis, des spécimens artificiels et futuristes qui semblent avoir été placés sous la lentille d’un microscope. En fait, cette série s’ancre sur le concept d’ambivalence, plus spécifiquement le dédoublement sémantique qu’autorise l’idée de la trace. Certes vestige d’un temps passé, l’empreinte est néanmoins perceptible dans le présent. Et s’il s’agissait plutôt d’une impression laissée par un nouvel organisme ? Au fond, Fossile, trace fait valser les temporalités, schèmes sur lesquels repose sans conteste l’hypothèse d’un « reset ».",
-        description_fr: "Les créations de Laurent Lamarche matérialisent ses cogitations à propos de la perméabilité relatives entre la nature et la fiction par l’entremise de formes organiques artificielles créées de toute pièce. Pour synthétiser, l’artiste accomplit une sorte d’osmose entre l’art et la science pour ainsi transfigurer la réalité et permettre au récepteur de s’extraire momentanément du réel afin de plonger dans un univers extraordinaire et utopique. En raison de l’amalgame alambiqué qu’il opère entre la matière et le concept, la technologie et la nature, son iconographie visuelle est fantasmagorique, insolite et singulière. En fait preuve la série photographique Fossile, trace, choisie pour l’édition 2020 du festival Art Souterrain, montrant à voir des organismes fossilisés inventés, facticement grossis, des spécimens artificiels et futuristes qui semblent avoir été placés sous la lentille d’un microscope. En fait, cette série s’ancre sur le concept d’ambivalence, plus spécifiquement le dédoublement sémantique qu’autorise l’idée de la trace. Certes vestige d’un temps passé, l’empreinte est néanmoins perceptible dans le présent. Et s’il s’agissait plutôt d’une impression laissée par un nouvel organisme ? Au fond, Fossile, trace fait valser les temporalités, schèmes sur lesquels repose sans conteste l’hypothèse d’un « reset ».",
-        description_en: "Through his work, Laurent Lamarche’s seeks to give form to his views on how relatively blurry the line between nature and fiction can be by using completely artificially created organic forms. To operate this synthesis, the artist realizes a type of osmosis between art and science to transform the real, allowing the viewer to momentarily leave reality and step into an extraordinary and utopian universe. As a result of this convoluted blend of matter and concept, technology and nature, his visual iconography is phantasmagoric, unusual and unique. And such is the photographic series Fossile, trace, selected for the 2020 edition of the Art Souterrain Festival, which features supposedly enlarged imaginary fossilized organisms, artificial and futuristic specimens that appear to have been placed under the lens of a microscope. In fact, this series is grounded on the idea of ambivalence, more specifically on the double meaning contained in the concept of the record: as the imprint is a relic of past times, it continues to be visible in the present. What if it was an impression left by a new organism? In the end, Fossile, trace plays with time, an undoubtedly essential element of the hypothesis at the basis of a reset.",
-        index_itinerary: 45,
-        level: "",
-        latitude: "45.5127498",
-        longitude: "-73.56073666",
-        creation_year: "2020",
-        qr_code_token: "bf0a5980-60dd-426d-9aa4-594465a6ce6b",
-        off_road: true
-    }, {
-        id: 490,
-        artist: {
-            id: 754,
+            id: 950,
             picture: null,
             first_name: "Latulippe",
             last_name: "Mathieu",
@@ -1886,8 +1750,8 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_fr: "Mathieu Latulippe vit et travaille à Montréal. Son travail a été présenté au Canada et à l’étranger, notamment, au Festival International du film sur l’art de Montréal, à La Manif d’Art de Québec 4, à la Fonderie Darling, à la Galerie B-312, à OPTICA, à la Triennale 2011 du Musée d'art contemporain de Montréal. Il a été artiste en résidence, entre autres, à Among other things en Turquie, à art3 à Valence, et aux studios-résidences du CALQ de Bâle et de Séoul. Son travail fait partie de nombreuses collections privées et publiques. Il est lauréat du prix Victor-Martyn-Lynch-Stanton 2015 pour les arts visuels.",
             bio_en: "Mathieu Latulippe lives and works in Montreal. Her work has been presented in Canada and abroad, notably at the Montreal International Festival of Films on Art, La Manif d'Art de Québec 4, the Darling Foundry, the Galerie B-312, OPTICA, at the 2011 Triennale of the Montreal Museum of Contemporary Art. He has been artist in residence, among others, at Among other things in Turkey, at art3 in Valence, and at CALQ studios-residences in Basel and Seoul. His work is part of many private and public collections. He is the winner of the 2015 Victor-Martyn-Lynch-Stanton prize for the visual arts."
         },
-        place: {id: 169, plan: null, name: "Skol", name_fr: "Skol", name_en: "Skol"},
-        artwork_type: {id: 108, name: "Installation", name_fr: "Installation", name_en: "Installation"},
+        place: {id: 221, plan: null, name: "Skol", name_fr: "Skol", name_en: "Skol"},
+        artwork_type: {id: 148, name: "Installation", name_fr: "Installation", name_en: "Installation"},
         plan: null,
         picture: "A_decouvrir_sur_place.jpg",
         name: "Démesures et Concession",
@@ -1901,12 +1765,43 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50598598",
         longitude: "-73.56686497",
         creation_year: "",
-        qr_code_token: "b4d0953a-69ee-41c1-a9dd-138db9fe16b1",
+        qr_code_token: "5f3b116d-9534-4866-9650-b0819c40b254",
         off_road: true
     }, {
-        id: 491,
+        id: 697,
         artist: {
-            id: 755,
+            id: 947,
+            picture: "ID_Artiste-43.jpg",
+            first_name: "Lamarche",
+            last_name: "Laurent",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "Titulaire d’une maîtrise en arts visuels et médiatiques de l’Université du Québec à Montréal, Laurent Lamarche explore différents modes d’expression, qu’il s’agisse de la photographie, de la sculpture, de l’installation ou du multimédia. Ses œuvres ont été présentées dans de multiples expositions nationales et internationales, tant collectives qu’individuelles, et font partie de collections d’institutions artistiques et de sociétés de renom. En outre, l’artiste a réalisé plus d’une dizaine d’œuvres d’art public dans le cadre de la Politique d’intégration de l’art à l’architecture.",
+            bio_fr: "Titulaire d’une maîtrise en arts visuels et médiatiques de l’Université du Québec à Montréal, Laurent Lamarche explore différents modes d’expression, qu’il s’agisse de la photographie, de la sculpture, de l’installation ou du multimédia. Ses œuvres ont été présentées dans de multiples expositions nationales et internationales, tant collectives qu’individuelles, et font partie de collections d’institutions artistiques et de sociétés de renom. En outre, l’artiste a réalisé plus d’une dizaine d’œuvres d’art public dans le cadre de la Politique d’intégration de l’art à l’architecture.",
+            bio_en: "Holding a Master in Fine Arts and Media Arts degree from the Université du Québec à Montréal, Laurent Lamarche explores different modes of expression, whether it be photography, sculpture, installations or multimedia arts. His works have been presented in numerous national and international exhibitions, both as solo shows and as part of a group. They are also collected by renowned public organizations and art institutions. Moreover, the artist has created more than a dozen public artworks as part of the Politique d’intégration de l’art à l’architecture."
+        },
+        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        artwork_type: {id: 146, name: "Photographie", name_fr: "Photographie", name_en: "Photography"},
+        plan: null,
+        picture: "A_decouvrir_sur_place.jpg",
+        name: "Fossile, Trace",
+        name_fr: "Fossile, Trace",
+        name_en: "Fossile, Trace",
+        description: "Les créations de Laurent Lamarche matérialisent ses cogitations à propos de la perméabilité relatives entre la nature et la fiction par l’entremise de formes organiques artificielles créées de toute pièce. Pour synthétiser, l’artiste accomplit une sorte d’osmose entre l’art et la science pour ainsi transfigurer la réalité et permettre au récepteur de s’extraire momentanément du réel afin de plonger dans un univers extraordinaire et utopique. En raison de l’amalgame alambiqué qu’il opère entre la matière et le concept, la technologie et la nature, son iconographie visuelle est fantasmagorique, insolite et singulière. En fait preuve la série photographique Fossile, trace, choisie pour l’édition 2020 du festival Art Souterrain, montrant à voir des organismes fossilisés inventés, facticement grossis, des spécimens artificiels et futuristes qui semblent avoir été placés sous la lentille d’un microscope. En fait, cette série s’ancre sur le concept d’ambivalence, plus spécifiquement le dédoublement sémantique qu’autorise l’idée de la trace. Certes vestige d’un temps passé, l’empreinte est néanmoins perceptible dans le présent. Et s’il s’agissait plutôt d’une impression laissée par un nouvel organisme ? Au fond, Fossile, trace fait valser les temporalités, schèmes sur lesquels repose sans conteste l’hypothèse d’un « reset ».",
+        description_fr: "Les créations de Laurent Lamarche matérialisent ses cogitations à propos de la perméabilité relatives entre la nature et la fiction par l’entremise de formes organiques artificielles créées de toute pièce. Pour synthétiser, l’artiste accomplit une sorte d’osmose entre l’art et la science pour ainsi transfigurer la réalité et permettre au récepteur de s’extraire momentanément du réel afin de plonger dans un univers extraordinaire et utopique. En raison de l’amalgame alambiqué qu’il opère entre la matière et le concept, la technologie et la nature, son iconographie visuelle est fantasmagorique, insolite et singulière. En fait preuve la série photographique Fossile, trace, choisie pour l’édition 2020 du festival Art Souterrain, montrant à voir des organismes fossilisés inventés, facticement grossis, des spécimens artificiels et futuristes qui semblent avoir été placés sous la lentille d’un microscope. En fait, cette série s’ancre sur le concept d’ambivalence, plus spécifiquement le dédoublement sémantique qu’autorise l’idée de la trace. Certes vestige d’un temps passé, l’empreinte est néanmoins perceptible dans le présent. Et s’il s’agissait plutôt d’une impression laissée par un nouvel organisme ? Au fond, Fossile, trace fait valser les temporalités, schèmes sur lesquels repose sans conteste l’hypothèse d’un « reset ».",
+        description_en: "Through his work, Laurent Lamarche’s seeks to give form to his views on how relatively blurry the line between nature and fiction can be by using completely artificially created organic forms. To operate this synthesis, the artist realizes a type of osmosis between art and science to transform the real, allowing the viewer to momentarily leave reality and step into an extraordinary and utopian universe. As a result of this convoluted blend of matter and concept, technology and nature, his visual iconography is phantasmagoric, unusual and unique. And such is the photographic series Fossile, trace, selected for the 2020 edition of the Art Souterrain Festival, which features supposedly enlarged imaginary fossilized organisms, artificial and futuristic specimens that appear to have been placed under the lens of a microscope. In fact, this series is grounded on the idea of ambivalence, more specifically on the double meaning contained in the concept of the record: as the imprint is a relic of past times, it continues to be visible in the present. What if it was an impression left by a new organism? In the end, Fossile, trace plays with time, an undoubtedly essential element of the hypothesis at the basis of a reset.",
+        index_itinerary: 45,
+        level: "",
+        latitude: "45.5127498",
+        longitude: "-73.56073666",
+        creation_year: "2020",
+        qr_code_token: "3f857511-6797-4e2e-ae0f-860d91832b1c",
+        off_road: true
+    }, {
+        id: 699,
+        artist: {
+            id: 951,
             picture: null,
             first_name: "Baxter",
             last_name: "Bonnie",
@@ -1918,14 +1813,14 @@ export const artworks: IResponseApi<IArtwork> = {
             bio_en: "Born in Texarkana, Texas, Bonnie Baxter has lived and worked in Val-David since 1972. Her installation bring together printing, video and sculpture. She has been exhibiting in Canada and internationally for over four decades, and recently at Centre CLARK in 2020 and FOFA Gallery of Concordia University in 2019, as well as major surveys of her work at the Musée d’art contemporain des Laurentides (MAC LAU), the touring exhibition Rewind (2005-07) and Bonnie Baxter : Présent / Passé / Futur (2018-19). She has repeatedly received grants from the Conseil des arts et des lettres du Québec (CALQ) and the Canada Council for the Arts. Furthermore, she was awarded the CALQ’s Grand Prix de la culture des Laurentides in 2005, an excellence in teaching award from Concordia University in 2016 and, in 2018, the Prix Soleil lifetime achievement award. Bonnie Baxter is represented by Galerie Division."
         },
         place: {
-            id: 170,
+            id: 222,
             plan: null,
             name: "Observatoire Place Ville Marie ",
             name_fr: "Observatoire Place Ville Marie ",
             name_en: "Observatoire Place Ville Marie "
         },
         artwork_type: {
-            id: 114,
+            id: 154,
             name: "Estampes numériques, sculptures et vidéos",
             name_fr: "Estampes numériques, sculptures et vidéos",
             name_en: "Digital prints, sculptures and videos"
@@ -1943,7 +1838,112 @@ export const artworks: IResponseApi<IArtwork> = {
         latitude: "45.50160255",
         longitude: "-73.56862701",
         creation_year: "",
-        qr_code_token: "7b150da3-b10d-47ac-83b2-fb48584a9bb7",
+        qr_code_token: "eefb3df6-9a45-4d49-a917-37f0938c8844",
+        off_road: true
+    }, {
+        id: 700,
+        artist: {
+            id: 927,
+            picture: "ID_Artiste-23.jpg",
+            first_name: "Cheuk",
+            last_name: "Chloe",
+            country: "Montréal, Canada",
+            country_fr: "Montréal, Canada",
+            country_en: "Montréal, Canada",
+            bio: "Depuis 2012, Chloé Cheuk est diplômée de l'École des médias créatifs de la City University de Hong Kong. Elle poursuit actuellement une maîtrise en beaux-arts, spécialisée en sculpture, à l'Université Concordia, au Québec.\r\nElle a participé à plusieurs expositions solitaires et collectives à Hong Kong (2017), en Pologne, en Autriche et à Dubaï. En 2014, elle a été lauréate du prix « Mention spéciale » au 19 e Festival ifva (catégorie « Médias interactifs »). En 2016, elle a été membre du comité de programme international de l'ISEA.\r\nTravaillant simultanément dans l'installation, les médias interactifs, la photographie et la vidéo, Chloé Cheuk se concentre sur la « structure des sentiments » entre les personnes et la société. Pour cela, elle reconstruit des objets par le biais de métaphores, dans un vocabulaire spirituel et esthétique réduit.\r\nSes œuvres se rapportent souvent aux expériences ainsi qu’aux souvenirs quotidiens des spectateurs, personnels ou collectifs, qui établissent un dialogue intime. Signifiant différentes implications, les objets quotidiens qu'elle choisit font souvent écho à notre monde contemporain sur les plans personnel, social et politique.",
+            bio_fr: "Depuis 2012, Chloé Cheuk est diplômée de l'École des médias créatifs de la City University de Hong Kong. Elle poursuit actuellement une maîtrise en beaux-arts, spécialisée en sculpture, à l'Université Concordia, au Québec.\r\nElle a participé à plusieurs expositions solitaires et collectives à Hong Kong (2017), en Pologne, en Autriche et à Dubaï. En 2014, elle a été lauréate du prix « Mention spéciale » au 19 e Festival ifva (catégorie « Médias interactifs »). En 2016, elle a été membre du comité de programme international de l'ISEA.\r\nTravaillant simultanément dans l'installation, les médias interactifs, la photographie et la vidéo, Chloé Cheuk se concentre sur la « structure des sentiments » entre les personnes et la société. Pour cela, elle reconstruit des objets par le biais de métaphores, dans un vocabulaire spirituel et esthétique réduit.\r\nSes œuvres se rapportent souvent aux expériences ainsi qu’aux souvenirs quotidiens des spectateurs, personnels ou collectifs, qui établissent un dialogue intime. Signifiant différentes implications, les objets quotidiens qu'elle choisit font souvent écho à notre monde contemporain sur les plans personnel, social et politique.",
+            bio_en: "Chloé Cheuk graduated from City University’s School of Creative Media (Hong Kong) in 2012. She is currently pursuing a Master of Fine Arts degree with a concentration in sculpture at Concordia University in Quebec.\r\nShe has participated in numerous solo and group exhibitions in Hong Kong (2017), Poland, Austria and Dubai. In 2014, she was awarded the Special Mention Prize at the 19 th edition of the ifva Festival (in the Interactive Media category). She was a member of the ISEA’s international program committee for the year 2016.\r\nWorking simultaneously in the mediums of installation art, interactive media, photography and video, Chloé Cheuk focuses on the “structure of feelings” between people and society by reconstructing objects through metaphors using a pared down vocabulary based in spirituality and esthetics.\r\nHer artworks often touch upon spectators’ everyday experiences and memories, on both an individual and collective level, which lay the groundwork for an intimate conversation. Carrying various implications, the ordinary objects she chooses frequently echo the personal, social and political facets of our contemporary world."
+        },
+        place: {id: 223, plan: null, name: "Ellephant", name_fr: "Ellephant", name_en: "Ellephant"},
+        artwork_type: {id: 155, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
+        plan: null,
+        picture: "A_decouvrir_sur_place.jpg",
+        name: "Deep Cleansing",
+        name_fr: "Deep Cleansing",
+        name_en: "Deep Cleansing",
+        description: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.",
+        description_fr: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.",
+        description_en: "Le processus de nettoyage consiste à éliminer les contaminants afin d'atteindre un certain niveau de confort. Nettoyer, c'est enlever et oublier - volontairement, involontairement, sélectivement ou sans discernement. En éthique, les contaminants sont des formes hétérogènes qui provoquent un malaise. La «solution finale» pour éliminer la saleté consiste à effectuer un nettoyage en profondeur. En blanchissant les vestiges physiques, on se détache des autres et recouvre le passé de nouveaux souvenirs, comme si ce qui avait précédé n'avait jamais existé. Lorsque les documents historiques sont constamment réinterprétés et refusés, avons-nous vraiment le choix de nous souvenir de la vérité, de nos expériences et de nos sentiments? Quand on nous demande constamment d'aller de l'avant et de ne pas nous attarder sur les erreurs passées, comment passer à gué et revenir à ce qui n'existe peut-être plus? Dans l'exposition, l'artiste explore le terme «nettoyage» à l'aide de produits de nettoyage. L'artiste fixe les processus de nettoyage et exprime les frustrations et les conflits de se souvenir des vérités qui sont emportées ou déformées. La mémoire est éphémère, lavable et peut être éradiquée. L'oubli peut ne pas être une perte pour tout le monde - il peut aussi s'agir d'une stratégie souhaitable pour solidifier une idéologie. Se souvenir et oublier sont des actes politiques. Alors que la mémoire des événements peut être transmise à la prochaine génération à travers des enregistrements et des archives, la mémoire des émotions qui ne peut être atteinte que par des expériences sensorielles ne peut pas être transcendée.        The process of cleansing is to remove contaminants in order to achieve a certain level of comfort. To cleanse is to remove and forget—willingly, unwillingly, selectively or indiscriminately. In ethics, contaminants are heterogenous forms that cause uneasiness. The “final solution” for the removal of dirt is to perform a deep cleansing. By bleaching physical vestiges, one detaches oneself from others and covers the past with new memories, as if what came before never existed. When historical records are constantly being re-interpreted and denied, do we truly have a choice to remember the truth, our experiences, and our feelings? When we are constantly asked to move forward and not dwell on past mistakes, how do we ford the tide and return to what may no longer exist? In the exhibition, the artist investigates the term “cleansing” through the use of cleaning products. The artist fixes the processes of cleansing and expresses the frustrations and conflict of remembering truths that are being washed away or distorted. Memory is ephemeral, washable, and can be eradicated. Forgetfulness may not be a loss for everyone—it can also be a desirable strategy to solidify an ideology. Both remembering and forgetting are political acts. While event memory can be passed on to the next generation through records and archives, emotion memory that can only be attained through sensory experiences cannot be transcended.",
+        index_itinerary: 50,
+        level: "",
+        latitude: "45.50975746",
+        longitude: "-73.56177306",
+        creation_year: "",
+        qr_code_token: "f07aa400-8bad-4039-9440-1d0bf5cdc0e2",
+        off_road: true
+    }, {
+        id: 701,
+        artist: {
+            id: 952,
+            picture: null,
+            first_name: "Canseco",
+            last_name: "Luis",
+            country: "Mexico, Mexique",
+            country_fr: "Mexico, Mexique",
+            country_en: "Mexico City, Mexico",
+            bio: "",
+            bio_fr: "",
+            bio_en: ""
+        },
+        place: {
+            id: 219,
+            plan: null,
+            name: "Institut Culturel du Mexique",
+            name_fr: "Institut Culturel du Mexique",
+            name_en: "Cultural Institute of Mexico"
+        },
+        artwork_type: {id: 155, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
+        plan: null,
+        picture: "A_decouvrir_sur_place.jpg",
+        name: "Matière première - RESET",
+        name_fr: "Matière première - RESET",
+        name_en: "Matière première - RESET",
+        description: "Les oeuvres qui feront partie du projet Matière Première seront produites in situ par l’artiste Luis Canseco. Canseco entreprend un voyage qui commence dans le cadre de la dimension utilitaire et pratique d'une série d'objets industriels extraits de ses contextes de fabrication d'origine. Faisant appel à l’idée que tout objet et toute action, produit d’un processus naturel ou d’une activité humaine, peut devenir une fonction esthétique, l’artiste va encore plus loin dans l’endroit où il se demande ce qui différencie le phénomène Esthétique de l’œuvre d'art . Canseco parvient non seulement à potentialiser sa fonction esthétique, mais également à ouvrir des conditions de possibilité pour l'ouverture et l'exploration du territoire artistique en leur imprimant des qualités dérivées de leur propre sensibilité.",
+        description_fr: "Les oeuvres qui feront partie du projet Matière Première seront produites in situ par l’artiste Luis Canseco. Canseco entreprend un voyage qui commence dans le cadre de la dimension utilitaire et pratique d'une série d'objets industriels extraits de ses contextes de fabrication d'origine. Faisant appel à l’idée que tout objet et toute action, produit d’un processus naturel ou d’une activité humaine, peut devenir une fonction esthétique, l’artiste va encore plus loin dans l’endroit où il se demande ce qui différencie le phénomène Esthétique de l’œuvre d'art . Canseco parvient non seulement à potentialiser sa fonction esthétique, mais également à ouvrir des conditions de possibilité pour l'ouverture et l'exploration du territoire artistique en leur imprimant des qualités dérivées de leur propre sensibilité.",
+        description_en: "The works that are part of the Raw Material project will be produced in situ by the artist Luis Canseco. Canseco undertakes a journey that begins within the scope of the practical-utilitarian dimension of a series of industrial objects extracted from its original manufacturing contexts. Appealing to the idea that any object and any action, product of either a natural process or a human activity, can become an aesthetic function, the artist goes one step further to the place where he wonders what differentiates the phenomenon Aesthetic of the work of art. It is right there where from the intervention and fusion of these pieces with other materials such as graphite and objects from territorial environments (stones, plastic, metal etc), Canseco not only manages to potentiate its aesthetic function, but also to open conditions of possibility for the opening and exploration of the artistic territory by printing on them qualities derived from their own sensitivity.",
+        index_itinerary: 51,
+        level: "",
+        latitude: "45.50161268",
+        longitude: "-73.57564116",
+        creation_year: "",
+        qr_code_token: "c36fdd9d-e5f1-4b6a-881a-21272d4f2026",
+        off_road: true
+    }, {
+        id: 702,
+        artist: {
+            id: 953,
+            picture: null,
+            first_name: "Multiple Artiste",
+            last_name: "",
+            country: "",
+            country_fr: "",
+            country_en: "",
+            bio: "",
+            bio_fr: "",
+            bio_en: ""
+        },
+        place: {
+            id: 217,
+            plan: null,
+            name: "Château Dufresne ",
+            name_fr: "Château Dufresne ",
+            name_en: "Château Dufresne "
+        },
+        artwork_type: {id: 155, name: "Exposition", name_fr: "Exposition", name_en: "Exposition"},
+        plan: null,
+        picture: "A_decouvrir_sur_place.jpg",
+        name: "Expositions du Château Dufresne",
+        name_fr: "Expositions du Château Dufresne",
+        name_en: "Expositions du Château Dufresne",
+        description: "Le Château Dufresne est une somptueuse résidence jumelée d’inspiration beaux-arts dans laquelle vivait une famille bourgeoise francophone durant la première moitié du siècle dernier. Ce lieu a abrité le premier Musée national d’art contemporain du Québec et un premier Musée des Arts décoratifs, avant de devenir lui-même un établissement muséal et patrimonial.",
+        description_fr: "Le Château Dufresne est une somptueuse résidence jumelée d’inspiration beaux-arts dans laquelle vivait une famille bourgeoise francophone durant la première moitié du siècle dernier. Ce lieu a abrité le premier Musée national d’art contemporain du Québec et un premier Musée des Arts décoratifs, avant de devenir lui-même un établissement muséal et patrimonial.",
+        description_en: "The Château Dufresne is a sumptuous semi-detached fine art residence in which a bourgeois French-speaking family lived during the first half of the last century. It housed the first National Museum of Contemporary Art in Quebec and a first Museum of Decorative Arts, before becoming itself a museum and heritage establishment.",
+        index_itinerary: 52,
+        level: "",
+        latitude: "45.5539015",
+        longitude: "-73.5538942",
+        creation_year: "",
+        qr_code_token: "d7d692ab-4cf5-4b07-811d-70e17a63891f",
         off_road: true
     }]
 };

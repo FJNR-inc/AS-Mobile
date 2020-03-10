@@ -1,5 +1,5 @@
 <StackLayout>
-    <FlexboxLayout flexDirection="column" class="list-quizz" *ngFor="let assessment of assessments" [nsRouterLink]="'/map/quiz/' + assessment.id">
+    <FlexboxLayout flexDirection="column" class="list-quizz" *ngFor="let assessment of assessments" [nsRouterLink]="'/quiz/' + assessment.id">
         <Label class="list-quizz__name" [text]="assessment.name"></Label>
     </FlexboxLayout>
 </StackLayout>

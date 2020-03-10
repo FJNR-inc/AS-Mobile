@@ -24,7 +24,7 @@ export class EventComponent implements OnInit {
 
     ngOnInit() {
         this.activatedRoute.params.subscribe((params: Params) => {
-            this.index = params["id"];
+            this.index = +params["id"];
             this.refreshEvent();
         });
     }

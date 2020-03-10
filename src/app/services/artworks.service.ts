@@ -19,8 +19,6 @@ export class ArtworksService extends GlobalService {
 
     list(placeId: number = null, artworkTypeId: number = null): Observable<any> {
 
-        console.log(`filters-> placeId: ${placeId}, artworkTypeId: ${artworkTypeId}`);
-
         const newArtworkResponse: IResponseApi<IArtwork> = JSON.parse(JSON.stringify(artworks));
         newArtworkResponse.results = newArtworkResponse.results.filter(
             (artwork: IArtwork) => {
@@ -30,7 +28,6 @@ export class ArtworksService extends GlobalService {
                 return checkPlace && checkType;
             }
         ).map((artwork: IArtwork) => {
-
 
             InternationalizationService.translateObject(artwork,
                 ["description", "name"]);
@@ -58,22 +55,6 @@ export class ArtworksService extends GlobalService {
 
         return of(newArtwork).pipe(
             map((artwork: IArtwork) => {
-
-                /*artwork.description = artwork["description_" + local]
-                    ? artwork["description_" + local] : artwork.description;
-                artwork.name = artwork["name_" + local] ? artwork["name_" + local] : artwork.name;
-
-                artwork.artist.country = artwork.artist["country_" + local]
-                    ? artwork.artist["country_" + local] : artwork.artist.country;
-                artwork.artist.bio = artwork.artist["bio_" + local]
-                    ? artwork.artist["bio_" + local] : artwork.artist.bio;
-
-                artwork.place.name = artwork.place["name_" + local]
-                    ? artwork.place["name_" + local] : artwork.place.name;
-
-                artwork.artwork_type.name = artwork.artwork_type["name_" + local]
-                    ? artwork.artwork_type["name_" + local] : artwork.artwork_type.name;*/
-
 
                 InternationalizationService.translateObject(artwork,
                     ["description", "name"]);

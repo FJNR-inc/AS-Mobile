@@ -24,7 +24,7 @@
             <GridLayout class="events-page__event" [style.background]="'url(' + item.picture + ')'" [nsRouterLink]="['/events/event', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="events-page__event__description">
                     <Label row="1" col="0" colspan="2" style="font-size: 14" [text]="item.name" textWrap="true" class="events-page__event__description__title"></Label>
-                    <Label row="2" col="0" verticalAlignment="bottom" [text]="formatDate(item.date)" class="events-page__event__description__date"></Label>
+                    <Label row="2" col="0" verticalAlignment="bottom" [text]="item.date | date" class="events-page__event__description__date"></Label>
                     <Label row="2" col="1" verticalAlignment="bottom" [text]="item.place.name" class="events-page__event__description__address"></Label>
                 </GridLayout>
             </GridLayout>

@@ -3,15 +3,15 @@ import { IEvent } from "~/app/models/event";
 
 export const events: IResponseApi<IEvent> = {
     count: 8, next: null, previous: null, results: [{
-        id: 9,
+        id: 57,
         event_type: {
-            id: 26,
+            id: 68,
             name: "Rencontre avec artiste",
             name_fr: "Rencontre avec artiste",
             name_en: "Talk with artist"
         },
         place: {
-            id: 214,
+            id: 292,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
@@ -25,10 +25,10 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-visite-guidee-rencontre-avec-lartiste-julie-piche-96122508009",
         date: "2020-03-22T14:00:00Z"
     }, {
-        id: 10,
-        event_type: {id: 24, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
+        id: 58,
+        event_type: {id: 66, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
         place: {
-            id: 214,
+            id: 292,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
@@ -42,9 +42,9 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-visite-guidee-rencontre-avec-lartiste-julie-piche-96122508009",
         date: "2020-03-22T14:00:00Z"
     }, {
-        id: 11,
-        event_type: {id: 23, name: "Visite Focus", name_fr: "Visite Focus", name_en: "Focus Visit"},
-        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        id: 59,
+        event_type: {id: 65, name: "Visite Focus", name_fr: "Visite Focus", name_en: "Focus Visit"},
+        place: {id: 294, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
         picture: "Lynn-Banon-Focus.jpg",
         name: "FOCUS - Lynn Banon, Commissaire invité",
         description: "Ce mardi, c'est la commissaire invité Lynn Bannon qui sera votre guide. Elle vous accueillera dès 18 heure à l'Agora, au Pavillon Judith Jasmin à l'UQAM. Le long du parcours, votre guide vous dévoilera un aperçu des coulisses du festival et partagera ses pensées relatives au thème du festival : RESET. Lynn Bannon se concentrera sur les oeuvres exposées par trois artistes canadiens à L'UQAM : Sandra Lachance, Laurent Lamarche et Andrée-Anne Mercier.",
@@ -53,9 +53,9 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-focus-lynn-banon-commissaire-invite-96465052569",
         date: "2020-03-19T18:00:00Z"
     }, {
-        id: 12,
-        event_type: {id: 27, name: "Table ronde", name_fr: "Table ronde", name_en: "Round Table Discussion"},
-        place: {id: 216, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
+        id: 60,
+        event_type: {id: 69, name: "Table ronde", name_fr: "Table ronde", name_en: "Round Table Discussion"},
+        place: {id: 294, plan: null, name: "Agora UQAM ", name_fr: "Agora UQAM ", name_en: "Agoraa UQAM"},
         picture: "table-ronde-RAAV-UQAM.jpg",
         name: "Table Ronde : Comment la recherche création permet le RESET ?",
         description: "Venez partager un moment de discussion et de questionnement autour du thème : Comment la recherche création permet le RESET ? Cette année, le Festival Art Souterrain souhaite interpeller les passants des souterrains de Montréal  autour de la thématique RESET. Si vous aviez un bouton permettant de tout effacer et recommencer, appuierez-vous ? Une cinquantaine d'artistes du Québec et au-delà se sont penchés sur le sujet et vous invitent à découvrir leur interprétation dans les souterrains de Montréal. ",
@@ -63,15 +63,16 @@ export const events: IResponseApi<IEvent> = {
         description_en: "Come and share a moment of discussion and questioning around the theme: How does creative research enable RESET? This year, the Festival Art Souterrain wants to question the passers-by of Montreal's undergrounds around the theme RESET. If you had a button to erase everything and start over, would you press it? Over fifty artists from Quebec and beyond have been working on the subject and invite you to discover their interpretation in Montreal's undergrounds. ",
         link: "https://www.eventbrite.ca/e/billets-table-ronde-comment-la-recherche-creation-permet-le-reset-97758531399",
         date: "2020-03-16T12:00:00Z"
-    }, {id: 13,
+    }, {
+        id: 61,
         event_type: {
-            id: 26,
+            id: 68,
             name: "Rencontre avec artiste",
             name_fr: "Rencontre avec artiste",
             name_en: "Talk with artist"
         },
         place: {
-            id: 222,
+            id: 300,
             plan: null,
             name: "Observatoire Place Ville Marie ",
             name_fr: "Observatoire Place Ville Marie ",
@@ -85,10 +86,10 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-rencontre-avec-bonnie-baxter-98527088173",
         date: "2020-03-16T17:30:00Z"
     }, {
-        id: 14,
-        event_type: {id: 24, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
+        id: 62,
+        event_type: {id: 66, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
         place: {
-            id: 214,
+            id: 292,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
@@ -102,10 +103,10 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-guided-tour-reset-96135765663",
         date: "2020-03-21T14:00:00Z"
     }, {
-        id: 15,
-        event_type: {id: 24, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
+        id: 63,
+        event_type: {id: 66, name: "Visite guidée", name_fr: "Visite guidée", name_en: "Guid Tour"},
         place: {
-            id: 214,
+            id: 292,
             plan: "D_CCMM.jpg",
             name: "Centre Commerce Mondial de Montréal",
             name_fr: "Centre Commerce Mondial de Montréal",
@@ -119,9 +120,15 @@ export const events: IResponseApi<IEvent> = {
         link: "https://www.eventbrite.ca/e/billets-visite-guidee-reset-96119926287",
         date: "2020-03-15T14:00:00Z"
     }, {
-        id: 16,
-        event_type: {id: 28, name: "Activité", name_fr: "Activité", name_en: "Activity"},
-        place: {id: 220, plan: null, name: "Cinema Du Parc ", name_fr: "Cinema Du Parc ", name_en: "Cinema du Parc"},
+        id: 64,
+        event_type: {id: 70, name: "Activité", name_fr: "Activité", name_en: "Activity"},
+        place: {
+            id: 298,
+            plan: "Minuit-au-parc.jpg",
+            name: "Cinema Du Parc ",
+            name_fr: "Cinema Du Parc ",
+            name_en: "Cinema du Parc"
+        },
         picture: "Minuit-au-parc.jpg",
         name: "Minuit au Parc",
         description: "2001, l’Odysée de l’espace est un classique du cinéma qui explore avec brio la thématique du Festival Art Souterrain 2020 : « RESET ». Découvrez, ou redécouvrez, ce chef d’œuvre grâce à notre partenariat avec le Cinéma du Parc. Minuit au Parc est un évènement incontournable de votre fin de semaine pour aborder notre thématique sous un nouvel angle !",

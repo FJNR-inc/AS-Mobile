@@ -25,9 +25,6 @@ export class EventsService extends GlobalService {
                 const checkPlace = !placeId || event.place.id === placeId;
                 const checkType = !eventTypeId || event.event_type.id === eventTypeId;
 
-                console.log(eventTypeId)
-                console.log(event.event_type)
-                console.log(checkType)
                 return checkPlace && checkType;
             }
         ).map((event: IEvent) => {

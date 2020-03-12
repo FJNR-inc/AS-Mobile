@@ -66,6 +66,10 @@ export class EventsComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        const local = InternationalizationService.getLocale();
+
+        this.typeOfEvent = this.translationModal[local].typeOfEventAll;
+
         this.refreshEvents();
         this.refreshEventTypes();
     }

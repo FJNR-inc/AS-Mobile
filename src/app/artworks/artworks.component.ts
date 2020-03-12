@@ -94,6 +94,11 @@ export class ArtworksComponent implements OnInit {
 
     ngOnInit(): void {
 
+        const local = InternationalizationService.getLocale();
+
+        this.place = this.translationModal[local].typeOfPlaceAll;
+        this.typeOfArtwork = this.translationModal[local].typeOfArtWorkAll;
+
         this.refreshArtworks();
         this.refreshArtworkTypes();
         this.refreshPlaces();

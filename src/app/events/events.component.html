@@ -14,12 +14,16 @@
     </ActionItem>
     <Label class="action-bar-title" text="{{ 'events.title' | translate }}"></Label>
     <ActionItem (tap)="toggleModal()"
-                ios.systemIcon="9" ios.position="left"
-                android.systemIcon="ic_menu_search" android.position="actionBar"></ActionItem>
+                ios.systemIcon="12"
+                ios.position="right"
+                android.systemIcon="ic_menu_search"
+                android.position="actionBar"></ActionItem>
 </ActionBar>
 
-<GridLayout height="100%" class="events-page" [ngClass]="{'events-page--dialogOpen': this.dialogShown}">
-    <ListView [items]="events" *ngIf="events.length > 1">
+<GridLayout height="100%" class="events-page" >
+    <ListView
+            [items]="events" *ngIf="events.length > 1"
+            [ngClass]="{'events-page--dialogOpen': this.dialogShown}">
         <ng-template let-item="item">
             <GridLayout class="events-page__event" [style.background]="'url(~/assets/data/' + item.picture + ')'" [nsRouterLink]="['/events/event', item.id]" pageTransition="slide">
                 <GridLayout columns="*, auto" rows="*, auto, auto" class="events-page__event__description">
@@ -33,28 +37,28 @@
     <FlexBoxLayout alignItems="center" justifyContent="center" *ngIf="events.length < 1">
         <TitleComponent text="{{ 'events.no_events_found' | translate }}" textAlignment="center"></TitleComponent>
     </FlexBoxLayout>
-</GridLayout>
 
-<AbsoluteLayout class="events-modal" *ngIf="dialogShown">
-    <StackLayout class="events-modal__content">
-        <TitleComponent text="{{ 'events.search_modal.title' | translate }}"
-                        textAlignment="center"
-                        type="3"
-                        class="events-modal__content__title"></TitleComponent>
-
-        <StackLayout class="events-modal__content__text">
-            <TitleComponent text="{{ 'events.search_modal.explanation' | translate }}"
+    <AbsoluteLayout class="events-modal" *ngIf="dialogShown">
+        <StackLayout class="events-modal__content">
+            <TitleComponent text="{{ 'events.search_modal.title' | translate }}"
                             textAlignment="center"
-                            type="4"></TitleComponent>
-        </StackLayout>
+                            type="3"
+                            class="events-modal__content__title"></TitleComponent>
 
-        <StackLayout class="events-modal__content__select">
-            <Label row="10" col="1" colSpan="5" text="{{ 'events.search_modal.input_type_event' | translate }}" class="title-label"></Label>
-            <Label [text]="typeOfEvent" editable="false" class="input-select" (tap)="onTypeEventTap()"></Label>
-        </StackLayout>
+            <StackLayout class="events-modal__content__text">
+                <TitleComponent text="{{ 'events.search_modal.explanation' | translate }}"
+                                textAlignment="center"
+                                type="4"></TitleComponent>
+            </StackLayout>
 
-        <StackLayout class="events-modal__content__button">
-            <Button text="{{ 'events.search_modal.button_filter' | translate }}" (tap)="refreshEvents()" class="button"></Button>
+            <StackLayout class="events-modal__content__select">
+                <Label row="10" col="1" colSpan="5" text="{{ 'events.search_modal.input_type_event' | translate }}" class="title-label"></Label>
+                <Label [text]="typeOfEvent" editable="false" class="input-select" (tap)="onTypeEventTap()"></Label>
+            </StackLayout>
+
+            <StackLayout class="events-modal__content__button">
+                <Button text="{{ 'events.search_modal.button_filter' | translate }}" (tap)="refreshEvents()" class="button"></Button>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
-</AbsoluteLayout>
+    </AbsoluteLayout>
+</GridLayout>

@@ -1,7 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
 import GlobalService from "./globalService";
+import { map } from "rxjs/internal/operators";
+import { InternationalizationService } from "~/app/services/internationalization.service";
+import { IEventType } from "~/app/models/eventType";
+import { IResponseApi } from "~/app/models/api";
+import { eventTypes } from "~/app/datas/event_type_data";
 
 @Injectable()
 export class EventTypesService extends GlobalService {
@@ -12,29 +17,37 @@ export class EventTypesService extends GlobalService {
         super();
     }
 
-    list(filters: Array<{name: string, value: any}> = [], limit = 100, offset = 0): Observable<any> {
-        const headers = this.getHeaders();
-        let params = new HttpParams();
-        params = params.set("limit", limit.toString());
-        params = params.set("offset", offset.toString());
+    list(): Observable<any> {
 
-        for (const filter of filters) {
-            params = params.set(filter.name, filter.value);
-        }
+        const newArtworkResponse: IResponseApi<IEventType> = JSON.parse(JSON.stringify(eventTypes));
+        newArtworkResponse.results = newArtworkResponse.results.map(
+            (eventType: IEventType) => {
 
-        return this.http.get<any>(
-            this.urlEventTypes,
-            {headers, params}
-        );
+            InternationalizationService.translateObject(eventType,
+                ["name"]);
+
+            return eventType;
+        });
+
+        return of(newArtworkResponse);
     }
 
     get(id: number): Observable<any> {
-        const headers = this.getHeaders();
-        const params = new HttpParams();
+        const newEvent = JSON.parse(JSON.stringify(eventTypes)).results.find(
+            (eventType: IEventType) => {
 
-        return this.http.get<any>(
-            this.urlEventTypes + "/" + id,
-            {headers, params}
+                return eventType.id === id;
+            }
+        );
+
+        return of(newEvent).pipe(
+            map((eventType: IEventType) => {
+
+                InternationalizationService.translateObject(eventType,
+                    ["name"]);
+
+                return eventType;
+            })
         );
     }
 }

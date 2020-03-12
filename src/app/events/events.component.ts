@@ -7,7 +7,6 @@ import { EventTypesService } from "~/app/services/eventTypes.service";
 import { EventType } from "~/app/models/eventType";
 import { Event } from "~/app/models/event";
 import { EventsService } from "~/app/services/events.service";
-import { ArtworkType } from "~/app/models/artworkType";
 import { InternationalizationService } from "~/app/services/internationalization.service";
 
 interface ITranslationModalLabel {
@@ -66,9 +65,6 @@ export class EventsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        const local = InternationalizationService.getLocale();
-
-        this.typeOfEvent = this.translationModal[local].typeOfEventAll;
 
         this.refreshEvents();
         this.refreshEventTypes();
@@ -90,12 +86,7 @@ export class EventsComponent implements OnInit {
     onTypeEventTap(): void {
         const local = InternationalizationService.getLocale();
 
-        this.typeOfEvent = this.translationModal[local].typeOfEventAll;
         const options: ActionOptions = this.translationModal[local].actionOptionEventType;
-
-        for (const eventType of this.eventTypes) {
-            options.actions.push(eventType.name);
-        }
 
         action(options).then((result) => {
             this.typeOfEvent =
@@ -107,7 +98,7 @@ export class EventsComponent implements OnInit {
 
     getFilterEventType() {
         const eventTypeFilter = this.eventTypes.find(
-            (eventType: ArtworkType) => eventType.name === this.typeOfEvent);
+            (eventType: EventType) => eventType.name === this.typeOfEvent);
 
         return !!eventTypeFilter ? eventTypeFilter.id : null;
 
@@ -116,6 +107,7 @@ export class EventsComponent implements OnInit {
     refreshEvents() {
         this.dialogShown = false;
         this.eventsService.list(
+            null,
             this.getFilterEventType()).subscribe(
             (events) => {
                 this.events =  events.results.map(
@@ -131,6 +123,14 @@ export class EventsComponent implements OnInit {
                 this.eventTypes =  eventTypes.results.map(
                     (item) => new EventType(item)
                 );
+                const local = InternationalizationService.getLocale();
+
+                this.typeOfEvent = this.translationModal[local].typeOfEventAll;
+                const options: ActionOptions = this.translationModal[local].actionOptionEventType;
+
+                for (const eventType of this.eventTypes) {
+                    options.actions.push(eventType.name);
+                }
             }
         );
     }

@@ -94,11 +94,6 @@ export class ArtworksComponent implements OnInit {
 
     ngOnInit(): void {
 
-        const local = InternationalizationService.getLocale();
-
-        this.place = this.translationModal[local].typeOfPlaceAll;
-        this.typeOfArtwork = this.translationModal[local].typeOfArtWorkAll;
-
         this.refreshArtworks();
         this.refreshArtworkTypes();
         this.refreshPlaces();
@@ -121,13 +116,7 @@ export class ArtworksComponent implements OnInit {
 
         const local = InternationalizationService.getLocale();
 
-        this.typeOfArtwork = this.translationModal[local].typeOfArtWorkAll;
-
         const options: ActionOptions = this.translationModal[local].actionOptionArtworkType;
-
-        for (const artworkType of this.artworkTypes) {
-            options.actions.push(artworkType.name);
-        }
 
         action(options).then((result) => {
             this.typeOfArtwork =
@@ -140,12 +129,7 @@ export class ArtworksComponent implements OnInit {
 
         const local = InternationalizationService.getLocale();
 
-        this.place = this.translationModal[local].typeOfPlaceAll;
         const options: ActionOptions = this.translationModal[local].actionOptionPlace;
-
-        for (const place of this.places) {
-            options.actions.push(place.name);
-        }
 
         action(options).then((result) => {
             this.place =
@@ -189,6 +173,13 @@ export class ArtworksComponent implements OnInit {
                 this.artworkTypes = artworkTypes.results.map(
                     (item) => new ArtworkType(item)
                 );
+                const local = InternationalizationService.getLocale();
+
+                this.typeOfArtwork = this.translationModal[local].typeOfArtWorkAll;
+                for (const artworkType of this.artworkTypes) {
+                    this.translationModal[local].
+                    actionOptionArtworkType.actions.push(artworkType.name);
+                }
             }
         );
     }
@@ -199,6 +190,15 @@ export class ArtworksComponent implements OnInit {
                 this.places = places.results.map(
                     (item) => new Place(item)
                 );
+
+
+                const local = InternationalizationService.getLocale();
+
+                this.place = this.translationModal[local].typeOfPlaceAll;
+                for (const place of this.places) {
+                    this.translationModal[local].
+                    actionOptionPlace.actions.push(place.name);
+                }
             }
         );
     }
